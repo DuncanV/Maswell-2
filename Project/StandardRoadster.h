@@ -3,7 +3,7 @@
 *  @class StandardRoadster
 *  @authors Duncan + Tjaart
 *  @version 1.0.0
-*  @brief Concrete Product for Abstract Factory Pattern
+*  @brief Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern
 */
 
 #ifndef PROJECT_STANDARDROADSTER_H
@@ -14,7 +14,7 @@
 class StandardRoadster : public StandardCar{
 public:
     /**
-     * The base Constructor for StandardRoadster
+     * Constructor for StandardRoadster, calls Constructor of StandardCar
      */
     StandardRoadster() : StandardCar("Roadster"){};
 };

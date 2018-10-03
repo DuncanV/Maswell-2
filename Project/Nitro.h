@@ -1,6 +1,10 @@
-//
-// Created by Duncan on 2018/10/03.
-//
+/**
+ *  @file Nitro.h
+ *  @class Nitro
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief Concrete Decorcator for Decorator Pattern
+ */
 
 #ifndef PROJECT_NITRO_H
 #define PROJECT_NITRO_H

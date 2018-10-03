@@ -21,7 +21,6 @@ SportsCar::SportsCar(const Car &car_) : Car(car_){
 
 string SportsCar::getDescription() {
     string out = Car::getDescription();
-    //Add veriables thats unique to electric car
     return out;
 }
 

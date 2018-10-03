@@ -21,7 +21,6 @@ StandardCar::StandardCar(const Car &car_) : Car(car_) {
 
 string StandardCar::getDescription() {
     string out = Car::getDescription();
-    //Add veriables thats unique to electric car
     return out;
 }
 

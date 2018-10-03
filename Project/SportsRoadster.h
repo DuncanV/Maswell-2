@@ -1,9 +1,9 @@
 /**
- *  @file SportsFormulaOne.h
- *  @class SportsFormulaOne
+ *  @file SportsRoadster.h
+ *  @class SportsRoadster
  *  @authors Duncan + Tjaart
  *  @version 1.0.0
- *  @brief Concrete Product for Abstract Factory Pattern
+ *  @brief Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern
  */
 
 
@@ -15,7 +15,7 @@
 class SportsRoadster : public SportsCar{
 public:
     /**
-    * Constructor for SportsRoadster, calls Constructor  of SportsCar
+    * Constructor for SportsRoadster, calls Constructor of SportsCar
     */
     SportsRoadster() : SportsCar("Roadster"){};
 };
