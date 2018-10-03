@@ -1,0 +1,4 @@
+C:\Users\Duncan\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug
