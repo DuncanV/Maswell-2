@@ -54,7 +54,7 @@ int main() {
 
         Car* car1 = testDecorator->clone();
         cout << car1->showCarStats() << endl;
-//
+
         Car* car2 = testDecorator->clone(true);
         cout << car2->showCarStats() << endl;
         

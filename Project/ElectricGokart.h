@@ -16,20 +16,22 @@ public:
     *  Constructor for ElectricGoKart, calls Constructor of ElectricCar
     */
     ElectricGoKart() : ElectricCar("GoKart"){
-        setAccel(75);
+        setAcceleration(75);
         setSpeed(40);
         setHandling(50);
     };
-    ElectricGoKart(const Car&C, bool flag) : ElectricCar(C,flag){
-        if (flag== false)
-        {
-            setAccel(75);
+
+    ElectricGoKart(const Car& car_, bool flag_) : ElectricCar(car_, flag_){
+        if (flag_ == false) {
+            setAcceleration(75);
             setSpeed(40);
             setHandling(50);
         }
     };
-    virtual Car* clone(bool flag_=false){
-        return new ElectricGoKart(*this,flag_);
+
+    virtual Car* clone(bool flag_ = false){
+        cout << "Cloning ..." << endl;
+        return new ElectricGoKart(*this, flag_);
     };
 };
 #endif //PROJECT_ELECTRICGOKART_H

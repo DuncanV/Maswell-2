@@ -104,13 +104,13 @@ public:
     * Function to set Acceleration of a car
     * @param A
     */
-    void setAccel(int A){acceleration=A;}
+    void setAcceleration(int A){acceleration=A;}
 
     /**
     * Function to get Acceleration of a car
     * @return Acceleration
     */
-    int getAcce(){ return acceleration;}
+    int getAcceleration(){ return acceleration;}
 
     /**
     * pointer to car object for decorator
@@ -130,7 +130,6 @@ private:
      * @brief a Model number based on modelCounter for each vehicle made
      */
     int modelNumber;
-
     static int modelCounter;
     string description;
     int topSpeed=0;

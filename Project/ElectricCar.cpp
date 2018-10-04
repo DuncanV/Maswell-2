@@ -16,28 +16,23 @@ ElectricCar::ElectricCar(string modelType_) : Car("Electric " + modelType_){
 }
 
 ElectricCar::ElectricCar(const Car &car_, bool flag_) : Car(car_, flag_){
-    string end = "*************************\n";
-
-    string out="";
-    out += "Model type: " + car_.getModelType() + "\n";
-    out += "Model number: " + to_string(car_.getModelNumber()) + "\n";
-    out += end;
-    setDescription(out);
+//    string end = "*************************\n";
+//
+//    string out="";
+//    out += "Model type: " + car_.getModelType() + "\n";
+//    out += "Model number: " + to_string(car_.getModelNumber()) + "\n";
+//    out += end;
+//    setDescription(out);
 
 }
 
 string ElectricCar::getDescription() {
     string out = "Top speed: "+to_string(getSpeed())+"\n";
-    out+= "Acceleration: "+to_string(getAcce())+"\n";
+    out+= "Acceleration: "+to_string(getAcceleration())+"\n";
     out+="Handling: "+to_string(getHandling())+"\n";
     out+=  Car::getDescription();
     //Add veriables thats unique to electric car
 
     return out;
 }
-
-//Car* ElectricCar::clone(bool flag_ = false) {
-//    cout << "Cloning ...\n" << endl;
-//    return new ElectricCar(*this, flag_);
-//}
 

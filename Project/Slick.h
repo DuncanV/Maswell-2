@@ -18,7 +18,7 @@ public:
         setDescription("Slick Tires!\n");
         DecorateCar->setSpeed(DecorateCar->getSpeed()-10);
         DecorateCar->setHandling(DecorateCar->getHandling()+15);
-        DecorateCar->setAccel(DecorateCar->getAcce()+5);
+        DecorateCar->setAcceleration(DecorateCar->getAcceleration()+5);
     }
     ~Slick(){};
 };

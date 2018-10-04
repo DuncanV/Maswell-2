@@ -17,9 +17,22 @@ public:
      * Constructor for StandardGoKart, calls Constructor of StandardCar
      */
     StandardGoKart() : StandardCar("GoKart"){
-        setAccel(45);
+        setAcceleration(45);
         setSpeed(50);
         setHandling(60);
+    };
+
+    StandardGoKart(const Car& car_, bool flag_) : StandardCar(car_, flag_){
+        if (flag_ == false) {
+            setAcceleration(150);
+            setSpeed(120);
+            setHandling(200);
+        }
+    };
+
+    virtual Car* clone(bool flag_ = false){
+        cout << "Cloning ..." << endl;
+        return new StandardGoKart(*this, flag_);
     };
 };
 

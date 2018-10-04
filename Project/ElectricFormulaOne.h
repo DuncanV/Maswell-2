@@ -18,7 +18,20 @@ public:
     ElectricFormulaOne() : ElectricCar("FormulaOne"){
         setHandling(150);
         setSpeed(120);
-        setAccel(200);
+        setAcceleration(200);
+    };
+
+    ElectricFormulaOne(const Car& car_, bool flag_) : ElectricCar(car_, flag_){
+        if (flag_ == false) {
+            setAcceleration(150);
+            setSpeed(120);
+            setHandling(200);
+        }
+    };
+
+    virtual Car* clone(bool flag_ = false){
+        cout << "Cloning ..." << endl;
+        return new ElectricFormulaOne(*this, flag_);
     };
 };
 #endif //PROJECT_ELECTRICFORMULAONE_H

@@ -42,7 +42,7 @@ public:
      * a abstract clone function for the prototype design pattern
      * @return a Car object
      */
-    virtual Car* clone(bool flag_);
+    virtual Car* clone(bool flag_){};
 
 private:
 };

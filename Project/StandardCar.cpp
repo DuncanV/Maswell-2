@@ -22,7 +22,7 @@ StandardCar::StandardCar(const Car &car_, bool flag_) : Car(car_, flag_) {
 string StandardCar::getDescription() {
 
     string out = "Top speed: "+to_string(getSpeed())+"\n";
-    out+= "Acceleration: "+to_string(getAcce())+"\n";
+    out+= "Acceleration: "+to_string(getAcceleration())+"\n";
     out+="Handling: "+to_string(getHandling())+"\n";
     out+=  Car::getDescription();
     //Add veriables thats unique to electric car
@@ -30,8 +30,4 @@ string StandardCar::getDescription() {
     return out;
 }
 
-Car* StandardCar::clone(bool flag_ = false) {
-    cout << "Cloning ...\n" << getDescription() << endl;
-    return new StandardCar(*this, flag_);
-}
 

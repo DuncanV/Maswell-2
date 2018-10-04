@@ -17,9 +17,22 @@ public:
      * Constructor for StandardRoadster, calls Constructor of StandardCar
      */
     StandardRoadster() : StandardCar("Roadster"){
-        setAccel(75);
+        setAcceleration(75);
         setSpeed(110);
         setHandling(85);
+    };
+
+    StandardRoadster(const Car& car_, bool flag_) : StandardCar(car_, flag_){
+        if (flag_ == false) {
+            setAcceleration(150);
+            setSpeed(120);
+            setHandling(200);
+        }
+    };
+
+    virtual Car* clone(bool flag_ = false){
+        cout << "Cloning ..." << endl;
+        return new StandardRoadster(*this, flag_);
     };
 };
 

@@ -17,9 +17,6 @@ public:
     FlameVinyl():PimpMyRide()
     {
         setDescription("Flame Vinyls!\n");
-//        setSpeed(DecorateCar->getSpeed());
-//        setAccel(DecorateCar->getAcce());
-//        setHandling(DecorateCar->getHandling());
     }
     ~FlameVinyl(){};
 };

@@ -16,9 +16,22 @@ public:
      * Constructor for ElectricFormulaOne, calls Constructor of ElectricCar
      */
     ElectricRoadster() : ElectricCar("Roadster"){
-        setAccel(150);
+        setAcceleration(150);
         setSpeed(75);
         setHandling(110);
+    };
+
+    ElectricRoadster(const Car& car_, bool flag_) : ElectricCar(car_, flag_){
+        if (flag_ == false) {
+            setAcceleration(75);
+            setSpeed(40);
+            setHandling(50);
+        }
+    };
+
+    virtual Car* clone(bool flag_ = false){
+        cout << "Cloning ..." << endl;
+        return new ElectricGoKart(*this, flag_);
     };
 };
 #endif //PROJECT_ELECTRICROADSTER_H

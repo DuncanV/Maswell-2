@@ -13,12 +13,13 @@ Car::Car(string modelType_) {
 }
 
 Car::Car(const Car& car_, bool flag) {
+    modelType = car_.modelType;
+    modelNumber = car_.modelNumber;
+
     if (flag == false){
         carDecorate=0;
     } else{
         carDecorate = car_.carDecorate;
-        modelType = car_.modelType;
-        modelNumber = car_.modelNumber;
         topSpeed=car_.topSpeed;
         handling=car_.handling;
         acceleration=car_.acceleration;
@@ -27,7 +28,7 @@ Car::Car(const Car& car_, bool flag) {
 
 string Car::getDescription() {
     string out = "Top speed: "+to_string(getSpeed())+"\n";
-    out+= "Acceleration: "+to_string(getAcce())+"\n";
+    out+= "Acceleration: "+to_string(getAcceleration())+"\n";
     out+="Handling: "+to_string(getHandling())+"\n";
     out+=description;
     return description;
@@ -43,7 +44,7 @@ int Car::getModelNumber()const {
 
 string Car::showCarStats() {
     string out= "Top speed: "+to_string(getSpeed())+"\n";
-    out+= "Acceleration: "+to_string(getAcce())+"\n";
+    out+= "Acceleration: "+to_string(getAcceleration())+"\n";
     out+="Handling: "+to_string(getHandling())+"\n";
     if(carDecorate!=0)
     {

@@ -19,7 +19,20 @@ public:
     StandardFormulaOne() : StandardCar("FormulaOne"){
         setHandling(120);
         setSpeed(150);
-        setAccel(120);
+        setAcceleration(120);
+    };
+
+    StandardFormulaOne(const Car& car_, bool flag_) : StandardCar(car_, flag_){
+        if (flag_ == false) {
+            setAcceleration(150);
+            setSpeed(120);
+            setHandling(200);
+        }
+    };
+
+    virtual Car* clone(bool flag_ = false){
+        cout << "Cloning ..." << endl;
+        return new StandardFormulaOne(*this, flag_);
     };
 };
 
