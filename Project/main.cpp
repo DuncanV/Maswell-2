@@ -7,7 +7,7 @@
 #include "Nitro.h"
 #include "SkullVinyl.h"
 #include "FlameVinyl.h"
-#include "SpikedTires.h"
+#include "Slick.h"
 #include "Spoiler.h"
 int main() {
     srand(time(NULL));
@@ -44,11 +44,11 @@ int main() {
 //    }
 //    delete []cars;
 
-        Car* testDecorator =Factories[0]->produceSports();
+        Car* testDecorator =Factories[0]->produceElectric();
         testDecorator->add(new FlameVinyl());
-        testDecorator->add(new SpikedTires());
-        testDecorator->add(new Nitro());
-        testDecorator->add(new Spoiler());
+        testDecorator->add(new Slick(testDecorator));
+        testDecorator->add(new Nitro(testDecorator));
+        testDecorator->add(new Spoiler(testDecorator));
 
         cout<<testDecorator->showCarStats()<<endl;
     //deletion of allocated memory

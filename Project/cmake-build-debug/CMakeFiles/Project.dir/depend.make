@@ -29,7 +29,7 @@ CMakeFiles/Project.dir/main.cpp.o: ../Nitro.h
 CMakeFiles/Project.dir/main.cpp.o: ../PimpMyRide.h
 CMakeFiles/Project.dir/main.cpp.o: ../RoadsterFactory.h
 CMakeFiles/Project.dir/main.cpp.o: ../SkullVinyl.h
-CMakeFiles/Project.dir/main.cpp.o: ../SpikedTires.h
+CMakeFiles/Project.dir/main.cpp.o: ../Slick.h
 CMakeFiles/Project.dir/main.cpp.o: ../Spoiler.h
 CMakeFiles/Project.dir/main.cpp.o: ../SportsCar.h
 CMakeFiles/Project.dir/main.cpp.o: ../SportsFormulaOne.h

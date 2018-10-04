@@ -13,9 +13,11 @@
 class Nitro: public PimpMyRide
 {
 public:
-    Nitro():PimpMyRide()
+    Nitro(Car* Decorate):PimpMyRide()
     {
         setDescription("Nitro Yeah!\n");
+        Decorate->setSpeed(getSpeed()+20);
+        Decorate->setAccel(getAcce()+20);
     }
     ~Nitro(){};
 };

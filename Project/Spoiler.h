@@ -14,9 +14,11 @@
 class Spoiler: public PimpMyRide
 {
 public:
-    Spoiler():PimpMyRide()
+    Spoiler(Car* Decorate):PimpMyRide()
     {
         setDescription("You got yourself a spoiler!\n");
+        Decorate->setHandling(getHandling()+20);
+        Decorate->setSpeed(getSpeed()-10);
     }
     ~Spoiler(){};
 };

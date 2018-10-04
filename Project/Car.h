@@ -98,9 +98,9 @@ private:
     int modelNumber;
     static int modelCounter;
     string description;
-    int topSpeed;
-    int handling;
-    int acceleration;
+    int topSpeed=0;
+    int handling=0;
+    int acceleration=0;
 };
 
 #endif //PROJECT_CAR_H
