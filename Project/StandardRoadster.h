@@ -20,6 +20,8 @@ public:
         setAcceleration(75);
         setSpeed(110);
         setHandling(85);
+
+        cout << "Creating ...\n" << toString() << endl;
     };
 
     StandardRoadster(const Car& car_, bool flag_) : StandardCar(car_, flag_){
@@ -28,6 +30,16 @@ public:
             setSpeed(120);
             setHandling(200);
         }
+
+        string out = "Cloning ";
+        if (flag_ == false){
+            out += "base car ...\n";
+        }
+        else{
+            out += "upgraded car ...\n";
+        }
+        cout << out;
+        cout << toString() << endl;
     };
 
     virtual Car* clone(bool flag_ = false){

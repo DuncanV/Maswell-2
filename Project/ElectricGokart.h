@@ -19,6 +19,8 @@ public:
         setAcceleration(75);
         setSpeed(40);
         setHandling(50);
+
+        cout << "Creating ...\n" << toString() << endl;
     };
 
     ElectricGoKart(const Car& car_, bool flag_) : ElectricCar(car_, flag_){
@@ -27,10 +29,19 @@ public:
             setSpeed(40);
             setHandling(50);
         }
+
+        string out = "Cloning ";
+        if (flag_ == false){
+            out += "base car ...\n";
+        }
+        else{
+            out += "upgraded car ...\n";
+        }
+        cout << out;
+        cout << toString() << endl;
     };
 
     virtual Car* clone(bool flag_ = false){
-        cout << "Cloning ..." << endl;
         return new ElectricGoKart(*this, flag_);
     };
 };

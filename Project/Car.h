@@ -21,7 +21,9 @@ public:
     /**
     * Defualt constructor used for Decoratoring
     */
-    Car(){carDecorate=0;};
+    Car(){
+        carDecorate=0;
+    };
 
     /**
      * The base Constructor for Car
@@ -41,12 +43,6 @@ public:
     virtual ~Car(){};
 
     /**
-     * a getDescription Function
-     * @return a string that states the info about the car
-     */
-    string getDescription();
-
-    /**
      * a abstract clone function for the prototype design pattern
      * @return a Car object
      */
@@ -54,7 +50,7 @@ public:
     
 
     /**
-     *abstract add function for decorator
+     * abstract add function for decorator
      * @param c is car object
      */
     virtual void add(Car* c);
@@ -64,6 +60,12 @@ public:
      * @param des string passed in
      */
     void setDescription(string des);
+
+    /**
+     * a getDescription Function
+     * @return a string that states the info about the car
+     */
+    string getDescription();
 
     /**
      * @return the car modelNumber
@@ -119,6 +121,7 @@ public:
 
     const string getModelType()const { return modelType;};
 
+    string toString();
 
 private:
     /**

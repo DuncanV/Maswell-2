@@ -27,15 +27,11 @@ Car::Car(const Car& car_, bool flag) {
 }
 
 string Car::getDescription() {
-    string out = "Top speed: "+to_string(getSpeed())+"\n";
-    out+= "Acceleration: "+to_string(getAcceleration())+"\n";
-    out+="Handling: "+to_string(getHandling())+"\n";
-    out+=description;
     return description;
 }
 
 void Car::setDescription(string des) {
-    description=des;
+    description = des;
 }
 
 int Car::getModelNumber()const {
@@ -43,17 +39,19 @@ int Car::getModelNumber()const {
 }
 
 string Car::showCarStats() {
-    string out= "Top speed: "+to_string(getSpeed())+"\n";
-    out+= "Acceleration: "+to_string(getAcceleration())+"\n";
-    out+="Handling: "+to_string(getHandling())+"\n";
+    string sep = "*********************************\n";
+
+    string out = "Top speed: "+to_string(getSpeed())+"\n";
+    out += "Acceleration: "+to_string(getAcceleration())+"\n";
+    out +="Handling: "+to_string(getHandling())+"\n";
+    out += sep;
     if(carDecorate!=0)
     {
-       out+=getDescription()+"With Added:\n"+carDecorate->showCarStats();
-
+        out += "With Added:\n" + carDecorate->showCarStats();
         return out;
     }
     else
-        return out+=getDescription()+"With NO Addons!\n";
+        return out += "With NO Addons!\n";
 }
 
 void Car::add(Car *c) {
@@ -61,4 +59,18 @@ void Car::add(Car *c) {
         carDecorate=c;
     else
         carDecorate->add(c);
+}
+
+string Car::toString(){
+    string sep = "*********************************\n";
+
+    string out = "";
+    out += sep;
+    out += "Car Description:\n";
+    out += "Model Type: " + modelType +"\n";
+    out += "Model Number: " + to_string(modelNumber) + "\n";
+    out += sep;
+    out += showCarStats();
+    out += sep;
+    return out;
 }

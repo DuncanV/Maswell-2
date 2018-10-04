@@ -53,7 +53,7 @@ public:
     virtual string showCarStats()
     {
         if(car!=0)
-        return getDescription()+car->showCarStats();
+            return getDescription() + car->showCarStats();
         else
             return getDescription();
     }

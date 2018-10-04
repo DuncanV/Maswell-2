@@ -44,22 +44,19 @@ int main() {
 //    }
 //    delete []cars;
 
+/*
+* UNCOMMENT FOR DEMONSTRATION OF DECORATOR
+*/
         Car* testDecorator =Factories[0]->produceElectric();
         testDecorator->add(new FlameVinyl());
         testDecorator->add(new Slick(testDecorator));
         testDecorator->add(new Nitro(testDecorator));
         testDecorator->add(new Spoiler(testDecorator));
 
-        cout<<testDecorator->showCarStats()<<endl;
-
+        cout << "Car after adding upgrades!\n";
+        cout << testDecorator->toString() << endl;
         Car* car1 = testDecorator->clone();
-        cout << car1->showCarStats() << endl;
-<<<<<<< HEAD
-
-=======
->>>>>>> b09fdc93e83773021c8043c26f53c8ee59dcffda
         Car* car2 = testDecorator->clone(true);
-        cout << car2->showCarStats() << endl;
         
         
     //deletion of allocated memory
