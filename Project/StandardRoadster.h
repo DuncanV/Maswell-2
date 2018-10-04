@@ -16,7 +16,11 @@ public:
     /**
      * Constructor for StandardRoadster, calls Constructor of StandardCar
      */
-    StandardRoadster() : StandardCar("Roadster"){};
+    StandardRoadster() : StandardCar("Roadster"){
+        setAccel(75);
+        setSpeed(110);
+        setHandling(85);
+    };
 };
 
 #endif //PROJECT_STANDARDROADSTER_H

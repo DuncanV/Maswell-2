@@ -16,7 +16,11 @@ public:
     /**
     * Constructor for SportsGoKart, calls Constructor of SportsCar
     */
-    SportsGoKart() : SportsCar("GoKart"){};
+    SportsGoKart() : SportsCar("GoKart"){
+        setAccel(50);
+        setSpeed(75);
+        setHandling(45);
+    };
 };
 
 #endif //PROJECT_SPORTSGOKART_H

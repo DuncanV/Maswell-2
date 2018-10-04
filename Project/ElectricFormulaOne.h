@@ -15,6 +15,10 @@ public:
     /**
      * Constructor for ElectricFormulaOne, calls Constructor of ElectricCar
      */
-    ElectricFormulaOne() : ElectricCar("FormulaOne"){};
+    ElectricFormulaOne() : ElectricCar("FormulaOne"){
+        setHandling(150);
+        setSpeed(120);
+        setAccel(200);
+    };
 };
 #endif //PROJECT_ELECTRICFORMULAONE_H

@@ -16,7 +16,11 @@ public:
     /**
      * Constructor for SportsFormulaOne, calls Constructor of SportsCar
      */
-    SportsFormulaOne() : SportsCar("FormulaOne"){};
+    SportsFormulaOne() : SportsCar("FormulaOne"){
+        setHandling(120);
+        setSpeed(200);
+        setAccel(150);
+    };
 };
 
 #endif //PROJECT_SPORTSFORMULAONE_H

@@ -3,7 +3,6 @@
  *  @class Car
  *  @authors Duncan + Tjaart
  *  @version 1.0.0
- *  @brief Abstract Product for Abstract Factory Pattern and Component for Decorator Pattern
  */
 
 #ifndef PROJECT_CAR_H
@@ -21,7 +20,7 @@ public:
     /**
     * Defualt constructor used for Decoratoring
     */
-    Car(){};
+    Car(){carDecorate=0;};
 
     /**
      * The base Constructor for Car
@@ -51,12 +50,13 @@ public:
      * @return a Car object
      */
     virtual Car* clone() = 0;
+    
 
     /**
-     * abstract add function for decorator
+     *abstract add function for decorator
      * @param c is car object
      */
-    virtual void add(Car* c)=0;
+    virtual void add(Car* c);
 
     /**
      * setDescritption function
@@ -73,7 +73,18 @@ public:
      * a abstract showCarStats function to show the stats of a car
      * @return string stating the stats
      */
-    virtual string showCarStats()=0;
+    virtual string showCarStats();
+
+    void setSpeed(int speed){topSpeed=speed;}
+    int getSpeed(){ return topSpeed;}
+    void setHandling(int H){handling=H;}
+    int getHandling(){ return handling;}
+    void setAccel(int A){acceleration=A;}
+    int getAcce(){ return acceleration;}
+    Car* carDecorate;
+
+
+
 private:
     /**
      * @brief a model string which states the type of car
@@ -86,6 +97,9 @@ private:
     int modelNumber;
     static int modelCounter;
     string description;
+    int topSpeed;
+    int handling;
+    int acceleration;
 };
 
 #endif //PROJECT_CAR_H

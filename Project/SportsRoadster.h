@@ -17,6 +17,10 @@ public:
     /**
     * Constructor for SportsRoadster, calls Constructor of SportsCar
     */
-    SportsRoadster() : SportsCar("Roadster"){};
+    SportsRoadster() : SportsCar("Roadster"){
+        setAccel(110);
+        setSpeed(150);
+        setHandling(75);
+    };
 };
 #endif //PROJECT_SPORTSROADSTER_H

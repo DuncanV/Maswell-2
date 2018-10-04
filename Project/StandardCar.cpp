@@ -20,7 +20,13 @@ StandardCar::StandardCar(const Car &car_) : Car(car_) {
 }
 
 string StandardCar::getDescription() {
-    string out = Car::getDescription();
+
+    string out = "Top speed: "+to_string(getSpeed())+"\n";
+    out+= "Acceleration: "+to_string(getAcce())+"\n";
+    out+="Handling: "+to_string(getHandling())+"\n";
+    out+=  Car::getDescription();
+    //Add veriables thats unique to electric car
+
     return out;
 }
 

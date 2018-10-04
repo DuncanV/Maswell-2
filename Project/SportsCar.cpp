@@ -20,7 +20,12 @@ SportsCar::SportsCar(const Car &car_) : Car(car_){
 }
 
 string SportsCar::getDescription() {
-    string out = Car::getDescription();
+    string out = "Top speed: "+to_string(getSpeed())+"\n";
+    out+= "Acceleration: "+to_string(getAcce())+"\n";
+    out+="Handling: "+to_string(getHandling())+"\n";
+    out+=  Car::getDescription();
+    //Add veriables thats unique to electric car
+
     return out;
 }
 
@@ -29,6 +34,6 @@ Car* SportsCar::clone() {
     return new SportsCar(*this);
 }
 
-string SportsCar::showCarStats() {
-    return getDescription();
-}
+//string SportsCar::showCarStats() {
+//    return getDescription();
+//}

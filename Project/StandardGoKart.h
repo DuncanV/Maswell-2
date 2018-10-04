@@ -16,7 +16,11 @@ public:
     /**
      * Constructor for StandardGoKart, calls Constructor of StandardCar
      */
-    StandardGoKart() : StandardCar("GoKart"){};
+    StandardGoKart() : StandardCar("GoKart"){
+        setAccel(45);
+        setSpeed(50);
+        setHandling(60);
+    };
 };
 
 #endif //PROJECT_STANDARDGOKART_H
