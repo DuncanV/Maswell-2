@@ -20,5 +20,16 @@ public:
         setSpeed(40);
         setHandling(50);
     };
+    ElectricGoKart(const Car&C, bool flag) : ElectricCar(C,flag){
+        if (flag== false)
+        {
+            setAccel(75);
+            setSpeed(40);
+            setHandling(50);
+        }
+    };
+    virtual Car* clone(bool flag_=false){
+        return new ElectricGoKart(*this,flag_);
+    };
 };
 #endif //PROJECT_ELECTRICGOKART_H

@@ -16,6 +16,13 @@ ElectricCar::ElectricCar(string modelType_) : Car("Electric " + modelType_){
 }
 
 ElectricCar::ElectricCar(const Car &car_, bool flag_) : Car(car_, flag_){
+    string end = "*************************\n";
+
+    string out="";
+    out += "Model type: " + car_.getModelType() + "\n";
+    out += "Model number: " + to_string(car_.getModelNumber()) + "\n";
+    out += end;
+    setDescription(out);
 
 }
 
@@ -29,8 +36,8 @@ string ElectricCar::getDescription() {
     return out;
 }
 
-Car* ElectricCar::clone(bool flag_ = false) {
-    cout << "Cloning ...\n" << getDescription() << endl;
-    return new ElectricCar(*this, flag_);
-}
+//Car* ElectricCar::clone(bool flag_ = false) {
+//    cout << "Cloning ...\n" << endl;
+//    return new ElectricCar(*this, flag_);
+//}
 

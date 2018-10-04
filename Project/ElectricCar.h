@@ -41,7 +41,7 @@ public:
      * clone function for the prototype design pattern
      * @return a pointer to car object
      */
-    virtual Car* clone(bool flag_);
+    virtual Car* clone(bool flag_){};
 
 private:
 

@@ -68,7 +68,7 @@ public:
     /**
      * @return the car modelNumber
      */
-    int getModelNumber();
+    int getModelNumber()const;
 
     /**
      * a abstract showCarStats function to show the stats of a car
@@ -117,6 +117,7 @@ public:
     */
     Car* carDecorate;
 
+    const string getModelType()const { return modelType;};
 
 
 private:

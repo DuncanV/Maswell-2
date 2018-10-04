@@ -19,6 +19,9 @@ Car::Car(const Car& car_, bool flag) {
         carDecorate = car_.carDecorate;
         modelType = car_.modelType;
         modelNumber = car_.modelNumber;
+        topSpeed=car_.topSpeed;
+        handling=car_.handling;
+        acceleration=car_.acceleration;
     }
 }
 
@@ -34,7 +37,7 @@ void Car::setDescription(string des) {
     description=des;
 }
 
-int Car::getModelNumber() {
+int Car::getModelNumber()const {
     return modelNumber;
 }
 
