@@ -17,8 +17,8 @@ public:
     Spoiler(Car* Decorate):PimpMyRide()
     {
         setDescription("You got yourself a spoiler!\n");
-        Decorate->setHandling(getHandling()+20);
-        Decorate->setSpeed(getSpeed()-10);
+        Decorate->setHandling(Decorate->getHandling()+20);
+        Decorate->setSpeed(Decorate->getSpeed()-10);
     }
     ~Spoiler(){};
 };

@@ -16,10 +16,9 @@ public:
     Slick(Car* DecorateCar):PimpMyRide()
     {
         setDescription("Slick Tires!\n");
-        int speed= getSpeed();
-        DecorateCar->setSpeed(getSpeed()-10);
-        DecorateCar->setHandling(getHandling()+15);
-        DecorateCar->setAccel(getAcce()+5);
+        DecorateCar->setSpeed(DecorateCar->getSpeed()-10);
+        DecorateCar->setHandling(DecorateCar->getHandling()+15);
+        DecorateCar->setAccel(DecorateCar->getAcce()+5);
     }
     ~Slick(){};
 };

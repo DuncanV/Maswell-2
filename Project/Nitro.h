@@ -16,8 +16,8 @@ public:
     Nitro(Car* Decorate):PimpMyRide()
     {
         setDescription("Nitro Yeah!\n");
-        Decorate->setSpeed(getSpeed()+20);
-        Decorate->setAccel(getAcce()+20);
+        Decorate->setSpeed(Decorate->getSpeed()+20);
+        Decorate->setAccel(Decorate->getAcce()+20);
     }
     ~Nitro(){};
 };
