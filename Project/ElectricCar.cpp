@@ -36,8 +36,4 @@ string ElectricCar::getDescription() {
     return out;
 }
 
-//Car* ElectricCar::clone(bool flag_ = false) {
-//    cout << "Cloning ...\n" << endl;
-//    return new ElectricCar(*this, flag_);
-//}
 
