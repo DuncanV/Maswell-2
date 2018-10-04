@@ -25,6 +25,7 @@ string SportsCar::getDescription() {
     out+="Handling: "+to_string(getHandling())+"\n";
     out+=  Car::getDescription();
     //Add veriables thats unique to electric car
+
     return out;
 }
 

@@ -3,7 +3,7 @@
  *  @class ElectricGoKart
  *  @authors Duncan + Tjaart
  *  @version 1.0.0
- *  @brief Concrete Product for Abstract Factory Pattern
+ *  @brief Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern
  */
 #ifndef PROJECT_ELECTRICGOKART_H
 #define PROJECT_ELECTRICGOKART_H
@@ -13,7 +13,7 @@
 class ElectricGoKart : public ElectricCar{
 public:
     /**
-    *  Constructor for ElectricGoKart, calls Constructor  of ElectricCar
+    *  Constructor for ElectricGoKart, calls Constructor of ElectricCar
     */
     ElectricGoKart() : ElectricCar("GoKart"){
         setAccel(75);

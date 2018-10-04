@@ -3,7 +3,7 @@
 *  @class StandardGoKart
 *  @authors Duncan + Tjaart
 *  @version 1.0.0
-*  @brief Concrete Product for Abstract Factory Pattern
+*  @brief Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern
 */
 
 #ifndef PROJECT_STANDARDGOKART_H
@@ -14,7 +14,7 @@
 class StandardGoKart : public StandardCar{
 public:
     /**
-     * The base Constructor for StandardGoKart
+     * Constructor for StandardGoKart, calls Constructor of StandardCar
      */
     StandardGoKart() : StandardCar("GoKart"){
         setAccel(45);

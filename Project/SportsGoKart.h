@@ -3,7 +3,7 @@
  *  @class SportsGoKart
  *  @authors Duncan + Tjaart
  *  @version 1.0.0
- *  @brief Concrete Product for Abstract Factory Pattern
+ *  @brief Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern
  */
 
 #ifndef PROJECT_SPORTSGOKART_H
@@ -14,7 +14,7 @@
 class SportsGoKart : public SportsCar{
 public:
     /**
-    * Constructor for SportsGoKart, calls Constructor  of SportsCar
+    * Constructor for SportsGoKart, calls Constructor of SportsCar
     */
     SportsGoKart() : SportsCar("GoKart"){
         setAccel(50);

@@ -3,9 +3,8 @@
  *  @class SportsCar
  *  @authors Duncan + Tjaart
  *  @version 1.0.0
- *  @brief Concrete Product for Abstract Factory Pattern
+ *  @brief Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern
  */
-
 
 #ifndef PROJECT_SPORTSCAR_H
 #define PROJECT_SPORTSCAR_H
@@ -44,8 +43,7 @@ public:
     */
     virtual Car* clone();
 
-//    virtual string showCarStats();
-//    virtual void add(Car* c){}
+    
 
 private:
 

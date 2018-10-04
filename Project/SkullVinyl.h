@@ -1,6 +1,10 @@
-//
-// Created by Duncan on 2018/10/03.
-//
+/**
+ *  @file SkullVinyl.h
+ *  @class SkullVinyl
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief Concrete Decorcator for Decorator Pattern
+ */
 
 #ifndef PROJECT_SKULLVINYL_H
 #define PROJECT_SKULLVINYL_H

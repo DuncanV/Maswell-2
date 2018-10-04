@@ -1,6 +1,10 @@
-//
-// Created by  Duncan + Tjaart on 2018/10/03.
-//
+/**
+ *  @file FlameVinyl.h
+ *  @class FlameVinyl
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief Concrete Decorcator for Decorator Pattern
+ */
 
 #ifndef PROJECT_FLAMEVINYL_H
 #define PROJECT_FLAMEVINYL_H

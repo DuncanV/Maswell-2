@@ -7,7 +7,7 @@
 ElectricCar::ElectricCar(string modelType_) : Car("Electric " + modelType_){
     string end = "*************************\n";
 
-     string out="";
+    string out="";
     out += "Model type: Electric " + modelType_ + "\n";
     out += "Model number: " + to_string(getModelNumber()) + "\n";
     out += end;
@@ -25,6 +25,7 @@ string ElectricCar::getDescription() {
     out+="Handling: "+to_string(getHandling())+"\n";
     out+=  Car::getDescription();
     //Add veriables thats unique to electric car
+
     return out;
 }
 

@@ -1,6 +1,10 @@
-//
-// Created by Duncan on 2018/10/03.
-//
+/**
+ *  @file SpikedTires.h
+ *  @class SpikedTires
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief Concrete Decorcator for Decorator Pattern
+ */
 
 #ifndef PROJECT_SPIKEDTIRES_H
 #define PROJECT_SPIKEDTIRES_H

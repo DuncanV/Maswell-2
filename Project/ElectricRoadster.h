@@ -3,7 +3,7 @@
  *  @class ElectricRoadster
  *  @authors Duncan + Tjaart
  *  @version 1.0.0
- *  @brief Concrete Product for Abstract Factory Pattern
+ *  @brief Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern
  */
 #ifndef PROJECT_ELECTRICROADSTER_H
 #define PROJECT_ELECTRICROADSTER_H
@@ -13,7 +13,7 @@
 class ElectricRoadster : public ElectricCar{
 public:
     /**
-     * Constructor for ElectricFormulaOne, calls Constructor  of ElectricCar
+     * Constructor for ElectricFormulaOne, calls Constructor of ElectricCar
      */
     ElectricRoadster() : ElectricCar("Roadster"){
         setAccel(150);
