@@ -18,6 +18,7 @@ public:
         setDescription("Nitro Yeah!\n");
         Decorate->setSpeed(Decorate->getSpeed()+20);
         Decorate->setAccel(Decorate->getAcce()+20);
+        Decorate->setHandling(Decorate->getHandling()-20);
     }
     ~Nitro(){};
 };

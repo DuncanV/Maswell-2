@@ -76,12 +76,45 @@ public:
      */
     virtual string showCarStats();
 
+    /**
+     * Function to set speed of a car
+     * @param speed
+     */
     void setSpeed(int speed){topSpeed=speed;}
+
+    /**
+    * Function to get speed of a car
+    * @return speed
+    */
     int getSpeed(){ return topSpeed;}
+
+    /**
+    * Function to set Handling of a car
+    * @param H
+    */
     void setHandling(int H){handling=H;}
+
+    /**
+    * Function to get Handling of a car
+    * @return handling
+    */
     int getHandling(){ return handling;}
+
+    /**
+    * Function to set Acceleration of a car
+    * @param A
+    */
     void setAccel(int A){acceleration=A;}
+
+    /**
+    * Function to get Acceleration of a car
+    * @return Acceleration
+    */
     int getAcce(){ return acceleration;}
+
+    /**
+    * pointer to car object for decorator
+    */
     Car* carDecorate;
 
 
@@ -96,6 +129,7 @@ private:
      * @brief a Model number based on modelCounter for each vehicle made
      */
     int modelNumber;
+
     static int modelCounter;
     string description;
     int topSpeed=0;
