@@ -3,6 +3,7 @@
 
 CMakeFiles/Project.dir/Car.cpp.o: ../Car.cpp
 CMakeFiles/Project.dir/Car.cpp.o: ../Car.h
+CMakeFiles/Project.dir/Car.cpp.o: ../PimpMyRide.h
 
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.cpp

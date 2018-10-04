@@ -17,9 +17,9 @@ private:
     /**
      * @brief a car object that will be decorated
      */
-    Car* car;
-public:
 
+public:
+    Car* car;
     /**
     * Defualt constructor used for PimpMyRide
     */
@@ -30,7 +30,7 @@ public:
     /**
      * The destructor for Car
      */
-    ~PimpMyRide(){delete car;}
+    ~PimpMyRide(){}
 
     /**
      * add function for decorator
@@ -57,5 +57,6 @@ public:
         else
             return getDescription();
     }
+    virtual Car* FullClone(){car->FullClone();};
 };
 #endif //PROJECT_PIMPMYRIDE_H

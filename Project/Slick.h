@@ -21,5 +21,16 @@ public:
         DecorateCar->setAcceleration(DecorateCar->getAcceleration()+5);
     }
     ~Slick(){};
+    Slick(Slick _Car,bool dummy)
+    {
+        setDescription(_Car.getDescription());
+        if(_Car.car!=0)
+        {
+            add(_Car.car->FullClone());
+        }
+    }
+    virtual Car* FullClone(){
+        return new Slick(*this,true);
+    }
 };
 #endif //PROJECT_SPIKEDTIRES_H

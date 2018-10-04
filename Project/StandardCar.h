@@ -43,6 +43,7 @@ public:
      * @return a Car object
      */
     virtual Car* clone(bool flag_){};
+    virtual Car* FullClone(){};
 
 private:
 };

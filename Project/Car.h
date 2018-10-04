@@ -47,7 +47,7 @@ public:
      * @return a Car object
      */
     virtual Car* clone(bool flag = false) = 0;
-    
+    virtual Car* FullClone() = 0;
 
     /**
      * abstract add function for decorator
@@ -65,7 +65,7 @@ public:
      * a getDescription Function
      * @return a string that states the info about the car
      */
-    string getDescription();
+    string getDescription()const;
 
     /**
      * @return the car modelNumber

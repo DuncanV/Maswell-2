@@ -3,6 +3,7 @@
 //
 
 #include "Car.h"
+#include "PimpMyRide.h"
 
 int Car::modelCounter = 0;
 
@@ -19,14 +20,15 @@ Car::Car(const Car& car_, bool flag) {
     if (flag == false){
         carDecorate=0;
     } else{
-        carDecorate = car_.carDecorate;
+//        carDecorate = car_.carDecorate;
+        carDecorate=car_.carDecorate->FullClone();
         topSpeed=car_.topSpeed;
         handling=car_.handling;
         acceleration=car_.acceleration;
     }
 }
 
-string Car::getDescription() {
+string Car::getDescription()const {
     return description;
 }
 

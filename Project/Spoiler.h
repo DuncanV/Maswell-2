@@ -21,5 +21,16 @@ public:
         Decorate->setSpeed(Decorate->getSpeed()-10);
     }
     ~Spoiler(){};
+    Spoiler(Spoiler _Car,bool dummy)
+    {
+        setDescription(_Car.getDescription());
+        if(_Car.car!=0)
+        {
+            add(_Car.car->FullClone());
+        }
+    }
+    virtual Car* FullClone(){
+        return new Spoiler(*this,true);
+    }
 };
 #endif //PROJECT_SPOILER_H

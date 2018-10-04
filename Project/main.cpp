@@ -57,8 +57,20 @@ int main() {
         cout << testDecorator->toString() << endl;
         Car* car1 = testDecorator->clone();
         Car* car2 = testDecorator->clone(true);
-        
-        
+        cout<<car1->toString()<<endl;
+        cout<<car2->toString()<<endl;
+
+
+//        Car* testDecorator1 =Factories[2]->produceSports();
+//    testDecorator1->add(new FlameVinyl());
+//    testDecorator1->add(new Slick(testDecorator1));
+//    testDecorator1->add(new Nitro(testDecorator1));
+//    testDecorator1->add(new Spoiler(testDecorator1));
+//
+//        cout << "Car after adding upgrades!\n";
+//        cout << testDecorator1->toString() << endl;
+//        Car* car3 = testDecorator1->clone();
+//        Car* car4 = testDecorator1->clone(true);
     //deletion of allocated memory
     for (int i = 0; i < 3; i++)
     {
