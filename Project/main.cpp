@@ -54,7 +54,10 @@ int main() {
 
         Car* car1 = testDecorator->clone();
         cout << car1->showCarStats() << endl;
+<<<<<<< HEAD
 
+=======
+>>>>>>> b09fdc93e83773021c8043c26f53c8ee59dcffda
         Car* car2 = testDecorator->clone(true);
         cout << car2->showCarStats() << endl;
         

@@ -36,3 +36,7 @@ string ElectricCar::getDescription() {
     return out;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b09fdc93e83773021c8043c26f53c8ee59dcffda
