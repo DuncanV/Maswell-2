@@ -44,11 +44,12 @@ int main() {
 //    }
 //    delete []cars;
 
-        Car* testDecorator = new SkullVinyl();
+        Car* testDecorator =Factories[0]->produceSports();
+        testDecorator->add(new FlameVinyl());
         testDecorator->add(new SpikedTires());
         testDecorator->add(new Nitro());
         testDecorator->add(new Spoiler());
-        testDecorator->add(Factories[0]->produceSports());
+
         cout<<testDecorator->showCarStats()<<endl;
     //deletion of allocated memory
     for (int i = 0; i < 3; i++)

@@ -16,7 +16,11 @@ public:
     /**
      * The base Constructor for StandardRoadster
      */
-    StandardRoadster() : StandardCar("Roadster"){};
+    StandardRoadster() : StandardCar("Roadster"){
+        setAccel(75);
+        setSpeed(110);
+        setHandling(85);
+    };
 };
 
 #endif //PROJECT_STANDARDROADSTER_H

@@ -15,6 +15,10 @@ public:
     /**
     *  Constructor for ElectricGoKart, calls Constructor  of ElectricCar
     */
-    ElectricGoKart() : ElectricCar("GoKart"){};
+    ElectricGoKart() : ElectricCar("GoKart"){
+        setAccel(75);
+        setSpeed(40);
+        setHandling(50);
+    };
 };
 #endif //PROJECT_ELECTRICGOKART_H

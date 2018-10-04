@@ -15,6 +15,10 @@ public:
     /**
      * Constructor for ElectricFormulaOne, calls Constructor  of ElectricCar
      */
-    ElectricRoadster() : ElectricCar("Roadster"){};
+    ElectricRoadster() : ElectricCar("Roadster"){
+        setAccel(150);
+        setSpeed(75);
+        setHandling(110);
+    };
 };
 #endif //PROJECT_ELECTRICROADSTER_H

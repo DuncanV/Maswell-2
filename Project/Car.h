@@ -51,13 +51,14 @@ public:
     /**
     * Defualt constructor used for Decoratoring
     */
-    Car(){};
+    Car(){carDecorate=0;};
 
     /**
      *abstract add function for decorator
      * @param c is car object
      */
-    virtual void add(Car* c)=0;
+//    virtual void add(Car* c)=0;
+    virtual void add(Car* c);
 
     /**
      * setDescritption function
@@ -70,7 +71,15 @@ public:
      */
     int getModelNumber();
 
-    virtual string showCarStats()=0;
+    virtual string showCarStats();
+
+    void setSpeed(int speed){topSpeed=speed;}
+    int getSpeed(){ return topSpeed;}
+    void setHandling(int H){handling=H;}
+    int getHandling(){ return handling;}
+    void setAccel(int A){acceleration=A;}
+    int getAcce(){ return acceleration;}
+    Car* carDecorate;
 private:
     /**
      * @brief a model string which states the type of car
@@ -83,6 +92,10 @@ private:
     int modelNumber;
     static int modelCounter;
     string description;
+    int topSpeed;
+    int handling;
+    int acceleration;
+    
 
 };
 

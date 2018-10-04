@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project">
-				<Option output="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project/fast">
-				<Option output="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Project.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,98 +73,98 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 Project/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/Car.cpp">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/Car.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/CarFactory.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/CarFactory.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/ElectricCar.cpp">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/ElectricCar.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/ElectricFormulaOne.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricFormulaOne.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/ElectricGokart.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricGokart.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/ElectricRoadster.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricRoadster.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/FlameVinyl.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/FlameVinyl.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/ForumlaOneFactory.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ForumlaOneFactory.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/GoKartFactory.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/GoKartFactory.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/Nitro.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Nitro.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/PimpMyRide.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/RoadsterFactory.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RoadsterFactory.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/SkullVinyl.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SkullVinyl.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/SpikedTires.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SpikedTires.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/Spoiler.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Spoiler.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/SportsCar.cpp">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/SportsCar.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/SportsFormulaOne.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsFormulaOne.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/SportsGoKart.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsGoKart.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/SportsRoadster.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsRoadster.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/StandardCar.cpp">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/StandardCar.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/StandardFormulaOne.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardFormulaOne.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/StandardGoKart.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardGoKart.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/StandardRoadster.h">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardRoadster.h">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/main.cpp">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp">
 			<Option target="Project"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell/Project/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

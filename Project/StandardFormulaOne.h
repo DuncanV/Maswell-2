@@ -16,7 +16,11 @@ public:
     /**
      * The base Constructor for StandardFormulaOne
      */
-    StandardFormulaOne() : StandardCar("FormulaOne"){};
+    StandardFormulaOne() : StandardCar("FormulaOne"){
+        setHandling(120);
+        setSpeed(150);
+        setAccel(120);
+    };
 };
 
 #endif //PROJECT_STANDARDFORMULAONE_H
