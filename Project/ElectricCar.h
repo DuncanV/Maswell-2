@@ -43,17 +43,6 @@ public:
      */
     virtual Car* clone();
 
-    /**
-     * showCarStats function to show the stats of a car
-     * @return string stating the stats
-     */
-    virtual string showCarStats();
-
-    /**
-     * add function for decorator
-     * @param c is car object
-     */
-    virtual void add(Car* c){}
 private:
 
 

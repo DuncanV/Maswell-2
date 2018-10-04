@@ -3,6 +3,7 @@
  *  @class Car
  *  @authors Duncan + Tjaart
  *  @version 1.0.0
+ *  @brief Abstract Product for Abstract Factory Pattern and Component for Decorator Pattern
  */
 
 #ifndef PROJECT_CAR_H

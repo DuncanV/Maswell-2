@@ -35,6 +35,3 @@ Car* StandardCar::clone() {
     return new StandardCar(*this);
 }
 
-string StandardCar::showCarStats() {
-    return getDescription();
-}

@@ -34,6 +34,3 @@ Car* SportsCar::clone() {
     return new SportsCar(*this);
 }
 
-//string SportsCar::showCarStats() {
-//    return getDescription();
-//}

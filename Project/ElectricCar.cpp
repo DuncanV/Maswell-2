@@ -34,6 +34,3 @@ Car* ElectricCar::clone() {
     return new ElectricCar(*this);
 }
 
-string ElectricCar::showCarStats() {
-    return getDescription();
-}
