@@ -24,7 +24,7 @@ public:
     * The copy constructor for ElectricCar
     * @param car_ is a Car object that will be copied
     */
-    ElectricCar(const Car& car_);
+    ElectricCar(const Car& car_, bool flag_);
 
     /**
      * The virtual destructor for ElectricCar
@@ -41,7 +41,7 @@ public:
      * clone function for the prototype design pattern
      * @return a pointer to car object
      */
-    virtual Car* clone();
+    virtual Car* clone(bool flag_);
 
 private:
 

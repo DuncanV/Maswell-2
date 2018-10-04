@@ -15,7 +15,7 @@ StandardCar::StandardCar(string modelType_) : Car("StandardCar " + modelType_) {
     cout << "Creating ...\n" <<"Car Description:\n" <<getDescription() << endl;
 }
 
-StandardCar::StandardCar(const Car &car_) : Car(car_) {
+StandardCar::StandardCar(const Car &car_, bool flag_) : Car(car_, flag_) {
 
 }
 
@@ -30,8 +30,8 @@ string StandardCar::getDescription() {
     return out;
 }
 
-Car* StandardCar::clone() {
+Car* StandardCar::clone(bool flag_ = false) {
     cout << "Cloning ...\n" << getDescription() << endl;
-    return new StandardCar(*this);
+    return new StandardCar(*this, flag_);
 }
 

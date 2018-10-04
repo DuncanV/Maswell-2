@@ -12,10 +12,14 @@ Car::Car(string modelType_) {
     carDecorate=0;
 }
 
-Car::Car(const Car& car_) {
-    modelType = car_.modelType;
-    modelNumber = car_.modelNumber;
-    carDecorate=0;
+Car::Car(const Car& car_, bool flag) {
+    if (flag == false){
+        carDecorate=0;
+    } else{
+        carDecorate = car_.carDecorate;
+        modelType = car_.modelType;
+        modelNumber = car_.modelNumber;
+    }
 }
 
 string Car::getDescription() {

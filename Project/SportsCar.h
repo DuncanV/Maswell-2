@@ -24,7 +24,7 @@ public:
     * The copy constructor for SportsCar
     * @param car_ is a Car object that will be copied
     */
-    SportsCar(const Car& car_);
+    SportsCar(const Car& car_, bool flag_);
 
     /**
     * The virtual destructor for SportsCar
@@ -41,7 +41,7 @@ public:
     * a abstract clone function for the prototype design pattern
     * @return a pointer to car object
     */
-    virtual Car* clone();
+    virtual Car* clone(bool flag_);
 
     
 

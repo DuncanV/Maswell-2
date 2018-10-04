@@ -33,7 +33,7 @@ public:
      * The copy constructor for Car
      * @param car_ is a Car object that will be copied
      */
-    Car(const Car& car_);
+    Car(const Car& car_, bool flag_);
 
     /**
      * The virtual destructor for Car
@@ -50,7 +50,7 @@ public:
      * a abstract clone function for the prototype design pattern
      * @return a Car object
      */
-    virtual Car* clone() = 0;
+    virtual Car* clone(bool flag = false) = 0;
     
 
     /**
