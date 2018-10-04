@@ -15,7 +15,7 @@ ElectricCar::ElectricCar(string modelType_) : Car("Electric " + modelType_){
     cout << "Creating ...\n" <<"Car Description:\n" <<getDescription() << endl;
 }
 
-ElectricCar::ElectricCar(const Car &car_) : Car(car_){
+ElectricCar::ElectricCar(const Car &car_, bool flag_) : Car(car_, flag_){
 
 }
 
@@ -29,8 +29,8 @@ string ElectricCar::getDescription() {
     return out;
 }
 
-Car* ElectricCar::clone() {
+Car* ElectricCar::clone(bool flag_ = false) {
     cout << "Cloning ...\n" << getDescription() << endl;
-    return new ElectricCar(*this);
+    return new ElectricCar(*this, flag_);
 }
 

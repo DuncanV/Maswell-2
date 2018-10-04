@@ -15,7 +15,7 @@ SportsCar::SportsCar(string modelType_) : Car("SportsCar " + modelType_){
     cout << "Creating ...\n" <<"Car Description:\n" <<getDescription() << endl;
 }
 
-SportsCar::SportsCar(const Car &car_) : Car(car_){
+SportsCar::SportsCar(const Car &car_, bool flag_) : Car(car_, flag_){
 
 }
 
@@ -29,8 +29,8 @@ string SportsCar::getDescription() {
     return out;
 }
 
-Car* SportsCar::clone() {
+Car* SportsCar::clone(bool flag_ = false) {
     cout << "Cloning ...\n" << getDescription() << endl;
-    return new SportsCar(*this);
+    return new SportsCar(*this, flag_);
 }
 

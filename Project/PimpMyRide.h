@@ -44,7 +44,7 @@ public:
             car->add(_car);
     }
 
-    virtual Car* clone(){};
+    virtual Car* clone(bool flag_){};
 
     /**
      * showCarStats function to show the stats of a car
