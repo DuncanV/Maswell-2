@@ -14,10 +14,16 @@
 class FlameVinyl: public PimpMyRide
 {
 public:
+    /**
+     * constructor to set description
+     */
     FlameVinyl():PimpMyRide()
     {
         setDescription("Flame Vinyls!\n");
     }
+    /**
+     * destructor to delete the vinyl
+     */
     ~FlameVinyl(){};
 };
 #endif //PROJECT_FLAMEVINYL_H

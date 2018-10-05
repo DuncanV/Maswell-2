@@ -13,10 +13,16 @@
 class SkullVinyl: public PimpMyRide
 {
 public:
+    /**
+     * constructor to set description
+     */
     SkullVinyl():PimpMyRide()
     {
         setDescription("Skull Vinyls!\n");
     }
+    /**
+    * destructor to delete the vinyl
+    */
     ~SkullVinyl(){};
 };
 #endif //PROJECT_SKULLVINYL_H
