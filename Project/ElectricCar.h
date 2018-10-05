@@ -42,6 +42,11 @@ public:
      * @return a pointer to car object
      */
     virtual Car* clone(bool flag_){};
+
+    /**
+     * implementation of Fullclone in Car
+     * @return Car object with all decorated
+     */
     virtual Car* FullClone(){};
 private:
 

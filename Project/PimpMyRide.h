@@ -44,6 +44,11 @@ public:
             car->add(_car);
     }
 
+    /**
+     * for clone for prototype pattern
+     * @param flag_ to determine if must be full clone or basic
+     * @return Car object
+     */
     virtual Car* clone(bool flag_){};
 
     /**
@@ -57,6 +62,10 @@ public:
         else
             return getDescription();
     }
+    /**
+    * for Fullclone for prototype pattern of decorator
+    * @return Car object
+    */
     virtual Car* FullClone(){car->FullClone();};
 };
 #endif //PROJECT_PIMPMYRIDE_H

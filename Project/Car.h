@@ -47,6 +47,10 @@ public:
      * @return a Car object
      */
     virtual Car* clone(bool flag = false) = 0;
+    /**
+     * abstract full clone implemented by decorator class to copy over the decorators
+     * @return Car object
+     */
     virtual Car* FullClone() = 0;
 
     /**
@@ -118,9 +122,15 @@ public:
     * pointer to car object for decorator
     */
     Car* carDecorate;
-
+    /**
+     * function to get model type of a car
+     * @return string (the model type)
+     */
     const string getModelType()const { return modelType;};
-
+    /**
+     * function to return a full detail about the car
+     * @return string of car details
+     */
     string toString();
 
 private:
@@ -133,10 +143,30 @@ private:
      * @brief a Model number based on modelCounter for each vehicle made
      */
     int modelNumber;
+
+    /**
+    * @brief a Model counter for each car
+    */
     static int modelCounter;
+
+    /**
+    * @brief a description used for cars and decorators
+    */
     string description;
+
+    /**
+    * @brief int to hold top speed of a car
+    */
     int topSpeed=0;
+
+    /**
+    * @brief int to hold handling of a car
+    */
     int handling=0;
+
+    /**
+    * @brief int to hold acceleration of a car
+    */
     int acceleration=0;
 };
 

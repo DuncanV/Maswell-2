@@ -51,12 +51,16 @@ int main() {
         testDecorator->add(new FlameVinyl());
         testDecorator->add(new Slick(testDecorator));
         testDecorator->add(new Nitro(testDecorator));
-        testDecorator->add(new Spoiler(testDecorator));
+//        testDecorator->add(new Spoiler(testDecorator));
 
         cout << "Car after adding upgrades!\n";
         cout << testDecorator->toString() << endl;
         Car* car1 = testDecorator->clone();
         Car* car2 = testDecorator->clone(true);
+        delete testDecorator;
+        car1->add(new Spoiler(car1));
+        car2->add(new Spoiler(car2));
+        
         cout<<car1->toString()<<endl;
         cout<<car2->toString()<<endl;
 
