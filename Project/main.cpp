@@ -9,6 +9,7 @@
 #include "FlameVinyl.h"
 #include "Slick.h"
 #include "Spoiler.h"
+
 int main() {
     srand(time(NULL));
 
@@ -16,6 +17,175 @@ int main() {
     Factories[0] = new GoKartFactory();             //Initialize factories to all the factories
     Factories[1] = new RoadsterFactory();           //
     Factories[2] = new FormulaOneFactory();         //
+
+    Car **cars = new Car *[5];
+    Car **clones = new Car *[5];
+
+    int input;
+    int choice;
+    int cloneChoice;
+    int cloneOption;
+    int counter = 0;
+    int cloneCounter = 0;
+    bool noCars = true;
+
+    do{
+        cout << "Welcome to [Name here]!\n\n";
+
+        cout << "What would you like to do?\n";
+        cout << "1. Build GoKart\n"
+             << "2. Build Roadster\n"
+             << "3. Build FormulaOne\n"
+             << "4. Clone an existing car\n"
+             << "8. Exit\n";
+
+        cin >> input;
+
+        if (input == 1){
+            cout << "What model would you like?\n";
+            cout << "1. Electric\n"
+                 << "2. Sport\n"
+                 << "3. Standard\n";
+            cin >> choice;
+
+            if (choice == 1){
+                cars[counter] = Factories[0]->produceElectric();
+            } else if (choice == 2){
+                cars[counter] = Factories[0]->produceSports();
+            } else if (choice == 3){
+                cars[counter] = Factories[0]->produceStandard();
+            }
+
+        } else if (input == 2){
+            cout << "What model would you like?\n";
+            cout << "1. Electric\n"
+                 << "2. Sport\n"
+                 << "3. Standard\n";
+            cin >> choice;
+
+            if (choice == 1){
+                cars[counter] = Factories[1]->produceElectric();
+            } else if (choice == 2){
+                cars[counter] = Factories[1]->produceSports();
+            } else if (choice == 3){
+                cars[counter] = Factories[1]->produceStandard();
+            }
+
+        } else if (input == 3){
+            cout << "What model would you like?\n";
+            cout << "1. Electric\n"
+                 << "2. Sport\n"
+                 << "3. Standard\n";
+            cin >> choice;
+
+            if (choice == 1){
+                cars[counter] = Factories[2]->produceElectric();
+            } else if (choice == 2){
+                cars[counter] = Factories[2]->produceSports();
+            } else if (choice == 3){
+                cars[counter] = Factories[2]->produceStandard();
+            }
+
+        } else if (input == 4){
+            if (counter == 0){
+                cout << "There are no cars to clone!\n";
+                noCars = true;
+            } else{
+                cout << "Here are the cars available to clone:\n";
+                for (int i = 0; i < counter; ++i) {
+                    cout << to_string(i) << ":\n"
+                         << cars[i]->toString() << endl;
+                }
+
+                cout << "Please select the one you want to clone.\n";
+                cin >> cloneChoice;
+                cout << "Would you like to:\n"
+                     << "0. Clone base\n"
+                     << "1. Clone upgraded car\n";
+                cin >> cloneOption;
+
+                clones[cloneCounter] = cars[cloneChoice]->clone(cloneOption);
+                noCars = false;
+            }
+        }
+
+        if (input != 8 && input != 4){
+            bool again = true;
+            int option;
+            int upgrade;
+
+            do{
+                cout << "1. Add upgrades\n"
+                     << "2. Done\n";
+                cin >> option;
+
+                if (option == 1) {
+                    cout << "What would you like to add?\n"
+                         << "1. Flame Vinyls\n"
+                         << "2. Skull Vunyls\n"
+                         << "3. Nitros\n"
+                         << "4. Slick Tires\n"
+                         << "5. Spoiler\n";
+                    cin >> upgrade;
+
+                    switch (upgrade){
+                        case 1 : cars[counter]->add(new FlameVinyl()); break;
+                        case 2 : cars[counter]->add(new SkullVinyl()); break;
+                        case 3 : cars[counter]->add(new Nitro(cars[counter])); break;
+                        case 4 : cars[counter]->add(new Slick(cars[counter])); break;
+                        case 5 : cars[counter]->add(new Spoiler(cars[counter])); break;
+                    }
+                } else if (option == 2){
+                    again = false;
+                }
+            }
+            while (again == true);
+
+            cout << "Your car is:\n";
+            cout << cars[counter]->toString() << endl;
+
+            counter++;
+        }
+        if (input != 8 && input == 4 && noCars == false){
+            bool again = true;
+            int option;
+            int upgrade;
+
+            do{
+                cout << "1. Add upgrades\n"
+                     << "2. Done\n";
+                cin >> option;
+
+                if (option == 1) {
+                    cout << "What would you like to add?\n"
+                         << "1. Flame Vinyls\n"
+                         << "2. Skull Vunyls\n"
+                         << "3. Nitros\n"
+                         << "4. Slick Tires\n"
+                         << "5. Spoiler\n";
+                    cin >> upgrade;
+
+                    switch (upgrade){
+                        case 1 : clones[cloneCounter]->add(new FlameVinyl()); break;
+                        case 2 : clones[cloneCounter]->add(new SkullVinyl()); break;
+                        case 3 : clones[cloneCounter]->add(new Nitro(clones[cloneCounter])); break;
+                        case 4 : clones[cloneCounter]->add(new Slick(clones[cloneCounter])); break;
+                        case 5 : clones[cloneCounter]->add(new Spoiler(clones[cloneCounter])); break;
+                    }
+                } else if (option == 2){
+                    again = false;
+                }
+            }
+            while (again == true);
+
+            cout << "Your car is:\n";
+            cout << clones[cloneCounter]->toString() << endl;
+
+            cloneCounter;
+        }
+    }
+    while(input != 8 && counter < 5);
+
 /*
  * UNCOMMENT FOR DEMONSTRATION OF FACTORY
  */
@@ -47,37 +217,40 @@ int main() {
 /*
 * UNCOMMENT FOR DEMONSTRATION OF DECORATOR
 */
-        Car* testDecorator =Factories[0]->produceElectric();
-        testDecorator->add(new FlameVinyl());
-        testDecorator->add(new Slick(testDecorator));
-        testDecorator->add(new Nitro(testDecorator));
-        testDecorator->add(new Spoiler(testDecorator));
-
-        cout << "Car after adding upgrades!\n";
-        cout << testDecorator->toString() << endl;
-        Car* car1 = testDecorator->clone();
-        Car* car2 = testDecorator->clone(true);
-        cout<<car1->toString()<<endl;
-        cout<<car2->toString()<<endl;
-
-
-//        Car* testDecorator1 =Factories[2]->produceSports();
-//    testDecorator1->add(new FlameVinyl());
-//    testDecorator1->add(new Slick(testDecorator1));
-//    testDecorator1->add(new Nitro(testDecorator1));
-//    testDecorator1->add(new Spoiler(testDecorator1));
+//    Car* testDecorator =Factories[0]->produceElectric();
+//    testDecorator->add(new FlameVinyl());
+//    testDecorator->add(new Slick(testDecorator));
+//    testDecorator->add(new Nitro(testDecorator));
+//    testDecorator->add(new Spoiler(testDecorator));
 //
-//        cout << "Car after adding upgrades!\n";
-//        cout << testDecorator1->toString() << endl;
-//        Car* car3 = testDecorator1->clone();
-//        Car* car4 = testDecorator1->clone(true);
+//    cout << "Car after adding upgrades!\n";
+//    cout << testDecorator->toString() << endl;
+//    Car* car1 = testDecorator->clone();
+//    Car* car2 = testDecorator->clone(true);
+//
+//    cout<<testDecorator->toString()<<endl;
+//    cout<<car1->toString()<<endl;
+//    cout<<car2->toString()<<endl;
+//
+//    delete testDecorator;
+//
+//    cout<<car1->toString()<<endl;
+//    cout<<car2->toString()<<endl;
+
+
     //deletion of allocated memory
     for (int i = 0; i < 3; i++)
     {
         delete Factories[i];
     }
     delete []Factories;
-
+    for (int i = 0; i < 5; i++)
+    {
+        delete cars[i];
+        delete clones[i];
+    }
+    delete []cars;
+    delete []clones;
 
     return 0;
 }
