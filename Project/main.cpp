@@ -37,16 +37,18 @@ int main() {
              << "2. Build Roadster\n"
              << "3. Build FormulaOne\n"
              << "4. Clone an existing car\n"
-             << "8. Exit\n";
+             << "8. Exit\n>>";
 
         cin >> input;
+        cout<<endl;
 
         if (input == 1){
             cout << "What model would you like?\n";
             cout << "1. Electric\n"
                  << "2. Sport\n"
-                 << "3. Standard\n";
+                 << "3. Standard\n>>";
             cin >> choice;
+            cout<<endl;
 
             if (choice == 1){
                 cars[counter] = Factories[0]->produceElectric();
@@ -60,8 +62,9 @@ int main() {
             cout << "What model would you like?\n";
             cout << "1. Electric\n"
                  << "2. Sport\n"
-                 << "3. Standard\n";
+                 << "3. Standard\n>>";
             cin >> choice;
+            cout<<endl;
 
             if (choice == 1){
                 cars[counter] = Factories[1]->produceElectric();
@@ -75,8 +78,9 @@ int main() {
             cout << "What model would you like?\n";
             cout << "1. Electric\n"
                  << "2. Sport\n"
-                 << "3. Standard\n";
+                 << "3. Standard\n>>";
             cin >> choice;
+            cout<<endl;
 
             if (choice == 1){
                 cars[counter] = Factories[2]->produceElectric();
@@ -93,16 +97,18 @@ int main() {
             } else{
                 cout << "Here are the cars available to clone:\n";
                 for (int i = 0; i < counter; ++i) {
-                    cout << to_string(i) << ":\n"
+                    cout << ">>"<<to_string(i) << ":\n"
                          << cars[i]->toString() << endl;
                 }
 
-                cout << "Please select the one you want to clone.\n";
+                cout << "Please select the one you want to clone.\n>>";
                 cin >> cloneChoice;
+                cout<<endl;
                 cout << "Would you like to:\n"
                      << "0. Clone base\n"
-                     << "1. Clone upgraded car\n";
+                     << "1. Clone upgraded car\n>>";
                 cin >> cloneOption;
+                cout<<endl;
 
                 clones[cloneCounter] = cars[cloneChoice]->clone(cloneOption);
                 noCars = false;
@@ -116,8 +122,9 @@ int main() {
 
             do{
                 cout << "1. Add upgrades\n"
-                     << "2. Done\n";
+                     << "2. Done\n>>";
                 cin >> option;
+                cout<<endl;
 
                 if (option == 1) {
                     cout << "What would you like to add?\n"
@@ -125,8 +132,9 @@ int main() {
                          << "2. Skull Vunyls\n"
                          << "3. Nitros\n"
                          << "4. Slick Tires\n"
-                         << "5. Spoiler\n";
+                         << "5. Spoiler\n>>";
                     cin >> upgrade;
+                    cout<<endl;
 
                     switch (upgrade){
                         case 1 : cars[counter]->add(new FlameVinyl()); break;
@@ -153,8 +161,9 @@ int main() {
 
             do{
                 cout << "1. Add upgrades\n"
-                     << "2. Done\n";
+                     << "2. Done\n>>";
                 cin >> option;
+                cout<<endl;
 
                 if (option == 1) {
                     cout << "What would you like to add?\n"
@@ -162,8 +171,9 @@ int main() {
                          << "2. Skull Vunyls\n"
                          << "3. Nitros\n"
                          << "4. Slick Tires\n"
-                         << "5. Spoiler\n";
+                         << "5. Spoiler\n>>";
                     cin >> upgrade;
+                    cout<<endl;
 
                     switch (upgrade){
                         case 1 : clones[cloneCounter]->add(new FlameVinyl()); break;
@@ -181,7 +191,7 @@ int main() {
             cout << "Your car is:\n";
             cout << clones[cloneCounter]->toString() << endl;
 
-            cloneCounter;
+            cloneCounter++;
         }
     }
     while(input != 8 && counter < 5);
