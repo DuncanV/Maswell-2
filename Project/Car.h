@@ -168,6 +168,8 @@ private:
     * @brief int to hold acceleration of a car
     */
     int acceleration=0;
+
+    int tyreCondition
 };
 
 #endif //PROJECT_CAR_H
