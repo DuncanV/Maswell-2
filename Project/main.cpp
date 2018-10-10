@@ -11,6 +11,11 @@
 #include "Spoiler.h"
 #include "RegistrationManager.h"
 #include "ConcreteRegistrationManager.h"
+#include "RaceTrackComponent.h"
+#include "RaceTrack.h"
+#include "Straight.h"
+#include "LeftEighth.h"
+#include "RightEighth.h"
 int main() {
     srand(time(NULL));
 
@@ -200,16 +205,26 @@ int main() {
 /*
  * UNCOMMENT FOR DEMONSTRATION OF MEDIATOR
  */
-    RegistratcionManager* manager= new ConcreteRegistrationManager(5);
-    Car* car1= Factories[0]->produceSports();
-    Car* car2= Factories[0]->produceElectric();
-    manager->addCar(car1,2);
-    manager->addCar(car1,1);
-    manager->addCar(car1,2);
-    manager->addCar(car2,2);
-    manager->addCar(car2,1);
-    manager->addCar(car2,2);
-    manager->addCar(car2,3);
+//    RegistratcionManager* manager= new ConcreteRegistrationManager(5);
+//    Car* car1= Factories[0]->produceSports();
+//    Car* car2= Factories[0]->produceElectric();
+//    manager->addCar(car1,2);
+//    manager->addCar(car1,1);
+//    manager->addCar(car1,2);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,1);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,3);
+
+/*
+ * UNCOMMENT FOR DEMONSTATION OF RACETRACK COMPOSITE
+*/
+    RaceTrackComponent* racetrack = new RaceTrack();
+    racetrack->add(new Straight());
+    racetrack->add(new LeftEighth());
+    racetrack->add(new Straight());
+    racetrack->add(new RightEighth());
+    racetrack->print();
 
 /*
  * UNCOMMENT FOR DEMONSTRATION OF FACTORY

@@ -82,6 +82,10 @@ StandardGoKart.h
 ElectricGokart.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricGokart.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftEighth.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Nitro.h
 PimpMyRide.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
@@ -90,9 +94,25 @@ PimpMyRide.h
 Car.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.h
+vector
+-
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+string
+-
+iostream
+-
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
 iostream
 -
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightEighth.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RoadsterFactory.h
 CarFactory.h
@@ -156,6 +176,10 @@ StandardCar.h
 StandardCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Straight.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp
 iostream
 -
@@ -183,4 +207,14 @@ RegistrationManager.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
 ConcreteRegistrationManager.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+RaceTrack.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.h
+Straight.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Straight.h
+LeftEighth.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftEighth.h
+RightEighth.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightEighth.h
 
