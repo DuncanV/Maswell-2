@@ -76,3 +76,7 @@ string Car::toString(){
     out += sep;
     return out;
 }
+
+int Car::getID() {
+    return 0;
+}

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/ElectricCar.cpp.o"
   "CMakeFiles/Project.dir/SportsCar.cpp.o"
   "CMakeFiles/Project.dir/StandardCar.cpp.o"
+  "CMakeFiles/Project.dir/RegistrationManager.cpp.o"
+  "CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o"
   "Project.pdb"
   "Project.exe"
   "libProject.dll.a"

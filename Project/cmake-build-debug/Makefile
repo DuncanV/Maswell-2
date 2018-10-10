@@ -150,6 +150,33 @@ Car.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Car.cpp.s
 .PHONY : Car.cpp.s
 
+ConcreteRegistrationManager.o: ConcreteRegistrationManager.cpp.o
+
+.PHONY : ConcreteRegistrationManager.o
+
+# target to build an object file
+ConcreteRegistrationManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o
+.PHONY : ConcreteRegistrationManager.cpp.o
+
+ConcreteRegistrationManager.i: ConcreteRegistrationManager.cpp.i
+
+.PHONY : ConcreteRegistrationManager.i
+
+# target to preprocess a source file
+ConcreteRegistrationManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.i
+.PHONY : ConcreteRegistrationManager.cpp.i
+
+ConcreteRegistrationManager.s: ConcreteRegistrationManager.cpp.s
+
+.PHONY : ConcreteRegistrationManager.s
+
+# target to generate assembly for a file
+ConcreteRegistrationManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.s
+.PHONY : ConcreteRegistrationManager.cpp.s
+
 ElectricCar.o: ElectricCar.cpp.o
 
 .PHONY : ElectricCar.o
@@ -176,6 +203,33 @@ ElectricCar.s: ElectricCar.cpp.s
 ElectricCar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ElectricCar.cpp.s
 .PHONY : ElectricCar.cpp.s
+
+RegistrationManager.o: RegistrationManager.cpp.o
+
+.PHONY : RegistrationManager.o
+
+# target to build an object file
+RegistrationManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RegistrationManager.cpp.o
+.PHONY : RegistrationManager.cpp.o
+
+RegistrationManager.i: RegistrationManager.cpp.i
+
+.PHONY : RegistrationManager.i
+
+# target to preprocess a source file
+RegistrationManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RegistrationManager.cpp.i
+.PHONY : RegistrationManager.cpp.i
+
+RegistrationManager.s: RegistrationManager.cpp.s
+
+.PHONY : RegistrationManager.s
+
+# target to generate assembly for a file
+RegistrationManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RegistrationManager.cpp.s
+.PHONY : RegistrationManager.cpp.s
 
 SportsCar.o: SportsCar.cpp.o
 
@@ -270,9 +324,15 @@ help:
 	@echo "... Car.o"
 	@echo "... Car.i"
 	@echo "... Car.s"
+	@echo "... ConcreteRegistrationManager.o"
+	@echo "... ConcreteRegistrationManager.i"
+	@echo "... ConcreteRegistrationManager.s"
 	@echo "... ElectricCar.o"
 	@echo "... ElectricCar.i"
 	@echo "... ElectricCar.s"
+	@echo "... RegistrationManager.o"
+	@echo "... RegistrationManager.i"
+	@echo "... RegistrationManager.s"
 	@echo "... SportsCar.o"
 	@echo "... SportsCar.i"
 	@echo "... SportsCar.s"

@@ -11,7 +11,7 @@
 
 #include <iostream>
 #include <string>
-
+#include "RegistrationManager.h"
 using namespace std;
 
 class Car{
@@ -133,6 +133,7 @@ public:
      */
     string toString();
 
+
 private:
     /**
      * @brief a model string which states the type of car
@@ -169,7 +170,7 @@ private:
     */
     int acceleration=0;
 
-    int tyreCondition
+    int tyreCondition;
 };
 
 #endif //PROJECT_CAR_H

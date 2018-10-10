@@ -89,6 +89,12 @@
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/CarFactory.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -117,6 +123,12 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RoadsterFactory.h">
