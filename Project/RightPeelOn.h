@@ -7,10 +7,15 @@
 #include "RaceTrackComponent.h"
 class RightPeelOn:public RaceTrackComponent{
 public:
-    RightPeelOn(){setDescription("Right Peel On");}
+    RightPeelOn():RaceTrackComponent()
+    {setDescription("Right Peel On");}
     virtual ~RightPeelOn(){};
     virtual void add(RaceTrackComponent*R){};
-    virtual void print(){ cout<<getDescription()+"\n";};
+    virtual void print(){  if(decorate==0)
+            cout<<getDescription()+"\n";
+        else
+            cout<<getDescription()+" WITH ADDED: "+getDecorator()+"\n";
+    };
 private:
 
 };

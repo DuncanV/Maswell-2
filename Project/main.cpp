@@ -20,6 +20,10 @@
 #include "LeftPeelOff.h"
 #include "RightPeelOff.h"
 #include "RightPeelOn.h"
+#include "FinishDecorator.h"
+#include "StartDecorator.h"
+#include "PitStopDecorator.h"
+#include "SandPitsDecorator.h"
 int main() {
     srand(time(NULL));
 
@@ -221,20 +225,32 @@ int main() {
 //    manager->addCar(car2,3);
 
 /*
- * UNCOMMENT FOR DEMONSTATION OF RACETRACK COMPOSITE
+ * UNCOMMENT FOR DEMONSTATION OF RACETRACK COMPOSITE & DECORATOR
 */
     RaceTrackComponent* racetrack = new RaceTrack();
-    racetrack->add(new Straight());
+
+    RaceTrackComponent*s= new Straight();
+    s->decorateTrack(new StartDecorator());
+    s->decorateTrack(new PitStopDecorator());
+    racetrack->add(s);
+
+    RaceTrackComponent*l= new LeftEighth();
+    l->decorateTrack(new PitStopDecorator());
+    racetrack->add(l);
+
+    RaceTrackComponent*r= new RightEighth();
+    r->decorateTrack(new SandPitsDecorator());
+    racetrack->add(r);
+
     racetrack->add(new LeftEighth());
     racetrack->add(new Straight());
-    racetrack->add(new RightEighth());
+
+    RaceTrackComponent*f= new RightEighth();
+    f->decorateTrack(new FinishDecorator());
+    racetrack->add(f);
+
     racetrack->print();
-    racetrack->add(new RightPeelOff());
-    racetrack->add(new RightPeelOn());
-    racetrack->add(new RightPeelOn());
-    racetrack->add(new LeftPeelOn());
-    racetrack->add(new LeftPeelOff());
-    racetrack->print();
+
 
 /*
  * UNCOMMENT FOR DEMONSTRATION OF FACTORY

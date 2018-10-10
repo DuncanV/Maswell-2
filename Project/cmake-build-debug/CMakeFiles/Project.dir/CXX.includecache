@@ -58,6 +58,10 @@ ElectricCar.h
 ElectricCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/FinishDecorator.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/FlameVinyl.h
 PimpMyRide.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
@@ -102,6 +106,10 @@ PimpMyRide.h
 Car.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.h
 vector
 -
@@ -139,6 +147,10 @@ SportsRoadster.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsRoadster.h
 StandardRoadster.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardRoadster.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SandPitsDecorator.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SkullVinyl.h
 PimpMyRide.h
@@ -192,6 +204,10 @@ StandardCar.h
 StandardCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StartDecorator.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Straight.h
 RaceTrackComponent.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
@@ -241,4 +257,12 @@ RightPeelOff.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOff.h
 RightPeelOn.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOn.h
+FinishDecorator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/FinishDecorator.h
+StartDecorator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StartDecorator.h
+PitStopDecorator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
+SandPitsDecorator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SandPitsDecorator.h
 

@@ -11,7 +11,7 @@
 class RaceTrack: public RaceTrackComponent
 {
 public:
-    RaceTrack(){};
+    RaceTrack():RaceTrackComponent(){};
     virtual void print()
     {
         vector<RaceTrackComponent*>::iterator it;
@@ -31,7 +31,7 @@ public:
         for (it = components.begin(); it != components.end(); ++it)
             delete *it;
     };
-
+//    virtual void decorateTrack(RaceTrackComponent* R){};
 private:
     vector<RaceTrackComponent*> components;
 };

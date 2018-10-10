@@ -7,10 +7,14 @@
 #include "RaceTrackComponent.h"
 class LeftEighth:public RaceTrackComponent{
 public:
-    LeftEighth(){setDescription("Left Eighth");}
+    LeftEighth():RaceTrackComponent(){setDescription("Left Eighth");}
     virtual ~LeftEighth(){};
     virtual void add(RaceTrackComponent*R){};
-    virtual void print(){ cout<<getDescription()+"\n";};
+    virtual void print(){  if(decorate==0)
+            cout<<getDescription()+"\n";
+        else
+            cout<<getDescription()+" WITH ADDED: "+getDecorator()+"\n";
+    };
 private:
 
 };
