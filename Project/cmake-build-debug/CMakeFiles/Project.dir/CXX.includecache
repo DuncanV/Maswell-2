@@ -17,6 +17,8 @@ iostream
 -
 string
 -
+RegistrationManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/CarFactory.h
 string
@@ -27,6 +29,14 @@ StandardCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.h
 SportsCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp
+ConcreteRegistrationManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
+RegistrationManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp
 ElectricCar.h
@@ -79,6 +89,10 @@ PimpMyRide.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
 Car.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
+iostream
+-
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RoadsterFactory.h
 CarFactory.h
@@ -165,4 +179,8 @@ Slick.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Slick.h
 Spoiler.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Spoiler.h
+RegistrationManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
+ConcreteRegistrationManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
 

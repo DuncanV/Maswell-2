@@ -9,7 +9,8 @@
 #include "FlameVinyl.h"
 #include "Slick.h"
 #include "Spoiler.h"
-
+#include "RegistrationManager.h"
+#include "ConcreteRegistrationManager.h"
 int main() {
     srand(time(NULL));
 
@@ -17,184 +18,198 @@ int main() {
     Factories[0] = new GoKartFactory();             //Initialize factories to all the factories
     Factories[1] = new RoadsterFactory();           //
     Factories[2] = new FormulaOneFactory();         //
+//
+//    Car **cars = new Car *[5];
+//    Car **clones = new Car *[5];
+//
+//    int input;
+//    int choice;
+//    int cloneChoice;
+//    int cloneOption;
+//    int counter = 0;
+//    int cloneCounter = 0;
+//    bool noCars = true;
+//
+//    do{
+//        cout << "Welcome to [Name here]!\n\n";
+//
+//        cout << "What would you like to do?\n";
+//        cout << "1. Build GoKart\n"
+//             << "2. Build Roadster\n"
+//             << "3. Build FormulaOne\n"
+//             << "4. Clone an existing car\n"
+//             << "8. Exit\n>>";
+//
+//        cin >> input;
+//        cout<<endl;
+//
+//        if (input == 1){
+//            cout << "What model would you like?\n";
+//            cout << "1. Electric\n"
+//                 << "2. Sport\n"
+//                 << "3. Standard\n>>";
+//            cin >> choice;
+//            cout<<endl;
+//
+//            if (choice == 1){
+//                cars[counter] = Factories[0]->produceElectric();
+//            } else if (choice == 2){
+//                cars[counter] = Factories[0]->produceSports();
+//            } else if (choice == 3){
+//                cars[counter] = Factories[0]->produceStandard();
+//            }
+//
+//        } else if (input == 2){
+//            cout << "What model would you like?\n";
+//            cout << "1. Electric\n"
+//                 << "2. Sport\n"
+//                 << "3. Standard\n>>";
+//            cin >> choice;
+//            cout<<endl;
+//
+//            if (choice == 1){
+//                cars[counter] = Factories[1]->produceElectric();
+//            } else if (choice == 2){
+//                cars[counter] = Factories[1]->produceSports();
+//            } else if (choice == 3){
+//                cars[counter] = Factories[1]->produceStandard();
+//            }
+//
+//        } else if (input == 3){
+//            cout << "What model would you like?\n";
+//            cout << "1. Electric\n"
+//                 << "2. Sport\n"
+//                 << "3. Standard\n>>";
+//            cin >> choice;
+//            cout<<endl;
+//
+//            if (choice == 1){
+//                cars[counter] = Factories[2]->produceElectric();
+//            } else if (choice == 2){
+//                cars[counter] = Factories[2]->produceSports();
+//            } else if (choice == 3){
+//                cars[counter] = Factories[2]->produceStandard();
+//            }
+//
+//        } else if (input == 4){
+//            if (counter == 0){
+//                cout << "There are no cars to clone!\n";
+//                noCars = true;
+//            } else{
+//                cout << "Here are the cars available to clone:\n";
+//                for (int i = 0; i < counter; ++i) {
+//                    cout << ">>"<<to_string(i) << ":\n"
+//                         << cars[i]->toString() << endl;
+//                }
+//
+//                cout << "Please select the one you want to clone.\n>>";
+//                cin >> cloneChoice;
+//                cout<<endl;
+//                cout << "Would you like to:\n"
+//                     << "0. Clone base\n"
+//                     << "1. Clone upgraded car\n>>";
+//                cin >> cloneOption;
+//                cout<<endl;
+//
+//                clones[cloneCounter] = cars[cloneChoice]->clone(cloneOption);
+//                noCars = false;
+//            }
+//        }
+//
+//        if (input != 8 && input != 4){
+//            bool again = true;
+//            int option;
+//            int upgrade;
+//
+//            do{
+//                cout << "1. Add upgrades\n"
+//                     << "2. Done\n>>";
+//                cin >> option;
+//                cout<<endl;
+//
+//                if (option == 1) {
+//                    cout << "What would you like to add?\n"
+//                         << "1. Flame Vinyls\n"
+//                         << "2. Skull Vunyls\n"
+//                         << "3. Nitros\n"
+//                         << "4. Slick Tires\n"
+//                         << "5. Spoiler\n>>";
+//                    cin >> upgrade;
+//                    cout<<endl;
+//
+//                    switch (upgrade){
+//                        case 1 : cars[counter]->add(new FlameVinyl()); break;
+//                        case 2 : cars[counter]->add(new SkullVinyl()); break;
+//                        case 3 : cars[counter]->add(new Nitro(cars[counter])); break;
+//                        case 4 : cars[counter]->add(new Slick(cars[counter])); break;
+//                        case 5 : cars[counter]->add(new Spoiler(cars[counter])); break;
+//                    }
+//                } else if (option == 2){
+//                    again = false;
+//                }
+//            }
+//            while (again == true);
+//
+//            cout << "Your car is:\n";
+//            cout << cars[counter]->toString() << endl;
+//
+//            counter++;
+//        }
+//        if (input != 8 && input == 4 && noCars == false){
+//            bool again = true;
+//            int option;
+//            int upgrade;
+//
+//            do{
+//                cout << "1. Add upgrades\n"
+//                     << "2. Done\n>>";
+//                cin >> option;
+//                cout<<endl;
+//
+//                if (option == 1) {
+//                    cout << "What would you like to add?\n"
+//                         << "1. Flame Vinyls\n"
+//                         << "2. Skull Vunyls\n"
+//                         << "3. Nitros\n"
+//                         << "4. Slick Tires\n"
+//                         << "5. Spoiler\n>>";
+//                    cin >> upgrade;
+//                    cout<<endl;
+//
+//                    switch (upgrade){
+//                        case 1 : clones[cloneCounter]->add(new FlameVinyl()); break;
+//                        case 2 : clones[cloneCounter]->add(new SkullVinyl()); break;
+//                        case 3 : clones[cloneCounter]->add(new Nitro(clones[cloneCounter])); break;
+//                        case 4 : clones[cloneCounter]->add(new Slick(clones[cloneCounter])); break;
+//                        case 5 : clones[cloneCounter]->add(new Spoiler(clones[cloneCounter])); break;
+//                    }
+//                } else if (option == 2){
+//                    again = false;
+//                }
+//            }
+//            while (again == true);
+//
+//            cout << "Your car is:\n";
+//            cout << clones[cloneCounter]->toString() << endl;
+//
+//            cloneCounter++;
+//        }
+//    }
+//    while(input != 8 && counter < 5);
 
-    Car **cars = new Car *[5];
-    Car **clones = new Car *[5];
-
-    int input;
-    int choice;
-    int cloneChoice;
-    int cloneOption;
-    int counter = 0;
-    int cloneCounter = 0;
-    bool noCars = true;
-
-    do{
-        cout << "Welcome to [Name here]!\n\n";
-
-        cout << "What would you like to do?\n";
-        cout << "1. Build GoKart\n"
-             << "2. Build Roadster\n"
-             << "3. Build FormulaOne\n"
-             << "4. Clone an existing car\n"
-             << "8. Exit\n>>";
-
-        cin >> input;
-        cout<<endl;
-
-        if (input == 1){
-            cout << "What model would you like?\n";
-            cout << "1. Electric\n"
-                 << "2. Sport\n"
-                 << "3. Standard\n>>";
-            cin >> choice;
-            cout<<endl;
-
-            if (choice == 1){
-                cars[counter] = Factories[0]->produceElectric();
-            } else if (choice == 2){
-                cars[counter] = Factories[0]->produceSports();
-            } else if (choice == 3){
-                cars[counter] = Factories[0]->produceStandard();
-            }
-
-        } else if (input == 2){
-            cout << "What model would you like?\n";
-            cout << "1. Electric\n"
-                 << "2. Sport\n"
-                 << "3. Standard\n>>";
-            cin >> choice;
-            cout<<endl;
-
-            if (choice == 1){
-                cars[counter] = Factories[1]->produceElectric();
-            } else if (choice == 2){
-                cars[counter] = Factories[1]->produceSports();
-            } else if (choice == 3){
-                cars[counter] = Factories[1]->produceStandard();
-            }
-
-        } else if (input == 3){
-            cout << "What model would you like?\n";
-            cout << "1. Electric\n"
-                 << "2. Sport\n"
-                 << "3. Standard\n>>";
-            cin >> choice;
-            cout<<endl;
-
-            if (choice == 1){
-                cars[counter] = Factories[2]->produceElectric();
-            } else if (choice == 2){
-                cars[counter] = Factories[2]->produceSports();
-            } else if (choice == 3){
-                cars[counter] = Factories[2]->produceStandard();
-            }
-
-        } else if (input == 4){
-            if (counter == 0){
-                cout << "There are no cars to clone!\n";
-                noCars = true;
-            } else{
-                cout << "Here are the cars available to clone:\n";
-                for (int i = 0; i < counter; ++i) {
-                    cout << ">>"<<to_string(i) << ":\n"
-                         << cars[i]->toString() << endl;
-                }
-
-                cout << "Please select the one you want to clone.\n>>";
-                cin >> cloneChoice;
-                cout<<endl;
-                cout << "Would you like to:\n"
-                     << "0. Clone base\n"
-                     << "1. Clone upgraded car\n>>";
-                cin >> cloneOption;
-                cout<<endl;
-
-                clones[cloneCounter] = cars[cloneChoice]->clone(cloneOption);
-                noCars = false;
-            }
-        }
-
-        if (input != 8 && input != 4){
-            bool again = true;
-            int option;
-            int upgrade;
-
-            do{
-                cout << "1. Add upgrades\n"
-                     << "2. Done\n>>";
-                cin >> option;
-                cout<<endl;
-
-                if (option == 1) {
-                    cout << "What would you like to add?\n"
-                         << "1. Flame Vinyls\n"
-                         << "2. Skull Vunyls\n"
-                         << "3. Nitros\n"
-                         << "4. Slick Tires\n"
-                         << "5. Spoiler\n>>";
-                    cin >> upgrade;
-                    cout<<endl;
-
-                    switch (upgrade){
-                        case 1 : cars[counter]->add(new FlameVinyl()); break;
-                        case 2 : cars[counter]->add(new SkullVinyl()); break;
-                        case 3 : cars[counter]->add(new Nitro(cars[counter])); break;
-                        case 4 : cars[counter]->add(new Slick(cars[counter])); break;
-                        case 5 : cars[counter]->add(new Spoiler(cars[counter])); break;
-                    }
-                } else if (option == 2){
-                    again = false;
-                }
-            }
-            while (again == true);
-
-            cout << "Your car is:\n";
-            cout << cars[counter]->toString() << endl;
-
-            counter++;
-        }
-        if (input != 8 && input == 4 && noCars == false){
-            bool again = true;
-            int option;
-            int upgrade;
-
-            do{
-                cout << "1. Add upgrades\n"
-                     << "2. Done\n>>";
-                cin >> option;
-                cout<<endl;
-
-                if (option == 1) {
-                    cout << "What would you like to add?\n"
-                         << "1. Flame Vinyls\n"
-                         << "2. Skull Vunyls\n"
-                         << "3. Nitros\n"
-                         << "4. Slick Tires\n"
-                         << "5. Spoiler\n>>";
-                    cin >> upgrade;
-                    cout<<endl;
-
-                    switch (upgrade){
-                        case 1 : clones[cloneCounter]->add(new FlameVinyl()); break;
-                        case 2 : clones[cloneCounter]->add(new SkullVinyl()); break;
-                        case 3 : clones[cloneCounter]->add(new Nitro(clones[cloneCounter])); break;
-                        case 4 : clones[cloneCounter]->add(new Slick(clones[cloneCounter])); break;
-                        case 5 : clones[cloneCounter]->add(new Spoiler(clones[cloneCounter])); break;
-                    }
-                } else if (option == 2){
-                    again = false;
-                }
-            }
-            while (again == true);
-
-            cout << "Your car is:\n";
-            cout << clones[cloneCounter]->toString() << endl;
-
-            cloneCounter++;
-        }
-    }
-    while(input != 8 && counter < 5);
+/*
+ * UNCOMMENT FOR DEMONSTRATION OF MEDIATOR
+ */
+    RegistratcionManager* manager= new ConcreteRegistrationManager(5);
+    Car* car1= Factories[0]->produceSports();
+    Car* car2= Factories[0]->produceElectric();
+    manager->addCar(car1,2);
+    manager->addCar(car1,1);
+    manager->addCar(car1,2);
+    manager->addCar(car2,2);
+    manager->addCar(car2,1);
+    manager->addCar(car2,2);
+    manager->addCar(car2,3);
 
 /*
  * UNCOMMENT FOR DEMONSTRATION OF FACTORY
@@ -278,13 +293,13 @@ int main() {
         delete Factories[i];
     }
     delete []Factories;
-    for (int i = 0; i < 5; i++)
-    {
-        delete cars[i];
-        delete clones[i];
-    }
-    delete []cars;
-    delete []clones;
+//    for (int i = 0; i < 5; i++)
+//    {
+//        delete cars[i];
+//        delete clones[i];
+//    }
+//    delete []cars;
+//    delete []clones;
 
     return 0;
 }

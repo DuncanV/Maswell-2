@@ -77,6 +77,4 @@ string Car::toString(){
     return out;
 }
 
-int Car::getID() {
-    return 0;
-}
+

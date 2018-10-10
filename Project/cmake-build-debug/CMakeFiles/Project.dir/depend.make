@@ -4,21 +4,30 @@
 CMakeFiles/Project.dir/Car.cpp.o: ../Car.cpp
 CMakeFiles/Project.dir/Car.cpp.o: ../Car.h
 CMakeFiles/Project.dir/Car.cpp.o: ../PimpMyRide.h
+CMakeFiles/Project.dir/Car.cpp.o: ../RegistrationManager.h
+
+CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.cpp
+CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.h
+CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../RegistrationManager.h
 
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.cpp
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.h
+CMakeFiles/Project.dir/ElectricCar.cpp.o: ../RegistrationManager.h
 
 CMakeFiles/Project.dir/SportsCar.cpp.o: ../Car.h
+CMakeFiles/Project.dir/SportsCar.cpp.o: ../RegistrationManager.h
 CMakeFiles/Project.dir/SportsCar.cpp.o: ../SportsCar.cpp
 CMakeFiles/Project.dir/SportsCar.cpp.o: ../SportsCar.h
 
 CMakeFiles/Project.dir/StandardCar.cpp.o: ../Car.h
+CMakeFiles/Project.dir/StandardCar.cpp.o: ../RegistrationManager.h
 CMakeFiles/Project.dir/StandardCar.cpp.o: ../StandardCar.cpp
 CMakeFiles/Project.dir/StandardCar.cpp.o: ../StandardCar.h
 
 CMakeFiles/Project.dir/main.cpp.o: ../Car.h
 CMakeFiles/Project.dir/main.cpp.o: ../CarFactory.h
+CMakeFiles/Project.dir/main.cpp.o: ../ConcreteRegistrationManager.h
 CMakeFiles/Project.dir/main.cpp.o: ../ElectricCar.h
 CMakeFiles/Project.dir/main.cpp.o: ../ElectricFormulaOne.h
 CMakeFiles/Project.dir/main.cpp.o: ../ElectricGokart.h
@@ -28,6 +37,7 @@ CMakeFiles/Project.dir/main.cpp.o: ../ForumlaOneFactory.h
 CMakeFiles/Project.dir/main.cpp.o: ../GoKartFactory.h
 CMakeFiles/Project.dir/main.cpp.o: ../Nitro.h
 CMakeFiles/Project.dir/main.cpp.o: ../PimpMyRide.h
+CMakeFiles/Project.dir/main.cpp.o: ../RegistrationManager.h
 CMakeFiles/Project.dir/main.cpp.o: ../RoadsterFactory.h
 CMakeFiles/Project.dir/main.cpp.o: ../SkullVinyl.h
 CMakeFiles/Project.dir/main.cpp.o: ../Slick.h

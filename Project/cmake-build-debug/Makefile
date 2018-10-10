@@ -204,33 +204,6 @@ ElectricCar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ElectricCar.cpp.s
 .PHONY : ElectricCar.cpp.s
 
-RegistrationManager.o: RegistrationManager.cpp.o
-
-.PHONY : RegistrationManager.o
-
-# target to build an object file
-RegistrationManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RegistrationManager.cpp.o
-.PHONY : RegistrationManager.cpp.o
-
-RegistrationManager.i: RegistrationManager.cpp.i
-
-.PHONY : RegistrationManager.i
-
-# target to preprocess a source file
-RegistrationManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RegistrationManager.cpp.i
-.PHONY : RegistrationManager.cpp.i
-
-RegistrationManager.s: RegistrationManager.cpp.s
-
-.PHONY : RegistrationManager.s
-
-# target to generate assembly for a file
-RegistrationManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RegistrationManager.cpp.s
-.PHONY : RegistrationManager.cpp.s
-
 SportsCar.o: SportsCar.cpp.o
 
 .PHONY : SportsCar.o
@@ -330,9 +303,6 @@ help:
 	@echo "... ElectricCar.o"
 	@echo "... ElectricCar.i"
 	@echo "... ElectricCar.s"
-	@echo "... RegistrationManager.o"
-	@echo "... RegistrationManager.i"
-	@echo "... RegistrationManager.s"
 	@echo "... SportsCar.o"
 	@echo "... SportsCar.i"
 	@echo "... SportsCar.s"
