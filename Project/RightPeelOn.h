@@ -14,7 +14,7 @@ public:
     virtual void print(){  if(decorate==0)
             cout<<getDescription()+"\n";
         else
-            cout<<getDescription()+" WITH ADDED: "+getDecorator()+"\n";
+            cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
 private:
 

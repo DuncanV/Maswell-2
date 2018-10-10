@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/Car.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/ElectricCar.cpp.o"
+  "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/RaceTrackComponent.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/SportsCar.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/StandardCar.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/main.cpp.o"

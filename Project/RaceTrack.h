@@ -31,7 +31,14 @@ public:
         for (it = components.begin(); it != components.end(); ++it)
             delete *it;
     };
-//    virtual void decorateTrack(RaceTrackComponent* R){};
+    void show()
+    {
+        string star="******************************************\n";
+        cout<<"Here's your Race Track!\n"
+              <<star;
+        print();
+        cout<<star;
+    }
 private:
     vector<RaceTrackComponent*> components;
 };

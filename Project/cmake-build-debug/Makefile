@@ -204,6 +204,33 @@ ElectricCar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ElectricCar.cpp.s
 .PHONY : ElectricCar.cpp.s
 
+RaceTrackComponent.o: RaceTrackComponent.cpp.o
+
+.PHONY : RaceTrackComponent.o
+
+# target to build an object file
+RaceTrackComponent.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RaceTrackComponent.cpp.o
+.PHONY : RaceTrackComponent.cpp.o
+
+RaceTrackComponent.i: RaceTrackComponent.cpp.i
+
+.PHONY : RaceTrackComponent.i
+
+# target to preprocess a source file
+RaceTrackComponent.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RaceTrackComponent.cpp.i
+.PHONY : RaceTrackComponent.cpp.i
+
+RaceTrackComponent.s: RaceTrackComponent.cpp.s
+
+.PHONY : RaceTrackComponent.s
+
+# target to generate assembly for a file
+RaceTrackComponent.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/RaceTrackComponent.cpp.s
+.PHONY : RaceTrackComponent.cpp.s
+
 SportsCar.o: SportsCar.cpp.o
 
 .PHONY : SportsCar.o
@@ -303,6 +330,9 @@ help:
 	@echo "... ElectricCar.o"
 	@echo "... ElectricCar.i"
 	@echo "... ElectricCar.s"
+	@echo "... RaceTrackComponent.o"
+	@echo "... RaceTrackComponent.i"
+	@echo "... RaceTrackComponent.s"
 	@echo "... SportsCar.o"
 	@echo "... SportsCar.i"
 	@echo "... SportsCar.s"

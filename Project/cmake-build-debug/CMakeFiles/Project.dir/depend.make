@@ -15,6 +15,11 @@ CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.cpp
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.h
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../RegistrationManager.h
 
+CMakeFiles/Project.dir/RaceTrackComponent.cpp.o: ../Car.h
+CMakeFiles/Project.dir/RaceTrackComponent.cpp.o: ../RaceTrackComponent.cpp
+CMakeFiles/Project.dir/RaceTrackComponent.cpp.o: ../RaceTrackComponent.h
+CMakeFiles/Project.dir/RaceTrackComponent.cpp.o: ../RegistrationManager.h
+
 CMakeFiles/Project.dir/SportsCar.cpp.o: ../Car.h
 CMakeFiles/Project.dir/SportsCar.cpp.o: ../RegistrationManager.h
 CMakeFiles/Project.dir/SportsCar.cpp.o: ../SportsCar.cpp

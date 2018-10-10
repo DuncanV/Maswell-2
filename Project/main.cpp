@@ -249,7 +249,7 @@ int main() {
     f->decorateTrack(new FinishDecorator());
     racetrack->add(f);
 
-    racetrack->print();
+    racetrack->show();
 
 
 /*
