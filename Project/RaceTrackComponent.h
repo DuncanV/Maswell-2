@@ -10,7 +10,7 @@ using namespace std;
 class RaceTrackComponent
 {
 public:
-    virtual string print()=0;
+    virtual void print()=0;
     virtual void add(RaceTrackComponent*)=0;
     virtual ~RaceTrackComponent(){};
     void setDescription(string d){description=d;};

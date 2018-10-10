@@ -10,7 +10,7 @@ public:
     RightEighth(){setDescription("Right Eighth");}
     virtual ~RightEighth(){};
     virtual void add(RaceTrackComponent*R){};
-    virtual string print(){ cout<<getDescription()+"\n";};
+    virtual void print(){ cout<<getDescription()+"\n";};
 private:
 
 };

@@ -12,7 +12,7 @@ class RaceTrack: public RaceTrackComponent
 {
 public:
     RaceTrack(){};
-    virtual string print()
+    virtual void print()
     {
         vector<RaceTrackComponent*>::iterator it;
         for(it=components.begin();it!=components.end();it++)
@@ -20,6 +20,7 @@ public:
             (*it)->print();
         }
     };
+
     virtual void add(RaceTrackComponent* Ra)
     {
         components.push_back(Ra);

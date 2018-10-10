@@ -10,7 +10,7 @@ public:
     RightPeelOff(){setDescription("Right Peel Off");}
     virtual ~RightPeelOff(){};
     virtual void add(RaceTrackComponent*R){};
-    virtual string print(){ cout<<getDescription()+"\n";};
+    virtual void print(){ cout<<getDescription()+"\n";};
 private:
 
 };
