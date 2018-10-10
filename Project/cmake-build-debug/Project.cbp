@@ -122,6 +122,12 @@
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftEighth.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOff.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOn.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Nitro.h">
 			<Option target="Project"/>
 		</Unit>
@@ -138,6 +144,12 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightEighth.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOff.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOn.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RoadsterFactory.h">

@@ -86,6 +86,14 @@ ElectricGokart.h
 RaceTrackComponent.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOff.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOn.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Nitro.h
 PimpMyRide.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
@@ -111,6 +119,14 @@ iostream
 -
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightEighth.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOff.h
+RaceTrackComponent.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOn.h
 RaceTrackComponent.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
 
@@ -217,4 +233,12 @@ LeftEighth.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftEighth.h
 RightEighth.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightEighth.h
+LeftPeelOn.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOn.h
+LeftPeelOff.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOff.h
+RightPeelOff.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOff.h
+RightPeelOn.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOn.h
 

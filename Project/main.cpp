@@ -16,6 +16,10 @@
 #include "Straight.h"
 #include "LeftEighth.h"
 #include "RightEighth.h"
+#include "LeftPeelOn.h"
+#include "LeftPeelOff.h"
+#include "RightPeelOff.h"
+#include "RightPeelOn.h"
 int main() {
     srand(time(NULL));
 
@@ -224,6 +228,12 @@ int main() {
     racetrack->add(new LeftEighth());
     racetrack->add(new Straight());
     racetrack->add(new RightEighth());
+    racetrack->print();
+    racetrack->add(new RightPeelOff());
+    racetrack->add(new RightPeelOn());
+    racetrack->add(new RightPeelOn());
+    racetrack->add(new LeftPeelOn());
+    racetrack->add(new LeftPeelOff());
     racetrack->print();
 
 /*
