@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/StandardCar.cpp.o"
   "CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o"
   "CMakeFiles/Project.dir/RaceTrackComponent.cpp.o"
+  "CMakeFiles/Project.dir/RaceTrack.cpp.o"
   "Project.pdb"
   "Project.exe"
   "libProject.dll.a"

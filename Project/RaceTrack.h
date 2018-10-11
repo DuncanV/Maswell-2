@@ -39,7 +39,9 @@ public:
         print();
         cout<<star;
     }
+
 private:
     vector<RaceTrackComponent*> components;
+    static int trackNumber;
 };
 #endif //PROJECT_RACETRACK_H

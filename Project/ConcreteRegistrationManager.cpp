@@ -40,6 +40,20 @@ void ConcreteRegistrationManager::addCar(Car *_car, int track) {
             return;
         }
     }
+    /*
+     * UNCOMMENT IF MEANT ONLY 1 car in total 
+     */
+//    for(int m=0;m<numTracks;m++)
+//    {
+//        for(int k=0;k<numCars[m];k++)
+//        {
+//            if(cars[m][k]==_car)
+//            {
+//                cout<<"Your car is already registered in a race!"<<endl;
+//                return;
+//            }
+//        }
+//    }
     if(numCars[track-1]>=size[track-1])
     resize(track-1);
 
