@@ -1,6 +1,10 @@
-//
-// Created by Duncan + Tjaart on 2018/10/13.
-//
+/**
+ *  @file PimpMyTrack.h
+ *  @class PimpMyTrack
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief Abstract Decorator for Decorator design pattern
+ */
 
 #ifndef PROJECT_PIMPMYTRACK_H
 #define PROJECT_PIMPMYTRACK_H

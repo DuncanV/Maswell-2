@@ -6,7 +6,6 @@
  *  @brief AbstractMediator for mediator design pattern
  */
 
-
 #ifndef PROJECT_REGISTRATIONMANAGER_H
 #define PROJECT_REGISTRATIONMANAGER_H
 

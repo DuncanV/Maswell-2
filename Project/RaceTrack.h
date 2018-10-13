@@ -36,12 +36,12 @@ public:
     void show()
     {
         string star="******************************************\n";
-        cout<<"Here's your Race Track with ID = " +to_string(getRackTrackID())+"\n"
+        cout<<"Here's your Race Track with ID = " +to_string(getRaceTrackID())+"\n"
               <<star;
         print();
         cout<<star;
     }
-    int getRackTrackID(){ return RaceTrackID;};
+    int getRaceTrackID(){ return RaceTrackID;};
 
 private:
     vector<RaceTrackComponent*> components;
