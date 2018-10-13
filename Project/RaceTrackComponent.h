@@ -46,10 +46,8 @@ public:
         for(it=cars.begin();it!=cars.end();it++)
         {
             if((*it)==_car)
-                break;
-            i++;
+                cars.erase(it);
         }
-        cars.erase(cars.begin()+i);
     }
 
     virtual void show(){};
