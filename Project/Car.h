@@ -21,9 +21,9 @@ public:
     /**
     * Defualt constructor used for Decoratoring
     */
-    Car(){
+    Car(int tyres = 4){
         carDecorate=0;
-        for(int i =0;i<4;i++)
+        for(int i =0;i<tyres;i++)
         {
             tyreCondition[i]=100;
         }
@@ -35,7 +35,7 @@ public:
      * The base Constructor for Car
      * @param modelType_ states whether the car is Electirc/Sports/Standard
      */
-    Car(string modelType_);
+    Car(string modelType_, int tyres = 4);
 
     /**
      * The copy constructor for Car
@@ -89,6 +89,12 @@ public:
     virtual string showCarStats();
 
     /**
+     * function to print the condition of a car during the race
+     * @return string describing the condition
+     */
+    string showCarCondition();
+
+    /**
      * Function to set speed of a car
      * @param speed
      */
@@ -139,6 +145,59 @@ public:
      */
     string toString();
 
+    /**
+     * function to get the total time the car took in the race
+     * @return int representing the total time
+     */
+    int getTrackTime();
+
+    /**
+     * function to add time to the track time when the car is making a pit stop
+     * @param i the amount of time to be added to the existing time
+     */
+    void setTrackTime(int i);
+
+    /**
+     * function to get the amount of tyres the car have
+     * @return the number of tyres
+     */
+    int getNumTyres();
+
+    /**
+     * function to get the condition of each tyres
+     * @return int array showing the condition of each tyre
+     */
+    int* getCarTyres();
+
+    /**
+     * function to set the condition of the tyres after it has been changed
+     * @param index says which tyre was changed and should be updated
+     */
+    void setCarTyres(int index);
+
+    /**
+     * function to get the fuel level of the car
+     * @return the fuel level
+     */
+    int getCarFuel();
+
+    /**
+     * function to set the fuel level of a car
+     * @param fuel is the amount the fuel level shoul be after refueling
+     */
+    void setCarFuel(int fuel);
+
+    /**
+     * function to get the damage the car has taken
+     * @return the amount of damage since last repair
+     */
+    int getCarDamage();
+
+    /**
+     * function to set the damage of the car
+     * @param damage the total amount of damage after the car has been repaired
+     */
+    void setCarDamage(int damage);
 
 private:
     /**
@@ -176,8 +235,30 @@ private:
     */
     int acceleration=0;
 
-    int tyreCondition[4];
+    /**
+    * @brief number of tyres a car have
+    */
+    int numTyres;
+
+    /**
+     * @brief amount of time the car took to complete the race
+     */
+    int trackTime;
+
+    //Everything is ints to represent % but can be implemented differently
+    /**
+     * @brief array of amount tyres to show each tyres condition (until changed)
+     */
+    int* tyreCondition;
+
+    /**
+     * @brief fuel level of the car (until refuelled)
+     */
     int fuelLevel;
+
+    /**
+     * @brief total amount of damage the car took during the race (until repaired)
+     */
     int damage;
 };
 

@@ -7,11 +7,15 @@
 
 int Car::modelCounter = 0;
 
-Car::Car(string modelType_) {
+Car::Car(string modelType_, int tyres) {
     modelType = modelType_;
     modelNumber = modelCounter++;
     carDecorate=0;
-    for(int i =0;i<4;i++)
+
+    //Can implement this with cars with more than 4 tyres
+    numTyres = tyres;
+    tyreCondition = new int[numTyres];
+    for(int i =0;i<numTyres;i++)
     {
         tyreCondition[i]=100;
     }
@@ -26,13 +30,14 @@ Car::Car(const Car& car_, bool flag) {
     if (flag == false){
         carDecorate=0;
     } else{
-//        carDecorate = car_.carDecorate;
         carDecorate=car_.carDecorate->FullClone();
         topSpeed=car_.topSpeed;
         handling=car_.handling;
         acceleration=car_.acceleration;
     }
-    for(int i =0;i<4;i++)
+
+    numTyres = car_.numTyres;
+    for(int i =0;i<numTyres;i++)
     {
         tyreCondition[i]=100;
     }
@@ -57,7 +62,7 @@ string Car::showCarStats() {
 
     string out = "Top speed: "+to_string(getSpeed())+"\n";
     out += "Acceleration: "+to_string(getAcceleration())+"\n";
-    out +="Handling: "+to_string(getHandling())+"\n";
+    out += "Handling: "+to_string(getHandling())+"\n";
     out += sep;
     if(carDecorate!=0)
     {
@@ -75,6 +80,20 @@ void Car::add(Car *c) {
         carDecorate->add(c);
 }
 
+string Car::showCarCondition() {
+    string sep = "*********************************\n";
+
+    string out = "Tyre Condition: ";
+    for (int i = 0; i < numTyres-1; ++i) {
+        out += to_string(tyreCondition[i]) + ", ";
+    }
+    out += to_string(tyreCondition[numTyres-1]);
+    out += "\n";
+    out += "Fuel Level: "+to_string(fuelLevel)+"\n";
+    out += "Damage: "+to_string(damage)+"\n";
+    return out;
+}
+
 string Car::toString(){
     string sep = "*********************************\n";
 
@@ -86,7 +105,45 @@ string Car::toString(){
     out += sep;
     out += showCarStats();
     out += sep;
+    out += showCarCondition();
+    out += sep;
     return out;
+}
+
+void Car::setTrackTime(int i) {
+    trackTime += i;
+}
+
+int Car::getTrackTime() {
+    return trackTime;
+}
+
+int Car::getNumTyres() {
+    return numTyres;
+}
+
+int* Car::getCarTyres() {
+    return tyreCondition;
+}
+
+void Car::setCarTyres(int index){
+    tyreCondition[index] = 100;
+}
+
+int Car::getCarFuel() {
+    return fuelLevel;
+}
+
+void Car::setCarFuel(int fuel) {
+    fuelLevel = fuel;
+}
+
+int Car::getCarDamage() {
+    return damage;
+}
+
+void Car::setCarDamage(int damage_) {
+    damage = damage_;
 }
 
 
