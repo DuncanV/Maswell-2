@@ -4,13 +4,14 @@
 
 #include "Car.h"
 #include "PimpMyRide.h"
-
 int Car::modelCounter = 0;
+int Car::prodcuctionNum = 0;
 
 Car::Car(string modelType_) {
     modelType = modelType_;
     modelNumber = modelCounter++;
     carDecorate=0;
+    CarID=prodcuctionNum++;
     for(int i =0;i<4;i++)
     {
         tyreCondition[i]=100;
@@ -22,7 +23,7 @@ Car::Car(string modelType_) {
 Car::Car(const Car& car_, bool flag) {
     modelType = car_.modelType;
     modelNumber = car_.modelNumber;
-
+    CarID=prodcuctionNum++;
     if (flag == false){
         carDecorate=0;
     } else{
@@ -87,6 +88,10 @@ string Car::toString(){
     out += showCarStats();
     out += sep;
     return out;
+}
+
+void Car::RegistrationNotify(string msg) {
+    cout<<"NOTIFY: "+msg<<endl;
 }
 
 

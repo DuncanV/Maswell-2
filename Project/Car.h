@@ -139,7 +139,9 @@ public:
      */
     string toString();
 
-
+    int getCarID(){ return CarID;};
+    
+    void RegistrationNotify(string msg);
 private:
     /**
      * @brief a model string which states the type of car
@@ -175,7 +177,9 @@ private:
     * @brief int to hold acceleration of a car
     */
     int acceleration=0;
+    int CarID;
 
+    static int prodcuctionNum;
     int tyreCondition[4];
     int fuelLevel;
     int damage;

@@ -9,6 +9,7 @@
 #ifndef PROJECT_CONCRETEREGISTRATIONMANAGER_H
 #define PROJECT_CONCRETEREGISTRATIONMANAGER_H
 
+#include <vector>
 #include "RegistrationManager.h"
 
 class ConcreteRegistrationManager:public RegistratcionManager
@@ -18,7 +19,7 @@ public:
      * constructor for ConcreteRegistrationManager
      * @param _numTracks determines how many racetracks there are
      */
-    ConcreteRegistrationManager(int _numTracks);
+    ConcreteRegistrationManager();
 
     /**
      * destructor for manager
@@ -31,33 +32,22 @@ public:
      * @param track specifies which track the car will be racing
      */
     virtual void addCar(Car* _car, int track);
+    virtual void addTrack(RaceTrackComponent* _racetrack);
 
 private:
-    /**
-    * the number of tracks the mediator looks after
-    */
-    int numTracks;
-
-    /**
-     * the amount of cars on each track
-     */
-    int* numCars;
-
-    /**
-     * the size/ Max capacity of the track, dynamic
-     */
-    int* size;
 
     /**
      * cars array holds tracks and the cars
      */
-    Car*** cars;
+    vector<vector<Car*> > cars;
 
     /**
      * resizes the track number of cars to fit more cars in
      * @param trackNo the track no to be resized
      */
     void resize(int trackNo);
+
+    vector<RaceTrackComponent*> tracks;
 
 };
 
