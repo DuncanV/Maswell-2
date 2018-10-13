@@ -16,7 +16,7 @@ class RaceTrackComponent
 public:
     RaceTrackComponent(){
         decorate=0;
-        ID=partNumber++;
+//        ID=partNumber++;
     }
     virtual void decorateTrack(RaceTrackComponent* R)
     {
@@ -59,10 +59,12 @@ public:
     void setDescription(string d){description=d;};
     string getDescription(){ return description;};
     RaceTrackComponent* decorate;
+//    int getPartNumber(){ return ID;};
+//    void setPartNumber(int number){partNumber=number; };
 private:
     string description;
-    int ID;
-    static int partNumber;
+//    int ID;
+//    static int partNumber;
     vector<Car*> cars;
 
 };

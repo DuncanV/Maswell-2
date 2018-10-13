@@ -11,7 +11,9 @@
 class RaceTrack: public RaceTrackComponent
 {
 public:
-    RaceTrack():RaceTrackComponent(){};
+    RaceTrack():RaceTrackComponent(){RaceTrackID=trackNumber++;
+//    setPartNumber(0);
+ };
     virtual void print()
     {
         vector<RaceTrackComponent*>::iterator it;
@@ -34,14 +36,16 @@ public:
     void show()
     {
         string star="******************************************\n";
-        cout<<"Here's your Race Track!\n"
+        cout<<"Here's your Race Track with ID = " +to_string(getRackTrackID())+"\n"
               <<star;
         print();
         cout<<star;
     }
+    int getRackTrackID(){ return RaceTrackID;};
 
 private:
     vector<RaceTrackComponent*> components;
+    int RaceTrackID;
     static int trackNumber;
 };
 #endif //PROJECT_RACETRACK_H

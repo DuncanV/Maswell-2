@@ -32,9 +32,9 @@ void ConcreteRegistrationManager::addCar(Car *_car, int track) {
         cout<<"INCORRECT TRACK SELECTED"<<endl;
         return;
     }
-    for(int i=0;i<numCars[track-1];i++)
+    for(int i=0;i<numCars[track];i++)
     {
-        if(cars[track - 1][i] == _car)
+        if(cars[track][i] == _car)
         {
             cout<<"Car already registered for the race!"<<endl;
             return;
@@ -54,11 +54,11 @@ void ConcreteRegistrationManager::addCar(Car *_car, int track) {
 //            }
 //        }
 //    }
-    if(numCars[track-1]>=size[track-1])
-    resize(track-1);
+    if(numCars[track]>=size[track])
+    resize(track);
 
-    cars[track-1][numCars[track-1]]=_car;
-    numCars[track-1]++;
+    cars[track][numCars[track]]=_car;
+    numCars[track]++;
     cout<<"Car has been successfully registered"<<endl;
 
 

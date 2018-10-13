@@ -4,4 +4,4 @@
 
 #include "RaceTrackComponent.h"
 
-int RaceTrackComponent::partNumber = 0;
+//int RaceTrackComponent::partNumber = 0;

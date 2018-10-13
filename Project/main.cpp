@@ -213,44 +213,68 @@ int main() {
 /*
  * UNCOMMENT FOR DEMONSTRATION OF MEDIATOR
  */
-    RegistratcionManager* manager= new ConcreteRegistrationManager(5);
-    Car* car1= Factories[0]->produceSports();
-    Car* car2= Factories[0]->produceElectric();
-    manager->addCar(car1,2);
-    manager->addCar(car1,1);
-    manager->addCar(car1,2);
-    manager->addCar(car2,2);
-    manager->addCar(car2,1);
-    manager->addCar(car2,2);
-    manager->addCar(car2,3);
-    manager->addCar(car1,2);
+//    RegistratcionManager* manager= new ConcreteRegistrationManager(5);
+//    Car* car1= Factories[0]->produceSports();
+//    Car* car2= Factories[0]->produceElectric();
+//    manager->addCar(car1,2);
+//    manager->addCar(car1,1);
+//    manager->addCar(car1,2);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,1);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,3);
+//    manager->addCar(car1,2);
 
 /*
  * UNCOMMENT FOR DEMONSTATION OF RACETRACK COMPOSITE & DECORATOR
 */
-//    RaceTrackComponent* racetrack = new RaceTrack();
-//
-//    RaceTrackComponent*s= new Straight();
-//    s->decorateTrack(new StartDecorator());
-//    s->decorateTrack(new PitStopDecorator());
-//    racetrack->add(s);
-//
-//    RaceTrackComponent*l= new LeftEighth();
-//    l->decorateTrack(new PitStopDecorator());
-//    racetrack->add(l);
-//
-//    RaceTrackComponent*r= new RightEighth();
-//    r->decorateTrack(new SandPitsDecorator());
-//    racetrack->add(r);
-//
-//    racetrack->add(new LeftEighth());
-//    racetrack->add(new Straight());
-//
-//    RaceTrackComponent*f= new RightEighth();
-//    f->decorateTrack(new FinishDecorator());
-//    racetrack->add(f);
-//
-//    racetrack->show();
+    RaceTrackComponent* racetrack1 = new RaceTrack();
+
+    RaceTrackComponent*s1= new Straight();
+    s1->decorateTrack(new StartDecorator());
+    s1->decorateTrack(new PitStopDecorator());
+    racetrack1->add(s1);
+
+    RaceTrackComponent*l1= new LeftEighth();
+    l1->decorateTrack(new PitStopDecorator());
+    racetrack1->add(l1);
+
+    RaceTrackComponent*r1= new RightEighth();
+    r1->decorateTrack(new SandPitsDecorator());
+    racetrack1->add(r1);
+
+    racetrack1->add(new LeftEighth());
+    racetrack1->add(new Straight());
+
+    RaceTrackComponent*f1= new RightEighth();
+    f1->decorateTrack(new FinishDecorator());
+    racetrack1->add(f1);
+
+    racetrack1->show();
+    cout<<endl;
+    RaceTrackComponent* racetrack = new RaceTrack();
+
+    RaceTrackComponent*s= new Straight();
+    s->decorateTrack(new StartDecorator());
+    s->decorateTrack(new PitStopDecorator());
+    racetrack->add(s);
+
+    RaceTrackComponent*l= new LeftEighth();
+    l->decorateTrack(new PitStopDecorator());
+    racetrack->add(l);
+
+    RaceTrackComponent*r= new RightEighth();
+    r->decorateTrack(new SandPitsDecorator());
+    racetrack->add(r);
+
+    racetrack->add(new LeftEighth());
+    racetrack->add(new Straight());
+
+    RaceTrackComponent*f= new RightEighth();
+    f->decorateTrack(new FinishDecorator());
+    racetrack->add(f);
+
+    racetrack->show();
 
 
 /*
