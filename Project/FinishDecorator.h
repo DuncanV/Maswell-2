@@ -5,14 +5,13 @@
 #ifndef PROJECT_FINISHDECORATOR_H
 #define PROJECT_FINISHDECORATOR_H
 
-#include "RaceTrackComponent.h"
-class FinishDecorator: public RaceTrackComponent
+#include "PimpMyTrack.h"
+class FinishDecorator: public PimpMyTrack
 {
 public:
-    FinishDecorator():RaceTrackComponent()
+    FinishDecorator():PimpMyTrack()
     {setDescription("Finish Line!");}
     ~FinishDecorator(){};
-    virtual void print(){};
-    virtual void add(RaceTrackComponent*){}
+
 };
 #endif //PROJECT_FINISHDECORATOR_H

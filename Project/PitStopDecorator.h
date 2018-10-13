@@ -5,15 +5,14 @@
 #ifndef PROJECT_PITSTOPDECORATOR_H
 #define PROJECT_PITSTOPDECORATOR_H
 
-#include "RaceTrackComponent.h"
-class PitStopDecorator: public RaceTrackComponent
+#include "PimpMyTrack.h"
+class PitStopDecorator: public PimpMyTrack
 {
 public:
-    PitStopDecorator():RaceTrackComponent()
+    PitStopDecorator():PimpMyTrack()
     {setDescription("Pitstop!");}
     ~PitStopDecorator(){};
-    virtual void print(){};
-    virtual void add(RaceTrackComponent*){}
+
 
 };
 #endif //PROJECT_PITSTOPDECORATOR_H

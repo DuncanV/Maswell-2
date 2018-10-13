@@ -5,14 +5,13 @@
 #ifndef PROJECT_SANDPITSDECORATOR_H
 #define PROJECT_SANDPITSDECORATOR_H
 
-#include "RaceTrackComponent.h"
-class SandPitsDecorator: public RaceTrackComponent
+#include "PimpMyTrack.h"
+class SandPitsDecorator: public PimpMyTrack
 {
 public:
-    SandPitsDecorator():RaceTrackComponent()
+    SandPitsDecorator():PimpMyTrack()
     {setDescription("Sand Pits!");}
     ~SandPitsDecorator(){};
-    virtual void print(){};
-    virtual void add(RaceTrackComponent*){}
+
 };
 #endif //PROJECT_SANDPITSDECORATOR_H

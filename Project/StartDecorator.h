@@ -5,15 +5,14 @@
 #ifndef PROJECT_STARTDECORATOR_H
 #define PROJECT_STARTDECORATOR_H
 
-#include "RaceTrackComponent.h"
-class StartDecorator: public RaceTrackComponent
+#include "PimpMyTrack.h"
+
+class StartDecorator: public PimpMyTrack
 {
 public:
-    StartDecorator():RaceTrackComponent()
+    StartDecorator():PimpMyTrack()
     {setDescription("Start Line!");}
     ~StartDecorator(){};
-    virtual void print(){};
-    virtual void add(RaceTrackComponent*){}
 
 };
 #endif //PROJECT_STARTDECORATOR_H

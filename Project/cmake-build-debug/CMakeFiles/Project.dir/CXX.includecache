@@ -59,8 +59,8 @@ ElectricCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/FinishDecorator.h
-RaceTrackComponent.h
-/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+PimpMyTrack.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/FlameVinyl.h
 PimpMyRide.h
@@ -106,9 +106,13 @@ PimpMyRide.h
 Car.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
 
-/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
 RaceTrackComponent.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
+PimpMyTrack.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp
 RaceTrack.h
@@ -161,8 +165,8 @@ StandardRoadster.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardRoadster.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SandPitsDecorator.h
-RaceTrackComponent.h
-/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+PimpMyTrack.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SkullVinyl.h
 PimpMyRide.h
@@ -217,8 +221,8 @@ StandardCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StartDecorator.h
-RaceTrackComponent.h
-/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+PimpMyTrack.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Straight.h
 RaceTrackComponent.h

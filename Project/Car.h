@@ -23,6 +23,12 @@ public:
     */
     Car(){
         carDecorate=0;
+        for(int i =0;i<4;i++)
+        {
+            tyreCondition[i]=100;
+        }
+        fuelLevel=100;
+        damage=0;
     };
 
     /**
@@ -170,7 +176,9 @@ private:
     */
     int acceleration=0;
 
-    int tyreCondition;
+    int tyreCondition[4];
+    int fuelLevel;
+    int damage;
 };
 
 #endif //PROJECT_CAR_H

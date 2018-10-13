@@ -11,6 +11,12 @@ Car::Car(string modelType_) {
     modelType = modelType_;
     modelNumber = modelCounter++;
     carDecorate=0;
+    for(int i =0;i<4;i++)
+    {
+        tyreCondition[i]=100;
+    }
+    fuelLevel=100;
+    damage=0;
 }
 
 Car::Car(const Car& car_, bool flag) {
@@ -26,6 +32,12 @@ Car::Car(const Car& car_, bool flag) {
         handling=car_.handling;
         acceleration=car_.acceleration;
     }
+    for(int i =0;i<4;i++)
+    {
+        tyreCondition[i]=100;
+    }
+    fuelLevel=100;
+    damage=0;
 }
 
 string Car::getDescription()const {

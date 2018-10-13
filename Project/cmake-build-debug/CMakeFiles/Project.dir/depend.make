@@ -52,6 +52,7 @@ CMakeFiles/Project.dir/main.cpp.o: ../LeftPeelOff.h
 CMakeFiles/Project.dir/main.cpp.o: ../LeftPeelOn.h
 CMakeFiles/Project.dir/main.cpp.o: ../Nitro.h
 CMakeFiles/Project.dir/main.cpp.o: ../PimpMyRide.h
+CMakeFiles/Project.dir/main.cpp.o: ../PimpMyTrack.h
 CMakeFiles/Project.dir/main.cpp.o: ../PitStopDecorator.h
 CMakeFiles/Project.dir/main.cpp.o: ../RaceTrack.h
 CMakeFiles/Project.dir/main.cpp.o: ../RaceTrackComponent.h
