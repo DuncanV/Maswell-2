@@ -224,7 +224,7 @@ int main() {
  /*
  * UNCOMMENT FOR DEMONSTRATION OF THE TEAM PITCREW IMPLEMENTATION
  */
-//    Mediator* team1Mediator = new ConcreteMediator();
+    Mediator* team1Mediator = new ConcreteMediator();
 //    PitStop* team1 = new Team("Mercedez");
 //    team1->addCar(Factories[2]->produceSports());
 //    team1->attachManager(new Manager(team1Mediator, team1->getCar(0)));
@@ -248,27 +248,27 @@ int main() {
 /*
  * UNCOMMENT FOR DEMONSTRATION OF ManagerRegitstration MEDIATOR
  */
-    RaceTrackComponent* racetrack1 = new RaceTrack();
-    RaceTrackComponent* racetrack2 = new RaceTrack();
-    RegistratcionManager* manager= new ConcreteRegistrationManager();
-    Car* car1= Factories[0]->produceSports();
-    Car* car2= Factories[0]->produceElectric();
-    manager->addCar(car1,2);
-    manager->addCar(car1,1);
-    manager->addCar(car1,0);
-    manager->addTrack(racetrack1);
-    manager->addCar(car1,2);
-    manager->addCar(car2,0);
-    manager->addCar(car2,0);
-    manager->addCar(car2,1);
-    manager->addCar(car2,2);
-    manager->addTrack(racetrack2);
-    manager->addCar(car1,2);
-    manager->addCar(car2,2);
-    manager->addCar(car2,1);
-    manager->addCar(car2,2);
-    manager->addCar(car2,3);
-    manager->addCar(car1,2);
+//    RaceTrackComponent* racetrack1 = new RaceTrack();
+//    RaceTrackComponent* racetrack2 = new RaceTrack();
+//    RegistratcionManager* manager= new ConcreteRegistrationManager();
+//    Car* car1= Factories[0]->produceSports();
+//    Car* car2= Factories[0]->produceElectric();
+//    manager->addCar(car1,2);
+//    manager->addCar(car1,1);
+//    manager->addCar(car1,0);
+//    manager->addTrack(racetrack1);
+//    manager->addCar(car1,2);
+//    manager->addCar(car2,0);
+//    manager->addCar(car2,0);
+//    manager->addCar(car2,1);
+//    manager->addCar(car2,2);
+//    manager->addTrack(racetrack2);
+//    manager->addCar(car1,2);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,1);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,3);
+//    manager->addCar(car1,2);
 
 /*
  * UNCOMMENT FOR DEMONSTATION OF RACETRACK COMPOSITE & DECORATOR
