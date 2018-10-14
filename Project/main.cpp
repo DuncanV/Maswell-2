@@ -225,26 +225,7 @@ int main() {
  * UNCOMMENT FOR DEMONSTRATION OF THE TEAM PITCREW IMPLEMENTATION
  */
     Mediator* team1Mediator = new ConcreteMediator();
-<<<<<<< HEAD
-//    PitStop* team1 = new Team("Mercedez");
-//    team1->addCar(Factories[2]->produceSports());
-//    team1->attachManager(new Manager(team1Mediator, team1->getCar(0)));
-//    team1->attach(new Refueller(team1Mediator, team1->getCar(0)));
-//    team1->attach(new Mechanic(team1Mediator, team1->getCar(0)));
-//    for (int i = 0; i < 4; ++i) {
-//        team1->attach(new TyreChanger(team1Mediator, i, team1->getCar(0)));
-//    }
-//
-//    team1->addCar(Factories[2]->produceElectric());
-//    team1->attachManager(new Manager(team1Mediator, team1->getCar(1)));
-//    team1->attach(new Refueller(team1Mediator, team1->getCar(1)));
-//    team1->attach(new Mechanic(team1Mediator, team1->getCar(1)));
-//    for (int i = 0; i < 4; ++i) {
-//        team1->attach(new TyreChanger(team1Mediator, i, team1->getCar(1)));
-//    }
-//
-//    cout << team1->toString() << endl;
-=======
+
     PitStop* team1 = new Team("Mercedez");
     team1->addCar(Factories[2]->produceSports());
     team1->attachManager(new Manager(team1Mediator, team1->getCar(0)));
@@ -263,7 +244,7 @@ int main() {
     }
 
     cout << team1->toString() << endl;
->>>>>>> 134ad3f8a3b51c4b431c8db4b04e4e1a8f616454
+
 
 
 /*
