@@ -89,6 +89,12 @@
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/CarFactory.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp">
 			<Option target="Project"/>
 		</Unit>
@@ -131,6 +137,15 @@
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOn.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Manager.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mechanic.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Nitro.h">
 			<Option target="Project"/>
 		</Unit>
@@ -138,6 +153,18 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h">
@@ -153,6 +180,9 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Refueller.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h">
@@ -216,6 +246,15 @@
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Straight.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.h">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/TyreChanger.h">
 			<Option target="Project"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp">

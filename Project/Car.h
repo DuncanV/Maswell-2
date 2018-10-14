@@ -23,7 +23,9 @@ public:
     */
     Car(int tyres = 4){
         carDecorate=0;
-        for(int i =0;i<tyres;i++)
+        numTyres = tyres;
+        tyreCondition = new int[numTyres];
+        for(int i =0;i<numTyres;i++)
         {
             tyreCondition[i]=100;
         }

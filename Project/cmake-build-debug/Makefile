@@ -150,6 +150,33 @@ Car.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Car.cpp.s
 .PHONY : Car.cpp.s
 
+ConcreteMediator.o: ConcreteMediator.cpp.o
+
+.PHONY : ConcreteMediator.o
+
+# target to build an object file
+ConcreteMediator.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteMediator.cpp.o
+.PHONY : ConcreteMediator.cpp.o
+
+ConcreteMediator.i: ConcreteMediator.cpp.i
+
+.PHONY : ConcreteMediator.i
+
+# target to preprocess a source file
+ConcreteMediator.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteMediator.cpp.i
+.PHONY : ConcreteMediator.cpp.i
+
+ConcreteMediator.s: ConcreteMediator.cpp.s
+
+.PHONY : ConcreteMediator.s
+
+# target to generate assembly for a file
+ConcreteMediator.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteMediator.cpp.s
+.PHONY : ConcreteMediator.cpp.s
+
 ConcreteRegistrationManager.o: ConcreteRegistrationManager.cpp.o
 
 .PHONY : ConcreteRegistrationManager.o
@@ -203,6 +230,60 @@ ElectricCar.s: ElectricCar.cpp.s
 ElectricCar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ElectricCar.cpp.s
 .PHONY : ElectricCar.cpp.s
+
+PitCrew.o: PitCrew.cpp.o
+
+.PHONY : PitCrew.o
+
+# target to build an object file
+PitCrew.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/PitCrew.cpp.o
+.PHONY : PitCrew.cpp.o
+
+PitCrew.i: PitCrew.cpp.i
+
+.PHONY : PitCrew.i
+
+# target to preprocess a source file
+PitCrew.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/PitCrew.cpp.i
+.PHONY : PitCrew.cpp.i
+
+PitCrew.s: PitCrew.cpp.s
+
+.PHONY : PitCrew.s
+
+# target to generate assembly for a file
+PitCrew.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/PitCrew.cpp.s
+.PHONY : PitCrew.cpp.s
+
+PitStop.o: PitStop.cpp.o
+
+.PHONY : PitStop.o
+
+# target to build an object file
+PitStop.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/PitStop.cpp.o
+.PHONY : PitStop.cpp.o
+
+PitStop.i: PitStop.cpp.i
+
+.PHONY : PitStop.i
+
+# target to preprocess a source file
+PitStop.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/PitStop.cpp.i
+.PHONY : PitStop.cpp.i
+
+PitStop.s: PitStop.cpp.s
+
+.PHONY : PitStop.s
+
+# target to generate assembly for a file
+PitStop.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/PitStop.cpp.s
+.PHONY : PitStop.cpp.s
 
 RaceTrack.o: RaceTrack.cpp.o
 
@@ -312,6 +393,33 @@ StandardCar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/StandardCar.cpp.s
 .PHONY : StandardCar.cpp.s
 
+Team.o: Team.cpp.o
+
+.PHONY : Team.o
+
+# target to build an object file
+Team.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Team.cpp.o
+.PHONY : Team.cpp.o
+
+Team.i: Team.cpp.i
+
+.PHONY : Team.i
+
+# target to preprocess a source file
+Team.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Team.cpp.i
+.PHONY : Team.cpp.i
+
+Team.s: Team.cpp.s
+
+.PHONY : Team.s
+
+# target to generate assembly for a file
+Team.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Team.cpp.s
+.PHONY : Team.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -351,12 +459,21 @@ help:
 	@echo "... Car.o"
 	@echo "... Car.i"
 	@echo "... Car.s"
+	@echo "... ConcreteMediator.o"
+	@echo "... ConcreteMediator.i"
+	@echo "... ConcreteMediator.s"
 	@echo "... ConcreteRegistrationManager.o"
 	@echo "... ConcreteRegistrationManager.i"
 	@echo "... ConcreteRegistrationManager.s"
 	@echo "... ElectricCar.o"
 	@echo "... ElectricCar.i"
 	@echo "... ElectricCar.s"
+	@echo "... PitCrew.o"
+	@echo "... PitCrew.i"
+	@echo "... PitCrew.s"
+	@echo "... PitStop.o"
+	@echo "... PitStop.i"
+	@echo "... PitStop.s"
 	@echo "... RaceTrack.o"
 	@echo "... RaceTrack.i"
 	@echo "... RaceTrack.s"
@@ -369,6 +486,9 @@ help:
 	@echo "... StandardCar.o"
 	@echo "... StandardCar.i"
 	@echo "... StandardCar.s"
+	@echo "... Team.o"
+	@echo "... Team.i"
+	@echo "... Team.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
