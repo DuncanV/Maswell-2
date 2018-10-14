@@ -211,23 +211,23 @@ int main() {
 //    while(input != 8 && counter < 5);
 
 /*
- * UNCOMMENT FOR DEMONSTRATION OF MEDIATOR
+ * UNCOMMENT FOR DEMONSTRATION OF ManagerRegitstration MEDIATOR
  */
-    RaceTrackComponent* racetrack1 = new RaceTrack();
-    RaceTrackComponent* racetrack2 = new RaceTrack();
-    RegistratcionManager* manager= new ConcreteRegistrationManager();
-    Car* car1= Factories[0]->produceSports();
-    Car* car2= Factories[0]->produceElectric();
-    manager->addCar(car1,2);
-    manager->addCar(car1,1);
-    manager->addCar(car1,0);
-    manager->addTrack(racetrack1);
-    manager->addCar(car1,2);
-    manager->addCar(car2,0);
-    manager->addCar(car2,0);
-    manager->addCar(car2,1);
-    manager->addCar(car2,2);
-    manager->addTrack(racetrack2);
+//    RaceTrackComponent* racetrack1 = new RaceTrack();
+//    RaceTrackComponent* racetrack2 = new RaceTrack();
+//    RegistratcionManager* manager= new ConcreteRegistrationManager();
+//    Car* car1= Factories[0]->produceSports();
+//    Car* car2= Factories[0]->produceElectric();
+//    manager->addCar(car1,2);
+//    manager->addCar(car1,1);
+//    manager->addCar(car1,0);
+//    manager->addTrack(racetrack1);
+//    manager->addCar(car1,2);
+//    manager->addCar(car2,0);
+//    manager->addCar(car2,0);
+//    manager->addCar(car2,1);
+//    manager->addCar(car2,2);
+//    manager->addTrack(racetrack2);
 //    manager->addCar(car2,1);
 //    manager->addCar(car2,2);
 //    manager->addCar(car2,3);
@@ -335,7 +335,7 @@ int main() {
 //        testDecorator->add(new FlameVinyl());
 //        testDecorator->add(new Slick(testDecorator));
 //        testDecorator->add(new Nitro(testDecorator));
-////        testDecorator->add(new Spoiler(testDecorator));
+//        testDecorator->add(new Spoiler(testDecorator));
 //
 //        cout << "Car after adding upgrades!\n";
 //        cout << testDecorator->toString() << endl;
