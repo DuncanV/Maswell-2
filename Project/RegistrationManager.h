@@ -9,10 +9,8 @@
 #ifndef PROJECT_REGISTRATIONMANAGER_H
 #define PROJECT_REGISTRATIONMANAGER_H
 
-#include "Car.h"
 #include <iostream>
 using namespace std;
-class RaceTrackComponent;
 class Car;
 class RegistratcionManager{
 public:
@@ -20,7 +18,6 @@ public:
     * abstract function to add cars into mediator
     */
     virtual void addCar(Car* _car, int track)=0;
-    virtual void addTrack(RaceTrackComponent* _racetrack)=0;
 private:
 
 };

@@ -6,7 +6,6 @@ CMakeFiles/Project.dir/Car.cpp.o: ../Car.h
 CMakeFiles/Project.dir/Car.cpp.o: ../PimpMyRide.h
 CMakeFiles/Project.dir/Car.cpp.o: ../RegistrationManager.h
 
-CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.cpp
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../RegistrationManager.h
