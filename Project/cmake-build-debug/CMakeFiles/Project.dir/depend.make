@@ -6,6 +6,7 @@ CMakeFiles/Project.dir/Car.cpp.o: ../Car.h
 CMakeFiles/Project.dir/Car.cpp.o: ../PimpMyRide.h
 CMakeFiles/Project.dir/Car.cpp.o: ../RegistrationManager.h
 
+CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.cpp
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../RegistrationManager.h
@@ -38,6 +39,7 @@ CMakeFiles/Project.dir/StandardCar.cpp.o: ../StandardCar.h
 
 CMakeFiles/Project.dir/main.cpp.o: ../Car.h
 CMakeFiles/Project.dir/main.cpp.o: ../CarFactory.h
+CMakeFiles/Project.dir/main.cpp.o: ../ConcreteMediator.h
 CMakeFiles/Project.dir/main.cpp.o: ../ConcreteRegistrationManager.h
 CMakeFiles/Project.dir/main.cpp.o: ../ElectricCar.h
 CMakeFiles/Project.dir/main.cpp.o: ../ElectricFormulaOne.h
@@ -50,12 +52,18 @@ CMakeFiles/Project.dir/main.cpp.o: ../GoKartFactory.h
 CMakeFiles/Project.dir/main.cpp.o: ../LeftEighth.h
 CMakeFiles/Project.dir/main.cpp.o: ../LeftPeelOff.h
 CMakeFiles/Project.dir/main.cpp.o: ../LeftPeelOn.h
+CMakeFiles/Project.dir/main.cpp.o: ../Manager.h
+CMakeFiles/Project.dir/main.cpp.o: ../Mechanic.h
+CMakeFiles/Project.dir/main.cpp.o: ../Mediator.h
 CMakeFiles/Project.dir/main.cpp.o: ../Nitro.h
 CMakeFiles/Project.dir/main.cpp.o: ../PimpMyRide.h
 CMakeFiles/Project.dir/main.cpp.o: ../PimpMyTrack.h
+CMakeFiles/Project.dir/main.cpp.o: ../PitCrew.h
+CMakeFiles/Project.dir/main.cpp.o: ../PitStop.h
 CMakeFiles/Project.dir/main.cpp.o: ../PitStopDecorator.h
 CMakeFiles/Project.dir/main.cpp.o: ../RaceTrack.h
 CMakeFiles/Project.dir/main.cpp.o: ../RaceTrackComponent.h
+CMakeFiles/Project.dir/main.cpp.o: ../Refueller.h
 CMakeFiles/Project.dir/main.cpp.o: ../RegistrationManager.h
 CMakeFiles/Project.dir/main.cpp.o: ../RightEighth.h
 CMakeFiles/Project.dir/main.cpp.o: ../RightPeelOff.h
@@ -75,5 +83,7 @@ CMakeFiles/Project.dir/main.cpp.o: ../StandardGoKart.h
 CMakeFiles/Project.dir/main.cpp.o: ../StandardRoadster.h
 CMakeFiles/Project.dir/main.cpp.o: ../StartDecorator.h
 CMakeFiles/Project.dir/main.cpp.o: ../Straight.h
+CMakeFiles/Project.dir/main.cpp.o: ../Team.h
+CMakeFiles/Project.dir/main.cpp.o: ../TyreChanger.h
 CMakeFiles/Project.dir/main.cpp.o: ../main.cpp
 
