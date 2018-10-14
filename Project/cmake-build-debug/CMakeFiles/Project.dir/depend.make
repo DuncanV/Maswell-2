@@ -6,6 +6,13 @@ CMakeFiles/Project.dir/Car.cpp.o: ../Car.h
 CMakeFiles/Project.dir/Car.cpp.o: ../PimpMyRide.h
 CMakeFiles/Project.dir/Car.cpp.o: ../RegistrationManager.h
 
+CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../Car.h
+CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../ConcreteMediator.cpp
+CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../ConcreteMediator.h
+CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../Mediator.h
+CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../PitCrew.h
+CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../RegistrationManager.h
+
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.cpp
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.h
@@ -15,6 +22,19 @@ CMakeFiles/Project.dir/ElectricCar.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.cpp
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.h
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../RegistrationManager.h
+
+CMakeFiles/Project.dir/PitCrew.cpp.o: ../Car.h
+CMakeFiles/Project.dir/PitCrew.cpp.o: ../Mediator.h
+CMakeFiles/Project.dir/PitCrew.cpp.o: ../PitCrew.cpp
+CMakeFiles/Project.dir/PitCrew.cpp.o: ../PitCrew.h
+CMakeFiles/Project.dir/PitCrew.cpp.o: ../RegistrationManager.h
+
+CMakeFiles/Project.dir/PitStop.cpp.o: ../Car.h
+CMakeFiles/Project.dir/PitStop.cpp.o: ../Mediator.h
+CMakeFiles/Project.dir/PitStop.cpp.o: ../PitCrew.h
+CMakeFiles/Project.dir/PitStop.cpp.o: ../PitStop.cpp
+CMakeFiles/Project.dir/PitStop.cpp.o: ../PitStop.h
+CMakeFiles/Project.dir/PitStop.cpp.o: ../RegistrationManager.h
 
 CMakeFiles/Project.dir/RaceTrack.cpp.o: ../Car.h
 CMakeFiles/Project.dir/RaceTrack.cpp.o: ../RaceTrack.cpp
@@ -36,6 +56,14 @@ CMakeFiles/Project.dir/StandardCar.cpp.o: ../Car.h
 CMakeFiles/Project.dir/StandardCar.cpp.o: ../RegistrationManager.h
 CMakeFiles/Project.dir/StandardCar.cpp.o: ../StandardCar.cpp
 CMakeFiles/Project.dir/StandardCar.cpp.o: ../StandardCar.h
+
+CMakeFiles/Project.dir/Team.cpp.o: ../Car.h
+CMakeFiles/Project.dir/Team.cpp.o: ../Mediator.h
+CMakeFiles/Project.dir/Team.cpp.o: ../PitCrew.h
+CMakeFiles/Project.dir/Team.cpp.o: ../PitStop.h
+CMakeFiles/Project.dir/Team.cpp.o: ../RegistrationManager.h
+CMakeFiles/Project.dir/Team.cpp.o: ../Team.cpp
+CMakeFiles/Project.dir/Team.cpp.o: ../Team.h
 
 CMakeFiles/Project.dir/main.cpp.o: ../Car.h
 CMakeFiles/Project.dir/main.cpp.o: ../CarFactory.h
