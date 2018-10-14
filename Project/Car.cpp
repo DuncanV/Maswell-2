@@ -6,12 +6,12 @@
 #include "PimpMyRide.h"
 
 int Car::modelCounter = 0;
-
+int Car::prodcuctionNum = 0;
 Car::Car(string modelType_, int tyres) {
     modelType = modelType_;
     modelNumber = modelCounter++;
     carDecorate=0;
-
+    CarID=prodcuctionNum++;
     //Can implement this with cars with more than 4 tyres
     numTyres = tyres;
     tyreCondition = new int[numTyres];
@@ -26,7 +26,7 @@ Car::Car(string modelType_, int tyres) {
 Car::Car(const Car& car_, bool flag) {
     modelType = car_.modelType;
     modelNumber = car_.modelNumber;
-
+    CarID=prodcuctionNum++;
     if (flag == false){
         carDecorate=0;
     } else{
@@ -146,4 +146,6 @@ void Car::setCarDamage(int damage_) {
     damage = damage_;
 }
 
-
+void Car::RegistrationNotify(string msg) {
+    cout<<"NOTIFY: "+msg<<endl;
+}

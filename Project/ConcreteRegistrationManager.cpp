@@ -4,76 +4,70 @@
 
 #include "ConcreteRegistrationManager.h"
 
-ConcreteRegistrationManager::ConcreteRegistrationManager(int _numTracks) {
-    numTracks=_numTracks;
-    numCars= new int[_numTracks];
-    size= new int[_numTracks];
-    cars= new Car**[numTracks];
-    for(int i =0;i<numTracks;i++)
-    {
-        size[i]=1;
-        cars[i]= new Car*[1];
-        numCars[i]=0;
-    }
+ConcreteRegistrationManager::ConcreteRegistrationManager() {
+
 }
 
 ConcreteRegistrationManager::~ConcreteRegistrationManager() {
-    for(int i =0;i<numTracks;i++)
-        if(cars[i])
-        delete cars[i];
-    delete [] cars;
 
-    delete []numCars;
 }
 
 void ConcreteRegistrationManager::addCar(Car *_car, int track) {
-    if(track<1||track>numTracks)
+    int i = tracks.size();
+    if(track<cars.size())
     {
-        cout<<"INCORRECT TRACK SELECTED"<<endl;
-        return;
-    }
-    for(int i=0;i<numCars[track];i++)
-    {
-        if(cars[track][i] == _car)
+        vector<Car*>::iterator it;
+        for(it=cars[track].begin();it!=cars[track].end();it++)
         {
-            cout<<"Car already registered for the race!"<<endl;
-            return;
+            if(*(it)==_car)
+            {
+                cout<<"Your Car with ID = "+to_string(_car->getCarID())+" has already been registered for track: " +to_string(track)+"\n";
+                return;
+            }
         }
     }
-    /*
-     * UNCOMMENT IF MEANT ONLY 1 car in total 
-     */
-//    for(int m=0;m<numTracks;m++)
-//    {
-//        for(int k=0;k<numCars[m];k++)
-//        {
-//            if(cars[m][k]==_car)
-//            {
-//                cout<<"Your car is already registered in a race!"<<endl;
-//                return;
-//            }
-//        }
-//    }
-    if(numCars[track]>=size[track])
-    resize(track);
+    if(track>=cars.size())
+    {
+        resize(track);
+        cars[track].push_back(_car);
+        cout<<"Your Car with ID = "+to_string(_car->getCarID())+" has been registered for track: " +to_string(track)+", You will be notified when the track is complete\n";
+    } else
+    {
+        cars[track].push_back(_car);
+        if(tracks.size()<=track)
+        {
+            cout<<"Your Car with ID = "+to_string(_car->getCarID())+" has been registered for track: " +to_string(track)+", You will be notified when the track is complete\n";
+        } else
+            cout<<"Your Car with ID = "+to_string(_car->getCarID())+" has been registered for track: " +to_string(track)+" and this track is ready to race on!\n";
 
-    cars[track][numCars[track]]=_car;
-    numCars[track]++;
-    cout<<"Car has been successfully registered"<<endl;
-
-
+    }
 }
 
 void ConcreteRegistrationManager::resize(int trackNo) {
-    int tempsize= size[trackNo]+1;
-    Car** temp;
-    temp =new Car*[tempsize];
-    for(int i= 0;i<size[trackNo];i++)
+    unsigned long t = cars.size()-1;
+    for(int i =cars.size()-1;i<trackNo;i++)
     {
-        temp[i]=cars[trackNo][i];
+        vector<Car*> s;
+        cars.push_back(s);
     }
+}
 
-    cars[trackNo]= temp;
-    size[trackNo]=tempsize;
+void ConcreteRegistrationManager::addTrack(RaceTrackComponent *_racetrack) {
+    tracks.push_back(_racetrack);
+    if(cars.size()<tracks.size())
+    {
+        vector<Car*> s;
+        cars.push_back(s);
+    } else
+    {
+        string msg;
+        vector<Car*>::iterator it;
+        for(it=cars[tracks.size()-1].begin();it!=cars[tracks.size()-1].end();it++)
+        {
+            msg="";
+            msg+="Car with ID = "+to_string((*it)->getCarID())+", Track: "+to_string(tracks.size()-1)+" is now Open!\n";
+            (*it)->RegistrationNotify(msg);
+        }
+    }
 }
 

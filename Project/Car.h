@@ -200,7 +200,9 @@ public:
      * @param damage the total amount of damage after the car has been repaired
      */
     void setCarDamage(int damage);
+    int getCarID(){ return CarID;};
 
+    void RegistrationNotify(string msg);
 private:
     /**
      * @brief a model string which states the type of car
@@ -236,7 +238,9 @@ private:
     * @brief int to hold acceleration of a car
     */
     int acceleration=0;
+    int CarID;
 
+    static int prodcuctionNum;
     /**
     * @brief number of tyres a car have
     */

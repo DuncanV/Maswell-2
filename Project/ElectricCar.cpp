@@ -4,7 +4,7 @@
 
 #include "ElectricCar.h"
 
-ElectricCar::ElectricCar(string modelType_) : Car("Electric " + modelType_){
+ElectricCar::ElectricCar(string modelType_) : Car("Electric "+modelType_){
 
 }
 

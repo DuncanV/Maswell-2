@@ -7,6 +7,7 @@ CMakeFiles/Project.dir/Car.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
@@ -39,6 +40,7 @@ CMakeFiles/Project.dir/StandardCar.cpp.o
 CMakeFiles/Project.dir/main.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/CarFactory.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricFormulaOne.h
@@ -51,12 +53,18 @@ CMakeFiles/Project.dir/main.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftEighth.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOff.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/LeftPeelOn.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Manager.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mechanic.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Nitro.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Refueller.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightEighth.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightPeelOff.h
@@ -76,4 +84,6 @@ CMakeFiles/Project.dir/main.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardRoadster.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StartDecorator.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Straight.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/TyreChanger.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp

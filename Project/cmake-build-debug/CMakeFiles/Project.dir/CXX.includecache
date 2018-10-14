@@ -30,11 +30,17 @@ StandardCar.h
 SportsCar.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.h
+Mediator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp
 ConcreteRegistrationManager.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
+vector
+-
 RegistrationManager.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
 
@@ -98,6 +104,18 @@ RaceTrackComponent.h
 RaceTrackComponent.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Manager.h
+PitCrew.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mechanic.h
+PitCrew.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
+PitCrew.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Nitro.h
 PimpMyRide.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
@@ -109,6 +127,18 @@ Car.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
 RaceTrackComponent.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+vector
+-
+Car.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
+Mediator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.h
+PitCrew.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
 PimpMyTrack.h
@@ -138,7 +168,13 @@ vector
 iostream
 -
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Refueller.h
+PitCrew.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
+Car.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
 iostream
 -
 
@@ -228,6 +264,14 @@ PimpMyTrack.h
 RaceTrackComponent.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.h
+PitStop.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/TyreChanger.h
+PitCrew.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp
 iostream
 -
@@ -281,4 +325,22 @@ PitStopDecorator.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
 SandPitsDecorator.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SandPitsDecorator.h
+Team.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.h
+PitStop.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.h
+PitCrew.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
+Refueller.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Refueller.h
+TyreChanger.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/TyreChanger.h
+Mechanic.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mechanic.h
+Manager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Manager.h
+Mediator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
+ConcreteMediator.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.h
 
