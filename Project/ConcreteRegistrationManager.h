@@ -32,6 +32,11 @@ public:
      * @param track specifies which track the car will be racing
      */
     virtual void addCar(Car* _car, int track);
+
+    /**
+    * implementation of absrtact function to add car into the cars array
+    * @param _racetrack racetrack object to be placed in the array
+    */
     virtual void addTrack(RaceTrackComponent* _racetrack);
 
 private:
@@ -47,6 +52,9 @@ private:
      */
     void resize(int trackNo);
 
+    /**
+     * holds all the registered tracks
+     */
     vector<RaceTrackComponent*> tracks;
 
 };

@@ -1,6 +1,10 @@
-//
-// Created by Duncan + Tjaart on 2018/10/10.
-//
+/**
+ *  @file RaceTrackComponent.h
+ *  @class RaceTrackComponent
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief abstract leaf class for composite pattern
+ */
 
 #ifndef PROJECT_RACETRACKCOMPONENT_H
 #define PROJECT_RACETRACKCOMPONENT_H
@@ -14,10 +18,17 @@ class RaceTrackComponent
 {
 
 public:
+    /**
+     * Parent Constructor for the racetrack parys
+     */
     RaceTrackComponent(){
         decorate=0;
 //        ID=partNumber++;
     }
+    /**
+     * dectorates the track with passed in paramater
+     * @param R
+     */
     virtual void decorateTrack(RaceTrackComponent* R)
     {
         if(decorate==0)
@@ -27,6 +38,9 @@ public:
             decorate->decorateTrack(R);
         }
     }
+    /**
+     * @return the decorators string
+     */
     virtual string getDecorator(){
         if(decorate->decorate==0)
             return decorate->getDescription();
@@ -35,10 +49,18 @@ public:
         return "";
 
     }
+    /**
+     * add car to the race track component
+     * @param _car the car to add
+     */
     void addCar(Car* _car)
     {
         cars.push_back(_car);
     }
+    /**
+     * remove a car from the track component
+     * @param _car the car to remove
+     */
     void removeCar(Car* _car)
     {
         int i=0;
@@ -49,20 +71,45 @@ public:
                 cars.erase(it);
         }
     }
-
+    /**
+     * empty implementation of show
+     */
     virtual void show(){};
+    /**
+     * pure virtual implementation of print
+     */
     virtual void print()=0;
+    /**
+    * pure virtual implementation of add
+    */
     virtual void add(RaceTrackComponent*)=0;
+    /**
+     * destructor
+     */
     virtual ~RaceTrackComponent(){};
+    /**
+     * sets the description
+     * @param d the string to set the description
+     */
     void setDescription(string d){description=d;};
+    /**
+     * @return the description
+     */
     string getDescription(){ return description;};
+
+    /**
+     * the decorate for the track component
+     */
     RaceTrackComponent* decorate;
-//    int getPartNumber(){ return ID;};
-//    void setPartNumber(int number){partNumber=number; };
+
 private:
+    /**
+     * description for the track part
+     */
     string description;
-//    int ID;
-//    static int partNumber;
+    /**
+     * vector of cars on the track part
+     */
     vector<Car*> cars;
 
 };

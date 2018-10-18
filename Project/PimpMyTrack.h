@@ -14,9 +14,21 @@
 class PimpMyTrack: public RaceTrackComponent
 {
 public:
+    /**
+     * constructor calls parent constructor
+     */
     PimpMyTrack():RaceTrackComponent(){};
+    /**
+     * destuctor
+     */
     ~PimpMyTrack(){};
+    /**
+     * empty implementation of print
+     */
     virtual void print(){};
+    /**
+     *  empty implementation of add
+     */
     virtual void add(RaceTrackComponent*){}
 private:
 

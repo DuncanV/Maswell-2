@@ -20,6 +20,9 @@ public:
     * abstract function to add cars into mediator
     */
     virtual void addCar(Car* _car, int track)=0;
+    /**
+    * abstract function to add trackComponents into mediator
+    */
     virtual void addTrack(RaceTrackComponent* _racetrack)=0;
 private:
 
