@@ -11,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/PitCrew.cpp.o"
   "CMakeFiles/Project.dir/PitStop.cpp.o"
   "CMakeFiles/Project.dir/Team.cpp.o"
-  "CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o"
+  "CMakeFiles/Project.dir/State.cpp.o"
   "Project.pdb"
   "Project.exe"
   "libProject.dll.a"
