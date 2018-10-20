@@ -17,22 +17,14 @@ using namespace std;
 
 class Car{
 
+    class State* current;
+
 public:
 
     /**
     * Defualt constructor used for Decoratoring
     */
-    Car(int tyres = 4){
-        carDecorate=0;
-        numTyres = tyres;
-        tyreCondition = new int[numTyres];
-        for(int i =0;i<numTyres;i++)
-        {
-            tyreCondition[i]=100;
-        }
-        fuelLevel=100;
-        damage=0;
-    };
+    Car(int tyres = 4);
 
     /**
      * The base Constructor for Car
@@ -221,10 +213,18 @@ public:
 
     void setTrackPart(int t){trackPart= t;};
 
+    void setState(State* state);
+    string getState();
+    void ready();
+    void racing();
+    void stopped();
+
     void setDriver(Driver* driver1){driver=driver1;};
 
     Driver* getDriver(){ return driver;};
+
 private:
+
     /**
      * @brief a model string which states the type of car
      */
@@ -305,5 +305,7 @@ private:
 
     Driver* driver;
 };
+
+#include "State.h"
 
 #endif //PROJECT_CAR_H

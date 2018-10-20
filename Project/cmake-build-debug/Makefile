@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Duncan/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Tjaart/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Duncan/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/Tjaart/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/c
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Duncan/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/cygdrive/c/Users/Tjaart/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Duncan/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/cygdrive/c/Users/Tjaart/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,33 +176,6 @@ ConcreteMediator.s: ConcreteMediator.cpp.s
 ConcreteMediator.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteMediator.cpp.s
 .PHONY : ConcreteMediator.cpp.s
-
-ConcreteRaceManager.o: ConcreteRaceManager.cpp.o
-
-.PHONY : ConcreteRaceManager.o
-
-# target to build an object file
-ConcreteRaceManager.cpp.o:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o
-.PHONY : ConcreteRaceManager.cpp.o
-
-ConcreteRaceManager.i: ConcreteRaceManager.cpp.i
-
-.PHONY : ConcreteRaceManager.i
-
-# target to preprocess a source file
-ConcreteRaceManager.cpp.i:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRaceManager.cpp.i
-.PHONY : ConcreteRaceManager.cpp.i
-
-ConcreteRaceManager.s: ConcreteRaceManager.cpp.s
-
-.PHONY : ConcreteRaceManager.s
-
-# target to generate assembly for a file
-ConcreteRaceManager.cpp.s:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRaceManager.cpp.s
-.PHONY : ConcreteRaceManager.cpp.s
 
 ConcreteRegistrationManager.o: ConcreteRegistrationManager.cpp.o
 
@@ -420,6 +393,33 @@ StandardCar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/StandardCar.cpp.s
 .PHONY : StandardCar.cpp.s
 
+State.o: State.cpp.o
+
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/State.cpp.s
+.PHONY : State.cpp.s
+
 Team.o: Team.cpp.o
 
 .PHONY : Team.o
@@ -489,9 +489,6 @@ help:
 	@echo "... ConcreteMediator.o"
 	@echo "... ConcreteMediator.i"
 	@echo "... ConcreteMediator.s"
-	@echo "... ConcreteRaceManager.o"
-	@echo "... ConcreteRaceManager.i"
-	@echo "... ConcreteRaceManager.s"
 	@echo "... ConcreteRegistrationManager.o"
 	@echo "... ConcreteRegistrationManager.i"
 	@echo "... ConcreteRegistrationManager.s"
@@ -516,6 +513,9 @@ help:
 	@echo "... StandardCar.o"
 	@echo "... StandardCar.i"
 	@echo "... StandardCar.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
 	@echo "... Team.o"
 	@echo "... Team.i"
 	@echo "... Team.s"

@@ -1,4 +1,9 @@
-C:\Users\Duncan\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project
--- Configuring done
--- Generating done
--- Build files have been written to: /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug
+C:\Users\Tjaart\.CLion2018.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project
+CMake Error at CMakeLists.txt:6:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "<<<<<<<".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+Cannot read project file C:\Users\Tjaart\Documents\GitHub\Maswell-2\Project\cmake-build-debug\Project.cbp

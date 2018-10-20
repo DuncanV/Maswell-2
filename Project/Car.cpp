@@ -7,6 +7,20 @@
 
 int Car::modelCounter = 0;
 int Car::prodcuctionNum = 0;
+
+Car::Car(int tyres) {
+    carDecorate=0;
+
+    numTyres = tyres;
+    tyreCondition = new int[numTyres];
+    for(int i =0;i<numTyres;i++)
+    {
+        tyreCondition[i]=100;
+    }
+    fuelLevel=100;
+    damage=0;
+}
+
 Car::Car(string modelType_, int tyres) {
     modelType = modelType_;
     modelNumber = modelCounter++;
@@ -148,4 +162,24 @@ void Car::setCarDamage(int damage_) {
 
 void Car::RegistrationNotify(string msg) {
     cout<<"NOTIFY: "+msg<<endl;
+}
+
+void Car::setState(State* state) {
+    current = state;
+}
+
+string Car::getState() {
+    return current->toString();
+}
+
+void Car::ready() {
+    current->ready(this);
+}
+
+void Car::racing() {
+    current->racing(this);
+}
+
+void Car::stopped() {
+    current->stopped(this);
 }

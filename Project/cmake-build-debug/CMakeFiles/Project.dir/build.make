@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Duncan/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /cygdrive/c/Users/Tjaart/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Duncan/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /cygdrive/c/Users/Tjaart/.CLion2018.1/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Project.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Project.dir/flags.make
 
 CMakeFiles/Project.dir/main.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/main.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project.dir/main.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/main.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/main.cpp
 
 CMakeFiles/Project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp > CMakeFiles/Project.dir/main.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/main.cpp > CMakeFiles/Project.dir/main.cpp.i
 
 CMakeFiles/Project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp -o CMakeFiles/Project.dir/main.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/main.cpp -o CMakeFiles/Project.dir/main.cpp.s
 
 CMakeFiles/Project.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Project.dir/main.cpp.o.provides.build: CMakeFiles/Project.dir/main.cp
 
 CMakeFiles/Project.dir/Car.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/Car.cpp.o: ../Car.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/Car.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/Car.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/Car.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/Car.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Car.cpp
 
 CMakeFiles/Project.dir/Car.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Car.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.cpp > CMakeFiles/Project.dir/Car.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Car.cpp > CMakeFiles/Project.dir/Car.cpp.i
 
 CMakeFiles/Project.dir/Car.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Car.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.cpp -o CMakeFiles/Project.dir/Car.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Car.cpp -o CMakeFiles/Project.dir/Car.cpp.s
 
 CMakeFiles/Project.dir/Car.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Project.dir/Car.cpp.o.provides.build: CMakeFiles/Project.dir/Car.cpp.
 
 CMakeFiles/Project.dir/ElectricCar.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/ElectricCar.cpp.o: ../ElectricCar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/ElectricCar.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/ElectricCar.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/ElectricCar.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/ElectricCar.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp
 
 CMakeFiles/Project.dir/ElectricCar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/ElectricCar.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp > CMakeFiles/Project.dir/ElectricCar.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp > CMakeFiles/Project.dir/ElectricCar.cpp.i
 
 CMakeFiles/Project.dir/ElectricCar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/ElectricCar.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp -o CMakeFiles/Project.dir/ElectricCar.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp -o CMakeFiles/Project.dir/ElectricCar.cpp.s
 
 CMakeFiles/Project.dir/ElectricCar.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Project.dir/ElectricCar.cpp.o.provides.build: CMakeFiles/Project.dir/
 
 CMakeFiles/Project.dir/SportsCar.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/SportsCar.cpp.o: ../SportsCar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/SportsCar.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/SportsCar.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project.dir/SportsCar.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/SportsCar.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/SportsCar.cpp
 
 CMakeFiles/Project.dir/SportsCar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/SportsCar.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.cpp > CMakeFiles/Project.dir/SportsCar.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/SportsCar.cpp > CMakeFiles/Project.dir/SportsCar.cpp.i
 
 CMakeFiles/Project.dir/SportsCar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/SportsCar.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/SportsCar.cpp -o CMakeFiles/Project.dir/SportsCar.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/SportsCar.cpp -o CMakeFiles/Project.dir/SportsCar.cpp.s
 
 CMakeFiles/Project.dir/SportsCar.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Project.dir/SportsCar.cpp.o.provides.build: CMakeFiles/Project.dir/Sp
 
 CMakeFiles/Project.dir/StandardCar.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/StandardCar.cpp.o: ../StandardCar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/StandardCar.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/StandardCar.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project.dir/StandardCar.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/StandardCar.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/StandardCar.cpp
 
 CMakeFiles/Project.dir/StandardCar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/StandardCar.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.cpp > CMakeFiles/Project.dir/StandardCar.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/StandardCar.cpp > CMakeFiles/Project.dir/StandardCar.cpp.i
 
 CMakeFiles/Project.dir/StandardCar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/StandardCar.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/StandardCar.cpp -o CMakeFiles/Project.dir/StandardCar.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/StandardCar.cpp -o CMakeFiles/Project.dir/StandardCar.cpp.s
 
 CMakeFiles/Project.dir/StandardCar.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Project.dir/StandardCar.cpp.o.provides.build: CMakeFiles/Project.dir/
 
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp
 
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp > CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp > CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.i
 
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp -o CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp -o CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.s
 
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/Project.dir/RaceTrackComponent.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/RaceTrackComponent.cpp.o: ../RaceTrackComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/RaceTrackComponent.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/RaceTrackComponent.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project.dir/RaceTrackComponent.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/RaceTrackComponent.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.cpp
 
 CMakeFiles/Project.dir/RaceTrackComponent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/RaceTrackComponent.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.cpp > CMakeFiles/Project.dir/RaceTrackComponent.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.cpp > CMakeFiles/Project.dir/RaceTrackComponent.cpp.i
 
 CMakeFiles/Project.dir/RaceTrackComponent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/RaceTrackComponent.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.cpp -o CMakeFiles/Project.dir/RaceTrackComponent.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.cpp -o CMakeFiles/Project.dir/RaceTrackComponent.cpp.s
 
 CMakeFiles/Project.dir/RaceTrackComponent.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Project.dir/RaceTrackComponent.cpp.o.provides.build: CMakeFiles/Proje
 
 CMakeFiles/Project.dir/RaceTrack.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/RaceTrack.cpp.o: ../RaceTrack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/RaceTrack.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/RaceTrack.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project.dir/RaceTrack.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/RaceTrack.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp
 
 CMakeFiles/Project.dir/RaceTrack.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/RaceTrack.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp > CMakeFiles/Project.dir/RaceTrack.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp > CMakeFiles/Project.dir/RaceTrack.cpp.i
 
 CMakeFiles/Project.dir/RaceTrack.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/RaceTrack.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp -o CMakeFiles/Project.dir/RaceTrack.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp -o CMakeFiles/Project.dir/RaceTrack.cpp.s
 
 CMakeFiles/Project.dir/RaceTrack.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Project.dir/RaceTrack.cpp.o.provides.build: CMakeFiles/Project.dir/Ra
 
 CMakeFiles/Project.dir/ConcreteMediator.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../ConcreteMediator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project.dir/ConcreteMediator.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/ConcreteMediator.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project.dir/ConcreteMediator.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/ConcreteMediator.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp
 
 CMakeFiles/Project.dir/ConcreteMediator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/ConcreteMediator.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp > CMakeFiles/Project.dir/ConcreteMediator.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp > CMakeFiles/Project.dir/ConcreteMediator.cpp.i
 
 CMakeFiles/Project.dir/ConcreteMediator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/ConcreteMediator.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp -o CMakeFiles/Project.dir/ConcreteMediator.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp -o CMakeFiles/Project.dir/ConcreteMediator.cpp.s
 
 CMakeFiles/Project.dir/ConcreteMediator.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/Project.dir/ConcreteMediator.cpp.o.provides.build: CMakeFiles/Project
 
 CMakeFiles/Project.dir/PitCrew.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/PitCrew.cpp.o: ../PitCrew.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/PitCrew.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/PitCrew.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project.dir/PitCrew.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/PitCrew.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitCrew.cpp
 
 CMakeFiles/Project.dir/PitCrew.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/PitCrew.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.cpp > CMakeFiles/Project.dir/PitCrew.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitCrew.cpp > CMakeFiles/Project.dir/PitCrew.cpp.i
 
 CMakeFiles/Project.dir/PitCrew.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/PitCrew.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.cpp -o CMakeFiles/Project.dir/PitCrew.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitCrew.cpp -o CMakeFiles/Project.dir/PitCrew.cpp.s
 
 CMakeFiles/Project.dir/PitCrew.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/Project.dir/PitCrew.cpp.o.provides.build: CMakeFiles/Project.dir/PitC
 
 CMakeFiles/Project.dir/PitStop.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/PitStop.cpp.o: ../PitStop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project.dir/PitStop.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/PitStop.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project.dir/PitStop.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/PitStop.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitStop.cpp
 
 CMakeFiles/Project.dir/PitStop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/PitStop.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.cpp > CMakeFiles/Project.dir/PitStop.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitStop.cpp > CMakeFiles/Project.dir/PitStop.cpp.i
 
 CMakeFiles/Project.dir/PitStop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/PitStop.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.cpp -o CMakeFiles/Project.dir/PitStop.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitStop.cpp -o CMakeFiles/Project.dir/PitStop.cpp.s
 
 CMakeFiles/Project.dir/PitStop.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/Project.dir/PitStop.cpp.o.provides.build: CMakeFiles/Project.dir/PitS
 
 CMakeFiles/Project.dir/Team.cpp.o: CMakeFiles/Project.dir/flags.make
 CMakeFiles/Project.dir/Team.cpp.o: ../Team.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project.dir/Team.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/Team.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project.dir/Team.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/Team.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Team.cpp
 
 CMakeFiles/Project.dir/Team.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/Team.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.cpp > CMakeFiles/Project.dir/Team.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Team.cpp > CMakeFiles/Project.dir/Team.cpp.i
 
 CMakeFiles/Project.dir/Team.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/Team.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Team.cpp -o CMakeFiles/Project.dir/Team.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Team.cpp -o CMakeFiles/Project.dir/Team.cpp.s
 
 CMakeFiles/Project.dir/Team.cpp.o.requires:
 
@@ -345,28 +345,28 @@ CMakeFiles/Project.dir/Team.cpp.o.provides: CMakeFiles/Project.dir/Team.cpp.o.re
 CMakeFiles/Project.dir/Team.cpp.o.provides.build: CMakeFiles/Project.dir/Team.cpp.o
 
 
-CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../ConcreteRaceManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o -c /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.cpp
+CMakeFiles/Project.dir/State.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/State.cpp.o: ../State.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Project.dir/State.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/State.cpp.o -c /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/State.cpp
 
-CMakeFiles/Project.dir/ConcreteRaceManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/ConcreteRaceManager.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.cpp > CMakeFiles/Project.dir/ConcreteRaceManager.cpp.i
+CMakeFiles/Project.dir/State.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/State.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/State.cpp > CMakeFiles/Project.dir/State.cpp.i
 
-CMakeFiles/Project.dir/ConcreteRaceManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/ConcreteRaceManager.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.cpp -o CMakeFiles/Project.dir/ConcreteRaceManager.cpp.s
+CMakeFiles/Project.dir/State.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/State.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/State.cpp -o CMakeFiles/Project.dir/State.cpp.s
 
-CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.requires:
+CMakeFiles/Project.dir/State.cpp.o.requires:
 
-.PHONY : CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.requires
+.PHONY : CMakeFiles/Project.dir/State.cpp.o.requires
 
-CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.provides: CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.provides.build
-.PHONY : CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.provides
+CMakeFiles/Project.dir/State.cpp.o.provides: CMakeFiles/Project.dir/State.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/State.cpp.o.provides.build
+.PHONY : CMakeFiles/Project.dir/State.cpp.o.provides
 
-CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.provides.build: CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o
+CMakeFiles/Project.dir/State.cpp.o.provides.build: CMakeFiles/Project.dir/State.cpp.o
 
 
 # Object files for target Project
@@ -383,7 +383,7 @@ Project_OBJECTS = \
 "CMakeFiles/Project.dir/PitCrew.cpp.o" \
 "CMakeFiles/Project.dir/PitStop.cpp.o" \
 "CMakeFiles/Project.dir/Team.cpp.o" \
-"CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o"
+"CMakeFiles/Project.dir/State.cpp.o"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
@@ -400,10 +400,10 @@ Project.exe: CMakeFiles/Project.dir/ConcreteMediator.cpp.o
 Project.exe: CMakeFiles/Project.dir/PitCrew.cpp.o
 Project.exe: CMakeFiles/Project.dir/PitStop.cpp.o
 Project.exe: CMakeFiles/Project.dir/Team.cpp.o
-Project.exe: CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o
+Project.exe: CMakeFiles/Project.dir/State.cpp.o
 Project.exe: CMakeFiles/Project.dir/build.make
 Project.exe: CMakeFiles/Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -423,7 +423,7 @@ CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/ConcreteMediator.cpp.o.r
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/PitCrew.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/PitStop.cpp.o.requires
 CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/Team.cpp.o.requires
-CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o.requires
+CMakeFiles/Project.dir/requires: CMakeFiles/Project.dir/State.cpp.o.requires
 
 .PHONY : CMakeFiles/Project.dir/requires
 
@@ -432,6 +432,6 @@ CMakeFiles/Project.dir/clean:
 .PHONY : CMakeFiles/Project.dir/clean
 
 CMakeFiles/Project.dir/depend:
-	cd /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Project.dir/depend
 
