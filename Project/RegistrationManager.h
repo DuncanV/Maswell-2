@@ -11,6 +11,8 @@
 
 #include "Car.h"
 #include <iostream>
+#include <vector>
+
 using namespace std;
 class RaceTrackComponent;
 class Car;
@@ -24,6 +26,8 @@ public:
     * abstract function to add trackComponents into mediator
     */
     virtual void addTrack(RaceTrackComponent* _racetrack)=0;
+
+    virtual vector<Car*> getCars(int racetrack)=0;
 private:
 
 };

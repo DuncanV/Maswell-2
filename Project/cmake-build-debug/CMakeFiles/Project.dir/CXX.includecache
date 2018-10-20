@@ -38,6 +38,18 @@ ConcreteMediator.h
 Mediator.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.cpp
+ConcreteRaceManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.h
+
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.h
+RaceManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceManager.h
+Car.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
+vector
+-
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp
 ConcreteRegistrationManager.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
@@ -156,6 +168,12 @@ PitCrew.h
 PimpMyTrack.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PimpMyTrack.h
 
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceManager.h
+vector
+-
+Car.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
+
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.cpp
 RaceTrack.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.h
@@ -188,6 +206,8 @@ PitCrew.h
 Car.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
 iostream
+-
+vector
 -
 
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RightEighth.h
@@ -291,6 +311,8 @@ PitCrew.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/main.cpp
 iostream
 -
+vector
+-
 Car.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
 GoKartFactory.h
@@ -359,4 +381,8 @@ Mediator.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
 ConcreteMediator.h
 /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.h
+RaceManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceManager.h
+ConcreteRaceManager.h
+/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.h
 

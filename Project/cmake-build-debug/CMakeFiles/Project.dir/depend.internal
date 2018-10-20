@@ -13,6 +13,12 @@ CMakeFiles/Project.dir/ConcreteMediator.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Mediator.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
+CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.cpp
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceManager.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp
@@ -69,6 +75,7 @@ CMakeFiles/Project.dir/main.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/CarFactory.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricFormulaOne.h
@@ -90,6 +97,7 @@ CMakeFiles/Project.dir/main.cpp.o
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStop.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitStopDecorator.h
+ /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceManager.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrack.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/RaceTrackComponent.h
  /cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Refueller.h

@@ -13,6 +13,12 @@ CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../Mediator.h
 CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../PitCrew.h
 CMakeFiles/Project.dir/ConcreteMediator.cpp.o: ../RegistrationManager.h
 
+CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../Car.h
+CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../ConcreteRaceManager.cpp
+CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../ConcreteRaceManager.h
+CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../RaceManager.h
+CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../RegistrationManager.h
+
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.cpp
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../ConcreteRegistrationManager.h
@@ -68,6 +74,7 @@ CMakeFiles/Project.dir/Team.cpp.o: ../Team.h
 CMakeFiles/Project.dir/main.cpp.o: ../Car.h
 CMakeFiles/Project.dir/main.cpp.o: ../CarFactory.h
 CMakeFiles/Project.dir/main.cpp.o: ../ConcreteMediator.h
+CMakeFiles/Project.dir/main.cpp.o: ../ConcreteRaceManager.h
 CMakeFiles/Project.dir/main.cpp.o: ../ConcreteRegistrationManager.h
 CMakeFiles/Project.dir/main.cpp.o: ../ElectricCar.h
 CMakeFiles/Project.dir/main.cpp.o: ../ElectricFormulaOne.h
@@ -89,6 +96,7 @@ CMakeFiles/Project.dir/main.cpp.o: ../PimpMyTrack.h
 CMakeFiles/Project.dir/main.cpp.o: ../PitCrew.h
 CMakeFiles/Project.dir/main.cpp.o: ../PitStop.h
 CMakeFiles/Project.dir/main.cpp.o: ../PitStopDecorator.h
+CMakeFiles/Project.dir/main.cpp.o: ../RaceManager.h
 CMakeFiles/Project.dir/main.cpp.o: ../RaceTrack.h
 CMakeFiles/Project.dir/main.cpp.o: ../RaceTrackComponent.h
 CMakeFiles/Project.dir/main.cpp.o: ../Refueller.h

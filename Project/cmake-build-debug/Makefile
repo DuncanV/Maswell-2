@@ -177,6 +177,33 @@ ConcreteMediator.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteMediator.cpp.s
 .PHONY : ConcreteMediator.cpp.s
 
+ConcreteRaceManager.o: ConcreteRaceManager.cpp.o
+
+.PHONY : ConcreteRaceManager.o
+
+# target to build an object file
+ConcreteRaceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o
+.PHONY : ConcreteRaceManager.cpp.o
+
+ConcreteRaceManager.i: ConcreteRaceManager.cpp.i
+
+.PHONY : ConcreteRaceManager.i
+
+# target to preprocess a source file
+ConcreteRaceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRaceManager.cpp.i
+.PHONY : ConcreteRaceManager.cpp.i
+
+ConcreteRaceManager.s: ConcreteRaceManager.cpp.s
+
+.PHONY : ConcreteRaceManager.s
+
+# target to generate assembly for a file
+ConcreteRaceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ConcreteRaceManager.cpp.s
+.PHONY : ConcreteRaceManager.cpp.s
+
 ConcreteRegistrationManager.o: ConcreteRegistrationManager.cpp.o
 
 .PHONY : ConcreteRegistrationManager.o
@@ -462,6 +489,9 @@ help:
 	@echo "... ConcreteMediator.o"
 	@echo "... ConcreteMediator.i"
 	@echo "... ConcreteMediator.s"
+	@echo "... ConcreteRaceManager.o"
+	@echo "... ConcreteRaceManager.i"
+	@echo "... ConcreteRaceManager.s"
 	@echo "... ConcreteRegistrationManager.o"
 	@echo "... ConcreteRegistrationManager.i"
 	@echo "... ConcreteRegistrationManager.s"

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/Car.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/Car.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteMediator.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/ConcreteMediator.cpp.o"
+  "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRaceManager.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ConcreteRegistrationManager.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/ElectricCar.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/ElectricCar.cpp.o"
   "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/PitCrew.cpp" "/cygdrive/c/Users/Duncan/Documents/GitHub/Maswell-2/Project/cmake-build-debug/CMakeFiles/Project.dir/PitCrew.cpp.o"

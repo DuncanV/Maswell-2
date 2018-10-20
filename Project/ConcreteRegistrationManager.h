@@ -39,6 +39,19 @@ public:
     */
     virtual void addTrack(RaceTrackComponent* _racetrack);
 
+    virtual vector<Car*> getCars(int racetrack)
+    {
+        int track= tracks.size();
+        if(tracks.size()<=racetrack)
+        {
+            cout<<"TRACK IS NOT AVAILABLE YET\n";
+            vector<Car*> a;
+            return a;
+        } else
+        {
+            return cars[racetrack];
+        }
+    }
 private:
 
     /**
