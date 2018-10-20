@@ -12,7 +12,8 @@ using namespace std;
 
 //#include "BigBrother.h"
 #include "Car.h"
-class BigBrother;
+//class BigBrother;
+#include "BigBrother.h"
 #include <string>
 #include <vector>
 #include <iostream>

@@ -36,7 +36,7 @@ public:
     int getAverageTime(){ return averageTime;};
     virtual void accept(BigBrother* v)
     {
-        v->visit(*this);
+        v->visit(this);
     }
 private:
     int averageTime= 25;

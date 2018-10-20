@@ -7,6 +7,8 @@
 
 #include "RaceManager.h"
 #include "Car.h"
+#include "BigBrother.h"
+#include "ConcreteBigBrother.h"
 #include <vector>
 
 using namespace std;
@@ -27,7 +29,7 @@ public:
     }
     virtual void startRace()
     {//will have to have iterator object in here
-
+        raceVisitor= new ConcreteBigBrother();
     }
 
     virtual void stopRace()
@@ -125,5 +127,6 @@ private:
     RaceTrackComponent* RaceTrack;
     int lapCount;
     int LapMax;
+    BigBrother* raceVisitor;
 };
 #endif //PROJECT_CONCRETERACEMANAGER_H

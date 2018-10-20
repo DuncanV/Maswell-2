@@ -5,13 +5,22 @@
 #ifndef PROJECT_BIGBROTHER_H
 #define PROJECT_BIGBROTHER_H
 
-#include "LeftPeelOff.h"
-#include "LeftPeelOn.h"
-#include "RightPeelOn.h"
-#include "RightPeelOff.h"
-#include "RightEighth.h"
-#include "LeftEighth.h"
-#include "Straight.h"
+//#include "LeftPeelOff.h"
+//#include "LeftPeelOn.h"
+//#include "RightPeelOn.h"
+//#include "RightPeelOff.h"
+//#include "RightEighth.h"
+//#include "LeftEighth.h"
+//#include "Straight.h"
+
+class LeftEighth;
+class RightEighth;
+class LeftPeelOff;
+class RightPeelOff;
+class LeftPeelOn;
+class RightPeelOn;
+class Straight;
+
 class BigBrother
 {
 public:
