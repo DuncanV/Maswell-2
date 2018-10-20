@@ -299,7 +299,6 @@ private:
      */
     int trackPart;
 
-    int trackTime;
 };
 
 #endif //PROJECT_CAR_H

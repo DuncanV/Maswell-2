@@ -8,6 +8,7 @@
 #include "RaceManager.h"
 #include "Car.h"
 #include <vector>
+using namespace std;
 class ConcreteRaceManager: public RaceManager
 {
 public:
@@ -32,13 +33,59 @@ public:
 
     virtual void printLeaderBoard()
     {
-        string stars="******************************************";
+        string stars="******************************************\n";
+        int carIDs [cars.size()];
+        int carTimes[cars.size()];
+        int time;
+        int id;
+        for (int i=0; i<cars.size(); i++)
+        {
+            time=cars[i]->getTrackTime();
+            id = cars[i]->getCarID();
+            carIDs[i]=id;
+            carTimes[i]=time;
+        }
+        int n=cars.size();
+        int i, j;
+        for (i = 0; i < n-1; i++)
+        {
+            // Last i elements are already in place
+            for (j = 0; j < n-i-1; j++)
+                if (carTimes[j] > carTimes[j+1])
+                {
+                    int temp;
+                    temp= carTimes[j+1];
+                    carTimes[j+1]=carTimes[j];
+                    carTimes[j]=temp;
+                    temp= carIDs[j+1];
+                    carIDs[j+1]=carIDs[j];
+                    carIDs[j]=temp;
+                }
+        }
 
+        string output="LEADERBOARD\n";
+        output+=stars;
+
+        for(int k=0;k<cars.size();k++)
+        {
+            for(int h=0;h<cars.size();h++)
+            {
+                if(carTimes[k]==cars[h]->getTrackTime()&&carIDs[k]==cars[h]->getCarID())
+                {
+                    output+=getCarInfo(cars[h]);
+                }
+            }
+        }
+        output+=stars;
+        cout<<output;
     }
+
     //used in printLeaderBoard
+
+
     string getCarInfo(Car*_car)
     {
-        string r= "Car - "+to_string(_car->getCarID())+" with time: "+to_string(_car->getTrackTime());
+        string r= "Car - "+to_string(_car->getCarID())+" with time: "+to_string(_car->getTrackTime())+"\n";
         return r;
     }
 

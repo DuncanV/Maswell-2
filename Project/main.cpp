@@ -285,7 +285,8 @@ int main() {
         test=manager->getTrack(trackNum);
     }
     raceManager->addCars(manager->getCars(trackNum));
-
+    raceManager->readyRace();
+    raceManager->printLeaderBoard();
 
 
 
