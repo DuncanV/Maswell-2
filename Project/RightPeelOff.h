@@ -8,6 +8,7 @@
 
 #ifndef PROJECT_RIGHTPEELOFF_H
 #define PROJECT_RIGHTPEELOFF_H
+#include "BigBrother.h"
 #include "RaceTrackComponent.h"
 class RightPeelOff:public RaceTrackComponent{
 public:
@@ -34,6 +35,10 @@ public:
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
     int getAverageTime(){ return averageTime;};
+    virtual void accept(BigBrother* v)
+    {
+        v->visit(*this);
+    }
 private:
     int averageTime= 12;
 };

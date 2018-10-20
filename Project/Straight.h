@@ -8,7 +8,7 @@
 
 #ifndef PROJECT_STRAIGHT_H
 #define PROJECT_STRAIGHT_H
-
+#include "BigBrother.h"
 #include "RaceTrackComponent.h"
 class Straight:public RaceTrackComponent{
 public:
@@ -34,6 +34,10 @@ public:
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
     int getAverageTime(){ return averageTime;};
+    virtual void accept(BigBrother* v)
+    {
+        v->visit(*this);
+    }
 private:
     int averageTime= 20;
 };

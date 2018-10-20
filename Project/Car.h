@@ -12,6 +12,7 @@
 #include <iostream>
 #include <string>
 #include "RegistrationManager.h"
+#include "Driver.h"
 using namespace std;
 
 class Car{
@@ -220,6 +221,9 @@ public:
 
     void setTrackPart(int t){trackPart= t;};
 
+    void setDriver(Driver* driver1){driver=driver1;};
+
+    Driver* getDriver(){ return driver;};
 private:
     /**
      * @brief a model string which states the type of car
@@ -299,6 +303,7 @@ private:
      */
     int trackPart;
 
+    Driver* driver;
 };
 
 #endif //PROJECT_CAR_H

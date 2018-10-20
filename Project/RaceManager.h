@@ -13,6 +13,8 @@ public:
     virtual void readyRace()=0;
     virtual void startRace()=0;
     virtual void stopRace()=0;
+    virtual void pauseRace(int numComponent)=0;
+    virtual void resumeRace(int numComponent)=0;
     virtual void printLeaderBoard()=0;
     virtual void addCars(vector<Car*> _cars)=0;
     virtual void addRacetrack(RaceTrackComponent*raceTrackComponent)=0;

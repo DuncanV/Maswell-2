@@ -29,7 +29,18 @@ public:
     {//will have to have iterator object in here
 
     }
+
     virtual void stopRace()
+    {
+
+    }
+
+    virtual void pauseRace(int numComponent)
+    {
+
+    }
+
+    virtual void resumeRace(int numComponent)
     {
 
     }

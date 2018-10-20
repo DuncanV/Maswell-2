@@ -7,6 +7,12 @@
 #include "Driver.h"
 class PassiveDriver:public Driver
 {
-    PassiveDriver(){};
+    PassiveDriver(){
+        srand(time(NULL));
+
+        int amount= rand()%80+110;
+        double ability = 1/amount;
+        setAbility(ability);
+    };
 };
 #endif //PROJECT_PASSIVEDRIVER_H

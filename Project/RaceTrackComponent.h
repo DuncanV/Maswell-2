@@ -10,7 +10,9 @@
 #define PROJECT_RACETRACKCOMPONENT_H
 using namespace std;
 
+//#include "BigBrother.h"
 #include "Car.h"
+class BigBrother;
 #include <string>
 #include <vector>
 #include <iostream>
@@ -102,6 +104,8 @@ public:
      * the decorate for the track component
      */
     RaceTrackComponent* decorate;
+    virtual void accept(BigBrother* v)=0;
+    vector<Car*> getCars(){ return cars;}
 
 private:
     /**
@@ -114,5 +118,7 @@ private:
     vector<Car*> cars;
 
 };
+
+#include "BigBrother.h"
 #endif //PROJECT_RACETRACKCOMPONENT_H
 

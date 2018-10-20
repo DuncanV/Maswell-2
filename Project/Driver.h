@@ -4,6 +4,8 @@
 
 #ifndef PROJECT_DRIVER_H
 #define PROJECT_DRIVER_H
+#include <stdlib.h>
+#include <time.h>
 class Driver{
 public:
     void setAbility(double ability){driverAbility=ability;};
