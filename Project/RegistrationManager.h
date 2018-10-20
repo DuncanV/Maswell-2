@@ -28,6 +28,8 @@ public:
     virtual void addTrack(RaceTrackComponent* _racetrack)=0;
 
     virtual vector<Car*> getCars(int racetrack)=0;
+    
+    virtual RaceTrackComponent* getTrack(int trackNo)=0;
 private:
 
 };

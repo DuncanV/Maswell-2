@@ -277,8 +277,13 @@ int main() {
     manager->addCar(car1,2);
 
     RaceManager* raceManager = new ConcreteRaceManager();
-    cout<<"Which track would you like to race? >";
-    cin>>trackNum;
+    RaceTrackComponent* test=NULL;
+    while(test==NULL)
+    {
+        cout<<"Which track would you like to race? >";
+        cin>>trackNum;
+        test=manager->getTrack(trackNum);
+    }
     raceManager->addCars(manager->getCars(trackNum));
 
 

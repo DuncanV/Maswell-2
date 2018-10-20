@@ -211,6 +211,15 @@ public:
      * @param msg the string to output
      */
     void RegistrationNotify(string msg);
+
+    int getLap(){ return lapNo;};
+
+    void setLap(int l){lapNo=l;};
+
+    int getTrackPart(){return trackPart;};
+
+    void setTrackPart(int t){trackPart= t;};
+
 private:
     /**
      * @brief a model string which states the type of car
@@ -280,6 +289,17 @@ private:
      * @brief total amount of damage the car took during the race (until repaired)
      */
     int damage;
+
+    /**
+     * the lap number of the car
+     */
+    int lapNo;
+    /**
+     * the part of track the car is on
+     */
+    int trackPart;
+
+    int trackTime;
 };
 
 #endif //PROJECT_CAR_H

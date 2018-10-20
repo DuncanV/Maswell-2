@@ -13,6 +13,12 @@ class ConcreteRaceManager: public RaceManager
 public:
     virtual void readyRace()
     {
+        for (int i=0; i<cars.size(); i++)
+        {
+            cars[i]->setLap(0);
+            cars[i]->setTrackPart(0);
+            cars[i]->setTrackTime(0);
+        }
 
     }
     virtual void startRace()
@@ -40,7 +46,12 @@ public:
             cars.push_back(_cars[i]);
         cout<<"Cars added to the raceTrack!\n";
     }
+    virtual void addRacetrack(RaceTrackComponent*raceTrackComponent)
+    {
+        RaceTrack=raceTrackComponent;
+    }
 private:
     vector<Car*> cars;
+    RaceTrackComponent* RaceTrack;
 };
 #endif //PROJECT_CONCRETERACEMANAGER_H

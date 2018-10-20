@@ -52,6 +52,16 @@ public:
             return cars[racetrack];
         }
     }
+
+    virtual RaceTrackComponent* getTrack(int trackNo)
+    {
+        if(trackNo>=tracks.size())
+        {
+            cout<<"TRACK IS NOT AVAILABLE YET\n";
+            return NULL;
+        }
+        return tracks[trackNo];
+    }
 private:
 
     /**

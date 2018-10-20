@@ -14,6 +14,7 @@ public:
     virtual void stopRace()=0;
     virtual void printLeaderBoard()=0;
     virtual void addCars(vector<Car*> _cars)=0;
+    virtual void addRacetrack(RaceTrackComponent*raceTrackComponent)=0;
 private:
     bool ready;
     bool start;
