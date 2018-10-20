@@ -7,6 +7,7 @@
  */
 #ifndef PROJECT_RIGHTEIGTH_H
 #define PROJECT_RIGHTEIGTH_H
+#include "BigBrother.h"
 #include "RaceTrackComponent.h"
 class RightEighth:public RaceTrackComponent{
 public:
@@ -34,6 +35,10 @@ public:
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
     int getAverageTime(){ return averageTime;};
+    virtual void accept(BigBrother* v)
+    {
+        v->visit(*this);
+    }
 private:
     int averageTime= 15;
 };

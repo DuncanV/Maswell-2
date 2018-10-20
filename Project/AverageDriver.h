@@ -7,6 +7,12 @@
 #include "Driver.h"
 class AverageDriver:public Driver
 {
+    AverageDriver(){
+        srand(time(NULL));
 
+        int amount= rand()%40+80;
+        double ability = 1/amount;
+        setAbility(ability);
+    }
 };
 #endif //PROJECT_AVERAGEDRIVER_H

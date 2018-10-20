@@ -7,6 +7,7 @@
  */
 #ifndef PROJECT_LEFTPEELOFF_H
 #define PROJECT_LEFTPEELOFF_H
+#include "BigBrother.h"
 #include "RaceTrackComponent.h"
 class LeftPeelOff:public RaceTrackComponent{
 public:
@@ -32,6 +33,10 @@ public:
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
     int getAverageTime(){ return averageTime;};
+    virtual void accept(BigBrother* v)
+    {
+        v->visit(*this);
+    }
 private:
     int averageTime= 12;
 };

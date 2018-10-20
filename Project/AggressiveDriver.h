@@ -8,6 +8,13 @@
 #include "Driver.h"
 class AggressiveDriver:public Driver
 {
-    AggressiveDriver(){};
+
+    AggressiveDriver(){
+        srand(time(NULL));
+
+        int amount= rand()%80+10;
+        double ability = 1/amount;
+        setAbility(ability);
+    };
 };
 #endif //PROJECT_AGGRESSIVEDRIVER_H
