@@ -22,7 +22,7 @@ public:
 
     }
     virtual void startRace()
-    {
+    {//will have to have iterator object in here
 
     }
     virtual void stopRace()
@@ -32,7 +32,14 @@ public:
 
     virtual void printLeaderBoard()
     {
+        string stars="******************************************";
 
+    }
+    //used in printLeaderBoard
+    string getCarInfo(Car*_car)
+    {
+        string r= "Car - "+to_string(_car->getCarID())+" with time: "+to_string(_car->getTrackTime());
+        return r;
     }
 
     virtual void addCars(vector<Car*> _cars)
