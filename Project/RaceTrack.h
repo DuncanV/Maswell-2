@@ -55,10 +55,16 @@ public:
     {
         string star="******************************************\n";
         cout<<"Here's your Race Track with ID = " +to_string(getRaceTrackID())+"\n"
-              <<star;
+            <<star;
         print();
         cout<<star;
     }
+
+    void moveCar(Car* _car,int rt)
+    {
+        components[rt]->addCar(_car);
+    }
+
     /**
      * @return the RacetrackID
      */

@@ -7,6 +7,7 @@
 
 #include <vector>
 #include "Car.h"
+#include "RaceTrackComponent.h"
 class RaceManager{
 public:
     virtual void readyRace()=0;

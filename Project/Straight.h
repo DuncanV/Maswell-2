@@ -33,6 +33,7 @@ public:
         else
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
+
 private:
 
 };

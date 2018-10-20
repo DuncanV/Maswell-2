@@ -111,7 +111,7 @@ string Car::toString(){
 }
 
 void Car::setTrackTime(int i) {
-    trackTime += i;
+    trackTime = i;
 }
 
 int Car::getTrackTime() {

@@ -71,6 +71,7 @@ public:
                 cars.erase(it);
         }
     }
+    virtual void moveCar(Car* _car,int rt){};
     /**
      * empty implementation of show
      */

@@ -17,6 +17,7 @@ CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../Car.h
 CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../ConcreteRaceManager.cpp
 CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../ConcreteRaceManager.h
 CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../RaceManager.h
+CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../RaceTrackComponent.h
 CMakeFiles/Project.dir/ConcreteRaceManager.cpp.o: ../RegistrationManager.h
 
 CMakeFiles/Project.dir/ConcreteRegistrationManager.cpp.o: ../Car.h

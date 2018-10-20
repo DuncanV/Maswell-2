@@ -255,7 +255,13 @@ int main() {
  */
     int trackNum;
     RaceTrackComponent* racetrack1 = new RaceTrack();
+    racetrack1->add(new Straight());
+    racetrack1->add(new LeftEighth());
+    racetrack1->add(new RightEighth());
     RaceTrackComponent* racetrack2 = new RaceTrack();
+    racetrack2->add(new Straight());
+    racetrack2->add(new LeftEighth());
+    racetrack2->add(new RightEighth());
     RegistratcionManager* manager= new ConcreteRegistrationManager();
     Car* car1= Factories[0]->produceSports();
     Car* car2= Factories[0]->produceElectric();
@@ -284,6 +290,7 @@ int main() {
         cin>>trackNum;
         test=manager->getTrack(trackNum);
     }
+    raceManager->addRacetrack(test);
     raceManager->addCars(manager->getCars(trackNum));
     raceManager->readyRace();
     raceManager->printLeaderBoard();

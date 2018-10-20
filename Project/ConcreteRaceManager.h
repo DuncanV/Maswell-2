@@ -8,6 +8,7 @@
 #include "RaceManager.h"
 #include "Car.h"
 #include <vector>
+
 using namespace std;
 class ConcreteRaceManager: public RaceManager
 {
@@ -19,7 +20,9 @@ public:
             cars[i]->setLap(0);
             cars[i]->setTrackPart(0);
             cars[i]->setTrackTime(0);
+            RaceTrack->moveCar(cars[i],0);
         }
+        cout<<"Cars Are Ready to race!\n";
 
     }
     virtual void startRace()
@@ -63,7 +66,7 @@ public:
                 }
         }
 
-        string output="LEADERBOARD\n";
+        string output="LEADER BOARD\n";
         output+=stars;
 
         for(int k=0;k<cars.size();k++)
@@ -81,8 +84,6 @@ public:
     }
 
     //used in printLeaderBoard
-
-
     string getCarInfo(Car*_car)
     {
         string r= "Car - "+to_string(_car->getCarID())+" with time: "+to_string(_car->getTrackTime())+"\n";
