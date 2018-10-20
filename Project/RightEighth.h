@@ -33,8 +33,8 @@ public:
         else
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
-
+    int getAverageTime(){ return averageTime;};
 private:
-
+    int averageTime= 15;
 };
 #endif //PROJECT_RIGHTEIGTH_H

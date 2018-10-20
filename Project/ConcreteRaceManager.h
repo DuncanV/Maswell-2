@@ -86,7 +86,7 @@ public:
     //used in printLeaderBoard
     string getCarInfo(Car*_car)
     {
-        string r= "Car - "+to_string(_car->getCarID())+" with time: "+to_string(_car->getTrackTime())+"\n";
+        string r= "Car - "+to_string(_car->getCarID())+" with time: "+to_string(_car->getTrackTime())+" Seconds\n";
         return r;
     }
 
@@ -105,8 +105,14 @@ public:
     {
         RaceTrack=raceTrackComponent;
     }
+    void setLapMax(int i){LapMax=i;};
+    int getLapMax(){ return LapMax;};
+    void setLapCount(int i){lapCount=i;};
+    int getLap(){ return lapCount;};
 private:
     vector<Car*> cars;
     RaceTrackComponent* RaceTrack;
+    int lapCount;
+    int LapMax;
 };
 #endif //PROJECT_CONCRETERACEMANAGER_H

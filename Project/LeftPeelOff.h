@@ -31,7 +31,8 @@ public:
         else
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
+    int getAverageTime(){ return averageTime;};
 private:
-
+    int averageTime= 12;
 };
 #endif //PROJECT_LEFTPEELOFF_H
