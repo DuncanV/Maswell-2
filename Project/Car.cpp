@@ -19,6 +19,7 @@ Car::Car(int tyres) {
     }
     fuelLevel=100;
     damage=0;
+    driver= new AverageDriver();
 }
 
 Car::Car(string modelType_, int tyres) {
@@ -35,6 +36,7 @@ Car::Car(string modelType_, int tyres) {
     }
     fuelLevel=100;
     damage=0;
+    driver= new AverageDriver();
 }
 
 Car::Car(const Car& car_, bool flag) {
@@ -57,6 +59,7 @@ Car::Car(const Car& car_, bool flag) {
     }
     fuelLevel=100;
     damage=0;
+    driver= new AverageDriver();
 }
 
 string Car::getDescription()const {

@@ -70,6 +70,34 @@ public:
      */
     int getRaceTrackID(){ return RaceTrackID;};
 
+    int getNumComponents(){ return components.size();};
+
+    void addAllCars(vector<Car*> _car,int rt)
+    {
+        for(int i=0;i<_car.size();i++)
+        {
+            components[rt]->addCar(_car[i]);
+        }
+    }
+
+    void removeAllCars(vector<Car*>_car, int rt)
+    {
+        for(int i=0;i<_car.size();i++)
+        {
+            components[rt]->removeCar(_car[i]);
+        }
+    }
+
+    vector<Car*> getAllCars(int rt)
+    {
+        return components[rt]->getCars();
+    }
+    virtual void accept(BigBrother* v){}
+
+    void makeAccept(BigBrother*v,int rt){
+        components[rt]->accept(v);
+    }
+    virtual void addTime(){}
 private:
     /**
      * contains the components of the track

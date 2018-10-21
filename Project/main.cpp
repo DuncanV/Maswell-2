@@ -37,7 +37,10 @@
 #include "RaceManager.h"
 #include "ConcreteRaceManager.h"
 #include "State.h"
-
+#include "Driver.h"
+#include "AggressiveDriver.h";
+#include "AverageDriver.h"
+#include "PassiveDriver.h";
 int main() {
     srand(time(NULL));
 
@@ -265,48 +268,50 @@ int main() {
 /*
  * UNCOMMENT FOR DEMONSTRATION OF ManagerRegitstration MEDIATOR
  */
-//    int trackNum;
-//    RaceTrackComponent* racetrack1 = new RaceTrack();
-//    racetrack1->add(new Straight());
-//    racetrack1->add(new LeftEighth());
-//    racetrack1->add(new RightEighth());
-//    RaceTrackComponent* racetrack2 = new RaceTrack();
-//    racetrack2->add(new Straight());
-//    racetrack2->add(new LeftEighth());
-//    racetrack2->add(new RightEighth());
-//    RegistratcionManager* manager= new ConcreteRegistrationManager();
-//    Car* car1= Factories[0]->produceSports();
-//    Car* car2= Factories[0]->produceElectric();
-//    manager->addCar(car1,2);
-//    manager->addCar(car1,1);
-//    manager->addCar(car1,0);
-//    manager->addTrack(racetrack1);
-//    manager->addCar(car1,2);
-//    manager->addCar(car2,0);
-//    manager->addCar(car2,0);
-//    manager->addCar(car2,1);
-//    manager->addCar(car2,2);
-//    manager->addTrack(racetrack2);
-//    manager->addCar(car1,2);
-//    manager->addCar(car2,2);
-//    manager->addCar(car2,1);
-//    manager->addCar(car2,2);
-//    manager->addCar(car2,3);
-//    manager->addCar(car1,2);
-//
-//    RaceManager* raceManager = new ConcreteRaceManager();
-//    RaceTrackComponent* test=NULL;
-//    while(test==NULL)
-//    {
-//        cout<<"Which track would you like to race? >";
-//        cin>>trackNum;
-//        test=manager->getTrack(trackNum);
-//    }
-//    raceManager->addRacetrack(test);
-//    raceManager->addCars(manager->getCars(trackNum));
-//    raceManager->readyRace();
-//    raceManager->printLeaderBoard();
+    int trackNum;
+    RaceTrackComponent* racetrack1 = new RaceTrack();
+    racetrack1->add(new Straight());
+    racetrack1->add(new LeftEighth());
+    racetrack1->add(new RightEighth());
+    RaceTrackComponent* racetrack2 = new RaceTrack();
+    racetrack2->add(new Straight());
+    racetrack2->add(new LeftEighth());
+    racetrack2->add(new RightEighth());
+    RegistratcionManager* manager= new ConcreteRegistrationManager();
+    Car* car1= Factories[0]->produceSports();
+    car1->setDriver(new PassiveDriver());
+    Car* car2= Factories[0]->produceElectric();
+    car2->setDriver(new AggressiveDriver());
+    manager->addCar(car1,2);
+    manager->addCar(car1,1);
+    manager->addCar(car1,0);
+    manager->addTrack(racetrack1);
+    manager->addCar(car1,2);
+    manager->addCar(car2,0);
+    manager->addCar(car2,0);
+    manager->addCar(car2,1);
+    manager->addCar(car2,2);
+    manager->addTrack(racetrack2);
+    manager->addCar(car1,2);
+    manager->addCar(car2,2);
+    manager->addCar(car2,1);
+    manager->addCar(car2,2);
+    manager->addCar(car2,3);
+    manager->addCar(car1,2);
 
+    RaceManager* raceManager = new ConcreteRaceManager();
+    RaceTrackComponent* test=NULL;
+    while(test==NULL)
+    {
+        cout<<"Which track would you like to race? >";
+        cin>>trackNum;
+        test=manager->getTrack(trackNum);
+    }
+    raceManager->addRacetrack(test);
+    raceManager->addCars(manager->getCars(trackNum));
+    raceManager->readyRace();
+    raceManager->printLeaderBoard();
+    raceManager->startRace();
 
 
 /*

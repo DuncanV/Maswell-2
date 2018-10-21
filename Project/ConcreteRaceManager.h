@@ -10,6 +10,7 @@
 #include "BigBrother.h"
 #include "ConcreteBigBrother.h"
 #include <vector>
+#include <unistd.h>
 
 using namespace std;
 class ConcreteRaceManager: public RaceManager
@@ -25,26 +26,77 @@ public:
             RaceTrack->moveCar(cars[i],0);
         }
         cout<<"Cars Are Ready to race!\n";
+        lapCount=0;
 
     }
     virtual void startRace()
     {//will have to have iterator object in here
         raceVisitor= new ConcreteBigBrother();
+        cout<<"How many laps would you like this race to be ? > ";
+        cin>>LapMax;
+        racetrackSize=RaceTrack->getNumComponents();
+        RaceTrack->removeAllCars(cars,0);
+        cout<<"START RACE!\n\n";
+        usleep(1000000);
+        for(lapCount=1;lapCount<=LapMax;lapCount++)
+        {
+            for(int i =0;i<racetrackSize;i++)
+            {
+                RaceTrack->addAllCars(cars,i);
+                RaceTrack->makeAccept(raceVisitor,i);
+                RaceTrack->removeAllCars(cars,i);
+            }
+            cout<<"LAP: "+to_string(lapCount)+" COMPLETED!\n";
+            printLeaderBoard();
+            usleep(1000000);
+
+        }
+        stopRace();
+
     }
 
     virtual void stopRace()
     {
+        cout<<"THE RACE IS FINISHED!\nHere is the Final Results!\n";
+        printLeaderBoard();
 
     }
 
     virtual void pauseRace(int numComponent)
     {
-
+        cout<<"Race is now Paused\n";
     }
 
     virtual void resumeRace(int numComponent)
     {
+        cout<<"Race will now continue\n";
 
+        for(int i =numComponent;i<racetrackSize;i++)
+        {
+            RaceTrack->addAllCars(cars,i);
+            RaceTrack->makeAccept(raceVisitor,i);
+            RaceTrack->removeAllCars(cars,i);
+        }
+        cout<<"LAP: "+to_string(lapCount)+" COMPLETED!\n";
+        printLeaderBoard();
+        usleep(1000000);
+        lapCount++;
+
+
+        for(lapCount=lapCount;lapCount<=LapMax;lapCount++)
+        {
+            for(int i =0;i<racetrackSize;i++)
+            {
+                RaceTrack->addAllCars(cars,i);
+                RaceTrack->makeAccept(raceVisitor,i);
+                RaceTrack->removeAllCars(cars,i);
+            }
+            cout<<"LAP: "+to_string(lapCount)+" COMPLETED!\n";
+            printLeaderBoard();
+            usleep(1000000);
+
+        }
+        stopRace();
     }
 
     virtual void printLeaderBoard()
@@ -127,6 +179,7 @@ private:
     RaceTrackComponent* RaceTrack;
     int lapCount;
     int LapMax;
+    int racetrackSize;
     BigBrother* raceVisitor;
 };
 #endif //PROJECT_CONCRETERACEMANAGER_H

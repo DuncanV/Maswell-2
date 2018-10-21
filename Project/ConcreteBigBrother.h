@@ -11,31 +11,31 @@ class ConcreteBigBrother: public BigBrother{
 public:
     virtual void visit(LeftEighth* leftEighth)
     {
-        int a=0;
+        leftEighth->addTime();
     }
     virtual void visit(RightEighth* rightEighth)
     {
-        int a=0;
+        rightEighth->addTime();
     }
     virtual void visit(LeftPeelOff* leftPeelOff)
     {
-        int a=0;
+        leftPeelOff->addTime();
     }
     virtual void visit(RightPeelOff* rightPeelOff)
     {
-        int a=0;
+        rightPeelOff->addTime();
     }
     virtual void visit(LeftPeelOn* leftPeelOn)
     {
-        int a=0;
+        leftPeelOn->addTime();
     }
     virtual void visit(RightPeelOn* rightPeelOn)
     {
-        int a=0;
+        rightPeelOn->addTime();
     }
     virtual void visit(Straight* straight)
     {
-        int a=0;
+        straight->addTime();
     }
 private:
 

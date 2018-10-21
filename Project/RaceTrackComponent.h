@@ -66,14 +66,23 @@ public:
      */
     void removeCar(Car* _car)
     {
-        int i=0;
-        vector<Car*>::iterator it;
-        for(it=cars.begin();it!=cars.end();it++)
-        {
-            if((*it)==_car)
-                cars.erase(it);
-        }
+//        int i=0;
+//        vector<Car*>::iterator it;
+//        for(it=cars.begin();it!=cars.end();it++)
+//        {
+//            if((*it)==_car)
+//                cars.erase(it);
+//        }
+        cars.erase(cars.begin());
     }
+
+
+    virtual int getNumComponents(){};
+    virtual void addAllCars(vector<Car*> _car,int rt){}
+    virtual void removeAllCars(vector<Car*>_car, int rt){}
+    virtual vector<Car*> getAllCars(int rt){}
+    virtual void makeAccept(BigBrother*v,int rt){}
+
     virtual void moveCar(Car* _car,int rt){};
     /**
      * empty implementation of show
@@ -105,18 +114,20 @@ public:
      * the decorate for the track component
      */
     RaceTrackComponent* decorate;
+    virtual void addTime()=0;
     virtual void accept(BigBrother* v)=0;
     vector<Car*> getCars(){ return cars;}
-
+    /**
+     * vector of cars on the track part
+     */
+    vector<Car*> cars;
 private:
     /**
      * description for the track part
      */
     string description;
-    /**
-     * vector of cars on the track part
-     */
-    vector<Car*> cars;
+
+
 
 };
 

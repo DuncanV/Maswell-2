@@ -35,9 +35,25 @@ public:
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
     int getAverageTime(){ return averageTime;};
+
     virtual void accept(BigBrother* v)
     {
         v->visit(this);
+    }
+    virtual void addTime()
+    {
+        double driver;
+        for(int i =0;i<cars.size();i++)
+        {
+            if(cars[i]->getDriver()!=NULL)
+            {
+                driver=cars[i]->getDriver()->getDriverAbilty();
+            } else
+            {
+                driver=1;
+            }
+            cars[i]->setTrackTime(cars[i]->getTrackTime()+(int)(getAverageTime()*driver+0.5));
+        }
     }
 private:
     int averageTime= 25;

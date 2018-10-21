@@ -13,6 +13,7 @@
 #include <string>
 #include "RegistrationManager.h"
 #include "Driver.h"
+#include "AverageDriver.h"
 using namespace std;
 
 class Car{
