@@ -130,6 +130,7 @@ public:
     * pointer to car object for decorator
     */
     Car* carDecorate;
+
     /**
      * function to get model type of a car
      * @return string (the model type)
