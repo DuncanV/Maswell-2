@@ -17,7 +17,47 @@ PitStop *Facade::createTeam() {
 }
 
 Car *Facade::createCustomCar() {
-    return nullptr;
+    int carSelect;
+    int carType;
+    int decorateSelect=-1;
+    Car* car;
+    cout<<"\n====================== Car Creation ======================\n";
+    while(true)
+    {
+        cout<<"\n*********** Car Selection ***********\n";
+        cout<<"0:Go Kart\n1:Roadster\n2:Formula One\n\n";
+        cout<<"Please select the type of car you like to make (0-2) > ";
+        cin>>carSelect;
+        if(carSelect>=0&& carSelect<=2)
+            break;
+    }
+    while(true)
+    {
+        cout<<"\n*********** Car Type ***********\n";
+        cout<<"0:Electric\n1:Sport\n2:Standard\n\n";
+        cout<<"Please select the implementation of car you like to make (0-2) > ";
+        cin>>carType;
+        if(carType>=0&& carType<=2)
+            break;
+    }
+    if(carType==0)
+    {
+        car=Factories[carSelect]->produceElectric();
+    }else if(carType==1)
+    {
+        car= Factories[carSelect]->produceSports();
+    }else if (carType==2)
+    {
+        car= Factories[carSelect]->produceStandard();
+    }
+
+    while(decorateSelect==)
+    {
+        //To do
+    }
+
+
+
 }
 
 RaceTrackComponent *Facade::createCustomeRacetrack() {
@@ -91,8 +131,6 @@ RaceTrackComponent *Facade::createCustomeRacetrack() {
     cout<<"\n*********** Here is you RaceTrack ***********\n";
     raceTrack->show();
     return raceTrack;
-
-
 }
 
 void Facade::registerCar(Car *c, int i) {
