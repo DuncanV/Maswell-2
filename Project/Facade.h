@@ -1,6 +1,10 @@
-//
-// Created by Duncan on 2018/10/25.
-//
+/**
+ *  @file Facade.h
+ *  @class Facade
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief Facade pattern
+ */
 
 #ifndef PROJECT_FACADE_H
 #define PROJECT_FACADE_H
@@ -50,20 +54,81 @@
 class Facade
 {
 public:
+    /**
+     * constructor that creates the necessary registration objects
+     */
     Facade();
+    /**
+     * destructor to delete all necessary things
+     */
+    ~Facade();
+    /**
+     * function to create a new team
+     * @param name takes team name in parameter
+     * @return a pitstop object
+     */
     PitStop* createTeam(string name);
+
+    /**
+     * create a custom car, will ask all options
+     * @return the created car
+     */
     Car* createCustomCar();
+    /**
+     * create a custom track
+     * @return the custom track
+     */
     RaceTrackComponent* createCustomeRacetrack();
+    /**
+     * register car to the track with the registration manager
+     * @param c the car to add
+     * @param i the track number
+     */
     void registerCar(Car* c,int i);
+    /**
+     *  register the track with registration manager
+     * @param rt
+     */
     void registerTrack(RaceTrackComponent* rt);
-    void prepRace();
+
+    /**
+     *  prepare the race by getting all the necessary info from the registration manager
+     *  @param rt
+     */
+    void prepRace(int racetrack);
+
+    /**
+     * will start the race
+     */
     void StartRace();
+
+    /**
+     * create a driver, asking which driver the user wants
+     * @return the driver
+     */
     Driver* createDriver();
 
 private:
+    /**
+     * the list of all the cars
+     */
     vector<Car*>cars;
+    /**
+     * the list of all the tracks
+     */
     vector<RaceTrackComponent*>racetracks;
+    /**
+     * the different factories
+     */
     CarFactory **Factories;
+    /**
+     *  the racemanager of the track
+     */
+    RaceManager* raceManager;
+    /**
+     * registration manager for the track
+     */
+    RegistratcionManager* registratcionManager;
 
 
 };
