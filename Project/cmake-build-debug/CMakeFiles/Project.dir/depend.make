@@ -5,7 +5,10 @@ CMakeFiles/Project.dir/Car.cpp.o: ../AverageDriver.h
 CMakeFiles/Project.dir/Car.cpp.o: ../Car.cpp
 CMakeFiles/Project.dir/Car.cpp.o: ../Car.h
 CMakeFiles/Project.dir/Car.cpp.o: ../Driver.h
+CMakeFiles/Project.dir/Car.cpp.o: ../Mediator.h
 CMakeFiles/Project.dir/Car.cpp.o: ../PimpMyRide.h
+CMakeFiles/Project.dir/Car.cpp.o: ../PitCrew.h
+CMakeFiles/Project.dir/Car.cpp.o: ../PitStop.h
 CMakeFiles/Project.dir/Car.cpp.o: ../RegistrationManager.h
 CMakeFiles/Project.dir/Car.cpp.o: ../State.h
 

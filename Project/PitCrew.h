@@ -13,6 +13,7 @@ using namespace std;
 
 class Mediator;
 class PitStop;
+class Car;
 
 class PitCrew {
 public:
@@ -35,6 +36,8 @@ public:
      */
     void changed();
 
+    void changedCar();
+
     /**
      * function to set the description of a member allowing us to get a detailed view of the team
      * @param des
@@ -48,12 +51,12 @@ public:
     string getDescription();
 
     virtual void update(bool* tyreCondiiton, bool fuelLevel, bool damage) = 0;
-    virtual bool * getTyreCondition() = 0;
-    virtual void setTyreCondition(bool* status) = 0;
-    virtual bool getFuelLevel() = 0;
-    virtual void setFuelLevel(bool status) = 0;
-    virtual bool getDamage() = 0;
-    virtual void setDamage(bool status) = 0;
+    virtual bool * getTyreCondition();
+    virtual void setTyreCondition(bool* status);
+    virtual bool getFuelLevel();
+    virtual void setFuelLevel(bool status);
+    virtual bool getDamage();
+    virtual void setDamage(bool status);
 
 protected:
     /**

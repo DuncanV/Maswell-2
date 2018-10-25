@@ -6,7 +6,10 @@ CMakeFiles/Project.dir/Car.cpp.o
  /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Car.cpp
  /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Car.h
  /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Driver.h
+ /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Mediator.h
  /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
+ /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitCrew.h
+ /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitStop.h
  /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/RegistrationManager.h
  /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/State.h
 CMakeFiles/Project.dir/ConcreteMediator.cpp.o

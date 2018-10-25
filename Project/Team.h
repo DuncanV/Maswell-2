@@ -15,24 +15,7 @@ public:
      */
     Team(string name);
 
-    /**
-     * function to get the condition of all the tyres and check if there is a problem or not
-     * @param index is the car to check up on
-     */
-    void getTyres(int index);
-
-    /**
-     * function to get the fuel level of the car and check if there is a problem or not
-     * @param index is the car to check up on
-     */
-    void getFuel(int index);
-
-    /**
-     * function to get the damage of the car and check if there is a problem or not
-     * @param index is the car to check up on
-     */
-    void getDamage(int index);
-
+    virtual void getCarStats();
 };
 
 

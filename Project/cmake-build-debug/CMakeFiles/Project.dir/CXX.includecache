@@ -21,6 +21,8 @@ Car.h
 /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Car.h
 PimpMyRide.h
 /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PimpMyRide.h
+PitStop.h
+/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitStop.h
 
 /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Car.h
 iostream
@@ -157,6 +159,8 @@ RaceTrackComponent.h
 /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Manager.h
 PitCrew.h
 /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/PitCrew.h
+State.h
+/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/State.h
 
 /cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Mechanic.h
 PitCrew.h

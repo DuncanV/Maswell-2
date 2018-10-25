@@ -24,10 +24,38 @@ void PitCrew::changed() {
     mediator->notify(this);
 }
 
+void PitCrew::changedCar() {
+    mediator->notifyManager(this);
+}
+
 void PitCrew::setDescription(string des) {
     description = des;
 }
 
 string PitCrew::getDescription() {
     return description;
+}
+
+bool* PitCrew::getTyreCondition() {
+    return tyreCondition;
+}
+
+void PitCrew::setTyreCondition(bool *status) {
+    tyreCondition = status;
+}
+
+bool PitCrew::getFuelLevel() {
+    return fuelLevel;
+}
+
+void PitCrew::setFuelLevel(bool status) {
+    fuelLevel = status;
+}
+
+bool PitCrew::getDamage() {
+    return damage;
+}
+
+void PitCrew::setDamage(bool status) {
+    damage = status;
 }

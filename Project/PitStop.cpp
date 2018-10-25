@@ -6,27 +6,29 @@
 
 PitStop::PitStop(string name_) {
     name = name_;
-    numCars = 0;
+    numMembers = 0;
 }
 
 PitStop::~PitStop() {
-
+    delete manager;
+    delete car;
 }
 
 void PitStop::attach(PitCrew *member) {
     pitCrew.push_back(member);
     member->registerWork(this);
+    numMembers++;
 }
 
 void PitStop::attachManager(PitCrew *manager_) {
-    managers.push_back(manager_);
-    manager_->registerWork(this);
+    manager = manager_;
+    manager->registerWork(this);
 }
 
 void PitStop::detach(PitCrew *member) {
     bool found = false;
 
-    vector<PitCrew*>::iterator it = pitCrew.begin();
+    auto it = pitCrew.begin();
     while ((it != pitCrew.end()) && (! found)) {
         if (*it == member) {
             found = true;
@@ -34,10 +36,11 @@ void PitStop::detach(PitCrew *member) {
         }
         ++it;
     }
+    numMembers--;
 }
 
-void PitStop::notify(int index) {
-    managers[index]->update(tyreCondition, fuelLevel, damage);
+void PitStop::notify() {
+    manager->update(tyreCondition, fuelLevel, damage);
 }
 
 void PitStop::setTyreCondition(bool* status) {
@@ -52,47 +55,39 @@ void PitStop::setDamage(bool status) {
     damage = status;
 }
 
-void PitStop::addCar(Car *car) {
-    cars.push_back(car);
-    numCars++;
+void PitStop::addCar(Car *car_) {
+    car = car_;
 }
 
-Car* PitStop::getCar(int index) {
-    if (index >= cars.size()){
-        return nullptr;
-    }
-    return cars[index];
+Car* PitStop::getCar() {
+    return car;
 }
 
-string PitStop::showCars() {
+PitCrew* PitStop::getManager() {
+    return manager;
+}
+
+string PitStop::showCar() {
     string sep = "*********************************\n";
 
     string out = "";
-    out += "Cars:\n";
+    out += "Car:\n";
     out += sep;
-    for (int i = 0; i < numCars-1; ++i) {
-        out += "Car " + to_string(i) + "\n";
-        out += cars[i]->toString();
-        out += sep;
-    }
-    out += "Car " + to_string(numCars-1) + "\n";
-    out += cars[numCars-1]->toString();
+    out += car->toString();
     return out;
 }
 
-string PitStop::getManagers() {
+string PitStop::showManager() {
     string sep = "*********************************\n";
 
     string out = "";
-    out += "Managers:\n";
+    out += "Manager:\n";
     out += sep;
-    for (int i = 0; i < managers.size(); ++i) {
-        out += managers[i]->getDescription() + "\n";
-    }
+    out += manager->getDescription() + "\n";
     return out;
 }
 
-string PitStop::getCrew(){
+string PitStop::showCrew(){
     string sep = "*********************************\n";
 
     string out = "";
@@ -115,11 +110,11 @@ string PitStop::toString() {
     out += sep;
     out += "Team Name: " + getName() +"\n";
     out += sep;
-    out += showCars();
+    out += showCar();
     out += sep;
-    out += getManagers();
+    out += showManager();
     out += sep;
-    out += getCrew();
+    out += showCrew();
     out += sep;
     return out;
 }

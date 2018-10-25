@@ -4,6 +4,7 @@
 
 #include "Car.h"
 #include "PimpMyRide.h"
+#include "PitStop.h"
 
 int Car::modelCounter = 0;
 int Car::prodcuctionNum = 0;
@@ -19,6 +20,8 @@ Car::Car(int tyres) {
     }
     fuelLevel=100;
     damage=0;
+
+    setState(new Ready());
     driver= new AverageDriver();
 }
 
@@ -36,6 +39,8 @@ Car::Car(string modelType_, int tyres) {
     }
     fuelLevel=100;
     damage=0;
+
+    setState(new Ready());
     driver= new AverageDriver();
 }
 
@@ -59,6 +64,8 @@ Car::Car(const Car& car_, bool flag) {
     }
     fuelLevel=100;
     damage=0;
+
+    setState(new Ready());
     driver= new AverageDriver();
 }
 
@@ -143,8 +150,17 @@ int* Car::getCarTyres() {
     return tyreCondition;
 }
 
-void Car::setCarTyres(int index){
-    tyreCondition[index] = 100;
+int Car::getCarTyre(int index) {
+    return tyreCondition[index];
+}
+
+void Car::setCarTyre(int index, int tyre){
+    tyreCondition[index] = tyre;
+    notifyTeam();
+}
+
+void Car::setChanged(int index, int tyre) {
+    tyreCondition[index] = tyre;
 }
 
 int Car::getCarFuel() {
@@ -153,6 +169,11 @@ int Car::getCarFuel() {
 
 void Car::setCarFuel(int fuel) {
     fuelLevel = fuel;
+    notifyTeam();
+}
+
+void Car::setRefuel(int fuel) {
+    fuelLevel = fuel;
 }
 
 int Car::getCarDamage() {
@@ -160,6 +181,11 @@ int Car::getCarDamage() {
 }
 
 void Car::setCarDamage(int damage_) {
+    damage = damage_;
+    notifyTeam();
+}
+
+void Car::setRepair(int damage_) {
     damage = damage_;
 }
 
@@ -185,4 +211,9 @@ void Car::racing() {
 
 void Car::stopped() {
     current->stopped(this);
+}
+
+void Car::notifyTeam() {
+    cout << "Car :: Notify team!\n";
+    team->getCarStats();
 }

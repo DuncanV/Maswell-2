@@ -38,9 +38,9 @@
 #include "ConcreteRaceManager.h"
 #include "State.h"
 #include "Driver.h"
-#include "AggressiveDriver.h";
+#include "AggressiveDriver.h"
 #include "AverageDriver.h"
-#include "PassiveDriver.h";
+#include "PassiveDriver.h"
 int main() {
     srand(time(NULL));
 
@@ -242,76 +242,79 @@ int main() {
  /*
  * UNCOMMENT FOR DEMONSTRATION OF THE TEAM PITCREW IMPLEMENTATION
  */
-//    Mediator* team1Mediator = new ConcreteMediator();
-//
-//    PitStop* team1 = new Team("Mercedez");
-//    team1->addCar(Factories[2]->produceSports());
-//    team1->attachManager(new Manager(team1Mediator, team1->getCar(0)));
-//    team1->attach(new Refueller(team1Mediator, team1->getCar(0)));
-//    team1->attach(new Mechanic(team1Mediator, team1->getCar(0)));
-//    for (int i = 0; i < 4; ++i) {
-//        team1->attach(new TyreChanger(team1Mediator, i, team1->getCar(0)));
-//    }
-//
-//    team1->addCar(Factories[2]->produceElectric());
-//    team1->attachManager(new Manager(team1Mediator, team1->getCar(1)));
-//    team1->attach(new Refueller(team1Mediator, team1->getCar(1)));
-//    team1->attach(new Mechanic(team1Mediator, team1->getCar(1)));
-//    for (int i = 0; i < 4; ++i) {
-//        team1->attach(new TyreChanger(team1Mediator, i, team1->getCar(1)));
-//    }
-//
-//    cout << team1->toString() << endl;
+    Mediator* team1Mediator = new ConcreteMediator();
+
+    Car* car1 = Factories[2]->produceSports();
+
+    PitStop* team1 = new Team("Mercedez");
+    team1->addCar(car1);
+    team1->attachManager(new Manager(team1Mediator, team1->getCar()));
+    team1->attach(new Refueller(team1Mediator, team1->getCar()));
+    team1->attach(new Mechanic(team1Mediator, team1->getCar()));
+    for (int i = 0; i < 4; ++i) {
+        team1->attach(new TyreChanger(team1Mediator, i, team1->getCar()));
+    }
+
+    for (int i = 0; i < team1->getNumMembers(); ++i){
+        team1Mediator->addMember(team1->getMember(i));
+    }
+    team1Mediator->addMember(team1->getManager());
+
+    car1->setManager(team1->getManager());
+    car1->setTeam(team1);
+    cout << team1->toString() << endl;
+
+    car1->setCarFuel(car1->getCarFuel() - 80);
 
 
 
 /*
  * UNCOMMENT FOR DEMONSTRATION OF ManagerRegitstration MEDIATOR
  */
-    int trackNum;
-    RaceTrackComponent* racetrack1 = new RaceTrack();
-    racetrack1->add(new Straight());
-    racetrack1->add(new LeftEighth());
-    racetrack1->add(new RightEighth());
-    RaceTrackComponent* racetrack2 = new RaceTrack();
-    racetrack2->add(new Straight());
-    racetrack2->add(new LeftEighth());
-    racetrack2->add(new RightEighth());
-    RegistratcionManager* manager= new ConcreteRegistrationManager();
-    Car* car1= Factories[0]->produceSports();
-    car1->setDriver(new PassiveDriver());
-    Car* car2= Factories[0]->produceElectric();
-    car2->setDriver(new AggressiveDriver());
-    manager->addCar(car1,2);
-    manager->addCar(car1,1);
-    manager->addCar(car1,0);
-    manager->addTrack(racetrack1);
-    manager->addCar(car1,2);
-    manager->addCar(car2,0);
-    manager->addCar(car2,0);
-    manager->addCar(car2,1);
-    manager->addCar(car2,2);
-    manager->addTrack(racetrack2);
-    manager->addCar(car1,2);
-    manager->addCar(car2,2);
-    manager->addCar(car2,1);
-    manager->addCar(car2,2);
-    manager->addCar(car2,3);
-    manager->addCar(car1,2);
-
-    RaceManager* raceManager = new ConcreteRaceManager();
-    RaceTrackComponent* test=NULL;
-    while(test==NULL)
-    {
-        cout<<"Which track would you like to race? >";
-        cin>>trackNum;
-        test=manager->getTrack(trackNum);
-    }
-    raceManager->addRacetrack(test);
-    raceManager->addCars(manager->getCars(trackNum));
-    raceManager->readyRace();
-    raceManager->printLeaderBoard();
-    raceManager->startRace();
+//    int trackNum;
+//    RaceTrackComponent* racetrack1 = new RaceTrack();
+//    racetrack1->add(new Straight());
+//    racetrack1->add(new LeftEighth());
+//    racetrack1->add(new RightEighth());
+//    RaceTrackComponent* racetrack2 = new RaceTrack();
+//    racetrack2->add(new Straight());
+//    racetrack2->add(new LeftEighth());
+//    racetrack2->add(new RightEighth());
+//    RegistratcionManager* manager= new ConcreteRegistrationManager();
+//    Car* car1= Factories[0]->produceSports();
+//    car1->setDriver(new PassiveDriver());
+//    Car* car2= Factories[0]->produceElectric();
+//    car2->setDriver(new AggressiveDriver());
+//    manager->addCar(car1,2);
+//    manager->addCar(car1,1);
+//    manager->addCar(car1,0);
+//    manager->addTrack(racetrack1);
+//    manager->addCar(car1,2);
+//    manager->addCar(car2,0);
+//    manager->addCar(car2,0);
+//    manager->addCar(car2,1);
+//    manager->addCar(car2,2);
+//    manager->addTrack(racetrack2);
+//    manager->addCar(car1,2);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,1);
+//    manager->addCar(car2,2);
+//    manager->addCar(car2,3);
+//    manager->addCar(car1,2);
+//
+//    RaceManager* raceManager = new ConcreteRaceManager();
+//    RaceTrackComponent* test=NULL;
+//    while(test==NULL)
+//    {
+//        cout<<"Which track would you like to race? >";
+//        cin>>trackNum;
+//        test=manager->getTrack(trackNum);
+//    }
+//    raceManager->addRacetrack(test);
+//    raceManager->addCars(manager->getCars(trackNum));
+//    raceManager->readyRace();
+//    raceManager->printLeaderBoard();
+//    raceManager->startRace();
 
 
 /*

@@ -44,7 +44,7 @@ public:
      * function that will notify the manager if the condition of the car changed
      * @param index the index of the car
      */
-    void notify(int index);
+    void notify();
 
     /**
      * function that sets the condtion for all the tyres to true or false depending if they need change or not
@@ -72,31 +72,38 @@ public:
 
     /**
      * function that gets a car from the cars vector for a specific team
-     * @param index of the car
      */
-    virtual Car* getCar(int index);
+    virtual Car* getCar();
+
+    /**
+     * function that gets the manager from the cars vector for a specific team
+
+     */
+    PitCrew* getManager();
+
+    PitCrew* getMember(int index){return pitCrew[index];};
+
+    int getNumMembers(){return numMembers;};
 
     /**
      * function that lists all the cars in the cars vector for the team
      * @return a string with all the cars
      */
-    string showCars();
+    string showCar();
 
     /**
      * function that gets the managers of the team
      * @return a description of the manager
      */
-    string getManagers();
+    string showManager();
 
     /**
      * function that gets the crew of the team
      * @return a description of the crew
      */
-    string getCrew();
+    string showCrew();
 
-    virtual void getTyres(int index) = 0;
-    virtual void getFuel(int index) = 0;
-    virtual void getDamage(int index) = 0;
+    virtual void getCarStats() = 0;
 
     /**
      * getter function to return the name of the team/pitstop
@@ -117,19 +124,16 @@ private:
     vector<PitCrew*> pitCrew;
 
     /**
-     * @brief vector to hold the managers for a team/pitstop
+     * @brief pointer to hold the manager for a team/pitstop
      */
-    vector<PitCrew*> managers;
+    PitCrew* manager;
 
     /**
-     * @brief vector to hold the cars for a team/pitstop
+     * @brief pointer to hold the car for a team/pitstop
      */
-    vector<Car*> cars;
+    Car* car;
 
-    /**
-     * @brief total number of cars the team/pitstop has
-     */
-    int numCars;
+    int numMembers;
 
     /**
      * @brief bool array to see if there is any problems for all the tyres

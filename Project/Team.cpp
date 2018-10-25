@@ -6,52 +6,45 @@
 
 Team::Team(string name) : PitStop(name){}
 
-void Team::getTyres(int index) {
-    Car* temp = getCar(index);
-    int* tempTyres = temp->getCarTyres();
+void Team::getCarStats() {
+    Car* temp = getCar();
 
-    bool* problem = new bool[temp->getNumTyres()];
+    //TYRE
+    int* tempTyres = temp->getCarTyres();
+    bool* problemTyre = new bool[temp->getNumTyres()];
     for (int i = 0; i < temp->getNumTyres(); ++i) {
-        problem[i] = false;
+        problemTyre[i] = false;
     }
 
-    int optimum = 60;
+    int tyreOptimum = 60;
     for (int i=0; i<temp->getNumTyres(); ++i){
-        if (tempTyres[i] < optimum){
-            problem[i] = true;
+        if (tempTyres[i] < tyreOptimum){
+            problemTyre[i] = true;
         }
     }
-    //If tyreCondition = true -> problem
-    setTyreCondition(problem);
-    notify(index);
-}
 
-void Team::getFuel(int index) {
-    Car* temp = getCar(index);
+    //FUEL
     int tempFuel = temp->getCarFuel();
+    bool problemFuel = false;
 
-    bool problem = false;
-    int optimum = 30;
-    if (tempFuel < optimum){
-        problem = true;
+    int fuelOptimum = 30;
+    if (tempFuel < fuelOptimum){
+        problemFuel = true;
     }
-    //If tyreCondition = true -> problem
-    setFuelLevel(problem);
-    notify(index);
-}
 
-void Team::getDamage(int index) {
-    Car* temp = getCar(index);
+    //DAMAGE
     int tempDamage = temp->getCarDamage();
+    bool problemDamage = false;
 
-    bool problem = false;
-    int optimum = 50;
-    if (tempDamage > optimum){
-        problem = true;
+    int damageOptimum = 50;
+    if (tempDamage > damageOptimum){
+        problemDamage = true;
     }
-    //If tyreCondition = true -> problem
-    setDamage(problem);
-    notify(index);
+
+    setTyreCondition(problemTyre);
+    setFuelLevel(problemFuel);
+    setDamage(problemDamage);
+    notify();
 }
 
 

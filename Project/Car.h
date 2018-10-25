@@ -20,6 +20,10 @@ class Car{
 
     class State* current;
 
+    class PitCrew* manager;
+
+    class PitStop* team;
+
 public:
 
     /**
@@ -160,17 +164,30 @@ public:
      */
     int getNumTyres();
 
+    PitCrew* getManager(){return manager;};
+
+    void setManager(PitCrew* m){manager = m;};
+
+    PitStop* getTeam(){ return team; };
+
+    void setTeam(PitStop* t){team = t;};
+
+    void notifyTeam();
+
     /**
      * function to get the condition of each tyres
      * @return int array showing the condition of each tyre
      */
     int* getCarTyres();
 
+    int getCarTyre(int index);
     /**
      * function to set the condition of the tyres after it has been changed
      * @param index says which tyre was changed and should be updated
      */
-    void setCarTyres(int index);
+    void setCarTyre(int index, int tyre);
+
+    void setChanged(int index, int tyre);
 
     /**
      * function to get the fuel level of the car
@@ -184,6 +201,8 @@ public:
      */
     void setCarFuel(int fuel);
 
+    void setRefuel(int fuel);
+
     /**
      * function to get the damage the car has taken
      * @return the amount of damage since last repair
@@ -194,7 +213,9 @@ public:
      * function to set the damage of the car
      * @param damage the total amount of damage after the car has been repaired
      */
-    void setCarDamage(int damage);
+    void setCarDamage(int damage_);
+
+    void setRepair(int damage_);
 
     /**
      * @return returns the car ID

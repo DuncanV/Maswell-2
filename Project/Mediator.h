@@ -13,6 +13,7 @@ class Mediator {
 public:
     virtual void notify(PitCrew* member) = 0;
     virtual void addMember(PitCrew* member) = 0;
+    virtual void notifyManager(PitCrew* member) = 0;
     virtual ~Mediator(){};
 };
 

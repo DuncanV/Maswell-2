@@ -6,25 +6,22 @@
 #define PROJECT_MANAGER_H
 
 #include "PitCrew.h"
+#include "State.h"
 
 class Manager : public PitCrew{
 public:
-    Manager(Mediator* med, Car* car) : PitCrew(med, car){setDescription("Manager working for " + car->getModelType());};
-
-    virtual bool* getTyreCondition() {return tyreCondition;};
-    virtual void setTyreCondition(bool* status){
-        tyreCondition = status;
+    Manager(Mediator* med, Car* car) : PitCrew(med, car){
+        setDescription("Manager working for " + car->getModelType());
     };
 
-    virtual bool getFuelLevel() {return fuelLevel;};
-    virtual void setFuelLevel(bool status){
-        fuelLevel = status;
-    };
+    virtual bool* getTyreCondition() {PitCrew::getTyreCondition();};
+    virtual void setTyreCondition(bool* status){PitCrew::setTyreCondition(status);};
 
-    virtual bool getDamage() {return damage;};
-    virtual void setDamage(bool status){
-        damage = status;
-    };
+    virtual bool getFuelLevel() {PitCrew::getFuelLevel();};
+    virtual void setFuelLevel(bool status){PitCrew::setFuelLevel(status);};
+
+    virtual bool getDamage() {PitCrew::getDamage();};
+    virtual void setDamage(bool status){PitCrew::setDamage(status);};
 
     virtual void update(bool* tyreCondition, bool fuelLevel, bool damage) {
         setTyreCondition(tyreCondition);
@@ -45,10 +42,15 @@ public:
         }
 
         if(elligible){
-            cout << "RACE!!!\n";
+            car->ready();
+            cout << "Manager :: Car is ready to race!\n";
         } else{
+            car->stopped();
+            cout << "Manager :: Telling crew to fix the car!\n";
             changed();
         }
+
+        car->racing();
     };
 };
 

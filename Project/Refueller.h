@@ -9,29 +9,34 @@
 
 class Refueller : public PitCrew{
 public:
-    Refueller(Mediator* med, Car* car) : PitCrew(med, car){setDescription("Refueller working for " + car->getModelType());};
-
-    virtual bool* getTyreCondition(){};
-    virtual void setTyreCondition(bool* status){};
-
-    virtual bool getFuelLevel(){return fuelLevel;};
-    virtual void setFuelLevel(bool status){
-        fuelLevel = status;
+    Refueller(Mediator* med, Car* car) : PitCrew(med, car){
+        setDescription("Refueller working for " + car->getModelType());
     };
 
-    virtual bool getDamage(){};
-    virtual void setDamage(bool status){};
+    virtual bool* getTyreCondition() {PitCrew::getTyreCondition();};
+    virtual void setTyreCondition(bool* status){PitCrew::setTyreCondition(status);};
+
+    virtual bool getFuelLevel() {PitCrew::getFuelLevel();};
+    virtual void setFuelLevel(bool status){PitCrew::setFuelLevel(status);};
+
+    virtual bool getDamage() {PitCrew::getDamage();};
+    virtual void setDamage(bool status){PitCrew::setDamage(status);};
 
     virtual void update(bool* tyreCondition, bool fuelLevel, bool damage){
         setFuelLevel(fuelLevel);
-        refuel();
+        if (fuelLevel)
+            refuel();
+        cout << "Refueller :: No fuel needed\n";
     };
 
     void refuel(){
-        car->setTrackTime(20);
-        car->setCarFuel(100);
+        cout << "Refueller :: Refuelling the car\n";
+        int time = 20;
+        car->setTrackTime(car->getTrackTime() + time);
+        car->setRefuel(100);
         setFuelLevel(false);
-        changed();
+        cout << "Refueller :: Refuelled the car in " << time << " seconds\n";
+        changedCar();
     };
 };
 

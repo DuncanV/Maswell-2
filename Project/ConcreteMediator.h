@@ -12,7 +12,9 @@ public:
     ~ConcreteMediator();
     virtual void addMember(PitCrew* member);
     virtual void notify(PitCrew* member);
+    virtual void notifyManager(PitCrew* member);
 
+    PitCrew* getManager(){return crewMembers[numCrewMembers-1];};
 private:
     vector<PitCrew*> crewMembers;
     int numCrewMembers;
