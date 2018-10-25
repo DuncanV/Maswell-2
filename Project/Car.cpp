@@ -214,6 +214,6 @@ void Car::stopped() {
 }
 
 void Car::notifyTeam() {
-    cout << "Car :: Notify team!\n";
+//    cout << "Car :: Notify team!\n";
     team->getCarStats();
 }

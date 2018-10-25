@@ -41,16 +41,13 @@ public:
             elligible = false;
         }
 
-        if(elligible){
-//            car->ready();
-//            cout << "Manager :: Car is ready to race!\n";
-        } else{
+        if(!elligible){
+
             car->stopped();
             cout << "Manager :: Telling crew to fix the car!\n";
             changed();
+            car->racing();
         }
-
-        car->racing();
     };
 };
 
