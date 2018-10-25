@@ -22,11 +22,11 @@ public:
         double ability = (amount*1.0)/100;
         setAbility(ability);
 
-        amount= rand()%80+110;
+        amount= rand()%80+100;
         ability = (amount*1.0)/100;
         setFuelAbility(ability);
 
-        amount= rand()%80+110;
+        amount= rand()%80+100;
         ability = (amount*1.0)/100;
         setTyreAbility(ability);
     };

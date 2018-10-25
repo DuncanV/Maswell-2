@@ -16,7 +16,7 @@ public:
     */
     PassiveDriver(){
 
-        int amount= rand()%80+110;
+        int amount= rand()%80+100;
         double ability = (amount*1.0)/100;
         setAbility(ability);
 

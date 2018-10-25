@@ -34,11 +34,22 @@ public:
         else
             cout<<getDescription()+"\tWITH ADDED: "+getDecorator()+"\n";
     };
+    /**
+     * returns the average time for the track
+     * @return
+     */
     int getAverageTime(){ return averageTime;};
+    /**
+     * accepts the visitor to go to the correct part of the visitor
+     * @param v
+     */
     virtual void accept(BigBrother* v)
     {
         v->visit(this);
     }
+    /**
+   *adds the time and fuel and tyre conditions to the car
+   */
     virtual void addTime()
     {
         double driver;
@@ -66,8 +77,17 @@ public:
         }
     }
 private:
+    /**
+     * average time for completing a track component
+     */
     int averageTime= 12;
+    /**
+     * average fuel used for the track part
+     */
     int averageFuel=8;
+    /**
+     * average tyre wear for the track part
+     */
     int averageTyre=8;
 };
 #endif //PROJECT_RIGHTPEELOFF_H

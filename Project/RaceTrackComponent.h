@@ -76,13 +76,40 @@ public:
         cars.erase(cars.begin());
     }
 
-
+    /**
+    * returns the number of components
+    * @return
+    */
     virtual int getNumComponents(){};
+    /**
+     * add the cars to the racetrack
+     * @param _car
+     * @param rt
+     */
     virtual void addAllCars(vector<Car*> _car,int rt){}
+    /**
+     * removes the cars from the racetrack
+     * @param _car
+     * @param rt
+     */
     virtual void removeAllCars(vector<Car*>_car, int rt){}
+    /**
+     * returns all the cars on a racetrack
+     * @param rt
+     * @return
+     */
     virtual vector<Car*> getAllCars(int rt){}
+    /**
+     * accept of vistor class
+     * @param v
+     * @param rt
+     */
     virtual void makeAccept(BigBrother*v,int rt){}
-
+    /**
+     * move car to certain track part
+     * @param _car
+     * @param rt
+     */
     virtual void moveCar(Car* _car,int rt){};
     /**
      * empty implementation of show
@@ -114,8 +141,19 @@ public:
      * the decorate for the track component
      */
     RaceTrackComponent* decorate;
+    /**
+     *add time to car
+     */
     virtual void addTime()=0;
+    /**
+     * accept visitor
+     * @param v
+     */
     virtual void accept(BigBrother* v)=0;
+    /**
+     *return the cars
+     * @return
+     */
     vector<Car*> getCars(){ return cars;}
     /**
      * vector of cars on the track part
