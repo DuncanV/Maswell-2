@@ -1,6 +1,10 @@
-//
-// Created by Duncan on 2018/10/20.
-//
+/**
+ *  @file AggressiveDriver.h
+ *  @class AggressiveDriver
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief concreteStratey for strategy design pattern
+ */
 
 #ifndef PROJECT_AVERAGEDRIVER_H
 #define PROJECT_AVERAGEDRIVER_H
@@ -8,8 +12,10 @@
 class AverageDriver:public Driver
 {
 public:
+    /**
+    * constructor to set fuel, tyre and driving ability
+    */
     AverageDriver(){
-
 
         int amount= rand()%40+120;
         double ability = (amount*1.0)/100;

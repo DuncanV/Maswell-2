@@ -207,12 +207,27 @@ public:
      */
     void RegistrationNotify(string msg);
 
+    /**
+     * returns lapnumber
+     * @return lapno
+     */
     int getLap(){ return lapNo;};
 
+    /**
+     * sets the lap number
+     * @param l
+     */
     void setLap(int l){lapNo=l;};
-
+    /**
+    * returns track part
+    * @return trackPart
+    */
     int getTrackPart(){return trackPart;};
 
+    /**
+     * sets track part of car
+     * @param t
+     */
     void setTrackPart(int t){trackPart= t;};
 
     void setState(State* state);
@@ -221,8 +236,15 @@ public:
     void racing();
     void stopped();
 
+    /**
+     * sets the driver of the car
+     * @param driver1
+     */
     void setDriver(Driver* driver1){driver=driver1;};
-
+    /**
+    * returns the driver of the car
+    * @return
+    */
     Driver* getDriver(){ return driver;};
 
 private:
@@ -304,7 +326,9 @@ private:
      * the part of track the car is on
      */
     int trackPart;
-
+    /**
+    * the driver object
+    */
     Driver* driver;
 };
 

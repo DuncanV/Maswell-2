@@ -1,6 +1,10 @@
-//
-// Created by Duncan on 2018/10/20.
-//
+/**
+ *  @file AggressiveDriver.h
+ *  @class AggressiveDriver
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ *  @brief concreteStratey for strategy design pattern
+ */
 
 #ifndef PROJECT_AGGRESSIVEDRIVER_H
 #define PROJECT_AGGRESSIVEDRIVER_H
@@ -9,6 +13,9 @@
 class AggressiveDriver:public Driver
 {
 public:
+    /**
+     * constructor to set fuel, tyre and driving ability
+     */
     AggressiveDriver(){
 
         int amount= rand()%80+10;
