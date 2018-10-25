@@ -231,6 +231,33 @@ ElectricCar.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/ElectricCar.cpp.s
 .PHONY : ElectricCar.cpp.s
 
+Facade.o: Facade.cpp.o
+
+.PHONY : Facade.o
+
+# target to build an object file
+Facade.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Facade.cpp.o
+.PHONY : Facade.cpp.o
+
+Facade.i: Facade.cpp.i
+
+.PHONY : Facade.i
+
+# target to preprocess a source file
+Facade.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Facade.cpp.i
+.PHONY : Facade.cpp.i
+
+Facade.s: Facade.cpp.s
+
+.PHONY : Facade.s
+
+# target to generate assembly for a file
+Facade.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Facade.cpp.s
+.PHONY : Facade.cpp.s
+
 PitCrew.o: PitCrew.cpp.o
 
 .PHONY : PitCrew.o
@@ -495,6 +522,9 @@ help:
 	@echo "... ElectricCar.o"
 	@echo "... ElectricCar.i"
 	@echo "... ElectricCar.s"
+	@echo "... Facade.o"
+	@echo "... Facade.i"
+	@echo "... Facade.s"
 	@echo "... PitCrew.o"
 	@echo "... PitCrew.i"
 	@echo "... PitCrew.s"

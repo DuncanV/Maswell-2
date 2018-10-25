@@ -26,9 +26,17 @@ public:
     * abstract function to add trackComponents into mediator
     */
     virtual void addTrack(RaceTrackComponent* _racetrack)=0;
-
+    /**
+     * returns the cars on a certain racetrack
+     * @param racetrack
+     * @return
+     */
     virtual vector<Car*> getCars(int racetrack)=0;
-    
+    /**
+     * returns the race track for a track number
+     * @param trackNo
+     * @return
+     */
     virtual RaceTrackComponent* getTrack(int trackNo)=0;
 private:
 

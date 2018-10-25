@@ -39,6 +39,11 @@ public:
     */
     virtual void addTrack(RaceTrackComponent* _racetrack);
 
+    /**
+     * returns the cars for a given racetrack
+     * @param racetrack
+     * @return vector of cars
+     */
     virtual vector<Car*> getCars(int racetrack)
     {
         int track= tracks.size();
@@ -53,6 +58,11 @@ public:
         }
     }
 
+    /**
+     * returns a racetrack given a racetrack number
+     * @param trackNo
+     * @return a racetrack number
+     */
     virtual RaceTrackComponent* getTrack(int trackNo)
     {
         if(trackNo>=tracks.size())

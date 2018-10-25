@@ -70,8 +70,17 @@ public:
      */
     int getRaceTrackID(){ return RaceTrackID;};
 
+    /**
+     * returns the number of track components in the track
+     * @return
+     */
     int getNumComponents(){ return components.size();};
 
+    /**
+     * adds all the cars to the track part
+     * @param _car
+     * @param rt
+     */
     void addAllCars(vector<Car*> _car,int rt)
     {
         for(int i=0;i<_car.size();i++)
@@ -80,6 +89,11 @@ public:
         }
     }
 
+    /**
+     * removes all the cars from the race track component
+     * @param _car
+     * @param rt
+     */
     void removeAllCars(vector<Car*>_car, int rt)
     {
         for(int i=0;i<_car.size();i++)
@@ -88,15 +102,32 @@ public:
         }
     }
 
+    /**
+     * returns all the cars as a wector
+     * @param rt
+     * @return car vector
+     */
     vector<Car*> getAllCars(int rt)
     {
         return components[rt]->getCars();
     }
+    /**
+     * empty implementation of abstract class
+     * @param v
+     */
     virtual void accept(BigBrother* v){}
 
+    /**
+     * element accepts the visitor
+     * @param v
+     * @param rt
+     */
     void makeAccept(BigBrother*v,int rt){
         components[rt]->accept(v);
     }
+    /**
+     * adds the time onto the car
+     */
     virtual void addTime(){}
 private:
     /**

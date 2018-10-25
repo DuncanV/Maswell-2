@@ -128,6 +128,12 @@
 		<Unit filename="/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/ElectricRoadster.h">
 			<Option target="Project"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Facade.cpp">
+			<Option target="Project"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/Facade.h">
+			<Option target="Project"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Tjaart/Documents/GitHub/Maswell-2/Project/FinishDecorator.h">
 			<Option target="Project"/>
 		</Unit>

@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project.dir/PitStop.cpp.o"
   "CMakeFiles/Project.dir/Team.cpp.o"
   "CMakeFiles/Project.dir/State.cpp.o"
+  "CMakeFiles/Project.dir/Facade.cpp.o"
   "Project.pdb"
   "Project.exe"
   "libProject.dll.a"
