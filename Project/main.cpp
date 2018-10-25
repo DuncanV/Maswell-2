@@ -51,7 +51,8 @@ int main() {
     Factories[2] = new FormulaOneFactory();         //
 
     Facade* facade= new Facade();
-    Driver* s=facade->createDriver();
+//    Driver* a= facade->createDriver();
+    RaceTrackComponent* s=facade->createCustomeRacetrack();
 //
 //    Car **cars = new Car *[5];
 //    Car **clones = new Car *[5];
@@ -268,7 +269,7 @@ int main() {
 //    car1->setTeam(team1);
 //    cout << team1->toString() << endl;
 //
-////    car1->setCarFuel(car1->getCarFuel() - 80);
+//   car1->setCarFuel(car1->getCarFuel() - 80);
 //
 //    Mediator* team2Mediator = new ConcreteMediator();
 //
@@ -470,11 +471,11 @@ int main() {
 
 
     //deletion of allocated memory
-    for (int i = 0; i < 3; i++)
-    {
-        delete Factories[i];
-    }
-    delete []Factories;
+//    for (int i = 0; i < 3; i++)
+//    {
+//        delete Factories[i];
+//    }
+//    delete []Factories;
 //    for (int i = 0; i < 5; i++)
 //    {
 //        delete cars[i];

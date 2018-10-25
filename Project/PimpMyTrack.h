@@ -30,6 +30,15 @@ public:
      *  empty implementation of add
      */
     virtual void add(RaceTrackComponent*){}
+    /**
+     * empty implementation of add time
+     */
+    virtual void addTime(){};
+    /**
+     * empty implementation of accept
+     * @param v
+     */
+    virtual void accept(BigBrother* v){};
 private:
 
 };
