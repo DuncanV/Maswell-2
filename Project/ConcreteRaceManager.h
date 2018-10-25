@@ -35,6 +35,12 @@ public:
         cout<<"How many laps would you like this race to be ? > ";
         cin>>LapMax;
         racetrackSize=RaceTrack->getNumComponents();
+        cout<<endl;
+        for(int i =3;i>=1;i--)
+        {
+            cout<<to_string(i)<<endl;
+            usleep(1000000);
+        }
         RaceTrack->removeAllCars(cars,0);
         cout<<"START RACE!\n\n";
         usleep(1000000);

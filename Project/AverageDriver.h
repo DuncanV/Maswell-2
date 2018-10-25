@@ -9,11 +9,19 @@ class AverageDriver:public Driver
 {
 public:
     AverageDriver(){
-        srand(time(NULL));
+
 
         int amount= rand()%40+120;
         double ability = (amount*1.0)/100;
         setAbility(ability);
+
+        amount= rand()%40+120;
+        ability = (amount*1.0)/100;
+        setFuelAbility(ability);
+
+        amount= rand()%40+120;
+        ability = (amount*1.0)/100;
+        setTyreAbility(ability);
     }
 };
 #endif //PROJECT_AVERAGEDRIVER_H

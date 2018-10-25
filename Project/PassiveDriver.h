@@ -9,11 +9,19 @@ class PassiveDriver:public Driver
 {
 public:
     PassiveDriver(){
-        srand(time(NULL));
+
 
         int amount= rand()%80+110;
         double ability = (amount*1.0)/100;
         setAbility(ability);
+
+        amount= rand()%80+10;
+        ability = (amount*1.0)/100;
+        setFuelAbility(ability);
+
+        amount= rand()%80+10;
+        ability = (amount*1.0)/100;
+        setTyreAbility(ability);
     };
 };
 #endif //PROJECT_PASSIVEDRIVER_H
