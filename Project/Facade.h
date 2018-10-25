@@ -54,7 +54,7 @@ public:
     PitStop* createTeam(string name);
     Car* createCustomCar();
     RaceTrackComponent* createCustomeRacetrack();
-    void registerCar(Car* c,int i)();
+    void registerCar(Car* c,int i);
     void registerTrack(RaceTrackComponent* rt);
     void prepRace();
     void StartRace();
