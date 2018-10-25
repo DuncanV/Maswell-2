@@ -29,6 +29,7 @@ public:
             cars[i]->setLap(0);
             cars[i]->setTrackPart(0);
             cars[i]->setTrackTime(0);
+            cars[i]->ready();
             RaceTrack->moveCar(cars[i],0);
         }
         cout<<"Cars Are Ready to race!\n";
@@ -45,10 +46,16 @@ public:
         cin>>LapMax;
         racetrackSize=RaceTrack->getNumComponents();
         cout<<endl;
+
         for(int i =3;i>=1;i--)
         {
             cout<<to_string(i)<<endl;
             usleep(1000000);
+        }
+
+        for(int k=0;k<cars.size();k++)
+        {
+            cars[k]->racing();
         }
         RaceTrack->removeAllCars(cars,0);
         cout<<"START RACE!\n\n";

@@ -42,8 +42,8 @@ public:
         }
 
         if(elligible){
-            car->ready();
-            cout << "Manager :: Car is ready to race!\n";
+//            car->ready();
+//            cout << "Manager :: Car is ready to race!\n";
         } else{
             car->stopped();
             cout << "Manager :: Telling crew to fix the car!\n";

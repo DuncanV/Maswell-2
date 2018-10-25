@@ -69,10 +69,10 @@ public:
             }
             cars[i]->setTrackTime(cars[i]->getTrackTime()+(int)(getAverageTime()*driver+0.5));
             cars[i]->setCarFuel(cars[i]->getCarFuel()-(int)(averageFuel*fuel+0.5));
-            for(int i=0;i<cars[i]->getNumTyres();i++)
-            {
-                cars[i]->setCarTyre(i,cars[i]->getCarTyre(i)-(int)(averageTyre*tyre+0.5));
-            }
+//            for(int i=0;i<cars[i]->getNumTyres();i++)
+//            {
+//                cars[i]->setCarTyre(i,cars[i]->getCarTyre(i)-(int)(averageTyre*tyre+0.5));
+//            }
         }
     }
 private:

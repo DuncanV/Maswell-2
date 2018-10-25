@@ -10,13 +10,13 @@
 class State {
 public:
     virtual void ready(Car* car){
-        cout << "Car is READY\n";
+        cout << "Car "<<car->getCarID()<<" is READY\n";
     };
     virtual void racing(Car* car){
-        cout << "Car is RACING\n";
+        cout << "Car "<<car->getCarID()<<" is RACING\n";
     };
     virtual void stopped(Car* car){
-        cout << "Car is STOPPED\n";
+        cout << "Car "<<car->getCarID()<<" is STOPPED\n";
     };
 
     virtual string toString() = 0;

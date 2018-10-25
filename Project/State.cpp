@@ -5,36 +5,36 @@
 #include "State.h"
 
 void Ready::racing(Car *car) {
-    cout << "Car is changed from READY to RACING\n";
+    cout << "Car "<<car->getCarID()<<" changed from READY to RACING\n";
     car->setState(new Racing());
     delete this;
 }
 void Ready::stopped(Car *car) {
-    cout << "Car is changed from READY to STOPPED\n";
+    cout << "Car "<<car->getCarID()<<" changed from READY to STOPPED\n";
     car->setState(new Stopped());
     delete this;
 }
 
 void Racing::ready(Car *car) {
-    cout << "Car is changed from RACING to READY\n";
+    cout << "Car "<<car->getCarID()<<" is changed from RACING to READY\n";
     car->setState(new Ready());
     delete this;
 }
 
 void Racing::stopped(Car *car) {
-    cout << "Car is changed from RACING to STOPPED\n";
+    cout << "Car "<<car->getCarID()<<" is changed from RACING to STOPPED\n";
     car->setState(new Stopped());
     delete this;
 }
 
 void Stopped::ready(Car *car) {
-    cout << "Car is changed from STOPPED to READY\n";
+    cout << "Car "<<car->getCarID()<<" is changed from STOPPED to READY\n";
     car->setState(new Ready());
     delete this;
 }
 
 void Stopped::racing(Car *car) {
-    cout << "Car is changed from STOPPED to RACING\n";
+    cout << "Car "<<car->getCarID()<<" is changed from STOPPED to RACING\n";
     car->setState(new Racing());
     delete this;
 }
