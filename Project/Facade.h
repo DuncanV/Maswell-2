@@ -64,10 +64,9 @@ public:
     ~Facade();
     /**
      * function to create a new team
-     * @param name takes team name in parameter
      * @return a pitstop object
      */
-    PitStop* createTeam(string name);
+    PitStop* createTeam();
 
     /**
      * create a custom car, will ask all options
