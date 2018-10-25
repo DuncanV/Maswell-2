@@ -1,6 +1,9 @@
-//
-// Created by Tjaart on 2018/10/13.
-//
+/**
+ *  @file PitCrew.h
+ *  @class PitCrew
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ */
 
 #ifndef PROJECT_PITCREW_H
 #define PROJECT_PITCREW_H
@@ -32,10 +35,13 @@ public:
     void registerWork(PitStop* pitStop);
 
     /**
-     * function to tell other collegues that belongs to the same mediator that the car is changed
+     * function to tell other colleagues that belongs to the same mediator that the car is changed
      */
     void changed();
 
+    /**
+     * function when the car has been changed but when the team should not be notified
+     */
     void changedCar();
 
     /**
@@ -50,12 +56,48 @@ public:
      */
     string getDescription();
 
+    /**
+     * Abstract function to update the team members
+     * @param tyreCondiiton
+     * @param fuelLevel
+     * @param damage
+     */
     virtual void update(bool* tyreCondiiton, bool fuelLevel, bool damage) = 0;
+
+    /**
+     * Get the tyreCondition for the car
+     * @return bool saying if there is a problem or not
+     */
     virtual bool * getTyreCondition();
+
+    /**
+    * Set the tyreCondition for the car
+    * @param bool saying if there is a problem or not
+    */
     virtual void setTyreCondition(bool* status);
+
+    /**
+     * Get the fuelLevel for the car
+     * @return bool saying if there is a problem or not
+     */
     virtual bool getFuelLevel();
+
+    /**
+     * Set the fuelLevel for the car
+     * @param bool saying if there is a problem or not
+     */
     virtual void setFuelLevel(bool status);
+
+    /**
+     * Get the damage for the car
+     * @return bool saying if there is a problem or not
+     */
     virtual bool getDamage();
+
+    /**
+     * Set the damage for the car
+     * @param bool saying if there is a problem or not
+     */
     virtual void setDamage(bool status);
 
 protected:

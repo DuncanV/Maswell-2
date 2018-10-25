@@ -1,6 +1,9 @@
-//
-// Created by Tjaart on 2018/10/13.
-//
+/**
+ *  @file PitStop.h
+ *  @class PitStop
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ */
 
 #ifndef PROJECT_PITSTOP_H
 #define PROJECT_PITSTOP_H
@@ -77,12 +80,20 @@ public:
 
     /**
      * function that gets the manager from the cars vector for a specific team
-
      */
     PitCrew* getManager();
 
+    /**
+     * function that gets the member with the index sent through
+     * @param index
+     * @return
+     */
     PitCrew* getMember(int index){return pitCrew[index];};
 
+    /**
+     * function to get the number of members in the team
+     * @return
+     */
     int getNumMembers(){return numMembers;};
 
     /**
@@ -103,6 +114,9 @@ public:
      */
     string showCrew();
 
+    /**
+     * Abstract method to get the car stats
+     */
     virtual void getCarStats() = 0;
 
     /**

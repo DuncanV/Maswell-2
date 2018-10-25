@@ -1,6 +1,9 @@
-//
-// Created by Tjaart on 2018/10/13.
-//
+/**
+ *  @file Team.h
+ *  @class Team
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ */
 
 #ifndef PROJECT_TEAM_H
 #define PROJECT_TEAM_H
@@ -15,6 +18,9 @@ public:
      */
     Team(string name);
 
+    /**
+     * Function to get the car stats
+     */
     virtual void getCarStats();
 };
 

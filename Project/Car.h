@@ -18,28 +18,40 @@ using namespace std;
 
 class Car{
 
+    /**
+     * @brief Pointer to the car's current state
+     */
     class State* current;
 
+    /**
+     * @brief Pointer to the car's manager
+     */
     class PitCrew* manager;
 
+    /**
+     * @brief Pointer to the car's team
+     */
     class PitStop* team;
 
 public:
 
     /**
-    * Defualt constructor used for Decoratoring
+    * Defualt constructor for Car
+    * @param tyres - the amount of tyres the car has
     */
     Car(int tyres = 4);
 
     /**
-     * The base Constructor for Car
-     * @param modelType_ states whether the car is Electirc/Sports/Standard
+     * The base constructor for Car
+     * @param modelType_ - states whether the car is Electirc/Sports/Standard
+     * @param tyres - the amount of tyres the car has
      */
     Car(string modelType_, int tyres = 4);
 
     /**
      * The copy constructor for Car
-     * @param car_ is a Car object that will be copied
+     * @param car_ - a Car object that will be copied
+     * @param flag_ - bool var to decide if the base car or the whole car will be cloned
      */
     Car(const Car& car_, bool flag_);
 
@@ -49,60 +61,63 @@ public:
     virtual ~Car(){};
 
     /**
-     * a abstract clone function for the prototype design pattern
+     * Abstract clone function for the prototype design pattern
+     * @param flag - bool var to decide if the base car or the whole car will be cloned
      * @return a Car object
      */
     virtual Car* clone(bool flag = false) = 0;
+
     /**
-     * abstract full clone implemented by decorator class to copy over the decorators
+     * Abstract full clone implemented by decorator class to copy over the decorators
      * @return Car object
      */
     virtual Car* FullClone() = 0;
 
     /**
      * abstract add function for decorator
-     * @param c is car object
+     * @param c - A Car object
      */
     virtual void add(Car* c);
 
     /**
-     * setDescritption function
+     * Set the description of the car
      * @param des string passed in
      */
     void setDescription(string des);
 
     /**
-     * a getDescription Function
-     * @return a string that states the info about the car
+     * Get the description of the car
+     * @return string
      */
     string getDescription()const;
 
     /**
+     * Get the model number of the car
      * @return the car modelNumber
      */
     int getModelNumber()const;
 
     /**
-     * a abstract showCarStats function to show the stats of a car
+     * Abstract showCarStats function to show the stats of a car
      * @return string stating the stats
      */
     virtual string showCarStats();
 
     /**
-     * function to print the condition of a car during the race
+     * Print the condition of a car during the race
      * @return string describing the condition
      */
     string showCarCondition();
 
     /**
      * Function to set speed of a car
-     * @param speed
+     * @param speed - The speed the car has
      */
     void setSpeed(int speed){topSpeed=speed;}
 
     /**
     * Function to get speed of a car
-    * @return speed
+    * @return speed - The speed the car has
     */
     int getSpeed(){ return topSpeed;}
 
@@ -140,6 +155,7 @@ public:
      * @return string (the model type)
      */
     const string getModelType()const { return modelType;};
+
     /**
      * function to return a full detail about the car
      * @return string of car details
@@ -164,60 +180,107 @@ public:
      */
     int getNumTyres();
 
+    /**
+     * Gets the manager of the car
+     * @return PitCrew pointer to the manager
+     */
     PitCrew* getManager(){return manager;};
 
+    /**
+     * Sets the manager of the car
+     * @param m - PitCrew object which is the manager
+     */
     void setManager(PitCrew* m){manager = m;};
 
+    /**
+     * Gets the team of the car
+     * @return PitStop pointer to the team
+     */
     PitStop* getTeam(){ return team; };
 
+    /**
+     * Sets the team of the car
+     * @param t - PitStop object which is the team
+     */
     void setTeam(PitStop* t){team = t;};
 
+    /**
+     * Car notifies the team that its variables has changed.
+     * Car will do this during a race
+     */
     void notifyTeam();
 
     /**
-     * function to get the condition of each tyres
+     * Get the condition of each tyre
      * @return int array showing the condition of each tyre
      */
     int* getCarTyres();
 
-    int getCarTyre(int index);
     /**
-     * function to set the condition of the tyres after it has been changed
-     * @param index says which tyre was changed and should be updated
+     * Get the tyre with the specific index's condition
+     * @param index - index for the tyre array
+     * @return int - the condition of the tyre
+     */
+    int getCarTyre(int index);
+
+    /**
+     * Set the condition of the tyres after it has been changed
+     * Car will then notify the team
+     * @param index - index for the tyre array
+     * @param tyre - the new condition of the tyre
      */
     void setCarTyre(int index, int tyre);
 
+    /**
+     * Set the condition of the tyres after it has been changed
+     * Car will not notify the team
+     * @param index - index for the tyre array
+     * @param tyre - the new condition of the tyre
+     */
     void setChanged(int index, int tyre);
 
     /**
-     * function to get the fuel level of the car
-     * @return the fuel level
+     * Get the fuel level of the car
+     * @return int - the fuel level
      */
     int getCarFuel();
 
     /**
-     * function to set the fuel level of a car
-     * @param fuel is the amount the fuel level shoul be after refueling
+     * Set the fuel level of a car
+     * Car will notify the team
+     * @param fuel - the new fuel level of the car
      */
     void setCarFuel(int fuel);
 
+    /**
+     * Set the fuel level of a car
+     * Car will not notify the team
+     * @param fuel - the new fuel level of the car
+     */
     void setRefuel(int fuel);
 
     /**
-     * function to get the damage the car has taken
+     * Get the damage the car has taken
      * @return the amount of damage since last repair
      */
     int getCarDamage();
 
     /**
-     * function to set the damage of the car
-     * @param damage the total amount of damage after the car has been repaired
+     * Set the damage of the car
+     * Car will then notify the team
+     * @param damage - the new damage of the car
      */
     void setCarDamage(int damage_);
 
+    /**
+     * Set the damage of the car
+     * Car will not notify the team
+     * @param damage - the new damage of the car
+     */
     void setRepair(int damage_);
 
     /**
+     * Get the ID of the car
      * @return returns the car ID
      */
     int getCarID(){ return CarID;};
@@ -251,10 +314,31 @@ public:
      */
     void setTrackPart(int t){trackPart= t;};
 
+    /**
+     * Set the current state of the car
+     * @param state - State object which it needs to be
+     */
     void setState(State* state);
+
+    /**
+     * Get the current state of the car
+     * @return state
+     */
     string getState();
+
+    /**
+     * Change car into the ready state
+     */
     void ready();
+
+    /**
+     * Change car into the racing state
+     */
     void racing();
+
+    /**
+     * Change car into the stopped state
+     */
     void stopped();
 
     /**
@@ -262,6 +346,7 @@ public:
      * @param driver1
      */
     void setDriver(Driver* driver1){driver=driver1;};
+
     /**
     * returns the driver of the car
     * @return

@@ -1,6 +1,10 @@
-//
-// Created by Tjaart on 2018/10/20.
-//
+/**
+ *  @file State.h
+ *  @class State
+ *  @authors Duncan + Tjaart
+ *  @version 1.0.0
+ */
+
 
 #ifndef PROJECT_STATE_H
 #define PROJECT_STATE_H
@@ -9,16 +13,35 @@
 
 class State {
 public:
+
+    /**
+     * Change car to ready state
+     * @param car
+     */
     virtual void ready(Car* car){
         cout << "Car "<<car->getCarID()<<" is READY\n";
     };
+
+    /**
+     * Change car to racing state
+     * @param car
+     */
     virtual void racing(Car* car){
         cout << "Car "<<car->getCarID()<<" is RACING\n";
     };
+
+    /**
+     * Change car to stopped state
+     * @param car
+     */
     virtual void stopped(Car* car){
         cout << "Car "<<car->getCarID()<<" is STOPPED\n";
     };
 
+    /**
+     * Print the current state to the screen
+     * @return
+     */
     virtual string toString() = 0;
 };
 
