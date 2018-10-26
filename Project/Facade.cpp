@@ -13,7 +13,48 @@ Facade::Facade() {
 }
 
 PitStop *Facade::createTeam() {
-    return nullptr;
+    int choice=-1;
+    cout<<"\n====================== Team Creation ======================\n";
+    string name;
+    cout<<"Please enter the name of your Team > ";
+    cin>>name;
+
+    cout<<"\nIn order to have a team, you need a car!\n\n";
+    while(choice<0||choice>1)
+    {
+        cout<<"0:Create New Car\n1:Copy a car\n\n";
+        cout<<"Would you like to create a new car or would you like to copy an existing car? (0-1) >";
+        cin>>choice;
+    }
+    Car* car;
+    if(choice==0)
+    {
+        car=createCustomCar();
+    } else
+    {
+        car=copyCar();
+    }
+    cout<<"Lets Finish Making your team! Give me a second to get everything together!\n";
+    usleep(3000000);
+    Mediator* teamMediator = new ConcreteMediator();
+    PitStop* team = new Team(name);
+    team->addCar(car);
+    team->attachManager(new Manager(teamMediator, team->getCar()));
+    team->attach(new Refueller(teamMediator, team->getCar()));
+    team->attach(new Mechanic(teamMediator, team->getCar()));
+    for (int i = 0; i < 4; ++i) {
+        team->attach(new TyreChanger(teamMediator, i, team->getCar()));
+    }
+
+    for (int i = 0; i < team->getNumMembers(); ++i){
+        teamMediator->addMember(team->getMember(i));
+    }
+    teamMediator->addMember(team->getManager());
+
+    car->setManager(team->getManager());
+    car->setTeam(team);
+    cout <<"Here is your Team!\n"<< team->toString()<<endl;
+    return team;
 }
 
 Car *Facade::createCustomCar() {
@@ -32,7 +73,6 @@ Car *Facade::createCustomCar() {
         {
             break;
         }
-
     }
     while(true)
     {
@@ -44,7 +84,6 @@ Car *Facade::createCustomCar() {
         {
             break;
         }
-
     }
     if(carType==0)
     {
@@ -82,6 +121,8 @@ Car *Facade::createCustomCar() {
     }
 
     cout<<"\n*********** Here is your new car ***********\n"<<car->toString()<<endl;
+    cout<<"\nWe will now take you to create your driver for the car!\n";
+    car->setDriver(createDriver());
     cout<<"Your car will be added to the list of cars!\n";
     cars.push_back(car);
     registerCar(car);
@@ -300,11 +341,11 @@ Car *Facade::copyCar() {
             }
         }
         cout<<"\n*********** Here is your copied car ***********\n"<<car->toString()<<endl;
+        cout<<"\nWe will now take you to create your driver for the car!\n";
+        car->setDriver(createDriver());
         cout<<"Your car will be added to the list of cars!\n";
         cars.push_back(car);
         registerCar(car);
         return car;
-
-
     }
 }

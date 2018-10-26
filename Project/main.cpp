@@ -55,9 +55,10 @@ int main() {
 //    RaceTrackComponent* s=facade->createCustomeRacetrack();
 //        Car* car= facade->createCustomCar();
 //        facade->registerCar(car);
-        Car* copy = facade->copyCar();
-    Car* copy1 = facade->copyCar();
-    Car* copy2 = facade->copyCar();
+//        Car* copy = facade->copyCar();
+//    Car* copy1 = facade->copyCar();
+//    Car* copy2 = facade->copyCar();
+        PitStop* pitStop= facade->createTeam();
 //
 //    Car **cars = new Car *[5];
 //    Car **clones = new Car *[5];
