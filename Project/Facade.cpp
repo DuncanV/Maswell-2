@@ -6,7 +6,7 @@
 Facade::Facade() {
     raceManager = new ConcreteRaceManager();
     registratcionManager= new ConcreteRegistrationManager();
-    CarFactory **Factories = new CarFactory *[3];
+    Factories = new CarFactory *[3];
     Factories[0] = new GoKartFactory();
     Factories[1] = new RoadsterFactory();
     Factories[2] = new FormulaOneFactory();
