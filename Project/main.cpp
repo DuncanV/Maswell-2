@@ -53,6 +53,7 @@ int main() {
     Facade* facade= new Facade();
 //    Driver* a= facade->createDriver();
 //    RaceTrackComponent* s=facade->createCustomeRacetrack();
+        Car* car= facade->createCustomCar();
 //
 //    Car **cars = new Car *[5];
 //    Car **clones = new Car *[5];

@@ -29,7 +29,10 @@ Car *Facade::createCustomCar() {
         cout<<"Please select the type of car you like to make (0-2) > ";
         cin>>carSelect;
         if(carSelect>=0&& carSelect<=2)
+        {
             break;
+        }
+
     }
     while(true)
     {
@@ -38,7 +41,10 @@ Car *Facade::createCustomCar() {
         cout<<"Please select the implementation of car you like to make (0-2) > ";
         cin>>carType;
         if(carType>=0&& carType<=2)
+        {
             break;
+        }
+
     }
     if(carType==0)
     {
@@ -51,10 +57,32 @@ Car *Facade::createCustomCar() {
         car= Factories[carSelect]->produceStandard();
     }
 
-    while(decorateSelect==)
+    while(decorateSelect!=5)
     {
-        //To do
+        cout<<"\n*********** Car Decoration ***********\n";
+        cout<<"0:Flame Vinyl\n1:Skull Vinyl\n2:Nitro\n3:Slick Tyres\n4:Spoiler\n5:DONE\n\n";
+        cout<<"Please select the Decoration you would like to add to your car (0-5) > ";
+        cin>>decorateSelect;
+        if(decorateSelect==0)
+        {
+            car->add(new FlameVinyl());
+        } else if(decorateSelect==1)
+        {
+            car->add(new SkullVinyl());
+        } else if (decorateSelect==2)
+        {
+            car->add(new Nitro(car));
+        } else if (decorateSelect==3)
+        {
+            car->add(new Slick(car));
+        } else if (decorateSelect==4)
+        {
+            car->add(new Spoiler(car));
+        }
     }
+
+    cout<<"\n*********** Here is your new car ***********\n"<<car->toString()<<endl;
+    return car;
 
 
 
