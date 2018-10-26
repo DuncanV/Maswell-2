@@ -58,6 +58,7 @@ Car::Car(const Car& car_, bool flag) {
     }
 
     numTyres = car_.numTyres;
+    tyreCondition = new int[numTyres];
     for(int i =0;i<numTyres;i++)
     {
         tyreCondition[i]=100;

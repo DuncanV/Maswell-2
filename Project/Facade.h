@@ -83,7 +83,7 @@ public:
      * @param c the car to add
      * @param i the track number
      */
-    void registerCar(Car* c,int i);
+    void registerCar(Car* c);
     /**
      *  register the track with registration manager
      * @param rt
@@ -94,7 +94,7 @@ public:
      *  prepare the race by getting all the necessary info from the registration manager
      *  @param rt
      */
-    void prepRace(int racetrack);
+    void prepRace();
 
     /**
      * will start the race
@@ -106,6 +106,12 @@ public:
      * @return the driver
      */
     Driver* createDriver();
+
+    /**
+     * function to clone a car
+     * @return the cloned car
+     */
+    Car* copyCar();
 
 private:
     /**

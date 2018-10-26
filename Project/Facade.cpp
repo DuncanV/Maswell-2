@@ -82,9 +82,10 @@ Car *Facade::createCustomCar() {
     }
 
     cout<<"\n*********** Here is your new car ***********\n"<<car->toString()<<endl;
+    cout<<"Your car will be added to the list of cars!\n";
+    cars.push_back(car);
+    registerCar(car);
     return car;
-
-
 
 }
 
@@ -158,23 +159,54 @@ RaceTrackComponent *Facade::createCustomeRacetrack() {
     }
     cout<<"\n*********** Here is you RaceTrack ***********\n";
     raceTrack->show();
+    cout<<"Your racetrack will be added to the racetracks!\n";
+    racetracks.push_back(raceTrack);
+    cout<<"We will now register your racetrack to the registration manager!\n";
+    registratcionManager->addTrack(raceTrack);
     return raceTrack;
 }
 
-void Facade::registerCar(Car *c, int i) {
-
+void Facade::registerCar(Car *c) {
+    int tn;
+    int again=-1;
+    cout<<"\n*********** Car Registration ***********\n";
+    while(again!=1)
+    {
+        cout<<"Which track would you like to register your car on? (0..*) > ";
+        cin>>tn;
+        if(tn>=0)
+        registratcionManager->addCar(c,tn);
+        cout<<"\n0:Register car for another track\n1:Done\n";
+        cout<<"\nWould you like to register your car for another track? (0-1) > ";
+        cin>>again;
+    }
 }
 
 void Facade::registerTrack(RaceTrackComponent *rt) {
-
+    registratcionManager->addTrack(rt);
 }
 
-void Facade::prepRace(int racetrack) {
-
+void Facade::prepRace() {
+    cout<<"\n====================== Race Preparation ======================\n";
+    int trackNum;
+    RaceTrackComponent* test=NULL;
+    while(test==NULL)
+    {
+        cout<<"\nWhich track would you like to race? >";
+        cin>>trackNum;
+        test=registratcionManager->getTrack(trackNum);
+    }
+    raceManager->addRacetrack(test);
+    raceManager->addCars(registratcionManager->getCars(trackNum));
+    raceManager->readyRace();
+    raceManager->printLeaderBoard();
 }
 
 void Facade::StartRace() {
-
+    int a;
+    cout<<"\n====================== Race Start ======================\nPlease push enter to commence start of race!\n";
+    cin>>a;
+    raceManager->startRace();
 }
 
 Driver *Facade::createDriver() {
@@ -210,4 +242,69 @@ Facade::~Facade() {
         delete Factories[i];
     }
     delete []Factories;
+}
+
+Car *Facade::copyCar() {
+    cout<<"\n====================== Car Copying ======================\n";
+    if(cars.size()==0)
+    {
+        cout<<"There are currently no cars available to copy, we will pass you onto car creation!\n";
+        return createCustomCar();
+    } else
+    {
+        int numcars= cars.size();
+        int carNum=-1;
+        int type=-1;
+        for(int i=0;i<numcars;i++)
+        {
+            cout<<"Car: "<<to_string(i)<<endl;
+            cout<<cars[i]->toString()<<endl;
+        }
+        while(carNum<0||carNum>=numcars)
+        {
+            cout<<"\nPlease Select which car you would like to clone (0-"<<to_string(numcars-1)<<") > ";
+            cin>>carNum;
+            cout<<endl;
+        }
+        while(type<0|| type>1)
+        {
+            cout<<"\n0:Clone Base Car\n1:Clone Upgraded Car\n";
+            cout<<"\nPlease Select the type of clone you would like to make (0-1) > ";
+
+            cin>>type;
+            cout<<endl;
+        }
+        int decorateSelect=-1;
+        Car* car= cars[carNum]->clone(type);
+        while(decorateSelect!=5)
+        {
+            cout<<"\n*********** Car Decoration ***********\n";
+            cout<<"0:Flame Vinyl\n1:Skull Vinyl\n2:Nitro\n3:Slick Tyres\n4:Spoiler\n5:DONE\n\n";
+            cout<<"Please select the Decoration you would like to add to your car (0-5) > ";
+            cin>>decorateSelect;
+            if(decorateSelect==0)
+            {
+                car->add(new FlameVinyl());
+            } else if(decorateSelect==1)
+            {
+                car->add(new SkullVinyl());
+            } else if (decorateSelect==2)
+            {
+                car->add(new Nitro(car));
+            } else if (decorateSelect==3)
+            {
+                car->add(new Slick(car));
+            } else if (decorateSelect==4)
+            {
+                car->add(new Spoiler(car));
+            }
+        }
+        cout<<"\n*********** Here is your copied car ***********\n"<<car->toString()<<endl;
+        cout<<"Your car will be added to the list of cars!\n";
+        cars.push_back(car);
+        registerCar(car);
+        return car;
+
+
+    }
 }
