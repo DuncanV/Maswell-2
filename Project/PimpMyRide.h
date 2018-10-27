@@ -17,9 +17,10 @@ private:
     /**
      * @brief a car object that will be decorated
      */
+    Car* car;
 
 public:
-    Car* car;
+
     /**
     * Defualt constructor used for PimpMyRide
     */
