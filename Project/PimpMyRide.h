@@ -14,11 +14,12 @@
 class PimpMyRide: public Car
 {
 private:
+
+
+public:
     /**
      * @brief a car object that will be decorated
      */
-
-public:
     Car* car;
     /**
     * Defualt constructor used for PimpMyRide
