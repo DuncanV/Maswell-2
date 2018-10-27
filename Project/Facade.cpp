@@ -251,7 +251,11 @@ bool Facade::prepRace() {
 void Facade::StartRace() {
 
     if(!prepRace())
+    {
         return;
+        cout<<"Returning to the main Menu!\n";
+    }
+
     cout<<"\n====================== Race Start ======================\n";
     raceManager->startRace();
 }

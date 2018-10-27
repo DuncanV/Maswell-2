@@ -49,7 +49,7 @@ public:
     {//will have to have iterator object in here
         if(cars.size()==0)
         {
-            cout<<"\nThere are no Cars on the track to race!\n";
+//            cout<<"\nThere are no Cars on the track to race!\n";
             return;
         }
         raceVisitor= new ConcreteBigBrother();
@@ -149,7 +149,7 @@ public:
     {
         if(cars.size()==0)
         {
-            cout<<"\nThere are no Cars on the track to race!\n";
+//            cout<<"\nThere are no Cars on the track to race!\n";
             return;
         }
         string stars="******************************************\n";
