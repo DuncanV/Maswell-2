@@ -14,6 +14,7 @@
 #include "ConcreteBigBrother.h"
 #include <vector>
 #include <unistd.h>
+#include <limits>
 
 using namespace std;
 class ConcreteRaceManager: public RaceManager
@@ -24,6 +25,11 @@ public:
      */
     virtual void readyRace()
     {
+        if(cars.size()==0)
+        {
+            cout<<"\nThere are no Cars on the track to race!\n";
+            return;
+        }
         for (int i=0; i<cars.size(); i++)
         {
             cars[i]->setLap(0);
@@ -41,11 +47,19 @@ public:
      */
     virtual void startRace()
     {//will have to have iterator object in here
+        if(cars.size()==0)
+        {
+            cout<<"\nThere are no Cars on the track to race!\n";
+            return;
+        }
         raceVisitor= new ConcreteBigBrother();
         cout<<"How many laps would you like this race to be ? > ";
         cin>>LapMax;
         racetrackSize=RaceTrack->getNumComponents();
         cout<<endl;
+        cout<<"Please push enter to commence start of race!\n";
+        fgetc(stdin);
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         for(int i =3;i>=1;i--)
         {
@@ -133,6 +147,11 @@ public:
      */
     virtual void printLeaderBoard()
     {
+        if(cars.size()==0)
+        {
+            cout<<"\nThere are no Cars on the track to race!\n";
+            return;
+        }
         string stars="******************************************\n";
         int carIDs [cars.size()];
         int carTimes[cars.size()];

@@ -228,27 +228,31 @@ void Facade::registerTrack(RaceTrackComponent *rt) {
     registratcionManager->addTrack(rt);
 }
 
-void Facade::prepRace() {
+bool Facade::prepRace() {
     cout<<"\n====================== Race Preparation ======================\n";
     int trackNum;
     RaceTrackComponent* test=NULL;
     while(test==NULL)
     {
-        cout<<"\nWhich track would you like to race? >";
+        cout<<"\nWhich track would you like to race? (enter -1 to go back) >";
         cin>>trackNum;
+        if(trackNum==-1)
+            return false;
         test=registratcionManager->getTrack(trackNum);
     }
     raceManager->addRacetrack(test);
     raceManager->addCars(registratcionManager->getCars(trackNum));
     raceManager->readyRace();
     raceManager->printLeaderBoard();
+    return true;
+
 }
 
 void Facade::StartRace() {
 
-    cout<<"\n====================== Race Start ======================\nPlease push enter TWICE to commence start of race!\n";
-    fgetc(stdin);
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    if(!prepRace())
+        return;
+    cout<<"\n====================== Race Start ======================\n";
     raceManager->startRace();
 }
 
@@ -350,4 +354,29 @@ Car *Facade::copyCar() {
         registerCar(car);
         return car;
     }
+}
+
+void Facade::registerCar() {
+    int numcars;
+    if(cars.size()==0)
+    {
+        cout<<"\nThere are No cars to register, please create a car before registering!\n";
+        return;
+    }
+    cout<<"\n====================== Car Registering ======================\n";
+    numcars= cars.size();
+    int carNum=-1;
+    for(int i=0;i<numcars;i++)
+    {
+        cout<<"Car: "<<to_string(i)<<endl;
+        cout<<cars[i]->toString()<<endl;
+    }
+    while(carNum<0||carNum>=numcars)
+    {
+        cout<<"\nPlease Select which car you would like to Register (0-"<<to_string(numcars-1)<<") > ";
+        cin>>carNum;
+        cout<<endl;
+    }
+    registerCar(cars[carNum]);
+
 }

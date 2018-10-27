@@ -84,17 +84,24 @@ public:
      * @param i the track number
      */
     void registerCar(Car* c);
+
+     /**
+      * overloaded parameter to state which car you want to register
+      */
+    void registerCar();
+
     /**
-     *  register the track with registration manager
-     * @param rt
-     */
+    *  register the track with registration manager
+    * @param rt
+    */
     void registerTrack(RaceTrackComponent* rt);
 
     /**
      *  prepare the race by getting all the necessary info from the registration manager
      *  @param rt
+     *  @return returns if you chose to go back
      */
-    void prepRace();
+    bool prepRace();
 
     /**
      * will start the race

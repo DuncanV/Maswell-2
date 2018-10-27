@@ -48,13 +48,19 @@ Car::Car(const Car& car_, bool flag) {
     modelType = car_.modelType;
     modelNumber = car_.modelNumber;
     CarID=prodcuctionNum++;
-    if (flag == false){
-        carDecorate=0;
-    } else{
-        carDecorate=car_.carDecorate->FullClone();
+    if (flag == true){
+        if(car_.carDecorate==0)
+        {
+            carDecorate=0;
+        } else
+        {
+            carDecorate=car_.carDecorate->FullClone();
+        }
         topSpeed=car_.topSpeed;
         handling=car_.handling;
         acceleration=car_.acceleration;
+    } else{
+        carDecorate=0;
     }
 
     numTyres = car_.numTyres;
@@ -191,7 +197,7 @@ void Car::setRepair(int damage_) {
 }
 
 void Car::RegistrationNotify(string msg) {
-    cout<<"NOTIFY: "+msg<<endl;
+    cout<<"\nNOTIFY: "+msg<<endl;
 }
 
 void Car::setState(State* state) {
