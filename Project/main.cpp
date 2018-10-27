@@ -59,7 +59,10 @@ int main() {
 //    Car* copy1 = facade->copyCar();
 //    Car* copy2 = facade->copyCar();
         PitStop* pitStop= facade->createTeam();
-//
+        PitStop* pitStop1= facade->createTeam();
+        RaceTrackComponent* raceTrackComponent= facade->createCustomeRacetrack();
+        facade->prepRace();
+        facade->StartRace();
 //    Car **cars = new Car *[5];
 //    Car **clones = new Car *[5];
 //
