@@ -1,0 +1,168 @@
+\hypertarget{class_facade}{}\section{Facade Class Reference}
+\label{class_facade}\index{Facade@{Facade}}
+
+
+\mbox{\hyperlink{class_facade}{Facade}} pattern.  
+
+
+
+
+{\ttfamily \#include $<$Facade.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_facade_a8e0f43c604499d9d603236929b3ac488}{Facade}} ()
+\item 
+\mbox{\hyperlink{class_facade_a169c5f53bfcb40710dc621f464237c62}{$\sim$\+Facade}} ()
+\item 
+\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$ \mbox{\hyperlink{class_facade_ad77479711f459ddab775288aa0553d50}{create\+Team}} ()
+\item 
+\mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_facade_abdb018bece78a8749c0e9c59fc66b06d}{create\+Custom\+Car}} ()
+\item 
+\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$ \mbox{\hyperlink{class_facade_a63d9892bcb04cf1406be32f548585c47}{create\+Custome\+Racetrack}} ()
+\item 
+void \mbox{\hyperlink{class_facade_a5afbadb755edf573f9c1a0a05c0f264b}{register\+Car}} (\mbox{\hyperlink{class_car}{Car}} $\ast$c)
+\item 
+void \mbox{\hyperlink{class_facade_afa1e2d4dcaa42d8dea6b6f0368952911}{register\+Car}} ()
+\item 
+void \mbox{\hyperlink{class_facade_adedd15b923856bb5876055a3315b0c76}{register\+Track}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$rt)
+\item 
+bool \mbox{\hyperlink{class_facade_a96625dee1b4fab0b7921701cbe164e9e}{prep\+Race}} ()
+\item 
+void \mbox{\hyperlink{class_facade_a96d2f2e58be5d8a41cebcc23136ad3f9}{Start\+Race}} ()
+\item 
+\mbox{\hyperlink{class_driver}{Driver}} $\ast$ \mbox{\hyperlink{class_facade_a390cd556494bcb05b4d61e276f14c603}{create\+Driver}} ()
+\item 
+\mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_facade_acb151bb025ef7238bc92fe7b474293e3}{copy\+Car}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_facade}{Facade}} pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_facade_a8e0f43c604499d9d603236929b3ac488}\label{class_facade_a8e0f43c604499d9d603236929b3ac488}} 
+\index{Facade@{Facade}!Facade@{Facade}}
+\index{Facade@{Facade}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{Facade()}{Facade()}}
+{\footnotesize\ttfamily Facade\+::\+Facade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor that creates the necessary registration objects \mbox{\Hypertarget{class_facade_a169c5f53bfcb40710dc621f464237c62}\label{class_facade_a169c5f53bfcb40710dc621f464237c62}} 
+\index{Facade@{Facade}!````~Facade@{$\sim$\+Facade}}
+\index{````~Facade@{$\sim$\+Facade}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{$\sim$\+Facade()}{~Facade()}}
+{\footnotesize\ttfamily Facade\+::$\sim$\+Facade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor to delete all necessary things 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_facade_acb151bb025ef7238bc92fe7b474293e3}\label{class_facade_acb151bb025ef7238bc92fe7b474293e3}} 
+\index{Facade@{Facade}!copy\+Car@{copy\+Car}}
+\index{copy\+Car@{copy\+Car}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{copy\+Car()}{copyCar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car}{Car}} $\ast$ Facade\+::copy\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to clone a car \begin{DoxyReturn}{Returns}
+the cloned car 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_facade_abdb018bece78a8749c0e9c59fc66b06d}\label{class_facade_abdb018bece78a8749c0e9c59fc66b06d}} 
+\index{Facade@{Facade}!create\+Custom\+Car@{create\+Custom\+Car}}
+\index{create\+Custom\+Car@{create\+Custom\+Car}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+Custom\+Car()}{createCustomCar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car}{Car}} $\ast$ Facade\+::create\+Custom\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+create a custom car, will ask all options \begin{DoxyReturn}{Returns}
+the created car 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_facade_a63d9892bcb04cf1406be32f548585c47}\label{class_facade_a63d9892bcb04cf1406be32f548585c47}} 
+\index{Facade@{Facade}!create\+Custome\+Racetrack@{create\+Custome\+Racetrack}}
+\index{create\+Custome\+Racetrack@{create\+Custome\+Racetrack}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+Custome\+Racetrack()}{createCustomeRacetrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$ Facade\+::create\+Custome\+Racetrack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+create a custom track \begin{DoxyReturn}{Returns}
+the custom track 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_facade_a390cd556494bcb05b4d61e276f14c603}\label{class_facade_a390cd556494bcb05b4d61e276f14c603}} 
+\index{Facade@{Facade}!create\+Driver@{create\+Driver}}
+\index{create\+Driver@{create\+Driver}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+Driver()}{createDriver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_driver}{Driver}} $\ast$ Facade\+::create\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+create a driver, asking which driver the user wants \begin{DoxyReturn}{Returns}
+the driver 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_facade_ad77479711f459ddab775288aa0553d50}\label{class_facade_ad77479711f459ddab775288aa0553d50}} 
+\index{Facade@{Facade}!create\+Team@{create\+Team}}
+\index{create\+Team@{create\+Team}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{create\+Team()}{createTeam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$ Facade\+::create\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to create a new team \begin{DoxyReturn}{Returns}
+a pitstop object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_facade_a96625dee1b4fab0b7921701cbe164e9e}\label{class_facade_a96625dee1b4fab0b7921701cbe164e9e}} 
+\index{Facade@{Facade}!prep\+Race@{prep\+Race}}
+\index{prep\+Race@{prep\+Race}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{prep\+Race()}{prepRace()}}
+{\footnotesize\ttfamily bool Facade\+::prep\+Race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+prepare the race by getting all the necessary info from the registration manager 
+\begin{DoxyParams}{Parameters}
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns if you chose to go back 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_facade_a5afbadb755edf573f9c1a0a05c0f264b}\label{class_facade_a5afbadb755edf573f9c1a0a05c0f264b}} 
+\index{Facade@{Facade}!register\+Car@{register\+Car}}
+\index{register\+Car@{register\+Car}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{register\+Car()}{registerCar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Facade\+::register\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{c }\end{DoxyParamCaption})}
+
+register car to the track with the registration manager 
+\begin{DoxyParams}{Parameters}
+{\em c} & the car to add \\
+\hline
+{\em i} & the track number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_facade_afa1e2d4dcaa42d8dea6b6f0368952911}\label{class_facade_afa1e2d4dcaa42d8dea6b6f0368952911}} 
+\index{Facade@{Facade}!register\+Car@{register\+Car}}
+\index{register\+Car@{register\+Car}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{register\+Car()}{registerCar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Facade\+::register\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+overloaded parameter to state which car you want to register \mbox{\Hypertarget{class_facade_adedd15b923856bb5876055a3315b0c76}\label{class_facade_adedd15b923856bb5876055a3315b0c76}} 
+\index{Facade@{Facade}!register\+Track@{register\+Track}}
+\index{register\+Track@{register\+Track}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{register\+Track()}{registerTrack()}}
+{\footnotesize\ttfamily void Facade\+::register\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{rt }\end{DoxyParamCaption})}
+
+register the track with registration manager 
+\begin{DoxyParams}{Parameters}
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_facade_a96d2f2e58be5d8a41cebcc23136ad3f9}\label{class_facade_a96d2f2e58be5d8a41cebcc23136ad3f9}} 
+\index{Facade@{Facade}!Start\+Race@{Start\+Race}}
+\index{Start\+Race@{Start\+Race}!Facade@{Facade}}
+\subsubsection{\texorpdfstring{Start\+Race()}{StartRace()}}
+{\footnotesize\ttfamily void Facade\+::\+Start\+Race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+will start the race 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_facade_8h}{Facade.\+h}}\item 
+Facade.\+cpp\end{DoxyCompactItemize}

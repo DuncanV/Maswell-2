@@ -1,0 +1,128 @@
+\hypertarget{class_straight}{}\section{Straight Class Reference}
+\label{class_straight}\index{Straight@{Straight}}
+
+
+Leaf for Composite design pattern.  
+
+
+
+
+{\ttfamily \#include $<$Straight.\+h$>$}
+
+Inheritance diagram for Straight\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_straight}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_straight_a4a1633c9f829c817c9b598ec4dd835b0}{Straight}} ()
+\item 
+virtual \mbox{\hyperlink{class_straight_ac0b30476ec27b8a8eeb20f3d1ef0dc13}{$\sim$\+Straight}} ()
+\item 
+virtual void \mbox{\hyperlink{class_straight_a31040b9493c960757e83a2a239865950}{add}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$R)
+\item 
+virtual void \mbox{\hyperlink{class_straight_ae95d3bdc1d16c97c8d6a6ab60e3205e4}{print}} ()
+\item 
+int \mbox{\hyperlink{class_straight_ae8851ae19372aeaa8a61b17114c78754}{get\+Average\+Time}} ()
+\item 
+virtual void \mbox{\hyperlink{class_straight_a8f71b6f1bcf39a5aa79efdfe0c432d1e}{accept}} (\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$v)
+\item 
+virtual void \mbox{\hyperlink{class_straight_ac73d5c8287446875ad28835f2d72a802}{add\+Time}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Leaf for Composite design pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_straight_a4a1633c9f829c817c9b598ec4dd835b0}\label{class_straight_a4a1633c9f829c817c9b598ec4dd835b0}} 
+\index{Straight@{Straight}!Straight@{Straight}}
+\index{Straight@{Straight}!Straight@{Straight}}
+\subsubsection{\texorpdfstring{Straight()}{Straight()}}
+{\footnotesize\ttfamily Straight\+::\+Straight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor calls \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} and sets description \mbox{\Hypertarget{class_straight_ac0b30476ec27b8a8eeb20f3d1ef0dc13}\label{class_straight_ac0b30476ec27b8a8eeb20f3d1ef0dc13}} 
+\index{Straight@{Straight}!````~Straight@{$\sim$\+Straight}}
+\index{````~Straight@{$\sim$\+Straight}!Straight@{Straight}}
+\subsubsection{\texorpdfstring{$\sim$\+Straight()}{~Straight()}}
+{\footnotesize\ttfamily virtual Straight\+::$\sim$\+Straight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_straight_a8f71b6f1bcf39a5aa79efdfe0c432d1e}\label{class_straight_a8f71b6f1bcf39a5aa79efdfe0c432d1e}} 
+\index{Straight@{Straight}!accept@{accept}}
+\index{accept@{accept}!Straight@{Straight}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily virtual void Straight\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+accepts the visitor to go to the correct part of the visitor 
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_race_track_component_aed0a0197b7bc8de3f681484819b59df6}{Race\+Track\+Component}}.
+
+\mbox{\Hypertarget{class_straight_a31040b9493c960757e83a2a239865950}\label{class_straight_a31040b9493c960757e83a2a239865950}} 
+\index{Straight@{Straight}!add@{add}}
+\index{add@{add}!Straight@{Straight}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily virtual void Straight\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implentation of add function, used by decorator 
+\begin{DoxyParams}{Parameters}
+{\em R} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_race_track_component_af89a6b453dfd3fb39fce27576012106f}{Race\+Track\+Component}}.
+
+\mbox{\Hypertarget{class_straight_ac73d5c8287446875ad28835f2d72a802}\label{class_straight_ac73d5c8287446875ad28835f2d72a802}} 
+\index{Straight@{Straight}!add\+Time@{add\+Time}}
+\index{add\+Time@{add\+Time}!Straight@{Straight}}
+\subsubsection{\texorpdfstring{add\+Time()}{addTime()}}
+{\footnotesize\ttfamily virtual void Straight\+::add\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+adds the time and fuel and tyre conditions to the car 
+
+Implements \mbox{\hyperlink{class_race_track_component_aa815404c45ba7df3786c3add177eb7e6}{Race\+Track\+Component}}.
+
+\mbox{\Hypertarget{class_straight_ae8851ae19372aeaa8a61b17114c78754}\label{class_straight_ae8851ae19372aeaa8a61b17114c78754}} 
+\index{Straight@{Straight}!get\+Average\+Time@{get\+Average\+Time}}
+\index{get\+Average\+Time@{get\+Average\+Time}!Straight@{Straight}}
+\subsubsection{\texorpdfstring{get\+Average\+Time()}{getAverageTime()}}
+{\footnotesize\ttfamily int Straight\+::get\+Average\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the average time for the track \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_straight_ae95d3bdc1d16c97c8d6a6ab60e3205e4}\label{class_straight_ae95d3bdc1d16c97c8d6a6ab60e3205e4}} 
+\index{Straight@{Straight}!print@{print}}
+\index{print@{print}!Straight@{Straight}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Straight\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+prints the description of the race track component /with decorators if it has 
+
+Implements \mbox{\hyperlink{class_race_track_component_a02a8d9520cfd80f31dd94b5fa1e76d47}{Race\+Track\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_straight_8h}{Straight.\+h}}\end{DoxyCompactItemize}

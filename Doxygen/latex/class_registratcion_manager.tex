@@ -1,0 +1,83 @@
+\hypertarget{class_registratcion_manager}{}\section{Registratcion\+Manager Class Reference}
+\label{class_registratcion_manager}\index{Registratcion\+Manager@{Registratcion\+Manager}}
+Inheritance diagram for Registratcion\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_registratcion_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_registratcion_manager_aec32edc5e4e17c3816889202f17ca3a5}{add\+Car}} (\mbox{\hyperlink{class_car}{Car}} $\ast$\+\_\+car, int track)=0
+\item 
+virtual void \mbox{\hyperlink{class_registratcion_manager_a7008cf3cb173f6121f94784ed242a7c6}{add\+Track}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$\+\_\+racetrack)=0
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$ $>$ \mbox{\hyperlink{class_registratcion_manager_a2e06d0bf5f81b2a30d19f242bb2f583d}{get\+Cars}} (int racetrack)=0
+\item 
+virtual \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$ \mbox{\hyperlink{class_registratcion_manager_afc647bf31a1e48c6d6a4b5f1156f9649}{get\+Track}} (int track\+No)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_registratcion_manager_aec32edc5e4e17c3816889202f17ca3a5}\label{class_registratcion_manager_aec32edc5e4e17c3816889202f17ca3a5}} 
+\index{Registratcion\+Manager@{Registratcion\+Manager}!add\+Car@{add\+Car}}
+\index{add\+Car@{add\+Car}!Registratcion\+Manager@{Registratcion\+Manager}}
+\subsubsection{\texorpdfstring{add\+Car()}{addCar()}}
+{\footnotesize\ttfamily virtual void Registratcion\+Manager\+::add\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{\+\_\+car,  }\item[{int}]{track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+abstract function to add cars into mediator 
+
+Implemented in \mbox{\hyperlink{class_concrete_registration_manager_a852824cb63b25c30dd4f626d5097c748}{Concrete\+Registration\+Manager}}.
+
+\mbox{\Hypertarget{class_registratcion_manager_a7008cf3cb173f6121f94784ed242a7c6}\label{class_registratcion_manager_a7008cf3cb173f6121f94784ed242a7c6}} 
+\index{Registratcion\+Manager@{Registratcion\+Manager}!add\+Track@{add\+Track}}
+\index{add\+Track@{add\+Track}!Registratcion\+Manager@{Registratcion\+Manager}}
+\subsubsection{\texorpdfstring{add\+Track()}{addTrack()}}
+{\footnotesize\ttfamily virtual void Registratcion\+Manager\+::add\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{\+\_\+racetrack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+abstract function to add track\+Components into mediator 
+
+Implemented in \mbox{\hyperlink{class_concrete_registration_manager_ab7b6cd458f9ff3c5ff7b9413dff48e6a}{Concrete\+Registration\+Manager}}.
+
+\mbox{\Hypertarget{class_registratcion_manager_a2e06d0bf5f81b2a30d19f242bb2f583d}\label{class_registratcion_manager_a2e06d0bf5f81b2a30d19f242bb2f583d}} 
+\index{Registratcion\+Manager@{Registratcion\+Manager}!get\+Cars@{get\+Cars}}
+\index{get\+Cars@{get\+Cars}!Registratcion\+Manager@{Registratcion\+Manager}}
+\subsubsection{\texorpdfstring{get\+Cars()}{getCars()}}
+{\footnotesize\ttfamily virtual vector$<$\mbox{\hyperlink{class_car}{Car}}$\ast$$>$ Registratcion\+Manager\+::get\+Cars (\begin{DoxyParamCaption}\item[{int}]{racetrack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+returns the cars on a certain racetrack 
+\begin{DoxyParams}{Parameters}
+{\em racetrack} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_registration_manager_acea73f6efa6ec01052d3d43694405e66}{Concrete\+Registration\+Manager}}.
+
+\mbox{\Hypertarget{class_registratcion_manager_afc647bf31a1e48c6d6a4b5f1156f9649}\label{class_registratcion_manager_afc647bf31a1e48c6d6a4b5f1156f9649}} 
+\index{Registratcion\+Manager@{Registratcion\+Manager}!get\+Track@{get\+Track}}
+\index{get\+Track@{get\+Track}!Registratcion\+Manager@{Registratcion\+Manager}}
+\subsubsection{\texorpdfstring{get\+Track()}{getTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}}$\ast$ Registratcion\+Manager\+::get\+Track (\begin{DoxyParamCaption}\item[{int}]{track\+No }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+returns the race track for a track number 
+\begin{DoxyParams}{Parameters}
+{\em track\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_registration_manager_a0a6cb4186150d569ac883c66860a52ef}{Concrete\+Registration\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Registration\+Manager.\+h\end{DoxyCompactItemize}

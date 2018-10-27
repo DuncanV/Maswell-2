@@ -1,0 +1,86 @@
+\hypertarget{class_standard_go_kart}{}\section{Standard\+Go\+Kart Class Reference}
+\label{class_standard_go_kart}\index{Standard\+Go\+Kart@{Standard\+Go\+Kart}}
+
+
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Standard\+Go\+Kart.\+h$>$}
+
+Inheritance diagram for Standard\+Go\+Kart\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_standard_go_kart}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_standard_go_kart_a9c4bbd015d1ae8b94a0b5f8ffd4e39b4}{Standard\+Go\+Kart}} ()
+\item 
+\mbox{\hyperlink{class_standard_go_kart_a92a4c08dfe2816ec215c05287a2c15c8}{Standard\+Go\+Kart}} (const \mbox{\hyperlink{class_car}{Car}} \&car\+\_\+, bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_standard_go_kart_aec5a6e2e21ab80b0ee072bbcdcf0323a}{clone}} (bool flag\+\_\+=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_standard_go_kart_a9c4bbd015d1ae8b94a0b5f8ffd4e39b4}\label{class_standard_go_kart_a9c4bbd015d1ae8b94a0b5f8ffd4e39b4}} 
+\index{Standard\+Go\+Kart@{Standard\+Go\+Kart}!Standard\+Go\+Kart@{Standard\+Go\+Kart}}
+\index{Standard\+Go\+Kart@{Standard\+Go\+Kart}!Standard\+Go\+Kart@{Standard\+Go\+Kart}}
+\subsubsection{\texorpdfstring{Standard\+Go\+Kart()}{StandardGoKart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Standard\+Go\+Kart\+::\+Standard\+Go\+Kart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \mbox{\hyperlink{class_standard_go_kart}{Standard\+Go\+Kart}}, calls Constructor of \mbox{\hyperlink{class_standard_car}{Standard\+Car}} \mbox{\Hypertarget{class_standard_go_kart_a92a4c08dfe2816ec215c05287a2c15c8}\label{class_standard_go_kart_a92a4c08dfe2816ec215c05287a2c15c8}} 
+\index{Standard\+Go\+Kart@{Standard\+Go\+Kart}!Standard\+Go\+Kart@{Standard\+Go\+Kart}}
+\index{Standard\+Go\+Kart@{Standard\+Go\+Kart}!Standard\+Go\+Kart@{Standard\+Go\+Kart}}
+\subsubsection{\texorpdfstring{Standard\+Go\+Kart()}{StandardGoKart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Standard\+Go\+Kart\+::\+Standard\+Go\+Kart (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_car}{Car}} \&}]{car\+\_\+,  }\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor used for cloning 
+\begin{DoxyParams}{Parameters}
+{\em car\+\_\+} & car object for copying \\
+\hline
+{\em flag\+\_\+} & to determine if must be full clone or basic clone\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_standard_go_kart_aec5a6e2e21ab80b0ee072bbcdcf0323a}\label{class_standard_go_kart_aec5a6e2e21ab80b0ee072bbcdcf0323a}} 
+\index{Standard\+Go\+Kart@{Standard\+Go\+Kart}!clone@{clone}}
+\index{clone@{clone}!Standard\+Go\+Kart@{Standard\+Go\+Kart}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Standard\+Go\+Kart\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag\+\_\+ = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of clone function 
+\begin{DoxyParams}{Parameters}
+{\em flag\+\_\+} & determines if must be full clone or basic clone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a copied car object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_standard_car_a2fd5dd06bebd68db247bab73bd2176be}{Standard\+Car}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_standard_go_kart_8h}{Standard\+Go\+Kart.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{class_right_peel_on}{}\section{Right\+Peel\+On Class Reference}
+\label{class_right_peel_on}\index{Right\+Peel\+On@{Right\+Peel\+On}}
+
+
+Leaf for Composite design pattern.  
+
+
+
+
+{\ttfamily \#include $<$Right\+Peel\+On.\+h$>$}
+
+Inheritance diagram for Right\+Peel\+On\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_right_peel_on}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_right_peel_on_a99584752f686b5d5540b2a5a032248c1}{Right\+Peel\+On}} ()
+\item 
+virtual \mbox{\hyperlink{class_right_peel_on_a46a1e94121c8fb13ba7189e4d28c551f}{$\sim$\+Right\+Peel\+On}} ()
+\item 
+virtual void \mbox{\hyperlink{class_right_peel_on_a474f981bb38dda2758bf896cbf10545b}{add}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$R)
+\item 
+virtual void \mbox{\hyperlink{class_right_peel_on_a6c54c5dbffa104bb96e7b564e854dd74}{print}} ()
+\item 
+int \mbox{\hyperlink{class_right_peel_on_afdfcc99fb52dfc8363ec063083f1ba1d}{get\+Average\+Time}} ()
+\item 
+virtual void \mbox{\hyperlink{class_right_peel_on_a520a4959ff33775e8c188423b7bc01b7}{accept}} (\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$v)
+\item 
+virtual void \mbox{\hyperlink{class_right_peel_on_aa37e19baf0ca3763e1912f85cbb0949b}{add\+Time}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Leaf for Composite design pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_right_peel_on_a99584752f686b5d5540b2a5a032248c1}\label{class_right_peel_on_a99584752f686b5d5540b2a5a032248c1}} 
+\index{Right\+Peel\+On@{Right\+Peel\+On}!Right\+Peel\+On@{Right\+Peel\+On}}
+\index{Right\+Peel\+On@{Right\+Peel\+On}!Right\+Peel\+On@{Right\+Peel\+On}}
+\subsubsection{\texorpdfstring{Right\+Peel\+On()}{RightPeelOn()}}
+{\footnotesize\ttfamily Right\+Peel\+On\+::\+Right\+Peel\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor calls \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} and sets description \mbox{\Hypertarget{class_right_peel_on_a46a1e94121c8fb13ba7189e4d28c551f}\label{class_right_peel_on_a46a1e94121c8fb13ba7189e4d28c551f}} 
+\index{Right\+Peel\+On@{Right\+Peel\+On}!````~Right\+Peel\+On@{$\sim$\+Right\+Peel\+On}}
+\index{````~Right\+Peel\+On@{$\sim$\+Right\+Peel\+On}!Right\+Peel\+On@{Right\+Peel\+On}}
+\subsubsection{\texorpdfstring{$\sim$\+Right\+Peel\+On()}{~RightPeelOn()}}
+{\footnotesize\ttfamily virtual Right\+Peel\+On\+::$\sim$\+Right\+Peel\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_right_peel_on_a520a4959ff33775e8c188423b7bc01b7}\label{class_right_peel_on_a520a4959ff33775e8c188423b7bc01b7}} 
+\index{Right\+Peel\+On@{Right\+Peel\+On}!accept@{accept}}
+\index{accept@{accept}!Right\+Peel\+On@{Right\+Peel\+On}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily virtual void Right\+Peel\+On\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+accepts the visitor to go to the correct part of the visitor 
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_race_track_component_aed0a0197b7bc8de3f681484819b59df6}{Race\+Track\+Component}}.
+
+\mbox{\Hypertarget{class_right_peel_on_a474f981bb38dda2758bf896cbf10545b}\label{class_right_peel_on_a474f981bb38dda2758bf896cbf10545b}} 
+\index{Right\+Peel\+On@{Right\+Peel\+On}!add@{add}}
+\index{add@{add}!Right\+Peel\+On@{Right\+Peel\+On}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily virtual void Right\+Peel\+On\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implentation of add function, used by decorator 
+\begin{DoxyParams}{Parameters}
+{\em R} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_race_track_component_af89a6b453dfd3fb39fce27576012106f}{Race\+Track\+Component}}.
+
+\mbox{\Hypertarget{class_right_peel_on_aa37e19baf0ca3763e1912f85cbb0949b}\label{class_right_peel_on_aa37e19baf0ca3763e1912f85cbb0949b}} 
+\index{Right\+Peel\+On@{Right\+Peel\+On}!add\+Time@{add\+Time}}
+\index{add\+Time@{add\+Time}!Right\+Peel\+On@{Right\+Peel\+On}}
+\subsubsection{\texorpdfstring{add\+Time()}{addTime()}}
+{\footnotesize\ttfamily virtual void Right\+Peel\+On\+::add\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+adds the time and fuel and tyre conditions to the car 
+
+Implements \mbox{\hyperlink{class_race_track_component_aa815404c45ba7df3786c3add177eb7e6}{Race\+Track\+Component}}.
+
+\mbox{\Hypertarget{class_right_peel_on_afdfcc99fb52dfc8363ec063083f1ba1d}\label{class_right_peel_on_afdfcc99fb52dfc8363ec063083f1ba1d}} 
+\index{Right\+Peel\+On@{Right\+Peel\+On}!get\+Average\+Time@{get\+Average\+Time}}
+\index{get\+Average\+Time@{get\+Average\+Time}!Right\+Peel\+On@{Right\+Peel\+On}}
+\subsubsection{\texorpdfstring{get\+Average\+Time()}{getAverageTime()}}
+{\footnotesize\ttfamily int Right\+Peel\+On\+::get\+Average\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the average time for the track \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_right_peel_on_a6c54c5dbffa104bb96e7b564e854dd74}\label{class_right_peel_on_a6c54c5dbffa104bb96e7b564e854dd74}} 
+\index{Right\+Peel\+On@{Right\+Peel\+On}!print@{print}}
+\index{print@{print}!Right\+Peel\+On@{Right\+Peel\+On}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Right\+Peel\+On\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+prints the description of the race track component /with decorators if it has 
+
+Implements \mbox{\hyperlink{class_race_track_component_a02a8d9520cfd80f31dd94b5fa1e76d47}{Race\+Track\+Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_right_peel_on_8h}{Right\+Peel\+On.\+h}}\end{DoxyCompactItemize}

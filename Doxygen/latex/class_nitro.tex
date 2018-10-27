@@ -1,0 +1,94 @@
+\hypertarget{class_nitro}{}\section{Nitro Class Reference}
+\label{class_nitro}\index{Nitro@{Nitro}}
+
+
+Concrete Decorcator for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Nitro.\+h$>$}
+
+Inheritance diagram for Nitro\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_nitro}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nitro_ae686f66dbacbf2a66345d04caa3d67ea}{Nitro}} (\mbox{\hyperlink{class_car}{Car}} $\ast$Decorate)
+\item 
+\mbox{\hyperlink{class_nitro_ac64ad126c7af7882afe5e7f67727a889}{$\sim$\+Nitro}} ()
+\item 
+\mbox{\hyperlink{class_nitro_a651d03025ee1e2e41e04be171e39b4d4}{Nitro}} (\mbox{\hyperlink{class_nitro}{Nitro}} \+\_\+\+Car, bool dummy)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_nitro_a1574264a8ca8691bb3669c8a3a3ad5dd}{Full\+Clone}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Decorcator for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_nitro_ae686f66dbacbf2a66345d04caa3d67ea}\label{class_nitro_ae686f66dbacbf2a66345d04caa3d67ea}} 
+\index{Nitro@{Nitro}!Nitro@{Nitro}}
+\index{Nitro@{Nitro}!Nitro@{Nitro}}
+\subsubsection{\texorpdfstring{Nitro()}{Nitro()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Nitro\+::\+Nitro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{Decorate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor which assigns description and alters behaviour of car 
+\begin{DoxyParams}{Parameters}
+{\em Decorate} & the car in which the behaviours are added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_nitro_ac64ad126c7af7882afe5e7f67727a889}\label{class_nitro_ac64ad126c7af7882afe5e7f67727a889}} 
+\index{Nitro@{Nitro}!````~Nitro@{$\sim$\+Nitro}}
+\index{````~Nitro@{$\sim$\+Nitro}!Nitro@{Nitro}}
+\subsubsection{\texorpdfstring{$\sim$\+Nitro()}{~Nitro()}}
+{\footnotesize\ttfamily Nitro\+::$\sim$\+Nitro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+destructor for \mbox{\hyperlink{class_nitro}{Nitro}} \mbox{\Hypertarget{class_nitro_a651d03025ee1e2e41e04be171e39b4d4}\label{class_nitro_a651d03025ee1e2e41e04be171e39b4d4}} 
+\index{Nitro@{Nitro}!Nitro@{Nitro}}
+\index{Nitro@{Nitro}!Nitro@{Nitro}}
+\subsubsection{\texorpdfstring{Nitro()}{Nitro()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Nitro\+::\+Nitro (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nitro}{Nitro}}}]{\+\_\+\+Car,  }\item[{bool}]{dummy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+copy constructor used for cloning the decorators 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Car} & the car it copies \\
+\hline
+{\em dummy} & just there to use instead of defualt constructor \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_nitro_a1574264a8ca8691bb3669c8a3a3ad5dd}\label{class_nitro_a1574264a8ca8691bb3669c8a3a3ad5dd}} 
+\index{Nitro@{Nitro}!Full\+Clone@{Full\+Clone}}
+\index{Full\+Clone@{Full\+Clone}!Nitro@{Nitro}}
+\subsubsection{\texorpdfstring{Full\+Clone()}{FullClone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Nitro\+::\+Full\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of Full\+Clone to deep copy the decorater \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object which is the decorator 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_pimp_my_ride_afce12a1a761727eebec707924521d0e2}{Pimp\+My\+Ride}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_nitro_8h}{Nitro.\+h}}\end{DoxyCompactItemize}

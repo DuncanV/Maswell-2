@@ -1,0 +1,106 @@
+\hypertarget{class_concrete_mediator}{}\section{Concrete\+Mediator Class Reference}
+\label{class_concrete_mediator}\index{Concrete\+Mediator@{Concrete\+Mediator}}
+
+
+{\ttfamily \#include $<$Concrete\+Mediator.\+h$>$}
+
+Inheritance diagram for Concrete\+Mediator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_concrete_mediator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_concrete_mediator_a62241708f7b293eafb48064e0dd22f2f}{$\sim$\+Concrete\+Mediator}} ()
+\item 
+virtual void \mbox{\hyperlink{class_concrete_mediator_a81de115027a7180658925a2d2175e08f}{add\+Member}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)
+\item 
+virtual void \mbox{\hyperlink{class_concrete_mediator_aea62657783ed54f1152fe129e4adc8d3}{notify}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)
+\item 
+virtual void \mbox{\hyperlink{class_concrete_mediator_ac4a804e3f7f6a74240ae249cf1f315ec}{notify\+Manager}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)
+\item 
+\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$ \mbox{\hyperlink{class_concrete_mediator_ab205ed278eb15b884e4d9441992b5b20}{get\+Manager}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_concrete_mediator_a62241708f7b293eafb48064e0dd22f2f}\label{class_concrete_mediator_a62241708f7b293eafb48064e0dd22f2f}} 
+\index{Concrete\+Mediator@{Concrete\+Mediator}!````~Concrete\+Mediator@{$\sim$\+Concrete\+Mediator}}
+\index{````~Concrete\+Mediator@{$\sim$\+Concrete\+Mediator}!Concrete\+Mediator@{Concrete\+Mediator}}
+\subsubsection{\texorpdfstring{$\sim$\+Concrete\+Mediator()}{~ConcreteMediator()}}
+{\footnotesize\ttfamily Concrete\+Mediator\+::$\sim$\+Concrete\+Mediator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for the \mbox{\hyperlink{class_concrete_mediator}{Concrete\+Mediator}} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_concrete_mediator_a81de115027a7180658925a2d2175e08f}\label{class_concrete_mediator_a81de115027a7180658925a2d2175e08f}} 
+\index{Concrete\+Mediator@{Concrete\+Mediator}!add\+Member@{add\+Member}}
+\index{add\+Member@{add\+Member}!Concrete\+Mediator@{Concrete\+Mediator}}
+\subsubsection{\texorpdfstring{add\+Member()}{addMember()}}
+{\footnotesize\ttfamily void Concrete\+Mediator\+::add\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Add a member of the pitcrew to the mediator to talk to other members 
+\begin{DoxyParams}{Parameters}
+{\em member} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_mediator_af3c7f586db4b837962101612555caf6f}{Mediator}}.
+
+\mbox{\Hypertarget{class_concrete_mediator_ab205ed278eb15b884e4d9441992b5b20}\label{class_concrete_mediator_ab205ed278eb15b884e4d9441992b5b20}} 
+\index{Concrete\+Mediator@{Concrete\+Mediator}!get\+Manager@{get\+Manager}}
+\index{get\+Manager@{get\+Manager}!Concrete\+Mediator@{Concrete\+Mediator}}
+\subsubsection{\texorpdfstring{get\+Manager()}{getManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}}$\ast$ Concrete\+Mediator\+::get\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the manager of the pitcrew \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_concrete_mediator_aea62657783ed54f1152fe129e4adc8d3}\label{class_concrete_mediator_aea62657783ed54f1152fe129e4adc8d3}} 
+\index{Concrete\+Mediator@{Concrete\+Mediator}!notify@{notify}}
+\index{notify@{notify}!Concrete\+Mediator@{Concrete\+Mediator}}
+\subsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Concrete\+Mediator\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Notify the team that the car has changed 
+\begin{DoxyParams}{Parameters}
+{\em member} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_mediator_acd0f8876148e8aef1f03a80072832bf8}{Mediator}}.
+
+\mbox{\Hypertarget{class_concrete_mediator_ac4a804e3f7f6a74240ae249cf1f315ec}\label{class_concrete_mediator_ac4a804e3f7f6a74240ae249cf1f315ec}} 
+\index{Concrete\+Mediator@{Concrete\+Mediator}!notify\+Manager@{notify\+Manager}}
+\index{notify\+Manager@{notify\+Manager}!Concrete\+Mediator@{Concrete\+Mediator}}
+\subsubsection{\texorpdfstring{notify\+Manager()}{notifyManager()}}
+{\footnotesize\ttfamily void Concrete\+Mediator\+::notify\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Notify the manager that the car has changed 
+\begin{DoxyParams}{Parameters}
+{\em member} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_mediator_a044f7032c52ca2359f98b798ccd555d3}{Mediator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_concrete_mediator_8h}{Concrete\+Mediator.\+h}}\item 
+Concrete\+Mediator.\+cpp\end{DoxyCompactItemize}

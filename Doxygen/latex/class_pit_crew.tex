@@ -1,0 +1,245 @@
+\hypertarget{class_pit_crew}{}\section{Pit\+Crew Class Reference}
+\label{class_pit_crew}\index{Pit\+Crew@{Pit\+Crew}}
+
+
+{\ttfamily \#include $<$Pit\+Crew.\+h$>$}
+
+Inheritance diagram for Pit\+Crew\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pit_crew}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pit_crew_a49409297eb8e8b28ba1631858358f3de}{Pit\+Crew}} (\mbox{\hyperlink{class_mediator}{Mediator}} $\ast$med, \mbox{\hyperlink{class_car}{Car}} $\ast$\mbox{\hyperlink{class_pit_crew_ae2d97d82c1ae7061faf9b053329772e5}{car}})
+\item 
+void \mbox{\hyperlink{class_pit_crew_acf65dc9104c4286e663926689e7a3803}{register\+Work}} (\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$pit\+Stop)
+\item 
+void \mbox{\hyperlink{class_pit_crew_a3d3613895533476934ba89ed592b5c6a}{changed}} ()
+\item 
+void \mbox{\hyperlink{class_pit_crew_a973e77f91c6110a1f6bda3ef71385b6e}{changed\+Car}} ()
+\item 
+void \mbox{\hyperlink{class_pit_crew_a15489fdb826cc62b7d83088ced1e3f8c}{set\+Description}} (string des)
+\item 
+string \mbox{\hyperlink{class_pit_crew_ad30e9eabf7e52b6a459b8a4816e43909}{get\+Description}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pit_crew_a575e63653226346422eb2c2f8020d95d}{update}} (bool $\ast$tyre\+Condiiton, bool \mbox{\hyperlink{class_pit_crew_ad45840fa02b11a128e069ffcc7fdde47}{fuel\+Level}}, bool \mbox{\hyperlink{class_pit_crew_aa87241e1f87a430e1a92ed7010ccf554}{damage}})=0
+\item 
+virtual bool $\ast$ \mbox{\hyperlink{class_pit_crew_a7a527a6b4eccb6570dcad04b04dc1177}{get\+Tyre\+Condition}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pit_crew_a281583ec0986aeec56fc70dd362fa31c}{set\+Tyre\+Condition}} (bool $\ast$status)
+\item 
+virtual bool \mbox{\hyperlink{class_pit_crew_a6960d91ce635df7f846301e21ae64450}{get\+Fuel\+Level}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pit_crew_a8c137bb619ab3a331f4f1d7023477e4b}{set\+Fuel\+Level}} (bool status)
+\item 
+virtual bool \mbox{\hyperlink{class_pit_crew_a0cd6a3161f5b016241b3a6a51d526c4f}{get\+Damage}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pit_crew_a41051dd7081efeac022cc3a35a592c64}{set\+Damage}} (bool status)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pit_crew_abf4690db656612bf89f0abe024756924}\label{class_pit_crew_abf4690db656612bf89f0abe024756924}} 
+string \mbox{\hyperlink{class_pit_crew_abf4690db656612bf89f0abe024756924}{description}}
+\begin{DoxyCompactList}\small\item\em description describing the crew member \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pit_crew_a95c5984868479e4084bfcc24b4693ff9}\label{class_pit_crew_a95c5984868479e4084bfcc24b4693ff9}} 
+\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$ \mbox{\hyperlink{class_pit_crew_a95c5984868479e4084bfcc24b4693ff9}{work\+For}}
+\begin{DoxyCompactList}\small\item\em the team/pitstop the member is working for \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pit_crew_ae2d97d82c1ae7061faf9b053329772e5}\label{class_pit_crew_ae2d97d82c1ae7061faf9b053329772e5}} 
+\mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_pit_crew_ae2d97d82c1ae7061faf9b053329772e5}{car}}
+\begin{DoxyCompactList}\small\item\em the car the member is working for \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pit_crew_add6d2560b553a1359bfb68a6a4d80332}\label{class_pit_crew_add6d2560b553a1359bfb68a6a4d80332}} 
+bool $\ast$ \mbox{\hyperlink{class_pit_crew_add6d2560b553a1359bfb68a6a4d80332}{tyre\+Condition}}
+\begin{DoxyCompactList}\small\item\em tyrecondition for the car \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pit_crew_ad45840fa02b11a128e069ffcc7fdde47}\label{class_pit_crew_ad45840fa02b11a128e069ffcc7fdde47}} 
+bool \mbox{\hyperlink{class_pit_crew_ad45840fa02b11a128e069ffcc7fdde47}{fuel\+Level}}
+\begin{DoxyCompactList}\small\item\em fuel level for the car \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pit_crew_aa87241e1f87a430e1a92ed7010ccf554}\label{class_pit_crew_aa87241e1f87a430e1a92ed7010ccf554}} 
+bool \mbox{\hyperlink{class_pit_crew_aa87241e1f87a430e1a92ed7010ccf554}{damage}}
+\begin{DoxyCompactList}\small\item\em damage for the car \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_pit_crew_a2025059ebb3b14eb3ada6723b5364157}\label{class_pit_crew_a2025059ebb3b14eb3ada6723b5364157}} 
+\mbox{\hyperlink{class_mediator}{Mediator}} $\ast$ \mbox{\hyperlink{class_pit_crew_a2025059ebb3b14eb3ada6723b5364157}{mediator}}
+\begin{DoxyCompactList}\small\item\em mediator the car belongs to \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pit_crew_a49409297eb8e8b28ba1631858358f3de}\label{class_pit_crew_a49409297eb8e8b28ba1631858358f3de}} 
+\index{Pit\+Crew@{Pit\+Crew}!Pit\+Crew@{Pit\+Crew}}
+\index{Pit\+Crew@{Pit\+Crew}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{Pit\+Crew()}{PitCrew()}}
+{\footnotesize\ttfamily Pit\+Crew\+::\+Pit\+Crew (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mediator}{Mediator}} $\ast$}]{med,  }\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{car }\end{DoxyParamCaption})}
+
+default constructor for a new \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} member 
+\begin{DoxyParams}{Parameters}
+{\em med} & The mediator for which the member will communicate to \\
+\hline
+{\em car} & The car the member will work with \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pit_crew_a3d3613895533476934ba89ed592b5c6a}\label{class_pit_crew_a3d3613895533476934ba89ed592b5c6a}} 
+\index{Pit\+Crew@{Pit\+Crew}!changed@{changed}}
+\index{changed@{changed}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{changed()}{changed()}}
+{\footnotesize\ttfamily void Pit\+Crew\+::changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to tell other colleagues that belongs to the same mediator that the car is changed \mbox{\Hypertarget{class_pit_crew_a973e77f91c6110a1f6bda3ef71385b6e}\label{class_pit_crew_a973e77f91c6110a1f6bda3ef71385b6e}} 
+\index{Pit\+Crew@{Pit\+Crew}!changed\+Car@{changed\+Car}}
+\index{changed\+Car@{changed\+Car}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{changed\+Car()}{changedCar()}}
+{\footnotesize\ttfamily void Pit\+Crew\+::changed\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function when the car has been changed but when the team should not be notified \mbox{\Hypertarget{class_pit_crew_a0cd6a3161f5b016241b3a6a51d526c4f}\label{class_pit_crew_a0cd6a3161f5b016241b3a6a51d526c4f}} 
+\index{Pit\+Crew@{Pit\+Crew}!get\+Damage@{get\+Damage}}
+\index{get\+Damage@{get\+Damage}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{get\+Damage()}{getDamage()}}
+{\footnotesize\ttfamily bool Pit\+Crew\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the damage for the car \begin{DoxyReturn}{Returns}
+bool saying if there is a problem or not 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_manager_a4f22d596754a0a099c9b467eadcb408f}{Manager}}, \mbox{\hyperlink{class_tyre_changer_ac0ad98b08d6016010a6bfed58442b78c}{Tyre\+Changer}}, \mbox{\hyperlink{class_mechanic_a6a67e4933d517b8e0a78763d80c82fd8}{Mechanic}}, and \mbox{\hyperlink{class_refueller_a60e223f847141196f4b44656869b06d1}{Refueller}}.
+
+\mbox{\Hypertarget{class_pit_crew_ad30e9eabf7e52b6a459b8a4816e43909}\label{class_pit_crew_ad30e9eabf7e52b6a459b8a4816e43909}} 
+\index{Pit\+Crew@{Pit\+Crew}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily string Pit\+Crew\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to get the description of the member \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pit_crew_a6960d91ce635df7f846301e21ae64450}\label{class_pit_crew_a6960d91ce635df7f846301e21ae64450}} 
+\index{Pit\+Crew@{Pit\+Crew}!get\+Fuel\+Level@{get\+Fuel\+Level}}
+\index{get\+Fuel\+Level@{get\+Fuel\+Level}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{get\+Fuel\+Level()}{getFuelLevel()}}
+{\footnotesize\ttfamily bool Pit\+Crew\+::get\+Fuel\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the fuel\+Level for the car \begin{DoxyReturn}{Returns}
+bool saying if there is a problem or not 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_manager_a832a35309c0a23038f2fc94879e2dab8}{Manager}}, \mbox{\hyperlink{class_tyre_changer_ad369d1e8e5e356b297c904be374b045c}{Tyre\+Changer}}, \mbox{\hyperlink{class_mechanic_a0479343f19d2ea34942e3c3bd0b14391}{Mechanic}}, and \mbox{\hyperlink{class_refueller_afa17784be5e98b518c3a7de2d3b7ad1f}{Refueller}}.
+
+\mbox{\Hypertarget{class_pit_crew_a7a527a6b4eccb6570dcad04b04dc1177}\label{class_pit_crew_a7a527a6b4eccb6570dcad04b04dc1177}} 
+\index{Pit\+Crew@{Pit\+Crew}!get\+Tyre\+Condition@{get\+Tyre\+Condition}}
+\index{get\+Tyre\+Condition@{get\+Tyre\+Condition}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{get\+Tyre\+Condition()}{getTyreCondition()}}
+{\footnotesize\ttfamily bool $\ast$ Pit\+Crew\+::get\+Tyre\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the tyre\+Condition for the car \begin{DoxyReturn}{Returns}
+bool saying if there is a problem or not 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_manager_ae4984934c5751a4cfd5932370191b67d}{Manager}}, \mbox{\hyperlink{class_tyre_changer_afdd2bc9ac35d7e5449a9e0c5ee39b450}{Tyre\+Changer}}, \mbox{\hyperlink{class_mechanic_aed7f46c76c75b647527c041ff5082f6e}{Mechanic}}, and \mbox{\hyperlink{class_refueller_a4ccfe56b7f490244776856fc5b8c0d45}{Refueller}}.
+
+\mbox{\Hypertarget{class_pit_crew_acf65dc9104c4286e663926689e7a3803}\label{class_pit_crew_acf65dc9104c4286e663926689e7a3803}} 
+\index{Pit\+Crew@{Pit\+Crew}!register\+Work@{register\+Work}}
+\index{register\+Work@{register\+Work}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{register\+Work()}{registerWork()}}
+{\footnotesize\ttfamily void Pit\+Crew\+::register\+Work (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$}]{pit\+Stop }\end{DoxyParamCaption})}
+
+function for attaching the crewmembers to a pitstop allowing us to get a description of the crew members of a team 
+\begin{DoxyParams}{Parameters}
+{\em pit\+Stop} & the pitstop the member is working for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_crew_a41051dd7081efeac022cc3a35a592c64}\label{class_pit_crew_a41051dd7081efeac022cc3a35a592c64}} 
+\index{Pit\+Crew@{Pit\+Crew}!set\+Damage@{set\+Damage}}
+\index{set\+Damage@{set\+Damage}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{set\+Damage()}{setDamage()}}
+{\footnotesize\ttfamily void Pit\+Crew\+::set\+Damage (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the damage for the car 
+\begin{DoxyParams}{Parameters}
+{\em bool} & saying if there is a problem or not \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_manager_abb374f168cde17c59609660efff6b186}{Manager}}, \mbox{\hyperlink{class_tyre_changer_ac89db968d57e823330886acbabb65b32}{Tyre\+Changer}}, \mbox{\hyperlink{class_mechanic_a12dfbe444cfcd09925534e2651ef5489}{Mechanic}}, and \mbox{\hyperlink{class_refueller_a0b40ac4e5bd3c83e2a0cfd18214c849d}{Refueller}}.
+
+\mbox{\Hypertarget{class_pit_crew_a15489fdb826cc62b7d83088ced1e3f8c}\label{class_pit_crew_a15489fdb826cc62b7d83088ced1e3f8c}} 
+\index{Pit\+Crew@{Pit\+Crew}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{set\+Description()}{setDescription()}}
+{\footnotesize\ttfamily void Pit\+Crew\+::set\+Description (\begin{DoxyParamCaption}\item[{string}]{des }\end{DoxyParamCaption})}
+
+function to set the description of a member allowing us to get a detailed view of the team 
+\begin{DoxyParams}{Parameters}
+{\em des} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_crew_a8c137bb619ab3a331f4f1d7023477e4b}\label{class_pit_crew_a8c137bb619ab3a331f4f1d7023477e4b}} 
+\index{Pit\+Crew@{Pit\+Crew}!set\+Fuel\+Level@{set\+Fuel\+Level}}
+\index{set\+Fuel\+Level@{set\+Fuel\+Level}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{set\+Fuel\+Level()}{setFuelLevel()}}
+{\footnotesize\ttfamily void Pit\+Crew\+::set\+Fuel\+Level (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the fuel\+Level for the car 
+\begin{DoxyParams}{Parameters}
+{\em bool} & saying if there is a problem or not \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_manager_a14c804ff23b09be331842d3db9cbbbe1}{Manager}}, \mbox{\hyperlink{class_tyre_changer_a22ba050947a3cea4372fc574d6fae910}{Tyre\+Changer}}, \mbox{\hyperlink{class_mechanic_aadcc0312af851bd03361aec4744881ee}{Mechanic}}, and \mbox{\hyperlink{class_refueller_a8b8eb7429509e858a3787e1a58aa9db0}{Refueller}}.
+
+\mbox{\Hypertarget{class_pit_crew_a281583ec0986aeec56fc70dd362fa31c}\label{class_pit_crew_a281583ec0986aeec56fc70dd362fa31c}} 
+\index{Pit\+Crew@{Pit\+Crew}!set\+Tyre\+Condition@{set\+Tyre\+Condition}}
+\index{set\+Tyre\+Condition@{set\+Tyre\+Condition}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{set\+Tyre\+Condition()}{setTyreCondition()}}
+{\footnotesize\ttfamily void Pit\+Crew\+::set\+Tyre\+Condition (\begin{DoxyParamCaption}\item[{bool $\ast$}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the tyre\+Condition for the car 
+\begin{DoxyParams}{Parameters}
+{\em bool} & saying if there is a problem or not \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_manager_a94c18f89371ffb2af29a14f67cde55de}{Manager}}, \mbox{\hyperlink{class_tyre_changer_a1a0df7cbe3bd488bdc54fd1e14fefd1b}{Tyre\+Changer}}, \mbox{\hyperlink{class_mechanic_a9ca7c0e50fe3bdc27f9f8f2273968ddc}{Mechanic}}, and \mbox{\hyperlink{class_refueller_a7260c4594e1def9110d293186a9dc14c}{Refueller}}.
+
+\mbox{\Hypertarget{class_pit_crew_a575e63653226346422eb2c2f8020d95d}\label{class_pit_crew_a575e63653226346422eb2c2f8020d95d}} 
+\index{Pit\+Crew@{Pit\+Crew}!update@{update}}
+\index{update@{update}!Pit\+Crew@{Pit\+Crew}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Pit\+Crew\+::update (\begin{DoxyParamCaption}\item[{bool $\ast$}]{tyre\+Condiiton,  }\item[{bool}]{fuel\+Level,  }\item[{bool}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract function to update the team members 
+\begin{DoxyParams}{Parameters}
+{\em tyre\+Condiiton} & \\
+\hline
+{\em fuel\+Level} & \\
+\hline
+{\em damage} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_manager_a61004fdc59a9b88c45931cc8b7201868}{Manager}}, \mbox{\hyperlink{class_tyre_changer_ad48ea41135a817264c940169a9cbef68}{Tyre\+Changer}}, \mbox{\hyperlink{class_mechanic_a405ddcc5b6e6f0194c33af4972cdec5d}{Mechanic}}, and \mbox{\hyperlink{class_refueller_a61a9f440ae2e7ca694b40b03a6a7b8d6}{Refueller}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pit_crew_8h}{Pit\+Crew.\+h}}\item 
+Pit\+Crew.\+cpp\end{DoxyCompactItemize}

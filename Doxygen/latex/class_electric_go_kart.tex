@@ -1,0 +1,86 @@
+\hypertarget{class_electric_go_kart}{}\section{Electric\+Go\+Kart Class Reference}
+\label{class_electric_go_kart}\index{Electric\+Go\+Kart@{Electric\+Go\+Kart}}
+
+
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Electric\+Gokart.\+h$>$}
+
+Inheritance diagram for Electric\+Go\+Kart\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_electric_go_kart}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_electric_go_kart_aa48c98395080aec1ddebdb633327f9ab}{Electric\+Go\+Kart}} ()
+\item 
+\mbox{\hyperlink{class_electric_go_kart_adc3a6b04ae5466f1a05ca6546e2e942e}{Electric\+Go\+Kart}} (const \mbox{\hyperlink{class_car}{Car}} \&car\+\_\+, bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_electric_go_kart_a56f6b0c5a68597601f27818f10862bcb}{clone}} (bool flag\+\_\+=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_electric_go_kart_aa48c98395080aec1ddebdb633327f9ab}\label{class_electric_go_kart_aa48c98395080aec1ddebdb633327f9ab}} 
+\index{Electric\+Go\+Kart@{Electric\+Go\+Kart}!Electric\+Go\+Kart@{Electric\+Go\+Kart}}
+\index{Electric\+Go\+Kart@{Electric\+Go\+Kart}!Electric\+Go\+Kart@{Electric\+Go\+Kart}}
+\subsubsection{\texorpdfstring{Electric\+Go\+Kart()}{ElectricGoKart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Electric\+Go\+Kart\+::\+Electric\+Go\+Kart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \mbox{\hyperlink{class_electric_go_kart}{Electric\+Go\+Kart}}, calls Constructor of \mbox{\hyperlink{class_electric_car}{Electric\+Car}} \mbox{\Hypertarget{class_electric_go_kart_adc3a6b04ae5466f1a05ca6546e2e942e}\label{class_electric_go_kart_adc3a6b04ae5466f1a05ca6546e2e942e}} 
+\index{Electric\+Go\+Kart@{Electric\+Go\+Kart}!Electric\+Go\+Kart@{Electric\+Go\+Kart}}
+\index{Electric\+Go\+Kart@{Electric\+Go\+Kart}!Electric\+Go\+Kart@{Electric\+Go\+Kart}}
+\subsubsection{\texorpdfstring{Electric\+Go\+Kart()}{ElectricGoKart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Electric\+Go\+Kart\+::\+Electric\+Go\+Kart (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_car}{Car}} \&}]{car\+\_\+,  }\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor used for cloning 
+\begin{DoxyParams}{Parameters}
+{\em car\+\_\+} & car object for copying \\
+\hline
+{\em flag\+\_\+} & to determine if must be full clone or basic clone \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_electric_go_kart_a56f6b0c5a68597601f27818f10862bcb}\label{class_electric_go_kart_a56f6b0c5a68597601f27818f10862bcb}} 
+\index{Electric\+Go\+Kart@{Electric\+Go\+Kart}!clone@{clone}}
+\index{clone@{clone}!Electric\+Go\+Kart@{Electric\+Go\+Kart}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Electric\+Go\+Kart\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag\+\_\+ = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of clone function 
+\begin{DoxyParams}{Parameters}
+{\em flag\+\_\+} & determines if must be full clone or basic clone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a copied car object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_electric_car_a852de7d2208dea4d45a554d9270508d0}{Electric\+Car}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_electric_gokart_8h}{Electric\+Gokart.\+h}}\end{DoxyCompactItemize}

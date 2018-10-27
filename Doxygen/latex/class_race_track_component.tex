@@ -1,0 +1,341 @@
+\hypertarget{class_race_track_component}{}\section{Race\+Track\+Component Class Reference}
+\label{class_race_track_component}\index{Race\+Track\+Component@{Race\+Track\+Component}}
+
+
+abstract leaf class for composite pattern  
+
+
+
+
+{\ttfamily \#include $<$Race\+Track\+Component.\+h$>$}
+
+Inheritance diagram for Race\+Track\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{class_race_track_component}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_race_track_component_a1dd8ed4c6c3833dd0a4372ade8609afb}{Race\+Track\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_af32bdea381a07dd2bb8f851164fc102b}{decorate\+Track}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$R)
+\item 
+virtual string \mbox{\hyperlink{class_race_track_component_a2998bbf7b576eff0e355166646ed46e8}{get\+Decorator}} ()
+\item 
+void \mbox{\hyperlink{class_race_track_component_aafa6492a0249238db0b91a36cf9bf55b}{add\+Car}} (\mbox{\hyperlink{class_car}{Car}} $\ast$\+\_\+car)
+\item 
+void \mbox{\hyperlink{class_race_track_component_a68594f9436ad820a62430d59ae433273}{remove\+Car}} (\mbox{\hyperlink{class_car}{Car}} $\ast$\+\_\+car)
+\item 
+virtual int \mbox{\hyperlink{class_race_track_component_a6b57a071d1f11ddccd416fdbfe7e973b}{get\+Num\+Components}} ()
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_afb51617f25b639cf0a98a42a86120937}{add\+All\+Cars}} (vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$$>$ \+\_\+car, int rt)
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_a0d073a7d844143f5c4cebf2a2bb0cee7}{remove\+All\+Cars}} (vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$$>$\+\_\+car, int rt)
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$ $>$ \mbox{\hyperlink{class_race_track_component_a3a2453934d3795376c23e251b2d3f99d}{get\+All\+Cars}} (int rt)
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_a7cfe0c366248474e2665d42724c09bca}{make\+Accept}} (\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$v, int rt)
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_a1925fdddd2cc1541fe649152bacb58ca}{move\+Car}} (\mbox{\hyperlink{class_car}{Car}} $\ast$\+\_\+car, int rt)
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_a109347e296fe7df389f157c01344a79a}{show}} ()
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_a02a8d9520cfd80f31dd94b5fa1e76d47}{print}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_af89a6b453dfd3fb39fce27576012106f}{add}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$)=0
+\item 
+virtual \mbox{\hyperlink{class_race_track_component_a9f99da5f33311cce756f496a7d9e3f1f}{$\sim$\+Race\+Track\+Component}} ()
+\item 
+void \mbox{\hyperlink{class_race_track_component_a03d5e6e6758dcf89bee2f4160d18a9eb}{set\+Description}} (string d)
+\item 
+string \mbox{\hyperlink{class_race_track_component_a443780d8534a8799fbcde14aa7b540c2}{get\+Description}} ()
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_aa815404c45ba7df3786c3add177eb7e6}{add\+Time}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_race_track_component_aed0a0197b7bc8de3f681484819b59df6}{accept}} (\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$v)=0
+\item 
+vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$ $>$ \mbox{\hyperlink{class_race_track_component_a5bb16c76fd5335c9d1a951b9de5ea48c}{get\+Cars}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$ \mbox{\hyperlink{class_race_track_component_ad5b40b7d85b7369e1aaf5ce8c3448128}{decorate}}
+\item 
+vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$ $>$ \mbox{\hyperlink{class_race_track_component_a7ac8e22cd540bed371efab3e47ebe49b}{cars}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+abstract leaf class for composite pattern 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_race_track_component_a1dd8ed4c6c3833dd0a4372ade8609afb}\label{class_race_track_component_a1dd8ed4c6c3833dd0a4372ade8609afb}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!Race\+Track\+Component@{Race\+Track\+Component}}
+\index{Race\+Track\+Component@{Race\+Track\+Component}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{Race\+Track\+Component()}{RaceTrackComponent()}}
+{\footnotesize\ttfamily Race\+Track\+Component\+::\+Race\+Track\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parent Constructor for the racetrack parys \mbox{\Hypertarget{class_race_track_component_a9f99da5f33311cce756f496a7d9e3f1f}\label{class_race_track_component_a9f99da5f33311cce756f496a7d9e3f1f}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!````~Race\+Track\+Component@{$\sim$\+Race\+Track\+Component}}
+\index{````~Race\+Track\+Component@{$\sim$\+Race\+Track\+Component}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{$\sim$\+Race\+Track\+Component()}{~RaceTrackComponent()}}
+{\footnotesize\ttfamily virtual Race\+Track\+Component\+::$\sim$\+Race\+Track\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_race_track_component_aed0a0197b7bc8de3f681484819b59df6}\label{class_race_track_component_aed0a0197b7bc8de3f681484819b59df6}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!accept@{accept}}
+\index{accept@{accept}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{accept()}{accept()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+accept visitor 
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_race_track_a022988aacbdffd1e0144be3836deeaea}{Race\+Track}}, \mbox{\hyperlink{class_left_eighth_a82a8a792d82363e5852763df729e1d8a}{Left\+Eighth}}, \mbox{\hyperlink{class_right_eighth_af66185d944d6c5b9854af5a95a826e5e}{Right\+Eighth}}, \mbox{\hyperlink{class_right_peel_off_a267445b1c690cbba2d737e441bc217d9}{Right\+Peel\+Off}}, \mbox{\hyperlink{class_right_peel_on_a520a4959ff33775e8c188423b7bc01b7}{Right\+Peel\+On}}, \mbox{\hyperlink{class_left_peel_on_a2c35b4a139709fe6a99c055aa9ba7169}{Left\+Peel\+On}}, \mbox{\hyperlink{class_straight_a8f71b6f1bcf39a5aa79efdfe0c432d1e}{Straight}}, \mbox{\hyperlink{class_left_peel_off_a14a125b99c807a7a0961af5be020e641}{Left\+Peel\+Off}}, and \mbox{\hyperlink{class_pimp_my_track_a26bee1c8ec01b69eedc788d6199be9f4}{Pimp\+My\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_af89a6b453dfd3fb39fce27576012106f}\label{class_race_track_component_af89a6b453dfd3fb39fce27576012106f}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!add@{add}}
+\index{add@{add}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+pure virtual implementation of add 
+
+Implemented in \mbox{\hyperlink{class_race_track_a1a71ace4706e2e08578111fee2c7eac6}{Race\+Track}}, \mbox{\hyperlink{class_pimp_my_track_a22126de4605d351960de212f39936051}{Pimp\+My\+Track}}, \mbox{\hyperlink{class_left_eighth_a8b41dca112e41eda8ec47a5cf4675a3e}{Left\+Eighth}}, \mbox{\hyperlink{class_right_peel_off_a6290d2439262a87a6557cd594cc72823}{Right\+Peel\+Off}}, \mbox{\hyperlink{class_right_peel_on_a474f981bb38dda2758bf896cbf10545b}{Right\+Peel\+On}}, \mbox{\hyperlink{class_left_peel_on_a73ee71ca18d951e4938914361caa395d}{Left\+Peel\+On}}, \mbox{\hyperlink{class_right_eighth_a9ca383bb10f9029d8ed0eb43cfa9edc7}{Right\+Eighth}}, \mbox{\hyperlink{class_straight_a31040b9493c960757e83a2a239865950}{Straight}}, and \mbox{\hyperlink{class_left_peel_off_ae1a279fc9522e6f2e6f5a4c879f01a06}{Left\+Peel\+Off}}.
+
+\mbox{\Hypertarget{class_race_track_component_afb51617f25b639cf0a98a42a86120937}\label{class_race_track_component_afb51617f25b639cf0a98a42a86120937}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!add\+All\+Cars@{add\+All\+Cars}}
+\index{add\+All\+Cars@{add\+All\+Cars}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{add\+All\+Cars()}{addAllCars()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::add\+All\+Cars (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$$>$}]{\+\_\+car,  }\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+add the cars to the racetrack 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+car} & \\
+\hline
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_race_track_a14ac008331e0a8945fce4cdb59086ba1}{Race\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_aafa6492a0249238db0b91a36cf9bf55b}\label{class_race_track_component_aafa6492a0249238db0b91a36cf9bf55b}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!add\+Car@{add\+Car}}
+\index{add\+Car@{add\+Car}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{add\+Car()}{addCar()}}
+{\footnotesize\ttfamily void Race\+Track\+Component\+::add\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{\+\_\+car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+add car to the race track component 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+car} & the car to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_track_component_aa815404c45ba7df3786c3add177eb7e6}\label{class_race_track_component_aa815404c45ba7df3786c3add177eb7e6}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!add\+Time@{add\+Time}}
+\index{add\+Time@{add\+Time}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{add\+Time()}{addTime()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::add\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+add time to car 
+
+Implemented in \mbox{\hyperlink{class_race_track_a9030a93ab510a49131fcbf1853d2fe81}{Race\+Track}}, \mbox{\hyperlink{class_left_eighth_a2bbed3b19b9d9842c7aadebd048b1884}{Left\+Eighth}}, \mbox{\hyperlink{class_right_eighth_adbe57086dd69560284c4df28fcd29221}{Right\+Eighth}}, \mbox{\hyperlink{class_right_peel_off_aa3097a53c5cf4b01495913cad798c1d4}{Right\+Peel\+Off}}, \mbox{\hyperlink{class_right_peel_on_aa37e19baf0ca3763e1912f85cbb0949b}{Right\+Peel\+On}}, \mbox{\hyperlink{class_left_peel_on_a4be64feefcd629c6dcb765175a9ea007}{Left\+Peel\+On}}, \mbox{\hyperlink{class_straight_ac73d5c8287446875ad28835f2d72a802}{Straight}}, \mbox{\hyperlink{class_left_peel_off_a579d92a784406a8b4060dec68a832db0}{Left\+Peel\+Off}}, and \mbox{\hyperlink{class_pimp_my_track_a79a8b871fe1c71263d8e4f5d091f87a6}{Pimp\+My\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_af32bdea381a07dd2bb8f851164fc102b}\label{class_race_track_component_af32bdea381a07dd2bb8f851164fc102b}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!decorate\+Track@{decorate\+Track}}
+\index{decorate\+Track@{decorate\+Track}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{decorate\+Track()}{decorateTrack()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::decorate\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{R }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+dectorates the track with passed in paramater 
+\begin{DoxyParams}{Parameters}
+{\em R} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_track_component_a3a2453934d3795376c23e251b2d3f99d}\label{class_race_track_component_a3a2453934d3795376c23e251b2d3f99d}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!get\+All\+Cars@{get\+All\+Cars}}
+\index{get\+All\+Cars@{get\+All\+Cars}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{get\+All\+Cars()}{getAllCars()}}
+{\footnotesize\ttfamily virtual vector$<$\mbox{\hyperlink{class_car}{Car}}$\ast$$>$ Race\+Track\+Component\+::get\+All\+Cars (\begin{DoxyParamCaption}\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+returns all the cars on a racetrack 
+\begin{DoxyParams}{Parameters}
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_race_track_abc68bb4172e9db6ebe3dbfb584691512}{Race\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_a5bb16c76fd5335c9d1a951b9de5ea48c}\label{class_race_track_component_a5bb16c76fd5335c9d1a951b9de5ea48c}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!get\+Cars@{get\+Cars}}
+\index{get\+Cars@{get\+Cars}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{get\+Cars()}{getCars()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_car}{Car}}$\ast$$>$ Race\+Track\+Component\+::get\+Cars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return the cars \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_track_component_a2998bbf7b576eff0e355166646ed46e8}\label{class_race_track_component_a2998bbf7b576eff0e355166646ed46e8}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!get\+Decorator@{get\+Decorator}}
+\index{get\+Decorator@{get\+Decorator}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{get\+Decorator()}{getDecorator()}}
+{\footnotesize\ttfamily virtual string Race\+Track\+Component\+::get\+Decorator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+the decorators string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_track_component_a443780d8534a8799fbcde14aa7b540c2}\label{class_race_track_component_a443780d8534a8799fbcde14aa7b540c2}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily string Race\+Track\+Component\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+the description 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_race_track_component_a6b57a071d1f11ddccd416fdbfe7e973b}\label{class_race_track_component_a6b57a071d1f11ddccd416fdbfe7e973b}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!get\+Num\+Components@{get\+Num\+Components}}
+\index{get\+Num\+Components@{get\+Num\+Components}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{get\+Num\+Components()}{getNumComponents()}}
+{\footnotesize\ttfamily virtual int Race\+Track\+Component\+::get\+Num\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+returns the number of components \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_race_track_a8870f6bafe0fbb3e693405b23dd40016}{Race\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_a7cfe0c366248474e2665d42724c09bca}\label{class_race_track_component_a7cfe0c366248474e2665d42724c09bca}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!make\+Accept@{make\+Accept}}
+\index{make\+Accept@{make\+Accept}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{make\+Accept()}{makeAccept()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::make\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_big_brother}{Big\+Brother}} $\ast$}]{v,  }\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+accept of vistor class 
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_race_track_abe1b09c550e3c99eb806ccf24aa74acb}{Race\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_a1925fdddd2cc1541fe649152bacb58ca}\label{class_race_track_component_a1925fdddd2cc1541fe649152bacb58ca}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!move\+Car@{move\+Car}}
+\index{move\+Car@{move\+Car}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{move\+Car()}{moveCar()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::move\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{\+\_\+car,  }\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+move car to certain track part 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+car} & \\
+\hline
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_race_track_af5549716e03ebf425f0683f0db4bd825}{Race\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_a02a8d9520cfd80f31dd94b5fa1e76d47}\label{class_race_track_component_a02a8d9520cfd80f31dd94b5fa1e76d47}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!print@{print}}
+\index{print@{print}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+pure virtual implementation of print 
+
+Implemented in \mbox{\hyperlink{class_left_eighth_ae5167cfc8af05a977d751cd0838ea17e}{Left\+Eighth}}, \mbox{\hyperlink{class_right_peel_off_a097f627c43aedcc60c89d2760a67c233}{Right\+Peel\+Off}}, \mbox{\hyperlink{class_right_peel_on_a6c54c5dbffa104bb96e7b564e854dd74}{Right\+Peel\+On}}, \mbox{\hyperlink{class_left_peel_on_a929012f0508e2207ae4c8229aecece54}{Left\+Peel\+On}}, \mbox{\hyperlink{class_right_eighth_a2d35c272dce18f3f6e9e297605877794}{Right\+Eighth}}, \mbox{\hyperlink{class_straight_ae95d3bdc1d16c97c8d6a6ab60e3205e4}{Straight}}, \mbox{\hyperlink{class_left_peel_off_aafa7fd3e608c6b08ea8b1bde7447c4f3}{Left\+Peel\+Off}}, \mbox{\hyperlink{class_pimp_my_track_a1b292c061991d5797183610f41180b91}{Pimp\+My\+Track}}, and \mbox{\hyperlink{class_race_track_afc353278ed272b8deb07283c3c45388e}{Race\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_a0d073a7d844143f5c4cebf2a2bb0cee7}\label{class_race_track_component_a0d073a7d844143f5c4cebf2a2bb0cee7}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!remove\+All\+Cars@{remove\+All\+Cars}}
+\index{remove\+All\+Cars@{remove\+All\+Cars}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{remove\+All\+Cars()}{removeAllCars()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::remove\+All\+Cars (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$$>$}]{\+\_\+car,  }\item[{int}]{rt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+removes the cars from the racetrack 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+car} & \\
+\hline
+{\em rt} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_race_track_a4b710e5c818fa6ac2c4701cbee3e8cd3}{Race\+Track}}.
+
+\mbox{\Hypertarget{class_race_track_component_a68594f9436ad820a62430d59ae433273}\label{class_race_track_component_a68594f9436ad820a62430d59ae433273}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!remove\+Car@{remove\+Car}}
+\index{remove\+Car@{remove\+Car}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{remove\+Car()}{removeCar()}}
+{\footnotesize\ttfamily void Race\+Track\+Component\+::remove\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{\+\_\+car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+remove a car from the track component 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+car} & the car to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_track_component_a03d5e6e6758dcf89bee2f4160d18a9eb}\label{class_race_track_component_a03d5e6e6758dcf89bee2f4160d18a9eb}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{set\+Description()}{setDescription()}}
+{\footnotesize\ttfamily void Race\+Track\+Component\+::set\+Description (\begin{DoxyParamCaption}\item[{string}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+sets the description 
+\begin{DoxyParams}{Parameters}
+{\em d} & the string to set the description \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_race_track_component_a109347e296fe7df389f157c01344a79a}\label{class_race_track_component_a109347e296fe7df389f157c01344a79a}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!show@{show}}
+\index{show@{show}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily virtual void Race\+Track\+Component\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+empty implementation of show 
+
+Reimplemented in \mbox{\hyperlink{class_race_track_ad4d3cc9b17b4cf1173033dc2d0f7ffb5}{Race\+Track}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_race_track_component_a7ac8e22cd540bed371efab3e47ebe49b}\label{class_race_track_component_a7ac8e22cd540bed371efab3e47ebe49b}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!cars@{cars}}
+\index{cars@{cars}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{cars}{cars}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_car}{Car}}$\ast$$>$ Race\+Track\+Component\+::cars}
+
+vector of cars on the track part \mbox{\Hypertarget{class_race_track_component_ad5b40b7d85b7369e1aaf5ce8c3448128}\label{class_race_track_component_ad5b40b7d85b7369e1aaf5ce8c3448128}} 
+\index{Race\+Track\+Component@{Race\+Track\+Component}!decorate@{decorate}}
+\index{decorate@{decorate}!Race\+Track\+Component@{Race\+Track\+Component}}
+\subsubsection{\texorpdfstring{decorate}{decorate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}}$\ast$ Race\+Track\+Component\+::decorate}
+
+the decorate for the track component 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_race_track_component_8h}{Race\+Track\+Component.\+h}}\end{DoxyCompactItemize}
