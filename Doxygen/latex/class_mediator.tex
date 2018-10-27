@@ -1,0 +1,94 @@
+\hypertarget{class_mediator}{}\section{Mediator Class Reference}
+\label{class_mediator}\index{Mediator@{Mediator}}
+
+
+{\ttfamily \#include $<$Mediator.\+h$>$}
+
+Inheritance diagram for Mediator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mediator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_mediator_acd0f8876148e8aef1f03a80072832bf8}{notify}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)=0
+\item 
+virtual void \mbox{\hyperlink{class_mediator_af3c7f586db4b837962101612555caf6f}{add\+Member}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)=0
+\item 
+virtual void \mbox{\hyperlink{class_mediator_a044f7032c52ca2359f98b798ccd555d3}{notify\+Manager}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)=0
+\item 
+virtual \mbox{\hyperlink{class_mediator_a445a0fa333ce54ec836e3c8a04276272}{$\sim$\+Mediator}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mediator_a445a0fa333ce54ec836e3c8a04276272}\label{class_mediator_a445a0fa333ce54ec836e3c8a04276272}} 
+\index{Mediator@{Mediator}!````~Mediator@{$\sim$\+Mediator}}
+\index{````~Mediator@{$\sim$\+Mediator}!Mediator@{Mediator}}
+\subsubsection{\texorpdfstring{$\sim$\+Mediator()}{~Mediator()}}
+{\footnotesize\ttfamily virtual Mediator\+::$\sim$\+Mediator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor for the mediator 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mediator_af3c7f586db4b837962101612555caf6f}\label{class_mediator_af3c7f586db4b837962101612555caf6f}} 
+\index{Mediator@{Mediator}!add\+Member@{add\+Member}}
+\index{add\+Member@{add\+Member}!Mediator@{Mediator}}
+\subsubsection{\texorpdfstring{add\+Member()}{addMember()}}
+{\footnotesize\ttfamily virtual void Mediator\+::add\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract method for adding a member to the mediator 
+\begin{DoxyParams}{Parameters}
+{\em member} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_mediator_a81de115027a7180658925a2d2175e08f}{Concrete\+Mediator}}.
+
+\mbox{\Hypertarget{class_mediator_acd0f8876148e8aef1f03a80072832bf8}\label{class_mediator_acd0f8876148e8aef1f03a80072832bf8}} 
+\index{Mediator@{Mediator}!notify@{notify}}
+\index{notify@{notify}!Mediator@{Mediator}}
+\subsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily virtual void Mediator\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract method for notifying other members of the team 
+\begin{DoxyParams}{Parameters}
+{\em member} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_mediator_aea62657783ed54f1152fe129e4adc8d3}{Concrete\+Mediator}}.
+
+\mbox{\Hypertarget{class_mediator_a044f7032c52ca2359f98b798ccd555d3}\label{class_mediator_a044f7032c52ca2359f98b798ccd555d3}} 
+\index{Mediator@{Mediator}!notify\+Manager@{notify\+Manager}}
+\index{notify\+Manager@{notify\+Manager}!Mediator@{Mediator}}
+\subsubsection{\texorpdfstring{notify\+Manager()}{notifyManager()}}
+{\footnotesize\ttfamily virtual void Mediator\+::notify\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract method for notifying the manager of the team 
+\begin{DoxyParams}{Parameters}
+{\em member} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_mediator_ac4a804e3f7f6a74240ae249cf1f315ec}{Concrete\+Mediator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mediator_8h}{Mediator.\+h}}\end{DoxyCompactItemize}

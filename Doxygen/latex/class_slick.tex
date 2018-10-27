@@ -1,0 +1,94 @@
+\hypertarget{class_slick}{}\section{Slick Class Reference}
+\label{class_slick}\index{Slick@{Slick}}
+
+
+Concrete Decorcator for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Slick.\+h$>$}
+
+Inheritance diagram for Slick\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_slick}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_slick_ac66212273efddd6697d2042d6c2f9f9a}{Slick}} (\mbox{\hyperlink{class_car}{Car}} $\ast$Decorate\+Car)
+\item 
+\mbox{\hyperlink{class_slick_a3b059145c3c0aa3dafd0f39f80298f3b}{$\sim$\+Slick}} ()
+\item 
+\mbox{\hyperlink{class_slick_ae34f904b44d660b2cba1b9ae71139d2e}{Slick}} (\mbox{\hyperlink{class_slick}{Slick}} \+\_\+\+Car, bool dummy)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_slick_a09178f75aaba34e79992c66eac80974e}{Full\+Clone}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Decorcator for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_slick_ac66212273efddd6697d2042d6c2f9f9a}\label{class_slick_ac66212273efddd6697d2042d6c2f9f9a}} 
+\index{Slick@{Slick}!Slick@{Slick}}
+\index{Slick@{Slick}!Slick@{Slick}}
+\subsubsection{\texorpdfstring{Slick()}{Slick()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Slick\+::\+Slick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{Decorate\+Car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor which assigns description and alters behaviour of car 
+\begin{DoxyParams}{Parameters}
+{\em Decorate} & the car in which the behaviours are added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_slick_a3b059145c3c0aa3dafd0f39f80298f3b}\label{class_slick_a3b059145c3c0aa3dafd0f39f80298f3b}} 
+\index{Slick@{Slick}!````~Slick@{$\sim$\+Slick}}
+\index{````~Slick@{$\sim$\+Slick}!Slick@{Slick}}
+\subsubsection{\texorpdfstring{$\sim$\+Slick()}{~Slick()}}
+{\footnotesize\ttfamily Slick\+::$\sim$\+Slick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+destructor for \mbox{\hyperlink{class_slick}{Slick}} \mbox{\Hypertarget{class_slick_ae34f904b44d660b2cba1b9ae71139d2e}\label{class_slick_ae34f904b44d660b2cba1b9ae71139d2e}} 
+\index{Slick@{Slick}!Slick@{Slick}}
+\index{Slick@{Slick}!Slick@{Slick}}
+\subsubsection{\texorpdfstring{Slick()}{Slick()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Slick\+::\+Slick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_slick}{Slick}}}]{\+\_\+\+Car,  }\item[{bool}]{dummy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+copy constructor used for cloning the decorators 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Car} & the car it copies \\
+\hline
+{\em dummy} & just there to use instead of defualt constructor \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_slick_a09178f75aaba34e79992c66eac80974e}\label{class_slick_a09178f75aaba34e79992c66eac80974e}} 
+\index{Slick@{Slick}!Full\+Clone@{Full\+Clone}}
+\index{Full\+Clone@{Full\+Clone}!Slick@{Slick}}
+\subsubsection{\texorpdfstring{Full\+Clone()}{FullClone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Slick\+::\+Full\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of Full\+Clone to deep copy the decorater \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object which is the decorator 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_pimp_my_ride_afce12a1a761727eebec707924521d0e2}{Pimp\+My\+Ride}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_slick_8h}{Slick.\+h}}\end{DoxyCompactItemize}

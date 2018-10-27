@@ -1,0 +1,135 @@
+\hypertarget{class_pimp_my_ride}{}\section{Pimp\+My\+Ride Class Reference}
+\label{class_pimp_my_ride}\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+
+
+Decorcator for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Pimp\+My\+Ride.\+h$>$}
+
+Inheritance diagram for Pimp\+My\+Ride\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pimp_my_ride}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pimp_my_ride_a8f900ee31c2c6a36492f39c82bdd64fc}{Pimp\+My\+Ride}} ()
+\item 
+\mbox{\hyperlink{class_pimp_my_ride_a891c6679516029bccdac908a09754935}{$\sim$\+Pimp\+My\+Ride}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pimp_my_ride_a2293a4df894794145696d7610efe3056}{add}} (\mbox{\hyperlink{class_car}{Car}} $\ast$\+\_\+car)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_pimp_my_ride_a37648eb844eb3e5967d0d3a6a8f0469d}{clone}} (bool flag\+\_\+)
+\item 
+virtual string \mbox{\hyperlink{class_pimp_my_ride_afd1a51b17959c3476d2ead62325d026e}{show\+Car\+Stats}} ()
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_pimp_my_ride_afce12a1a761727eebec707924521d0e2}{Full\+Clone}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_pimp_my_ride_a3800afb8cd2dafa5fa361bc4e852d8d2}\label{class_pimp_my_ride_a3800afb8cd2dafa5fa361bc4e852d8d2}} 
+\mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_pimp_my_ride_a3800afb8cd2dafa5fa361bc4e852d8d2}{car}}
+\begin{DoxyCompactList}\small\item\em a car object that will be decorated \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Decorcator for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pimp_my_ride_a8f900ee31c2c6a36492f39c82bdd64fc}\label{class_pimp_my_ride_a8f900ee31c2c6a36492f39c82bdd64fc}} 
+\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}!Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}!Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+\subsubsection{\texorpdfstring{Pimp\+My\+Ride()}{PimpMyRide()}}
+{\footnotesize\ttfamily Pimp\+My\+Ride\+::\+Pimp\+My\+Ride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Defualt constructor used for \mbox{\hyperlink{class_pimp_my_ride}{Pimp\+My\+Ride}} \mbox{\Hypertarget{class_pimp_my_ride_a891c6679516029bccdac908a09754935}\label{class_pimp_my_ride_a891c6679516029bccdac908a09754935}} 
+\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}!````~Pimp\+My\+Ride@{$\sim$\+Pimp\+My\+Ride}}
+\index{````~Pimp\+My\+Ride@{$\sim$\+Pimp\+My\+Ride}!Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+\subsubsection{\texorpdfstring{$\sim$\+Pimp\+My\+Ride()}{~PimpMyRide()}}
+{\footnotesize\ttfamily Pimp\+My\+Ride\+::$\sim$\+Pimp\+My\+Ride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The destructor for \mbox{\hyperlink{class_car}{Car}} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pimp_my_ride_a2293a4df894794145696d7610efe3056}\label{class_pimp_my_ride_a2293a4df894794145696d7610efe3056}} 
+\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}!add@{add}}
+\index{add@{add}!Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily virtual void Pimp\+My\+Ride\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{\+\_\+car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+add function for decorator 
+\begin{DoxyParams}{Parameters}
+{\em c} & is car object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_car_aca44e1a112ae22217c8004e92a86c374}{Car}}.
+
+\mbox{\Hypertarget{class_pimp_my_ride_a37648eb844eb3e5967d0d3a6a8f0469d}\label{class_pimp_my_ride_a37648eb844eb3e5967d0d3a6a8f0469d}} 
+\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}!clone@{clone}}
+\index{clone@{clone}!Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Pimp\+My\+Ride\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+for clone for prototype pattern 
+\begin{DoxyParams}{Parameters}
+{\em flag\+\_\+} & to determine if must be full clone or basic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_car_a27ad98735fd4a3f675234ea806c227da}{Car}}.
+
+\mbox{\Hypertarget{class_pimp_my_ride_afce12a1a761727eebec707924521d0e2}\label{class_pimp_my_ride_afce12a1a761727eebec707924521d0e2}} 
+\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}!Full\+Clone@{Full\+Clone}}
+\index{Full\+Clone@{Full\+Clone}!Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+\subsubsection{\texorpdfstring{Full\+Clone()}{FullClone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Pimp\+My\+Ride\+::\+Full\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+for Fullclone for prototype pattern of decorator \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_car_a6e32b3e8ddaaf2b3873c849e42f6a085}{Car}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_nitro_a1574264a8ca8691bb3669c8a3a3ad5dd}{Nitro}}, \mbox{\hyperlink{class_slick_a09178f75aaba34e79992c66eac80974e}{Slick}}, \mbox{\hyperlink{class_spoiler_a240c57673fae69ffa9cf51468ca17793}{Spoiler}}, \mbox{\hyperlink{class_flame_vinyl_a10356b9fab01a74d2354773e0beaba8b}{Flame\+Vinyl}}, and \mbox{\hyperlink{class_skull_vinyl_a02a74e1366553be8263a5751239bb8bf}{Skull\+Vinyl}}.
+
+\mbox{\Hypertarget{class_pimp_my_ride_afd1a51b17959c3476d2ead62325d026e}\label{class_pimp_my_ride_afd1a51b17959c3476d2ead62325d026e}} 
+\index{Pimp\+My\+Ride@{Pimp\+My\+Ride}!show\+Car\+Stats@{show\+Car\+Stats}}
+\index{show\+Car\+Stats@{show\+Car\+Stats}!Pimp\+My\+Ride@{Pimp\+My\+Ride}}
+\subsubsection{\texorpdfstring{show\+Car\+Stats()}{showCarStats()}}
+{\footnotesize\ttfamily virtual string Pimp\+My\+Ride\+::show\+Car\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+show\+Car\+Stats function to show the stats of a car \begin{DoxyReturn}{Returns}
+string stating the stats 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_car_a19567ab900b1c676f0244b15ec14dbad}{Car}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pimp_my_ride_8h}{Pimp\+My\+Ride.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\hypertarget{class_electric_car}{}\section{Electric\+Car Class Reference}
+\label{class_electric_car}\index{Electric\+Car@{Electric\+Car}}
+
+
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Electric\+Car.\+h$>$}
+
+Inheritance diagram for Electric\+Car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_electric_car}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_electric_car_a39c61284beee09357e58de1a532e26a0}{Electric\+Car}} (string model\+Type\+\_\+)
+\item 
+\mbox{\hyperlink{class_electric_car_a552446ff18f08c5e3420c4a9f7a86e77}{Electric\+Car}} (const \mbox{\hyperlink{class_car}{Car}} \&car\+\_\+, bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_electric_car_afd84f09e8cf25d68770a55580ffad16c}{$\sim$\+Electric\+Car}} ()
+\item 
+virtual string \mbox{\hyperlink{class_electric_car_a62d6d62f65e193c0e9f7b79faf2a280f}{get\+Description}} ()
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_electric_car_a852de7d2208dea4d45a554d9270508d0}{clone}} (bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_electric_car_a97eec3669ad8f20128eaab3084f8f8f5}{Full\+Clone}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_electric_car_a39c61284beee09357e58de1a532e26a0}\label{class_electric_car_a39c61284beee09357e58de1a532e26a0}} 
+\index{Electric\+Car@{Electric\+Car}!Electric\+Car@{Electric\+Car}}
+\index{Electric\+Car@{Electric\+Car}!Electric\+Car@{Electric\+Car}}
+\subsubsection{\texorpdfstring{Electric\+Car()}{ElectricCar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Electric\+Car\+::\+Electric\+Car (\begin{DoxyParamCaption}\item[{string}]{model\+Type\+\_\+ }\end{DoxyParamCaption})}
+
+Constructor for \mbox{\hyperlink{class_electric_car}{Electric\+Car}} 
+\begin{DoxyParams}{Parameters}
+{\em model\+Type\+\_\+} & states whether car is Electric/\+Sports/\+Standard \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_electric_car_a552446ff18f08c5e3420c4a9f7a86e77}\label{class_electric_car_a552446ff18f08c5e3420c4a9f7a86e77}} 
+\index{Electric\+Car@{Electric\+Car}!Electric\+Car@{Electric\+Car}}
+\index{Electric\+Car@{Electric\+Car}!Electric\+Car@{Electric\+Car}}
+\subsubsection{\texorpdfstring{Electric\+Car()}{ElectricCar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Electric\+Car\+::\+Electric\+Car (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_car}{Car}} \&}]{car\+\_\+,  }\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})}
+
+The copy constructor for \mbox{\hyperlink{class_electric_car}{Electric\+Car}} 
+\begin{DoxyParams}{Parameters}
+{\em car\+\_\+} & is a \mbox{\hyperlink{class_car}{Car}} object that will be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_electric_car_afd84f09e8cf25d68770a55580ffad16c}\label{class_electric_car_afd84f09e8cf25d68770a55580ffad16c}} 
+\index{Electric\+Car@{Electric\+Car}!````~Electric\+Car@{$\sim$\+Electric\+Car}}
+\index{````~Electric\+Car@{$\sim$\+Electric\+Car}!Electric\+Car@{Electric\+Car}}
+\subsubsection{\texorpdfstring{$\sim$\+Electric\+Car()}{~ElectricCar()}}
+{\footnotesize\ttfamily virtual Electric\+Car\+::$\sim$\+Electric\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The virtual destructor for \mbox{\hyperlink{class_electric_car}{Electric\+Car}} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_electric_car_a852de7d2208dea4d45a554d9270508d0}\label{class_electric_car_a852de7d2208dea4d45a554d9270508d0}} 
+\index{Electric\+Car@{Electric\+Car}!clone@{clone}}
+\index{clone@{clone}!Electric\+Car@{Electric\+Car}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Electric\+Car\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+clone function for the prototype design pattern \begin{DoxyReturn}{Returns}
+a pointer to car object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_car_a27ad98735fd4a3f675234ea806c227da}{Car}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_electric_formula_one_ac1649c11b48ceae7a98ccbc0d4727e7c}{Electric\+Formula\+One}}, \mbox{\hyperlink{class_electric_go_kart_a56f6b0c5a68597601f27818f10862bcb}{Electric\+Go\+Kart}}, and \mbox{\hyperlink{class_electric_roadster_a4ef7c42355752e28cd2ad97ed1efc047}{Electric\+Roadster}}.
+
+\mbox{\Hypertarget{class_electric_car_a97eec3669ad8f20128eaab3084f8f8f5}\label{class_electric_car_a97eec3669ad8f20128eaab3084f8f8f5}} 
+\index{Electric\+Car@{Electric\+Car}!Full\+Clone@{Full\+Clone}}
+\index{Full\+Clone@{Full\+Clone}!Electric\+Car@{Electric\+Car}}
+\subsubsection{\texorpdfstring{Full\+Clone()}{FullClone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Electric\+Car\+::\+Full\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of Fullclone in \mbox{\hyperlink{class_car}{Car}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object with all decorated 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_car_a6e32b3e8ddaaf2b3873c849e42f6a085}{Car}}.
+
+\mbox{\Hypertarget{class_electric_car_a62d6d62f65e193c0e9f7b79faf2a280f}\label{class_electric_car_a62d6d62f65e193c0e9f7b79faf2a280f}} 
+\index{Electric\+Car@{Electric\+Car}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!Electric\+Car@{Electric\+Car}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily string Electric\+Car\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a get\+Description Function \begin{DoxyReturn}{Returns}
+a string that states the info about the car 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_electric_car_8h}{Electric\+Car.\+h}}\item 
+Electric\+Car.\+cpp\end{DoxyCompactItemize}

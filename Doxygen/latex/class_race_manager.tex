@@ -1,0 +1,155 @@
+\hypertarget{class_race_manager}{}\section{Race\+Manager Class Reference}
+\label{class_race_manager}\index{Race\+Manager@{Race\+Manager}}
+
+
+Observer class for Observer pattern.  
+
+
+
+
+{\ttfamily \#include $<$Race\+Manager.\+h$>$}
+
+Inheritance diagram for Race\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_race_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_aadeaeec5eaf2d1d8d0178b9fe06116cb}{ready\+Race}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_a174c266d650ae1da004a6b1aada152b3}{start\+Race}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_a008bf389eeb0dc37dceb5f5fd0bcf9c1}{stop\+Race}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_a8718e9cf2da16ba3f468ac72b2ac5cc6}{pause\+Race}} (int num\+Component)=0
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_a3a0299ac9a07a2cdc7c1135c6bbff453}{resume\+Race}} (int num\+Component)=0
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_a2150e315365566150ce687020adc772f}{print\+Leader\+Board}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_a96b19bc745ac837db71d71e3a2925ce8}{add\+Cars}} (vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$$>$ \+\_\+cars)=0
+\item 
+virtual void \mbox{\hyperlink{class_race_manager_ae6dda6855a1f976bb46c2b53ad8f29a4}{add\+Racetrack}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$race\+Track\+Component)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Observer class for Observer pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_race_manager_a96b19bc745ac837db71d71e3a2925ce8}\label{class_race_manager_a96b19bc745ac837db71d71e3a2925ce8}} 
+\index{Race\+Manager@{Race\+Manager}!add\+Cars@{add\+Cars}}
+\index{add\+Cars@{add\+Cars}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{add\+Cars()}{addCars()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::add\+Cars (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$$>$}]{\+\_\+cars }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+add cars to the race manager 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+cars} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_af66dfe4faeefa1c5011cc6f64fec967e}{Concrete\+Race\+Manager}}.
+
+\mbox{\Hypertarget{class_race_manager_ae6dda6855a1f976bb46c2b53ad8f29a4}\label{class_race_manager_ae6dda6855a1f976bb46c2b53ad8f29a4}} 
+\index{Race\+Manager@{Race\+Manager}!add\+Racetrack@{add\+Racetrack}}
+\index{add\+Racetrack@{add\+Racetrack}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{add\+Racetrack()}{addRacetrack()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::add\+Racetrack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{race\+Track\+Component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+adds the race 
+\begin{DoxyParams}{Parameters}
+{\em race\+Track\+Component} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_ab6953cc9a9930e4e0af231f125f8f223}{Concrete\+Race\+Manager}}.
+
+\mbox{\Hypertarget{class_race_manager_a8718e9cf2da16ba3f468ac72b2ac5cc6}\label{class_race_manager_a8718e9cf2da16ba3f468ac72b2ac5cc6}} 
+\index{Race\+Manager@{Race\+Manager}!pause\+Race@{pause\+Race}}
+\index{pause\+Race@{pause\+Race}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{pause\+Race()}{pauseRace()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::pause\+Race (\begin{DoxyParamCaption}\item[{int}]{num\+Component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+pauses the race 
+\begin{DoxyParams}{Parameters}
+{\em num\+Component} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_ae9b205b7f73339c73d5f8f4457d01faf}{Concrete\+Race\+Manager}}.
+
+\mbox{\Hypertarget{class_race_manager_a2150e315365566150ce687020adc772f}\label{class_race_manager_a2150e315365566150ce687020adc772f}} 
+\index{Race\+Manager@{Race\+Manager}!print\+Leader\+Board@{print\+Leader\+Board}}
+\index{print\+Leader\+Board@{print\+Leader\+Board}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{print\+Leader\+Board()}{printLeaderBoard()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::print\+Leader\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+prints the cars in order according to track times 
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_abc768656a765994e027399d9e64d7a19}{Concrete\+Race\+Manager}}.
+
+\mbox{\Hypertarget{class_race_manager_aadeaeec5eaf2d1d8d0178b9fe06116cb}\label{class_race_manager_aadeaeec5eaf2d1d8d0178b9fe06116cb}} 
+\index{Race\+Manager@{Race\+Manager}!ready\+Race@{ready\+Race}}
+\index{ready\+Race@{ready\+Race}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{ready\+Race()}{readyRace()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::ready\+Race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Moves all cars to starting point of track and sets the times to 0 
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_a52c31abcc79c666388c3c9dd8e285c88}{Concrete\+Race\+Manager}}.
+
+\mbox{\Hypertarget{class_race_manager_a3a0299ac9a07a2cdc7c1135c6bbff453}\label{class_race_manager_a3a0299ac9a07a2cdc7c1135c6bbff453}} 
+\index{Race\+Manager@{Race\+Manager}!resume\+Race@{resume\+Race}}
+\index{resume\+Race@{resume\+Race}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{resume\+Race()}{resumeRace()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::resume\+Race (\begin{DoxyParamCaption}\item[{int}]{num\+Component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+resumes the race according to where it left 
+\begin{DoxyParams}{Parameters}
+{\em num\+Component} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_ad57259cf0ed2055a029fe66dc5d298e1}{Concrete\+Race\+Manager}}.
+
+\mbox{\Hypertarget{class_race_manager_a174c266d650ae1da004a6b1aada152b3}\label{class_race_manager_a174c266d650ae1da004a6b1aada152b3}} 
+\index{Race\+Manager@{Race\+Manager}!start\+Race@{start\+Race}}
+\index{start\+Race@{start\+Race}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{start\+Race()}{startRace()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::start\+Race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+starts to move the cars along the racetrack 
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_af9266e7de2aec27b970878b8a68e6276}{Concrete\+Race\+Manager}}.
+
+\mbox{\Hypertarget{class_race_manager_a008bf389eeb0dc37dceb5f5fd0bcf9c1}\label{class_race_manager_a008bf389eeb0dc37dceb5f5fd0bcf9c1}} 
+\index{Race\+Manager@{Race\+Manager}!stop\+Race@{stop\+Race}}
+\index{stop\+Race@{stop\+Race}!Race\+Manager@{Race\+Manager}}
+\subsubsection{\texorpdfstring{stop\+Race()}{stopRace()}}
+{\footnotesize\ttfamily virtual void Race\+Manager\+::stop\+Race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+announcs when the race is finished and prints the final leaderboard 
+
+Implemented in \mbox{\hyperlink{class_concrete_race_manager_ac55ae9738d8cf5ce6bd1fe2f9356c6f7}{Concrete\+Race\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_race_manager_8h}{Race\+Manager.\+h}}\end{DoxyCompactItemize}

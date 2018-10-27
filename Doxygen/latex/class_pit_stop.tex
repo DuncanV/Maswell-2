@@ -1,0 +1,271 @@
+\hypertarget{class_pit_stop}{}\section{Pit\+Stop Class Reference}
+\label{class_pit_stop}\index{Pit\+Stop@{Pit\+Stop}}
+
+
+{\ttfamily \#include $<$Pit\+Stop.\+h$>$}
+
+Inheritance diagram for Pit\+Stop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pit_stop}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pit_stop_a6c071cb7cd700bd6cb87888fadd39086}{Pit\+Stop}} (string name)
+\item 
+\mbox{\hyperlink{class_pit_stop_a1315c3c8d71a3ea070ab2e05a2ff5d16}{$\sim$\+Pit\+Stop}} ()
+\item 
+void \mbox{\hyperlink{class_pit_stop_abf17df574e761dd36eb52d27c761ed43}{attach}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)
+\item 
+void \mbox{\hyperlink{class_pit_stop_a5c92a9c5a3f6433c84d94f4eb612dfaf}{attach\+Manager}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$manager)
+\item 
+void \mbox{\hyperlink{class_pit_stop_a08037efd617a3f0f36a7a69537ba2a49}{detach}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$member)
+\item 
+void \mbox{\hyperlink{class_pit_stop_ab5518b2a6052996fdab1a082d0b27874}{notify}} ()
+\item 
+void \mbox{\hyperlink{class_pit_stop_aae1894edaab6ccc3ca1d5ea18473bc47}{set\+Tyre\+Condition}} (bool $\ast$status)
+\item 
+void \mbox{\hyperlink{class_pit_stop_acaa67a8196e7771d5381857570768da6}{set\+Fuel\+Level}} (bool status)
+\item 
+void \mbox{\hyperlink{class_pit_stop_a7ae4b0e924c007026f02775a51cdd408}{set\+Damage}} (bool status)
+\item 
+virtual void \mbox{\hyperlink{class_pit_stop_a1e7fe0a405a2ba73c299bb5b05f19fc0}{add\+Car}} (\mbox{\hyperlink{class_car}{Car}} $\ast$car)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_pit_stop_afe4eca8318260d7399f5f8c29288dc02}{get\+Car}} ()
+\item 
+\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$ \mbox{\hyperlink{class_pit_stop_a5d0d8b1ce50db452fb1d22292f9d1d9d}{get\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$ \mbox{\hyperlink{class_pit_stop_a83212e8030b8931a3129a565089d76ce}{get\+Member}} (int index)
+\item 
+int \mbox{\hyperlink{class_pit_stop_acfbfcd3895366420857b8eef5cb5eac9}{get\+Num\+Members}} ()
+\item 
+string \mbox{\hyperlink{class_pit_stop_a50c9b32c4422d643fd8fdb901bad617a}{show\+Car}} ()
+\item 
+string \mbox{\hyperlink{class_pit_stop_a086c61b9f39bd212d33f569c76ac554e}{show\+Manager}} ()
+\item 
+string \mbox{\hyperlink{class_pit_stop_ad7f59968f9f74c427597bc4f80137f8b}{show\+Crew}} ()
+\item 
+virtual void \mbox{\hyperlink{class_pit_stop_a3a1040306ad9a9e573f488dd2dfc319f}{get\+Car\+Stats}} ()=0
+\item 
+string \mbox{\hyperlink{class_pit_stop_a84ba8d88f9995a144e65f5528d1f64ff}{get\+Name}} ()
+\item 
+string \mbox{\hyperlink{class_pit_stop_a3dcfcb1435c346df2265828a71f96601}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pit_stop_a6c071cb7cd700bd6cb87888fadd39086}\label{class_pit_stop_a6c071cb7cd700bd6cb87888fadd39086}} 
+\index{Pit\+Stop@{Pit\+Stop}!Pit\+Stop@{Pit\+Stop}}
+\index{Pit\+Stop@{Pit\+Stop}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{Pit\+Stop()}{PitStop()}}
+{\footnotesize\ttfamily Pit\+Stop\+::\+Pit\+Stop (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+default constructor for a pitstop 
+\begin{DoxyParams}{Parameters}
+{\em name} & of the team/pitstop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_a1315c3c8d71a3ea070ab2e05a2ff5d16}\label{class_pit_stop_a1315c3c8d71a3ea070ab2e05a2ff5d16}} 
+\index{Pit\+Stop@{Pit\+Stop}!````~Pit\+Stop@{$\sim$\+Pit\+Stop}}
+\index{````~Pit\+Stop@{$\sim$\+Pit\+Stop}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{$\sim$\+Pit\+Stop()}{~PitStop()}}
+{\footnotesize\ttfamily Pit\+Stop\+::$\sim$\+Pit\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor for the pitstop class, also detaches all members from the pitcrew vector 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pit_stop_a1e7fe0a405a2ba73c299bb5b05f19fc0}\label{class_pit_stop_a1e7fe0a405a2ba73c299bb5b05f19fc0}} 
+\index{Pit\+Stop@{Pit\+Stop}!add\+Car@{add\+Car}}
+\index{add\+Car@{add\+Car}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{add\+Car()}{addCar()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::add\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{car }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+function that adds a new car to the cars vector for a specific team 
+\begin{DoxyParams}{Parameters}
+{\em car} & to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_abf17df574e761dd36eb52d27c761ed43}\label{class_pit_stop_abf17df574e761dd36eb52d27c761ed43}} 
+\index{Pit\+Stop@{Pit\+Stop}!attach@{attach}}
+\index{attach@{attach}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})}
+
+function for adding \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} members to the team/pitstop 
+\begin{DoxyParams}{Parameters}
+{\em member} & added to the pitcrew vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_a5c92a9c5a3f6433c84d94f4eb612dfaf}\label{class_pit_stop_a5c92a9c5a3f6433c84d94f4eb612dfaf}} 
+\index{Pit\+Stop@{Pit\+Stop}!attach\+Manager@{attach\+Manager}}
+\index{attach\+Manager@{attach\+Manager}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{attach\+Manager()}{attachManager()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::attach\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{manager }\end{DoxyParamCaption})}
+
+function for adding \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} manager to the team/pitstop 
+\begin{DoxyParams}{Parameters}
+{\em manager} & added to the pitcrew vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_a08037efd617a3f0f36a7a69537ba2a49}\label{class_pit_stop_a08037efd617a3f0f36a7a69537ba2a49}} 
+\index{Pit\+Stop@{Pit\+Stop}!detach@{detach}}
+\index{detach@{detach}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{member }\end{DoxyParamCaption})}
+
+function for adding \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} members to the team/pitstop 
+\begin{DoxyParams}{Parameters}
+{\em member} & added to the pitcrew vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_afe4eca8318260d7399f5f8c29288dc02}\label{class_pit_stop_afe4eca8318260d7399f5f8c29288dc02}} 
+\index{Pit\+Stop@{Pit\+Stop}!get\+Car@{get\+Car}}
+\index{get\+Car@{get\+Car}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{get\+Car()}{getCar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car}{Car}} $\ast$ Pit\+Stop\+::get\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+function that gets a car from the cars vector for a specific team \mbox{\Hypertarget{class_pit_stop_a3a1040306ad9a9e573f488dd2dfc319f}\label{class_pit_stop_a3a1040306ad9a9e573f488dd2dfc319f}} 
+\index{Pit\+Stop@{Pit\+Stop}!get\+Car\+Stats@{get\+Car\+Stats}}
+\index{get\+Car\+Stats@{get\+Car\+Stats}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{get\+Car\+Stats()}{getCarStats()}}
+{\footnotesize\ttfamily virtual void Pit\+Stop\+::get\+Car\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract method to get the car stats 
+
+Implemented in \mbox{\hyperlink{class_team_ac06b2e2837cace2a8aa9b579dcd69a52}{Team}}.
+
+\mbox{\Hypertarget{class_pit_stop_a5d0d8b1ce50db452fb1d22292f9d1d9d}\label{class_pit_stop_a5d0d8b1ce50db452fb1d22292f9d1d9d}} 
+\index{Pit\+Stop@{Pit\+Stop}!get\+Manager@{get\+Manager}}
+\index{get\+Manager@{get\+Manager}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{get\+Manager()}{getManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$ Pit\+Stop\+::get\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that gets the manager from the cars vector for a specific team \mbox{\Hypertarget{class_pit_stop_a83212e8030b8931a3129a565089d76ce}\label{class_pit_stop_a83212e8030b8931a3129a565089d76ce}} 
+\index{Pit\+Stop@{Pit\+Stop}!get\+Member@{get\+Member}}
+\index{get\+Member@{get\+Member}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{get\+Member()}{getMember()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}}$\ast$ Pit\+Stop\+::get\+Member (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+function that gets the member with the index sent through 
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pit_stop_a84ba8d88f9995a144e65f5528d1f64ff}\label{class_pit_stop_a84ba8d88f9995a144e65f5528d1f64ff}} 
+\index{Pit\+Stop@{Pit\+Stop}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string Pit\+Stop\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+getter function to return the name of the team/pitstop \begin{DoxyReturn}{Returns}
+name of the team/pitstop 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pit_stop_acfbfcd3895366420857b8eef5cb5eac9}\label{class_pit_stop_acfbfcd3895366420857b8eef5cb5eac9}} 
+\index{Pit\+Stop@{Pit\+Stop}!get\+Num\+Members@{get\+Num\+Members}}
+\index{get\+Num\+Members@{get\+Num\+Members}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{get\+Num\+Members()}{getNumMembers()}}
+{\footnotesize\ttfamily int Pit\+Stop\+::get\+Num\+Members (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+function to get the number of members in the team \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pit_stop_ab5518b2a6052996fdab1a082d0b27874}\label{class_pit_stop_ab5518b2a6052996fdab1a082d0b27874}} 
+\index{Pit\+Stop@{Pit\+Stop}!notify@{notify}}
+\index{notify@{notify}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that will notify the manager if the condition of the car changed 
+\begin{DoxyParams}{Parameters}
+{\em index} & the index of the car \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_a7ae4b0e924c007026f02775a51cdd408}\label{class_pit_stop_a7ae4b0e924c007026f02775a51cdd408}} 
+\index{Pit\+Stop@{Pit\+Stop}!set\+Damage@{set\+Damage}}
+\index{set\+Damage@{set\+Damage}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{set\+Damage()}{setDamage()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::set\+Damage (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+function that sets the condition of the cars damage depending if needs to be repaired or not 
+\begin{DoxyParams}{Parameters}
+{\em status} & a bool describing the status of the damage of the car \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_acaa67a8196e7771d5381857570768da6}\label{class_pit_stop_acaa67a8196e7771d5381857570768da6}} 
+\index{Pit\+Stop@{Pit\+Stop}!set\+Fuel\+Level@{set\+Fuel\+Level}}
+\index{set\+Fuel\+Level@{set\+Fuel\+Level}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{set\+Fuel\+Level()}{setFuelLevel()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::set\+Fuel\+Level (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+function that sets the condition of the fuel level of a car depending if it needs to be filled or not 
+\begin{DoxyParams}{Parameters}
+{\em status} & a bool describing the status of the fuel level \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_aae1894edaab6ccc3ca1d5ea18473bc47}\label{class_pit_stop_aae1894edaab6ccc3ca1d5ea18473bc47}} 
+\index{Pit\+Stop@{Pit\+Stop}!set\+Tyre\+Condition@{set\+Tyre\+Condition}}
+\index{set\+Tyre\+Condition@{set\+Tyre\+Condition}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{set\+Tyre\+Condition()}{setTyreCondition()}}
+{\footnotesize\ttfamily void Pit\+Stop\+::set\+Tyre\+Condition (\begin{DoxyParamCaption}\item[{bool $\ast$}]{status }\end{DoxyParamCaption})}
+
+function that sets the condtion for all the tyres to true or false depending if they need change or not 
+\begin{DoxyParams}{Parameters}
+{\em status} & a bool array describing the status of each car \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_pit_stop_a50c9b32c4422d643fd8fdb901bad617a}\label{class_pit_stop_a50c9b32c4422d643fd8fdb901bad617a}} 
+\index{Pit\+Stop@{Pit\+Stop}!show\+Car@{show\+Car}}
+\index{show\+Car@{show\+Car}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{show\+Car()}{showCar()}}
+{\footnotesize\ttfamily string Pit\+Stop\+::show\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that lists all the cars in the cars vector for the team \begin{DoxyReturn}{Returns}
+a string with all the cars 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pit_stop_ad7f59968f9f74c427597bc4f80137f8b}\label{class_pit_stop_ad7f59968f9f74c427597bc4f80137f8b}} 
+\index{Pit\+Stop@{Pit\+Stop}!show\+Crew@{show\+Crew}}
+\index{show\+Crew@{show\+Crew}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{show\+Crew()}{showCrew()}}
+{\footnotesize\ttfamily string Pit\+Stop\+::show\+Crew (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that gets the crew of the team \begin{DoxyReturn}{Returns}
+a description of the crew 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pit_stop_a086c61b9f39bd212d33f569c76ac554e}\label{class_pit_stop_a086c61b9f39bd212d33f569c76ac554e}} 
+\index{Pit\+Stop@{Pit\+Stop}!show\+Manager@{show\+Manager}}
+\index{show\+Manager@{show\+Manager}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{show\+Manager()}{showManager()}}
+{\footnotesize\ttfamily string Pit\+Stop\+::show\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function that gets the managers of the team \begin{DoxyReturn}{Returns}
+a description of the manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_pit_stop_a3dcfcb1435c346df2265828a71f96601}\label{class_pit_stop_a3dcfcb1435c346df2265828a71f96601}} 
+\index{Pit\+Stop@{Pit\+Stop}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Pit\+Stop@{Pit\+Stop}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily string Pit\+Stop\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to print the team in detail to see who is in the team \begin{DoxyReturn}{Returns}
+string description of the team 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pit_stop_8h}{Pit\+Stop.\+h}}\item 
+Pit\+Stop.\+cpp\end{DoxyCompactItemize}

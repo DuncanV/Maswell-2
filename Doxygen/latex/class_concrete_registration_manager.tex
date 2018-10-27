@@ -1,0 +1,142 @@
+\hypertarget{class_concrete_registration_manager}{}\section{Concrete\+Registration\+Manager Class Reference}
+\label{class_concrete_registration_manager}\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+
+
+\mbox{\hyperlink{class_concrete_mediator}{Concrete\+Mediator}} for mediator design pattern.  
+
+
+
+
+{\ttfamily \#include $<$Concrete\+Registration\+Manager.\+h$>$}
+
+Inheritance diagram for Concrete\+Registration\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_concrete_registration_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_concrete_registration_manager_a14de4a7f39a166d72e179549d99ddb9b}{Concrete\+Registration\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_concrete_registration_manager_af27dd222a03c0d4c0dda6eea53b195e0}{$\sim$\+Concrete\+Registration\+Manager}} ()
+\item 
+virtual void \mbox{\hyperlink{class_concrete_registration_manager_a852824cb63b25c30dd4f626d5097c748}{add\+Car}} (\mbox{\hyperlink{class_car}{Car}} $\ast$\+\_\+car, int track)
+\item 
+virtual void \mbox{\hyperlink{class_concrete_registration_manager_ab7b6cd458f9ff3c5ff7b9413dff48e6a}{add\+Track}} (\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$\+\_\+racetrack)
+\item 
+virtual vector$<$ \mbox{\hyperlink{class_car}{Car}} $\ast$ $>$ \mbox{\hyperlink{class_concrete_registration_manager_acea73f6efa6ec01052d3d43694405e66}{get\+Cars}} (int racetrack)
+\item 
+virtual \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$ \mbox{\hyperlink{class_concrete_registration_manager_a0a6cb4186150d569ac883c66860a52ef}{get\+Track}} (int track\+No)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_concrete_mediator}{Concrete\+Mediator}} for mediator design pattern. 
+
+Abstract\+Mediator for mediator design pattern.
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_concrete_registration_manager_a14de4a7f39a166d72e179549d99ddb9b}\label{class_concrete_registration_manager_a14de4a7f39a166d72e179549d99ddb9b}} 
+\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}!Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}!Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+\subsubsection{\texorpdfstring{Concrete\+Registration\+Manager()}{ConcreteRegistrationManager()}}
+{\footnotesize\ttfamily Concrete\+Registration\+Manager\+::\+Concrete\+Registration\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+constructor for \mbox{\hyperlink{class_concrete_registration_manager}{Concrete\+Registration\+Manager}} 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+num\+Tracks} & determines how many racetracks there are \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_concrete_registration_manager_af27dd222a03c0d4c0dda6eea53b195e0}\label{class_concrete_registration_manager_af27dd222a03c0d4c0dda6eea53b195e0}} 
+\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}!````~Concrete\+Registration\+Manager@{$\sim$\+Concrete\+Registration\+Manager}}
+\index{````~Concrete\+Registration\+Manager@{$\sim$\+Concrete\+Registration\+Manager}!Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Concrete\+Registration\+Manager()}{~ConcreteRegistrationManager()}}
+{\footnotesize\ttfamily Concrete\+Registration\+Manager\+::$\sim$\+Concrete\+Registration\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor for manager 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_concrete_registration_manager_a852824cb63b25c30dd4f626d5097c748}\label{class_concrete_registration_manager_a852824cb63b25c30dd4f626d5097c748}} 
+\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}!add\+Car@{add\+Car}}
+\index{add\+Car@{add\+Car}!Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+\subsubsection{\texorpdfstring{add\+Car()}{addCar()}}
+{\footnotesize\ttfamily void Concrete\+Registration\+Manager\+::add\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{\+\_\+car,  }\item[{int}]{track }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+implementation of absrtact function to add car into the cars array 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+car} & car object to be placed in the array \\
+\hline
+{\em track} & specifies which track the car will be racing \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_registratcion_manager_aec32edc5e4e17c3816889202f17ca3a5}{Registratcion\+Manager}}.
+
+\mbox{\Hypertarget{class_concrete_registration_manager_ab7b6cd458f9ff3c5ff7b9413dff48e6a}\label{class_concrete_registration_manager_ab7b6cd458f9ff3c5ff7b9413dff48e6a}} 
+\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}!add\+Track@{add\+Track}}
+\index{add\+Track@{add\+Track}!Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+\subsubsection{\texorpdfstring{add\+Track()}{addTrack()}}
+{\footnotesize\ttfamily void Concrete\+Registration\+Manager\+::add\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}} $\ast$}]{\+\_\+racetrack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+implementation of absrtact function to add car into the cars array 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+racetrack} & racetrack object to be placed in the array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_registratcion_manager_a7008cf3cb173f6121f94784ed242a7c6}{Registratcion\+Manager}}.
+
+\mbox{\Hypertarget{class_concrete_registration_manager_acea73f6efa6ec01052d3d43694405e66}\label{class_concrete_registration_manager_acea73f6efa6ec01052d3d43694405e66}} 
+\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}!get\+Cars@{get\+Cars}}
+\index{get\+Cars@{get\+Cars}!Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+\subsubsection{\texorpdfstring{get\+Cars()}{getCars()}}
+{\footnotesize\ttfamily virtual vector$<$\mbox{\hyperlink{class_car}{Car}}$\ast$$>$ Concrete\+Registration\+Manager\+::get\+Cars (\begin{DoxyParamCaption}\item[{int}]{racetrack }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+returns the cars for a given racetrack 
+\begin{DoxyParams}{Parameters}
+{\em racetrack} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of cars 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_registratcion_manager_a2e06d0bf5f81b2a30d19f242bb2f583d}{Registratcion\+Manager}}.
+
+\mbox{\Hypertarget{class_concrete_registration_manager_a0a6cb4186150d569ac883c66860a52ef}\label{class_concrete_registration_manager_a0a6cb4186150d569ac883c66860a52ef}} 
+\index{Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}!get\+Track@{get\+Track}}
+\index{get\+Track@{get\+Track}!Concrete\+Registration\+Manager@{Concrete\+Registration\+Manager}}
+\subsubsection{\texorpdfstring{get\+Track()}{getTrack()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_race_track_component}{Race\+Track\+Component}}$\ast$ Concrete\+Registration\+Manager\+::get\+Track (\begin{DoxyParamCaption}\item[{int}]{track\+No }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+returns a racetrack given a racetrack number 
+\begin{DoxyParams}{Parameters}
+{\em track\+No} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a racetrack number 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_registratcion_manager_afc647bf31a1e48c6d6a4b5f1156f9649}{Registratcion\+Manager}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_concrete_registration_manager_8h}{Concrete\+Registration\+Manager.\+h}}\item 
+Concrete\+Registration\+Manager.\+cpp\end{DoxyCompactItemize}

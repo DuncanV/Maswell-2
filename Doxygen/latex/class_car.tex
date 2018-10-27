@@ -1,0 +1,681 @@
+\hypertarget{class_car}{}\section{Car Class Reference}
+\label{class_car}\index{Car@{Car}}
+
+
+Abstract Product for Abstract Factory Pattern and Component for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Car.\+h$>$}
+
+Inheritance diagram for Car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.475177cm]{class_car}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_car_ab740ed295feccd6ba2ffcc954623fc36}{Car}} (int tyres=4)
+\item 
+\mbox{\hyperlink{class_car_ab471ee86f9ba3bc2637b526233932513}{Car}} (string model\+Type\+\_\+, int tyres=4)
+\item 
+\mbox{\hyperlink{class_car_a934bad1647e59360395ac3cbd71c6a8d}{Car}} (const \mbox{\hyperlink{class_car}{Car}} \&car\+\_\+, bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_car_a7f5f88d8a933b9de494e6beb818003f1}{$\sim$\+Car}} ()
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_car_a27ad98735fd4a3f675234ea806c227da}{clone}} (bool flag=false)=0
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_car_a6e32b3e8ddaaf2b3873c849e42f6a085}{Full\+Clone}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_car_aca44e1a112ae22217c8004e92a86c374}{add}} (\mbox{\hyperlink{class_car}{Car}} $\ast$c)
+\item 
+void \mbox{\hyperlink{class_car_a0dcda3633cafc81e96dffcbdc5bdeeb0}{set\+Description}} (string des)
+\item 
+string \mbox{\hyperlink{class_car_aa9255a0bd2fdb42948fea897b13d574f}{get\+Description}} () const
+\item 
+int \mbox{\hyperlink{class_car_aea72486ce71ff0989725e8abda128e00}{get\+Model\+Number}} () const
+\item 
+virtual string \mbox{\hyperlink{class_car_a19567ab900b1c676f0244b15ec14dbad}{show\+Car\+Stats}} ()
+\item 
+string \mbox{\hyperlink{class_car_af26b903e790eb44d638ba57e78e27e1b}{show\+Car\+Condition}} ()
+\item 
+void \mbox{\hyperlink{class_car_acf64780a1426bea0549759c1a0b83838}{set\+Speed}} (int speed)
+\item 
+int \mbox{\hyperlink{class_car_a18e48b5cf9815216b8e82351d36b8d9f}{get\+Speed}} ()
+\item 
+void \mbox{\hyperlink{class_car_aa5ef6b0602af458c67c0c9845ee82899}{set\+Handling}} (int H)
+\item 
+int \mbox{\hyperlink{class_car_a1ebc0aefed91d874aed3f93789c51209}{get\+Handling}} ()
+\item 
+void \mbox{\hyperlink{class_car_aa3f0bd8ed0bd0ab70540f1ea9f9c3058}{set\+Acceleration}} (int A)
+\item 
+int \mbox{\hyperlink{class_car_a65f1e6a41427135fe69004642f485076}{get\+Acceleration}} ()
+\item 
+const string \mbox{\hyperlink{class_car_a92753a8c68d5e0681dafd89db2e6e660}{get\+Model\+Type}} () const
+\item 
+string \mbox{\hyperlink{class_car_a7989fe6e09bb5dfc1b7de3d5f275b5ae}{to\+String}} ()
+\item 
+int \mbox{\hyperlink{class_car_a63dd14b9889f022373971846b088f65f}{get\+Track\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_car_a744626ffab217629a2e9a35837531a44}{set\+Track\+Time}} (int i)
+\item 
+int \mbox{\hyperlink{class_car_a37d6bc64d09b030dacd25de5f0fa0a64}{get\+Num\+Tyres}} ()
+\item 
+\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$ \mbox{\hyperlink{class_car_a225edc19422a1c521b4259abc363c046}{get\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_car_a10d9ba320f5efd4cf233d50d10e2107c}{set\+Manager}} (\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$m)
+\item 
+\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$ \mbox{\hyperlink{class_car_a597150e71ff1eb914f82eee7e545cddf}{get\+Team}} ()
+\item 
+void \mbox{\hyperlink{class_car_ae552ed5a2d8660c27ceb67c8454a48ae}{set\+Team}} (\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$t)
+\item 
+void \mbox{\hyperlink{class_car_abbf050e461e2e56dae11e89c8efda7af}{notify\+Team}} ()
+\item 
+int $\ast$ \mbox{\hyperlink{class_car_aabb17902a6b0770523779bd2d1ab9fdd}{get\+Car\+Tyres}} ()
+\item 
+int \mbox{\hyperlink{class_car_aa025fcec65db2ad7d696840e64c9451c}{get\+Car\+Tyre}} (int index)
+\item 
+void \mbox{\hyperlink{class_car_a87fc66f728b131aeb0748a416984ad93}{set\+Car\+Tyre}} (int index, int tyre)
+\item 
+void \mbox{\hyperlink{class_car_a2248a180b5fdb272746f93d7956d11d3}{set\+Changed}} (int index, int tyre)
+\item 
+int \mbox{\hyperlink{class_car_a7268dbaecbc6bca28bbe043d3a78a3fb}{get\+Car\+Fuel}} ()
+\item 
+void \mbox{\hyperlink{class_car_a4630826e2d1b4972e9c946faa6c58f19}{set\+Car\+Fuel}} (int fuel)
+\item 
+void \mbox{\hyperlink{class_car_a57adfd20b916e5b22c7d4fb5989f671e}{set\+Refuel}} (int fuel)
+\item 
+int \mbox{\hyperlink{class_car_a949327d4945b878e9e34e92979b9e589}{get\+Car\+Damage}} ()
+\item 
+void \mbox{\hyperlink{class_car_a0b440c163057149751f81da6f50882f3}{set\+Car\+Damage}} (int damage\+\_\+)
+\item 
+void \mbox{\hyperlink{class_car_a5ee7015f3f094416513a718cd38b0a10}{set\+Repair}} (int damage\+\_\+)
+\item 
+int \mbox{\hyperlink{class_car_af47c8e6bb7bd54dc0f027b268916fc5c}{get\+Car\+ID}} ()
+\item 
+void \mbox{\hyperlink{class_car_ab8e5fb187d9677c43f65a908f917baa8}{Registration\+Notify}} (string msg)
+\item 
+int \mbox{\hyperlink{class_car_abfcccd0fa3ef14dea58d1a92b9caf62a}{get\+Lap}} ()
+\item 
+void \mbox{\hyperlink{class_car_ae74720b1f4ca277faa844b6db17c0a30}{set\+Lap}} (int l)
+\item 
+int \mbox{\hyperlink{class_car_abecf0c28ecabc7f74bd40a3504da3a3a}{get\+Track\+Part}} ()
+\item 
+void \mbox{\hyperlink{class_car_abc826195aea1df1ad8c2f406a8b28721}{set\+Track\+Part}} (int t)
+\item 
+void \mbox{\hyperlink{class_car_a624d9dc67aae36f0e3cdadb471d4bba6}{set\+State}} (\mbox{\hyperlink{class_state}{State}} $\ast$state)
+\item 
+string \mbox{\hyperlink{class_car_a6b436cfadb57e26266ef2d2875619b77}{get\+State}} ()
+\item 
+void \mbox{\hyperlink{class_car_aa698269ee1300d5844decbe894c139c5}{ready}} ()
+\item 
+void \mbox{\hyperlink{class_car_a944100a25b1f6c67ca95e45868d9c10b}{racing}} ()
+\item 
+void \mbox{\hyperlink{class_car_a5e1e788c983d40dfe465f0a536d58d47}{stopped}} ()
+\item 
+void \mbox{\hyperlink{class_car_a9da54533fe2d029ab4300d1b8682c69f}{set\+Driver}} (\mbox{\hyperlink{class_driver}{Driver}} $\ast$driver1)
+\item 
+\mbox{\hyperlink{class_driver}{Driver}} $\ast$ \mbox{\hyperlink{class_car_a42b06291391327a61a56ca69dd9951b5}{get\+Driver}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_car_aceffd197450d95f4c6a15e38152b50a4}{car\+Decorate}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract Product for Abstract Factory Pattern and Component for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_car_ab740ed295feccd6ba2ffcc954623fc36}\label{class_car_ab740ed295feccd6ba2ffcc954623fc36}} 
+\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\subsubsection{\texorpdfstring{Car()}{Car()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Car\+::\+Car (\begin{DoxyParamCaption}\item[{int}]{tyres = {\ttfamily 4} }\end{DoxyParamCaption})}
+
+Defualt constructor for \mbox{\hyperlink{class_car}{Car}} 
+\begin{DoxyParams}{Parameters}
+{\em tyres} & -\/ the amount of tyres the car has \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_ab471ee86f9ba3bc2637b526233932513}\label{class_car_ab471ee86f9ba3bc2637b526233932513}} 
+\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\subsubsection{\texorpdfstring{Car()}{Car()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Car\+::\+Car (\begin{DoxyParamCaption}\item[{string}]{model\+Type\+\_\+,  }\item[{int}]{tyres = {\ttfamily 4} }\end{DoxyParamCaption})}
+
+The base constructor for \mbox{\hyperlink{class_car}{Car}} 
+\begin{DoxyParams}{Parameters}
+{\em model\+Type\+\_\+} & -\/ states whether the car is Electirc/\+Sports/\+Standard \\
+\hline
+{\em tyres} & -\/ the amount of tyres the car has \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a934bad1647e59360395ac3cbd71c6a8d}\label{class_car_a934bad1647e59360395ac3cbd71c6a8d}} 
+\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\subsubsection{\texorpdfstring{Car()}{Car()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Car\+::\+Car (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_car}{Car}} \&}]{car\+\_\+,  }\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})}
+
+The copy constructor for \mbox{\hyperlink{class_car}{Car}} 
+\begin{DoxyParams}{Parameters}
+{\em car\+\_\+} & -\/ a \mbox{\hyperlink{class_car}{Car}} object that will be copied \\
+\hline
+{\em flag\+\_\+} & -\/ bool var to decide if the base car or the whole car will be cloned \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a7f5f88d8a933b9de494e6beb818003f1}\label{class_car_a7f5f88d8a933b9de494e6beb818003f1}} 
+\index{Car@{Car}!````~Car@{$\sim$\+Car}}
+\index{````~Car@{$\sim$\+Car}!Car@{Car}}
+\subsubsection{\texorpdfstring{$\sim$\+Car()}{~Car()}}
+{\footnotesize\ttfamily virtual Car\+::$\sim$\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The virtual destructor for \mbox{\hyperlink{class_car}{Car}} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_car_aca44e1a112ae22217c8004e92a86c374}\label{class_car_aca44e1a112ae22217c8004e92a86c374}} 
+\index{Car@{Car}!add@{add}}
+\index{add@{add}!Car@{Car}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Car\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+abstract add function for decorator 
+\begin{DoxyParams}{Parameters}
+{\em c} & -\/ A \mbox{\hyperlink{class_car}{Car}} object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_pimp_my_ride_a2293a4df894794145696d7610efe3056}{Pimp\+My\+Ride}}.
+
+\mbox{\Hypertarget{class_car_a27ad98735fd4a3f675234ea806c227da}\label{class_car_a27ad98735fd4a3f675234ea806c227da}} 
+\index{Car@{Car}!clone@{clone}}
+\index{clone@{clone}!Car@{Car}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Car\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract clone function for the prototype design pattern 
+\begin{DoxyParams}{Parameters}
+{\em flag} & -\/ bool var to decide if the base car or the whole car will be cloned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_car}{Car}} object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_sports_roadster_a2f6df8bfdb8a28c413dbd976de77f68a}{Sports\+Roadster}}, \mbox{\hyperlink{class_pimp_my_ride_a37648eb844eb3e5967d0d3a6a8f0469d}{Pimp\+My\+Ride}}, \mbox{\hyperlink{class_sports_formula_one_aba368f668094ef50d94c29acd739fcbe}{Sports\+Formula\+One}}, \mbox{\hyperlink{class_sports_go_kart_abff0ab942e347968f49a3ebf600b19fe}{Sports\+Go\+Kart}}, \mbox{\hyperlink{class_standard_formula_one_acd27c9ec96a7410d40c72666d36b6a7e}{Standard\+Formula\+One}}, \mbox{\hyperlink{class_standard_go_kart_aec5a6e2e21ab80b0ee072bbcdcf0323a}{Standard\+Go\+Kart}}, \mbox{\hyperlink{class_standard_roadster_aa4aa69bc59c2095faae2fbc7de12798d}{Standard\+Roadster}}, \mbox{\hyperlink{class_electric_formula_one_ac1649c11b48ceae7a98ccbc0d4727e7c}{Electric\+Formula\+One}}, \mbox{\hyperlink{class_electric_go_kart_a56f6b0c5a68597601f27818f10862bcb}{Electric\+Go\+Kart}}, \mbox{\hyperlink{class_electric_roadster_a4ef7c42355752e28cd2ad97ed1efc047}{Electric\+Roadster}}, \mbox{\hyperlink{class_standard_car_a2fd5dd06bebd68db247bab73bd2176be}{Standard\+Car}}, \mbox{\hyperlink{class_electric_car_a852de7d2208dea4d45a554d9270508d0}{Electric\+Car}}, and \mbox{\hyperlink{class_sports_car_a4daa739baaee9d9d5ad33f4766ec43ec}{Sports\+Car}}.
+
+\mbox{\Hypertarget{class_car_a6e32b3e8ddaaf2b3873c849e42f6a085}\label{class_car_a6e32b3e8ddaaf2b3873c849e42f6a085}} 
+\index{Car@{Car}!Full\+Clone@{Full\+Clone}}
+\index{Full\+Clone@{Full\+Clone}!Car@{Car}}
+\subsubsection{\texorpdfstring{Full\+Clone()}{FullClone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Car\+::\+Full\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Abstract full clone implemented by decorator class to copy over the decorators \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_pimp_my_ride_afce12a1a761727eebec707924521d0e2}{Pimp\+My\+Ride}}, \mbox{\hyperlink{class_nitro_a1574264a8ca8691bb3669c8a3a3ad5dd}{Nitro}}, \mbox{\hyperlink{class_slick_a09178f75aaba34e79992c66eac80974e}{Slick}}, \mbox{\hyperlink{class_spoiler_a240c57673fae69ffa9cf51468ca17793}{Spoiler}}, \mbox{\hyperlink{class_standard_car_a4fda894219093e86a4c9b1eeb0edc523}{Standard\+Car}}, \mbox{\hyperlink{class_electric_car_a97eec3669ad8f20128eaab3084f8f8f5}{Electric\+Car}}, \mbox{\hyperlink{class_sports_car_a55002e6cf1f09b4a5d0e4c59c938e3a5}{Sports\+Car}}, \mbox{\hyperlink{class_flame_vinyl_a10356b9fab01a74d2354773e0beaba8b}{Flame\+Vinyl}}, and \mbox{\hyperlink{class_skull_vinyl_a02a74e1366553be8263a5751239bb8bf}{Skull\+Vinyl}}.
+
+\mbox{\Hypertarget{class_car_a65f1e6a41427135fe69004642f485076}\label{class_car_a65f1e6a41427135fe69004642f485076}} 
+\index{Car@{Car}!get\+Acceleration@{get\+Acceleration}}
+\index{get\+Acceleration@{get\+Acceleration}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Acceleration()}{getAcceleration()}}
+{\footnotesize\ttfamily int Car\+::get\+Acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to get Acceleration of a car \begin{DoxyReturn}{Returns}
+Acceleration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a949327d4945b878e9e34e92979b9e589}\label{class_car_a949327d4945b878e9e34e92979b9e589}} 
+\index{Car@{Car}!get\+Car\+Damage@{get\+Car\+Damage}}
+\index{get\+Car\+Damage@{get\+Car\+Damage}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Car\+Damage()}{getCarDamage()}}
+{\footnotesize\ttfamily int Car\+::get\+Car\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the damage the car has taken \begin{DoxyReturn}{Returns}
+the amount of damage since last repair 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a7268dbaecbc6bca28bbe043d3a78a3fb}\label{class_car_a7268dbaecbc6bca28bbe043d3a78a3fb}} 
+\index{Car@{Car}!get\+Car\+Fuel@{get\+Car\+Fuel}}
+\index{get\+Car\+Fuel@{get\+Car\+Fuel}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Car\+Fuel()}{getCarFuel()}}
+{\footnotesize\ttfamily int Car\+::get\+Car\+Fuel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the fuel level of the car \begin{DoxyReturn}{Returns}
+int -\/ the fuel level 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_af47c8e6bb7bd54dc0f027b268916fc5c}\label{class_car_af47c8e6bb7bd54dc0f027b268916fc5c}} 
+\index{Car@{Car}!get\+Car\+ID@{get\+Car\+ID}}
+\index{get\+Car\+ID@{get\+Car\+ID}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Car\+I\+D()}{getCarID()}}
+{\footnotesize\ttfamily int Car\+::get\+Car\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the ID of the car \begin{DoxyReturn}{Returns}
+returns the car ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_aa025fcec65db2ad7d696840e64c9451c}\label{class_car_aa025fcec65db2ad7d696840e64c9451c}} 
+\index{Car@{Car}!get\+Car\+Tyre@{get\+Car\+Tyre}}
+\index{get\+Car\+Tyre@{get\+Car\+Tyre}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Car\+Tyre()}{getCarTyre()}}
+{\footnotesize\ttfamily int Car\+::get\+Car\+Tyre (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Get the tyre with the specific index\textquotesingle{}s condition 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index for the tyre array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ the condition of the tyre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_aabb17902a6b0770523779bd2d1ab9fdd}\label{class_car_aabb17902a6b0770523779bd2d1ab9fdd}} 
+\index{Car@{Car}!get\+Car\+Tyres@{get\+Car\+Tyres}}
+\index{get\+Car\+Tyres@{get\+Car\+Tyres}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Car\+Tyres()}{getCarTyres()}}
+{\footnotesize\ttfamily int $\ast$ Car\+::get\+Car\+Tyres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the condition of each tyre \begin{DoxyReturn}{Returns}
+int array showing the condition of each tyre 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_aa9255a0bd2fdb42948fea897b13d574f}\label{class_car_aa9255a0bd2fdb42948fea897b13d574f}} 
+\index{Car@{Car}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily string Car\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the description of the car \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a42b06291391327a61a56ca69dd9951b5}\label{class_car_a42b06291391327a61a56ca69dd9951b5}} 
+\index{Car@{Car}!get\+Driver@{get\+Driver}}
+\index{get\+Driver@{get\+Driver}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Driver()}{getDriver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_driver}{Driver}}$\ast$ Car\+::get\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the driver of the car \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a1ebc0aefed91d874aed3f93789c51209}\label{class_car_a1ebc0aefed91d874aed3f93789c51209}} 
+\index{Car@{Car}!get\+Handling@{get\+Handling}}
+\index{get\+Handling@{get\+Handling}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Handling()}{getHandling()}}
+{\footnotesize\ttfamily int Car\+::get\+Handling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to get Handling of a car \begin{DoxyReturn}{Returns}
+handling 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_abfcccd0fa3ef14dea58d1a92b9caf62a}\label{class_car_abfcccd0fa3ef14dea58d1a92b9caf62a}} 
+\index{Car@{Car}!get\+Lap@{get\+Lap}}
+\index{get\+Lap@{get\+Lap}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Lap()}{getLap()}}
+{\footnotesize\ttfamily int Car\+::get\+Lap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns lapnumber \begin{DoxyReturn}{Returns}
+lapno 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a225edc19422a1c521b4259abc363c046}\label{class_car_a225edc19422a1c521b4259abc363c046}} 
+\index{Car@{Car}!get\+Manager@{get\+Manager}}
+\index{get\+Manager@{get\+Manager}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Manager()}{getManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}}$\ast$ Car\+::get\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the manager of the car \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} pointer to the manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_aea72486ce71ff0989725e8abda128e00}\label{class_car_aea72486ce71ff0989725e8abda128e00}} 
+\index{Car@{Car}!get\+Model\+Number@{get\+Model\+Number}}
+\index{get\+Model\+Number@{get\+Model\+Number}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Model\+Number()}{getModelNumber()}}
+{\footnotesize\ttfamily int Car\+::get\+Model\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the model number of the car \begin{DoxyReturn}{Returns}
+the car model\+Number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a92753a8c68d5e0681dafd89db2e6e660}\label{class_car_a92753a8c68d5e0681dafd89db2e6e660}} 
+\index{Car@{Car}!get\+Model\+Type@{get\+Model\+Type}}
+\index{get\+Model\+Type@{get\+Model\+Type}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Model\+Type()}{getModelType()}}
+{\footnotesize\ttfamily const string Car\+::get\+Model\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+function to get model type of a car \begin{DoxyReturn}{Returns}
+string (the model type) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a37d6bc64d09b030dacd25de5f0fa0a64}\label{class_car_a37d6bc64d09b030dacd25de5f0fa0a64}} 
+\index{Car@{Car}!get\+Num\+Tyres@{get\+Num\+Tyres}}
+\index{get\+Num\+Tyres@{get\+Num\+Tyres}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Num\+Tyres()}{getNumTyres()}}
+{\footnotesize\ttfamily int Car\+::get\+Num\+Tyres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to get the amount of tyres the car have \begin{DoxyReturn}{Returns}
+the number of tyres 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a18e48b5cf9815216b8e82351d36b8d9f}\label{class_car_a18e48b5cf9815216b8e82351d36b8d9f}} 
+\index{Car@{Car}!get\+Speed@{get\+Speed}}
+\index{get\+Speed@{get\+Speed}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Speed()}{getSpeed()}}
+{\footnotesize\ttfamily int Car\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to get speed of a car \begin{DoxyReturn}{Returns}
+speed -\/ The speed the car has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a6b436cfadb57e26266ef2d2875619b77}\label{class_car_a6b436cfadb57e26266ef2d2875619b77}} 
+\index{Car@{Car}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily string Car\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current state of the car \begin{DoxyReturn}{Returns}
+state 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a597150e71ff1eb914f82eee7e545cddf}\label{class_car_a597150e71ff1eb914f82eee7e545cddf}} 
+\index{Car@{Car}!get\+Team@{get\+Team}}
+\index{get\+Team@{get\+Team}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Team()}{getTeam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pit_stop}{Pit\+Stop}}$\ast$ Car\+::get\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the team of the car \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} pointer to the team 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_abecf0c28ecabc7f74bd40a3504da3a3a}\label{class_car_abecf0c28ecabc7f74bd40a3504da3a3a}} 
+\index{Car@{Car}!get\+Track\+Part@{get\+Track\+Part}}
+\index{get\+Track\+Part@{get\+Track\+Part}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Track\+Part()}{getTrackPart()}}
+{\footnotesize\ttfamily int Car\+::get\+Track\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns track part \begin{DoxyReturn}{Returns}
+track\+Part 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a63dd14b9889f022373971846b088f65f}\label{class_car_a63dd14b9889f022373971846b088f65f}} 
+\index{Car@{Car}!get\+Track\+Time@{get\+Track\+Time}}
+\index{get\+Track\+Time@{get\+Track\+Time}!Car@{Car}}
+\subsubsection{\texorpdfstring{get\+Track\+Time()}{getTrackTime()}}
+{\footnotesize\ttfamily int Car\+::get\+Track\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to get the total time the car took in the race \begin{DoxyReturn}{Returns}
+int representing the total time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_abbf050e461e2e56dae11e89c8efda7af}\label{class_car_abbf050e461e2e56dae11e89c8efda7af}} 
+\index{Car@{Car}!notify\+Team@{notify\+Team}}
+\index{notify\+Team@{notify\+Team}!Car@{Car}}
+\subsubsection{\texorpdfstring{notify\+Team()}{notifyTeam()}}
+{\footnotesize\ttfamily void Car\+::notify\+Team (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_car}{Car}} notifies the team that its variables has changed. \mbox{\hyperlink{class_car}{Car}} will do this during a race \mbox{\Hypertarget{class_car_a944100a25b1f6c67ca95e45868d9c10b}\label{class_car_a944100a25b1f6c67ca95e45868d9c10b}} 
+\index{Car@{Car}!racing@{racing}}
+\index{racing@{racing}!Car@{Car}}
+\subsubsection{\texorpdfstring{racing()}{racing()}}
+{\footnotesize\ttfamily void Car\+::racing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Change car into the racing state \mbox{\Hypertarget{class_car_aa698269ee1300d5844decbe894c139c5}\label{class_car_aa698269ee1300d5844decbe894c139c5}} 
+\index{Car@{Car}!ready@{ready}}
+\index{ready@{ready}!Car@{Car}}
+\subsubsection{\texorpdfstring{ready()}{ready()}}
+{\footnotesize\ttfamily void Car\+::ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Change car into the ready state \mbox{\Hypertarget{class_car_ab8e5fb187d9677c43f65a908f917baa8}\label{class_car_ab8e5fb187d9677c43f65a908f917baa8}} 
+\index{Car@{Car}!Registration\+Notify@{Registration\+Notify}}
+\index{Registration\+Notify@{Registration\+Notify}!Car@{Car}}
+\subsubsection{\texorpdfstring{Registration\+Notify()}{RegistrationNotify()}}
+{\footnotesize\ttfamily void Car\+::\+Registration\+Notify (\begin{DoxyParamCaption}\item[{string}]{msg }\end{DoxyParamCaption})}
+
+notifies the car which track it is registered for 
+\begin{DoxyParams}{Parameters}
+{\em msg} & the string to output \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_aa3f0bd8ed0bd0ab70540f1ea9f9c3058}\label{class_car_aa3f0bd8ed0bd0ab70540f1ea9f9c3058}} 
+\index{Car@{Car}!set\+Acceleration@{set\+Acceleration}}
+\index{set\+Acceleration@{set\+Acceleration}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Acceleration()}{setAcceleration()}}
+{\footnotesize\ttfamily void Car\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{int}]{A }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to set Acceleration of a car 
+\begin{DoxyParams}{Parameters}
+{\em A} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a0b440c163057149751f81da6f50882f3}\label{class_car_a0b440c163057149751f81da6f50882f3}} 
+\index{Car@{Car}!set\+Car\+Damage@{set\+Car\+Damage}}
+\index{set\+Car\+Damage@{set\+Car\+Damage}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Car\+Damage()}{setCarDamage()}}
+{\footnotesize\ttfamily void Car\+::set\+Car\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage\+\_\+ }\end{DoxyParamCaption})}
+
+Set the damage of the car \mbox{\hyperlink{class_car}{Car}} will then notify the team 
+\begin{DoxyParams}{Parameters}
+{\em damage} & -\/ the new damage of the car \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a4630826e2d1b4972e9c946faa6c58f19}\label{class_car_a4630826e2d1b4972e9c946faa6c58f19}} 
+\index{Car@{Car}!set\+Car\+Fuel@{set\+Car\+Fuel}}
+\index{set\+Car\+Fuel@{set\+Car\+Fuel}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Car\+Fuel()}{setCarFuel()}}
+{\footnotesize\ttfamily void Car\+::set\+Car\+Fuel (\begin{DoxyParamCaption}\item[{int}]{fuel }\end{DoxyParamCaption})}
+
+Set the fuel level of a car \mbox{\hyperlink{class_car}{Car}} will notify the team 
+\begin{DoxyParams}{Parameters}
+{\em fuel} & -\/ the new fuel level of the car \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a87fc66f728b131aeb0748a416984ad93}\label{class_car_a87fc66f728b131aeb0748a416984ad93}} 
+\index{Car@{Car}!set\+Car\+Tyre@{set\+Car\+Tyre}}
+\index{set\+Car\+Tyre@{set\+Car\+Tyre}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Car\+Tyre()}{setCarTyre()}}
+{\footnotesize\ttfamily void Car\+::set\+Car\+Tyre (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{tyre }\end{DoxyParamCaption})}
+
+Set the condition of the tyres after it has been changed \mbox{\hyperlink{class_car}{Car}} will then notify the team 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index for the tyre array \\
+\hline
+{\em tyre} & -\/ the new condition of the tyre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a2248a180b5fdb272746f93d7956d11d3}\label{class_car_a2248a180b5fdb272746f93d7956d11d3}} 
+\index{Car@{Car}!set\+Changed@{set\+Changed}}
+\index{set\+Changed@{set\+Changed}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Changed()}{setChanged()}}
+{\footnotesize\ttfamily void Car\+::set\+Changed (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{tyre }\end{DoxyParamCaption})}
+
+Set the condition of the tyres after it has been changed \mbox{\hyperlink{class_car}{Car}} will not notify the team 
+\begin{DoxyParams}{Parameters}
+{\em index} & -\/ index for the tyre array \\
+\hline
+{\em tyre} & -\/ the new condition of the tyre \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a0dcda3633cafc81e96dffcbdc5bdeeb0}\label{class_car_a0dcda3633cafc81e96dffcbdc5bdeeb0}} 
+\index{Car@{Car}!set\+Description@{set\+Description}}
+\index{set\+Description@{set\+Description}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Description()}{setDescription()}}
+{\footnotesize\ttfamily void Car\+::set\+Description (\begin{DoxyParamCaption}\item[{string}]{des }\end{DoxyParamCaption})}
+
+Set the description of the car 
+\begin{DoxyParams}{Parameters}
+{\em des} & string passed in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a9da54533fe2d029ab4300d1b8682c69f}\label{class_car_a9da54533fe2d029ab4300d1b8682c69f}} 
+\index{Car@{Car}!set\+Driver@{set\+Driver}}
+\index{set\+Driver@{set\+Driver}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Driver()}{setDriver()}}
+{\footnotesize\ttfamily void Car\+::set\+Driver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_driver}{Driver}} $\ast$}]{driver1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+sets the driver of the car 
+\begin{DoxyParams}{Parameters}
+{\em driver1} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_aa5ef6b0602af458c67c0c9845ee82899}\label{class_car_aa5ef6b0602af458c67c0c9845ee82899}} 
+\index{Car@{Car}!set\+Handling@{set\+Handling}}
+\index{set\+Handling@{set\+Handling}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Handling()}{setHandling()}}
+{\footnotesize\ttfamily void Car\+::set\+Handling (\begin{DoxyParamCaption}\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to set Handling of a car 
+\begin{DoxyParams}{Parameters}
+{\em H} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_ae74720b1f4ca277faa844b6db17c0a30}\label{class_car_ae74720b1f4ca277faa844b6db17c0a30}} 
+\index{Car@{Car}!set\+Lap@{set\+Lap}}
+\index{set\+Lap@{set\+Lap}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Lap()}{setLap()}}
+{\footnotesize\ttfamily void Car\+::set\+Lap (\begin{DoxyParamCaption}\item[{int}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+sets the lap number 
+\begin{DoxyParams}{Parameters}
+{\em l} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a10d9ba320f5efd4cf233d50d10e2107c}\label{class_car_a10d9ba320f5efd4cf233d50d10e2107c}} 
+\index{Car@{Car}!set\+Manager@{set\+Manager}}
+\index{set\+Manager@{set\+Manager}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Manager()}{setManager()}}
+{\footnotesize\ttfamily void Car\+::set\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the manager of the car 
+\begin{DoxyParams}{Parameters}
+{\em m} & -\/ \mbox{\hyperlink{class_pit_crew}{Pit\+Crew}} object which is the manager \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a57adfd20b916e5b22c7d4fb5989f671e}\label{class_car_a57adfd20b916e5b22c7d4fb5989f671e}} 
+\index{Car@{Car}!set\+Refuel@{set\+Refuel}}
+\index{set\+Refuel@{set\+Refuel}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Refuel()}{setRefuel()}}
+{\footnotesize\ttfamily void Car\+::set\+Refuel (\begin{DoxyParamCaption}\item[{int}]{fuel }\end{DoxyParamCaption})}
+
+Set the fuel level of a car \mbox{\hyperlink{class_car}{Car}} will not notify the team 
+\begin{DoxyParams}{Parameters}
+{\em fuel} & -\/ the new fuel level of the car \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a5ee7015f3f094416513a718cd38b0a10}\label{class_car_a5ee7015f3f094416513a718cd38b0a10}} 
+\index{Car@{Car}!set\+Repair@{set\+Repair}}
+\index{set\+Repair@{set\+Repair}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Repair()}{setRepair()}}
+{\footnotesize\ttfamily void Car\+::set\+Repair (\begin{DoxyParamCaption}\item[{int}]{damage\+\_\+ }\end{DoxyParamCaption})}
+
+Set the damage of the car \mbox{\hyperlink{class_car}{Car}} will not notify the team 
+\begin{DoxyParams}{Parameters}
+{\em damage} & -\/ the new damage of the car \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_acf64780a1426bea0549759c1a0b83838}\label{class_car_acf64780a1426bea0549759c1a0b83838}} 
+\index{Car@{Car}!set\+Speed@{set\+Speed}}
+\index{set\+Speed@{set\+Speed}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Speed()}{setSpeed()}}
+{\footnotesize\ttfamily void Car\+::set\+Speed (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Function to set speed of a car 
+\begin{DoxyParams}{Parameters}
+{\em speed} & -\/ The speed the car has \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a624d9dc67aae36f0e3cdadb471d4bba6}\label{class_car_a624d9dc67aae36f0e3cdadb471d4bba6}} 
+\index{Car@{Car}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+State()}{setState()}}
+{\footnotesize\ttfamily void Car\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_state}{State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+Set the current state of the car 
+\begin{DoxyParams}{Parameters}
+{\em state} & -\/ \mbox{\hyperlink{class_state}{State}} object which it needs to be \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_ae552ed5a2d8660c27ceb67c8454a48ae}\label{class_car_ae552ed5a2d8660c27ceb67c8454a48ae}} 
+\index{Car@{Car}!set\+Team@{set\+Team}}
+\index{set\+Team@{set\+Team}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Team()}{setTeam()}}
+{\footnotesize\ttfamily void Car\+::set\+Team (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the team of the car 
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ \mbox{\hyperlink{class_pit_stop}{Pit\+Stop}} object which is the team \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_abc826195aea1df1ad8c2f406a8b28721}\label{class_car_abc826195aea1df1ad8c2f406a8b28721}} 
+\index{Car@{Car}!set\+Track\+Part@{set\+Track\+Part}}
+\index{set\+Track\+Part@{set\+Track\+Part}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Track\+Part()}{setTrackPart()}}
+{\footnotesize\ttfamily void Car\+::set\+Track\+Part (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+sets track part of car 
+\begin{DoxyParams}{Parameters}
+{\em t} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_a744626ffab217629a2e9a35837531a44}\label{class_car_a744626ffab217629a2e9a35837531a44}} 
+\index{Car@{Car}!set\+Track\+Time@{set\+Track\+Time}}
+\index{set\+Track\+Time@{set\+Track\+Time}!Car@{Car}}
+\subsubsection{\texorpdfstring{set\+Track\+Time()}{setTrackTime()}}
+{\footnotesize\ttfamily void Car\+::set\+Track\+Time (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+function to add time to the track time when the car is making a pit stop 
+\begin{DoxyParams}{Parameters}
+{\em i} & the amount of time to be added to the existing time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_car_af26b903e790eb44d638ba57e78e27e1b}\label{class_car_af26b903e790eb44d638ba57e78e27e1b}} 
+\index{Car@{Car}!show\+Car\+Condition@{show\+Car\+Condition}}
+\index{show\+Car\+Condition@{show\+Car\+Condition}!Car@{Car}}
+\subsubsection{\texorpdfstring{show\+Car\+Condition()}{showCarCondition()}}
+{\footnotesize\ttfamily string Car\+::show\+Car\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the condition of a car during the race \begin{DoxyReturn}{Returns}
+string describing the condition 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a19567ab900b1c676f0244b15ec14dbad}\label{class_car_a19567ab900b1c676f0244b15ec14dbad}} 
+\index{Car@{Car}!show\+Car\+Stats@{show\+Car\+Stats}}
+\index{show\+Car\+Stats@{show\+Car\+Stats}!Car@{Car}}
+\subsubsection{\texorpdfstring{show\+Car\+Stats()}{showCarStats()}}
+{\footnotesize\ttfamily string Car\+::show\+Car\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Abstract show\+Car\+Stats function to show the stats of a car \begin{DoxyReturn}{Returns}
+string stating the stats 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_pimp_my_ride_afd1a51b17959c3476d2ead62325d026e}{Pimp\+My\+Ride}}.
+
+\mbox{\Hypertarget{class_car_a5e1e788c983d40dfe465f0a536d58d47}\label{class_car_a5e1e788c983d40dfe465f0a536d58d47}} 
+\index{Car@{Car}!stopped@{stopped}}
+\index{stopped@{stopped}!Car@{Car}}
+\subsubsection{\texorpdfstring{stopped()}{stopped()}}
+{\footnotesize\ttfamily void Car\+::stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Change car into the stopped state \mbox{\Hypertarget{class_car_a7989fe6e09bb5dfc1b7de3d5f275b5ae}\label{class_car_a7989fe6e09bb5dfc1b7de3d5f275b5ae}} 
+\index{Car@{Car}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Car@{Car}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily string Car\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+function to return a full detail about the car \begin{DoxyReturn}{Returns}
+string of car details 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_car_aceffd197450d95f4c6a15e38152b50a4}\label{class_car_aceffd197450d95f4c6a15e38152b50a4}} 
+\index{Car@{Car}!car\+Decorate@{car\+Decorate}}
+\index{car\+Decorate@{car\+Decorate}!Car@{Car}}
+\subsubsection{\texorpdfstring{car\+Decorate}{carDecorate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_car}{Car}}$\ast$ Car\+::car\+Decorate}
+
+pointer to car object for decorator 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_car_8h}{Car.\+h}}\item 
+Car.\+cpp\end{DoxyCompactItemize}

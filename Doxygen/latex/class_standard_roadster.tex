@@ -1,0 +1,86 @@
+\hypertarget{class_standard_roadster}{}\section{Standard\+Roadster Class Reference}
+\label{class_standard_roadster}\index{Standard\+Roadster@{Standard\+Roadster}}
+
+
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Standard\+Roadster.\+h$>$}
+
+Inheritance diagram for Standard\+Roadster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_standard_roadster}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_standard_roadster_a736b370a7bb115760982e89848c0882f}{Standard\+Roadster}} ()
+\item 
+\mbox{\hyperlink{class_standard_roadster_a9b39f68839c6a89454d71d9fcd45549c}{Standard\+Roadster}} (const \mbox{\hyperlink{class_car}{Car}} \&car\+\_\+, bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_standard_roadster_aa4aa69bc59c2095faae2fbc7de12798d}{clone}} (bool flag\+\_\+=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_standard_roadster_a736b370a7bb115760982e89848c0882f}\label{class_standard_roadster_a736b370a7bb115760982e89848c0882f}} 
+\index{Standard\+Roadster@{Standard\+Roadster}!Standard\+Roadster@{Standard\+Roadster}}
+\index{Standard\+Roadster@{Standard\+Roadster}!Standard\+Roadster@{Standard\+Roadster}}
+\subsubsection{\texorpdfstring{Standard\+Roadster()}{StandardRoadster()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Standard\+Roadster\+::\+Standard\+Roadster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \mbox{\hyperlink{class_standard_roadster}{Standard\+Roadster}}, calls Constructor of \mbox{\hyperlink{class_standard_car}{Standard\+Car}} \mbox{\Hypertarget{class_standard_roadster_a9b39f68839c6a89454d71d9fcd45549c}\label{class_standard_roadster_a9b39f68839c6a89454d71d9fcd45549c}} 
+\index{Standard\+Roadster@{Standard\+Roadster}!Standard\+Roadster@{Standard\+Roadster}}
+\index{Standard\+Roadster@{Standard\+Roadster}!Standard\+Roadster@{Standard\+Roadster}}
+\subsubsection{\texorpdfstring{Standard\+Roadster()}{StandardRoadster()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Standard\+Roadster\+::\+Standard\+Roadster (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_car}{Car}} \&}]{car\+\_\+,  }\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor used for cloning 
+\begin{DoxyParams}{Parameters}
+{\em car\+\_\+} & car object for copying \\
+\hline
+{\em flag\+\_\+} & to determine if must be full clone or basic clone \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_standard_roadster_aa4aa69bc59c2095faae2fbc7de12798d}\label{class_standard_roadster_aa4aa69bc59c2095faae2fbc7de12798d}} 
+\index{Standard\+Roadster@{Standard\+Roadster}!clone@{clone}}
+\index{clone@{clone}!Standard\+Roadster@{Standard\+Roadster}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Standard\+Roadster\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag\+\_\+ = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of clone function 
+\begin{DoxyParams}{Parameters}
+{\em flag\+\_\+} & determines if must be full clone or basic clone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a copied car object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_standard_car_a2fd5dd06bebd68db247bab73bd2176be}{Standard\+Car}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_standard_roadster_8h}{Standard\+Roadster.\+h}}\end{DoxyCompactItemize}

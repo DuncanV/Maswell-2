@@ -1,0 +1,123 @@
+\hypertarget{class_sports_car}{}\section{Sports\+Car Class Reference}
+\label{class_sports_car}\index{Sports\+Car@{Sports\+Car}}
+
+
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Sports\+Car.\+h$>$}
+
+Inheritance diagram for Sports\+Car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_sports_car}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sports_car_a12c07f42ba9979fda7e3de7fc195ed0a}{Sports\+Car}} (string model\+Type\+\_\+)
+\item 
+\mbox{\hyperlink{class_sports_car_a92c5c238debbe61e1db2b2e42a81e814}{Sports\+Car}} (const \mbox{\hyperlink{class_car}{Car}} \&car\+\_\+, bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_sports_car_a556357475654f0c32c3b28cb436cb379}{$\sim$\+Sports\+Car}} ()
+\item 
+virtual string \mbox{\hyperlink{class_sports_car_af530b222b2229bf8f4f95dd2c79bac3a}{get\+Description}} ()
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_sports_car_a4daa739baaee9d9d5ad33f4766ec43ec}{clone}} (bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_sports_car_a55002e6cf1f09b4a5d0e4c59c938e3a5}{Full\+Clone}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sports_car_a12c07f42ba9979fda7e3de7fc195ed0a}\label{class_sports_car_a12c07f42ba9979fda7e3de7fc195ed0a}} 
+\index{Sports\+Car@{Sports\+Car}!Sports\+Car@{Sports\+Car}}
+\index{Sports\+Car@{Sports\+Car}!Sports\+Car@{Sports\+Car}}
+\subsubsection{\texorpdfstring{Sports\+Car()}{SportsCar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sports\+Car\+::\+Sports\+Car (\begin{DoxyParamCaption}\item[{string}]{model\+Type\+\_\+ }\end{DoxyParamCaption})}
+
+Constructor for \mbox{\hyperlink{class_sports_car}{Sports\+Car}} 
+\begin{DoxyParams}{Parameters}
+{\em model\+Type\+\_\+} & states whether car is Electric/\+Sports/\+Standard \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sports_car_a92c5c238debbe61e1db2b2e42a81e814}\label{class_sports_car_a92c5c238debbe61e1db2b2e42a81e814}} 
+\index{Sports\+Car@{Sports\+Car}!Sports\+Car@{Sports\+Car}}
+\index{Sports\+Car@{Sports\+Car}!Sports\+Car@{Sports\+Car}}
+\subsubsection{\texorpdfstring{Sports\+Car()}{SportsCar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sports\+Car\+::\+Sports\+Car (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_car}{Car}} \&}]{car\+\_\+,  }\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})}
+
+The copy constructor for \mbox{\hyperlink{class_sports_car}{Sports\+Car}} 
+\begin{DoxyParams}{Parameters}
+{\em car\+\_\+} & is a \mbox{\hyperlink{class_car}{Car}} object that will be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sports_car_a556357475654f0c32c3b28cb436cb379}\label{class_sports_car_a556357475654f0c32c3b28cb436cb379}} 
+\index{Sports\+Car@{Sports\+Car}!````~Sports\+Car@{$\sim$\+Sports\+Car}}
+\index{````~Sports\+Car@{$\sim$\+Sports\+Car}!Sports\+Car@{Sports\+Car}}
+\subsubsection{\texorpdfstring{$\sim$\+Sports\+Car()}{~SportsCar()}}
+{\footnotesize\ttfamily virtual Sports\+Car\+::$\sim$\+Sports\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+The virtual destructor for \mbox{\hyperlink{class_sports_car}{Sports\+Car}} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sports_car_a4daa739baaee9d9d5ad33f4766ec43ec}\label{class_sports_car_a4daa739baaee9d9d5ad33f4766ec43ec}} 
+\index{Sports\+Car@{Sports\+Car}!clone@{clone}}
+\index{clone@{clone}!Sports\+Car@{Sports\+Car}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Sports\+Car\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+a abstract clone function for the prototype design pattern \begin{DoxyReturn}{Returns}
+a pointer to car object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_car_a27ad98735fd4a3f675234ea806c227da}{Car}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_sports_roadster_a2f6df8bfdb8a28c413dbd976de77f68a}{Sports\+Roadster}}, \mbox{\hyperlink{class_sports_formula_one_aba368f668094ef50d94c29acd739fcbe}{Sports\+Formula\+One}}, and \mbox{\hyperlink{class_sports_go_kart_abff0ab942e347968f49a3ebf600b19fe}{Sports\+Go\+Kart}}.
+
+\mbox{\Hypertarget{class_sports_car_a55002e6cf1f09b4a5d0e4c59c938e3a5}\label{class_sports_car_a55002e6cf1f09b4a5d0e4c59c938e3a5}} 
+\index{Sports\+Car@{Sports\+Car}!Full\+Clone@{Full\+Clone}}
+\index{Full\+Clone@{Full\+Clone}!Sports\+Car@{Sports\+Car}}
+\subsubsection{\texorpdfstring{Full\+Clone()}{FullClone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Sports\+Car\+::\+Full\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of Fullclone in \mbox{\hyperlink{class_car}{Car}} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object with all decorated 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_car_a6e32b3e8ddaaf2b3873c849e42f6a085}{Car}}.
+
+\mbox{\Hypertarget{class_sports_car_af530b222b2229bf8f4f95dd2c79bac3a}\label{class_sports_car_af530b222b2229bf8f4f95dd2c79bac3a}} 
+\index{Sports\+Car@{Sports\+Car}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!Sports\+Car@{Sports\+Car}}
+\subsubsection{\texorpdfstring{get\+Description()}{getDescription()}}
+{\footnotesize\ttfamily string Sports\+Car\+::get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+a get\+Description Function \begin{DoxyReturn}{Returns}
+a string that states the info about the car 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_sports_car_8h}{Sports\+Car.\+h}}\item 
+Sports\+Car.\+cpp\end{DoxyCompactItemize}

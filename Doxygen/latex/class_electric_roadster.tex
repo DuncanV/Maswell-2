@@ -1,0 +1,86 @@
+\hypertarget{class_electric_roadster}{}\section{Electric\+Roadster Class Reference}
+\label{class_electric_roadster}\index{Electric\+Roadster@{Electric\+Roadster}}
+
+
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Electric\+Roadster.\+h$>$}
+
+Inheritance diagram for Electric\+Roadster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_electric_roadster}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_electric_roadster_a3fc84d2d94078f67a1da29fd4be0fe0e}{Electric\+Roadster}} ()
+\item 
+\mbox{\hyperlink{class_electric_roadster_a4d5d496f3f7ec8dd9832c2a40382ffc9}{Electric\+Roadster}} (const \mbox{\hyperlink{class_car}{Car}} \&car\+\_\+, bool flag\+\_\+)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_electric_roadster_a4ef7c42355752e28cd2ad97ed1efc047}{clone}} (bool flag\+\_\+=false)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Product for Abstract Factory Pattern and Concrete Component for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_electric_roadster_a3fc84d2d94078f67a1da29fd4be0fe0e}\label{class_electric_roadster_a3fc84d2d94078f67a1da29fd4be0fe0e}} 
+\index{Electric\+Roadster@{Electric\+Roadster}!Electric\+Roadster@{Electric\+Roadster}}
+\index{Electric\+Roadster@{Electric\+Roadster}!Electric\+Roadster@{Electric\+Roadster}}
+\subsubsection{\texorpdfstring{Electric\+Roadster()}{ElectricRoadster()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Electric\+Roadster\+::\+Electric\+Roadster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for \mbox{\hyperlink{class_electric_formula_one}{Electric\+Formula\+One}}, calls Constructor of \mbox{\hyperlink{class_electric_car}{Electric\+Car}} \mbox{\Hypertarget{class_electric_roadster_a4d5d496f3f7ec8dd9832c2a40382ffc9}\label{class_electric_roadster_a4d5d496f3f7ec8dd9832c2a40382ffc9}} 
+\index{Electric\+Roadster@{Electric\+Roadster}!Electric\+Roadster@{Electric\+Roadster}}
+\index{Electric\+Roadster@{Electric\+Roadster}!Electric\+Roadster@{Electric\+Roadster}}
+\subsubsection{\texorpdfstring{Electric\+Roadster()}{ElectricRoadster()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Electric\+Roadster\+::\+Electric\+Roadster (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_car}{Car}} \&}]{car\+\_\+,  }\item[{bool}]{flag\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor used for cloning 
+\begin{DoxyParams}{Parameters}
+{\em car\+\_\+} & car object for copying \\
+\hline
+{\em flag\+\_\+} & to determine if must be full clone or basic clone \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_electric_roadster_a4ef7c42355752e28cd2ad97ed1efc047}\label{class_electric_roadster_a4ef7c42355752e28cd2ad97ed1efc047}} 
+\index{Electric\+Roadster@{Electric\+Roadster}!clone@{clone}}
+\index{clone@{clone}!Electric\+Roadster@{Electric\+Roadster}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Electric\+Roadster\+::clone (\begin{DoxyParamCaption}\item[{bool}]{flag\+\_\+ = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of clone function 
+\begin{DoxyParams}{Parameters}
+{\em flag\+\_\+} & determines if must be full clone or basic clone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a copied car object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_electric_car_a852de7d2208dea4d45a554d9270508d0}{Electric\+Car}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_electric_roadster_8h}{Electric\+Roadster.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\hypertarget{class_spoiler}{}\section{Spoiler Class Reference}
+\label{class_spoiler}\index{Spoiler@{Spoiler}}
+
+
+Concrete Decorcator for Decorator Pattern.  
+
+
+
+
+{\ttfamily \#include $<$Spoiler.\+h$>$}
+
+Inheritance diagram for Spoiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_spoiler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spoiler_a2cae3e69c5e246b4332c7718a7b381ba}{Spoiler}} (\mbox{\hyperlink{class_car}{Car}} $\ast$Decorate)
+\item 
+\mbox{\hyperlink{class_spoiler_a0f1d8a66634330aef2a2e8d99360945e}{$\sim$\+Spoiler}} ()
+\item 
+\mbox{\hyperlink{class_spoiler_a6fbdbdf1a4ff3c894f74712bd0f118a8}{Spoiler}} (\mbox{\hyperlink{class_spoiler}{Spoiler}} \+\_\+\+Car, bool dummy)
+\item 
+virtual \mbox{\hyperlink{class_car}{Car}} $\ast$ \mbox{\hyperlink{class_spoiler_a240c57673fae69ffa9cf51468ca17793}{Full\+Clone}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Concrete Decorcator for Decorator Pattern. 
+
+\begin{DoxyAuthor}{Authors}
+Duncan + Tjaart 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_spoiler_a2cae3e69c5e246b4332c7718a7b381ba}\label{class_spoiler_a2cae3e69c5e246b4332c7718a7b381ba}} 
+\index{Spoiler@{Spoiler}!Spoiler@{Spoiler}}
+\index{Spoiler@{Spoiler}!Spoiler@{Spoiler}}
+\subsubsection{\texorpdfstring{Spoiler()}{Spoiler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Spoiler\+::\+Spoiler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_car}{Car}} $\ast$}]{Decorate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor which assigns description and alters behaviour of car 
+\begin{DoxyParams}{Parameters}
+{\em Decorate} & the car in which the behaviours are added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_spoiler_a0f1d8a66634330aef2a2e8d99360945e}\label{class_spoiler_a0f1d8a66634330aef2a2e8d99360945e}} 
+\index{Spoiler@{Spoiler}!````~Spoiler@{$\sim$\+Spoiler}}
+\index{````~Spoiler@{$\sim$\+Spoiler}!Spoiler@{Spoiler}}
+\subsubsection{\texorpdfstring{$\sim$\+Spoiler()}{~Spoiler()}}
+{\footnotesize\ttfamily Spoiler\+::$\sim$\+Spoiler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+destructor for \mbox{\hyperlink{class_spoiler}{Spoiler}} \mbox{\Hypertarget{class_spoiler_a6fbdbdf1a4ff3c894f74712bd0f118a8}\label{class_spoiler_a6fbdbdf1a4ff3c894f74712bd0f118a8}} 
+\index{Spoiler@{Spoiler}!Spoiler@{Spoiler}}
+\index{Spoiler@{Spoiler}!Spoiler@{Spoiler}}
+\subsubsection{\texorpdfstring{Spoiler()}{Spoiler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Spoiler\+::\+Spoiler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spoiler}{Spoiler}}}]{\+\_\+\+Car,  }\item[{bool}]{dummy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+copy constructor used for cloning the decorators 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Car} & the car it copies \\
+\hline
+{\em dummy} & just there to use instead of defualt constructor \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spoiler_a240c57673fae69ffa9cf51468ca17793}\label{class_spoiler_a240c57673fae69ffa9cf51468ca17793}} 
+\index{Spoiler@{Spoiler}!Full\+Clone@{Full\+Clone}}
+\index{Full\+Clone@{Full\+Clone}!Spoiler@{Spoiler}}
+\subsubsection{\texorpdfstring{Full\+Clone()}{FullClone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_car}{Car}}$\ast$ Spoiler\+::\+Full\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+implementation of Full\+Clone to deep copy the decorater \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_car}{Car}} object which is the decorator 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_pimp_my_ride_afce12a1a761727eebec707924521d0e2}{Pimp\+My\+Ride}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_spoiler_8h}{Spoiler.\+h}}\end{DoxyCompactItemize}
