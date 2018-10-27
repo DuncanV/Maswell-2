@@ -1,6 +1,7 @@
 //
 // Created by Duncan on 2018/10/25.
 //
+#include <limits>
 #include "Facade.h"
 
 Facade::Facade() {
@@ -244,9 +245,10 @@ void Facade::prepRace() {
 }
 
 void Facade::StartRace() {
-    int a;
-    cout<<"\n====================== Race Start ======================\nPlease push enter to commence start of race!\n";
-    cin>>a;
+
+    cout<<"\n====================== Race Start ======================\nPlease push enter TWICE to commence start of race!\n";
+    fgetc(stdin);
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     raceManager->startRace();
 }
 
