@@ -48,9 +48,9 @@
 #include "ConcreteRaceManager.h"
 #include "State.h"
 #include "Driver.h"
-#include "AggressiveDriver.h";
+#include "AggressiveDriver.h"
 #include "AverageDriver.h"
-#include "PassiveDriver.h";
+#include "PassiveDriver.h"
 class Facade
 {
 public:
