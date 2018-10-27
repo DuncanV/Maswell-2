@@ -21,6 +21,7 @@ public:
      * @brief a car object that will be decorated
      */
     Car* car;
+
     /**
     * Defualt constructor used for PimpMyRide
     */
